@@ -1,0 +1,695 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.png">
+  <link rel="icon" href="/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="荔枝">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="一、概述与分类算法不同，聚类算法并不知道分类的类别，其将样本划分为由类似对象组成的多个类。主要介绍三种聚类算法：kmean&#x2F;kmean++，系统聚类，DBSCAN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="12.聚类算法">
+<meta property="og:url" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/index.html">
+<meta property="og:site_name" content="Leungto">
+<meta property="og:description" content="一、概述与分类算法不同，聚类算法并不知道分类的类别，其将样本划分为由类似对象组成的多个类。主要介绍三种聚类算法：kmean&#x2F;kmean++，系统聚类，DBSCAN">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183817108.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184702444.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183919914.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184742899.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184810923.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190508409.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185118590.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185129648.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190628028.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190649926.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191827717.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191937374.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192138168.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192308937.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192705809.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194035710.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194121276.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194143789.png">
+<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194209404.png">
+<meta property="article:published_time" content="2022-08-14T11:16:59.000Z">
+<meta property="article:modified_time" content="2022-08-17T11:44:13.822Z">
+<meta property="article:author" content="荔枝">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183817108.png">
+  
+  
+  
+  <title>12.聚类算法 - Leungto</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="12.聚类算法"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-08-14 19:16" pubdate>
+          2022年8月14日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          372 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          4 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">12.聚类算法</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>与分类算法不同，聚类算法并不知道分类的类别，其将样本划分为由类似对象组成的多个类。主要介绍三种聚类算法：kmean/kmean++，系统聚类，DBSCAN</p>
+<span id="more"></span>
+<p>以下面的数据进行分析：</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183817108.png" srcset="/img/loading.gif" lazyload alt="image-20220817183817108" style="zoom: 67%;"></p>
+<p>由于数据的量纲不同，在聚类前进行z-score标准化操作：（spss-分析-描述-将标准化值另存为变量）</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184702444.png" srcset="/img/loading.gif" lazyload alt="image-20220817184702444"></p>
+<h3 id="二、kmean"><a href="#二、kmean" class="headerlink" title="二、kmean"></a>二、kmean</h3><h4 id="1-原理"><a href="#1-原理" class="headerlink" title="1.原理"></a>1.原理</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183919914.png" srcset="/img/loading.gif" lazyload alt="image-20220817183919914" style="zoom:67%;"></p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184742899.png" srcset="/img/loading.gif" lazyload alt="image-20220817184742899" style="zoom: 67%;"></p>
+<p>kmeans++算法对kmeans算法进行了优化：</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184810923.png" srcset="/img/loading.gif" lazyload alt="image-20220817184810923"></p>
+<h4 id="2-算法流程图"><a href="#2-算法流程图" class="headerlink" title="2.算法流程图"></a>2.算法流程图</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190508409.png" srcset="/img/loading.gif" lazyload alt="image-20220817190508409"></p>
+<h4 id="3-实现"><a href="#3-实现" class="headerlink" title="3.实现"></a>3.实现</h4><p>spss默认使用kmeans++算法进行聚类（分析-分类-kmeans聚类）</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185118590.png" srcset="/img/loading.gif" lazyload alt="image-20220817185118590"><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185129648.png" srcset="/img/loading.gif" lazyload alt="image-20220817185129648"></p>
+<p>因为kmeans算法需要指定分类的类别数量，这里进行了尝试，选择分2类，这一选择取决个人感觉，能解释即可</p>
+<h3 id="三、系统聚类"><a href="#三、系统聚类" class="headerlink" title="三、系统聚类"></a>三、系统聚类</h3><h4 id="1-原理-1"><a href="#1-原理-1" class="headerlink" title="1.原理"></a>1.原理</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190628028.png" srcset="/img/loading.gif" lazyload alt="image-20220817190628028" style="zoom:67%;"></p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190649926.png" srcset="/img/loading.gif" lazyload alt="image-20220817190649926" style="zoom:67%;"></p>
+<h4 id="2-实现"><a href="#2-实现" class="headerlink" title="2.实现"></a>2.实现</h4><p>（1）聚类</p>
+<p>spss分析-分类-系统聚类</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191827717.png" srcset="/img/loading.gif" lazyload alt="image-20220817191827717" style="zoom:67%;"></p>
+<p>得到谱系图如下，按竖线往下可进行分类</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191937374.png" srcset="/img/loading.gif" lazyload alt="image-20220817191937374"></p>
+<p>（2）使用肘部法则得到较优的分类数量</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192138168.png" srcset="/img/loading.gif" lazyload alt="image-20220817192138168"></p>
+<p>下图中的系数体现了畸变程度，在阶段1时分为n类，n为个体数，在最后的阶段分为1类，故畸变程度较大，将该列移至excel并按降序排列作图</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192308937.png" srcset="/img/loading.gif" lazyload alt="image-20220817192308937" style="zoom:67%;"></p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192705809.png" srcset="/img/loading.gif" lazyload alt="image-20220817192705809" style="zoom:67%;"></p>
+<p>由上图可知类别为4就挺好的啦！（肘部）</p>
+<h3 id="四、DBSCAN算法"><a href="#四、DBSCAN算法" class="headerlink" title="四、DBSCAN算法"></a>四、DBSCAN算法</h3><h4 id="1-原理-2"><a href="#1-原理-2" class="headerlink" title="1.原理"></a>1.原理</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194035710.png" srcset="/img/loading.gif" lazyload alt="image-20220817194035710" style="zoom:67%;"></p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194121276.png" srcset="/img/loading.gif" lazyload alt="image-20220817194121276" style="zoom:67%;"></p>
+<p>伪代码如下：</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194143789.png" srcset="/img/loading.gif" lazyload alt="image-20220817194143789"></p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194209404.png" srcset="/img/loading.gif" lazyload alt="image-20220817194209404"></p>
+<blockquote>
+<p>只有在看上去能用DBSCAN的时候采用，一般用系统聚类就够了</p>
+</blockquote>
+<p>哈哈哈数模系列可能会烂尾了。。。。（有时间再写）</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%B0%E6%A8%A1/" class="category-chain-item">数模</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>12.聚类算法</div>
+      <div>http://example.com/2022/08/14/12-聚类算法/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>荔枝</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年8月14日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/12/14/algorithm/" title="algorithm">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">algorithm</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/" title="11.分类模型">
+                        <span class="hidden-mobile">11.分类模型</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

@@ -1,0 +1,705 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.png">
+  <link rel="icon" href="/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="荔枝">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="rt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计网复习">
+<meta property="og:url" content="http://example.com/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:site_name" content="Leungto">
+<meta property="og:description" content="rt">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154313361.png">
+<meta property="og:image" content="http://example.com/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154348036.png">
+<meta property="og:image" content="http://example.com/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154008234.png">
+<meta property="og:image" content="http://example.com/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154036195.png">
+<meta property="article:published_time" content="2023-02-20T11:12:10.000Z">
+<meta property="article:modified_time" content="2023-02-24T08:12:57.619Z">
+<meta property="article:author" content="荔枝">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154313361.png">
+  
+  
+  
+  <title>计网复习 - Leungto</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="计网复习"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-02-20 19:12" pubdate>
+          2023年2月20日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.5k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          13 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">计网复习</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>rt</p>
+<span id="more"></span>
+<h2 id="第四章-网络层数据平面"><a href="#第四章-网络层数据平面" class="headerlink" title="第四章 网络层数据平面"></a>第四章 网络层数据平面</h2><h4 id="路由器与链路层交换机的区别"><a href="#路由器与链路层交换机的区别" class="headerlink" title="路由器与链路层交换机的区别"></a>路由器与链路层交换机的区别</h4><p>路由器运行网络层而交换机不运行网络层，不处理网络层字段</p>
+<p>路由器根据网络层ip地址进行转发操作，而交换机根据mac地址进行转发操作</p>
+<h4 id="数据平面和控制平面"><a href="#数据平面和控制平面" class="headerlink" title="数据平面和控制平面"></a>数据平面和控制平面</h4><p>数据平面：将分组从路由器的输入接口转发到合适的输出接口</p>
+<p>路由：使用路由选择算法来决定从发送主机到目标主机的路径</p>
+<p>路由和转发的区别在于转发是路由器本地动作，时间短，硬件实现，而路由是网络范围内的逻辑，通常用软件实现，时间长</p>
+<h4 id="基于目的的转发与通用转发"><a href="#基于目的的转发与通用转发" class="headerlink" title="基于目的的转发与通用转发"></a>基于目的的转发与通用转发</h4><p>基于目的地的转发匹配操作只基于目标ip地址，操作包括转发</p>
+<p>通用转发的匹配操作基于协议栈上不同层与不同协议相关联的多个报头字段，操作包括转发，泛洪，修改，丢弃</p>
+<p>这些字段例如ip源地址，tcp源端口，源mac地址，不包括TTL字段，数据包长度字段，首部校验和</p>
+<p>流表和转发表的不同：传统方式仅包含IP报头字段以及相应输出链路接口，openflow流表包括：</p>
+<ul>
+<li>首部字段集合：用于匹配</li>
+<li>计数器集合：当分组与流表条目匹配时进行更新</li>
+<li>当分组匹配流表项时采用的动作集合</li>
+</ul>
+<h4 id="交换结构"><a href="#交换结构" class="headerlink" title="交换结构"></a>交换结构</h4><p>基于内存的交换结构</p>
+<p>基于总线的交换结构</p>
+<p>经互联网络的交换结构</p>
+<h4 id="两版TCP报文相似字段"><a href="#两版TCP报文相似字段" class="headerlink" title="两版TCP报文相似字段"></a>两版TCP报文相似字段</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>IPV4</th>
+<th>IPV6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>版本</td>
+<td>版本</td>
+</tr>
+<tr>
+<td>服务类型</td>
+<td>流量类型</td>
+</tr>
+<tr>
+<td>数据包长度</td>
+<td>有效载荷长度</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>下一个首部</td>
+</tr>
+<tr>
+<td>寿命</td>
+<td>跳限制</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="路由聚集"><a href="#路由聚集" class="headerlink" title="路由聚集"></a>路由聚集</h4><p>路由聚集：ISP使用单个前缀为多个网络做广播，路由聚集能减少网络中通告的数量以及计算的代价</p>
+<h4 id="即插即用"><a href="#即插即用" class="headerlink" title="即插即用"></a>即插即用</h4><p>即插即用和零配置意味着该协议能自动配置主机的网络相关方面，以便将主机连接到网络中</p>
+<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154313361.png" srcset="/img/loading.gif" lazyload alt="image-20230224154313361" style="zoom: 50%;"></p>
+<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154348036.png" srcset="/img/loading.gif" lazyload alt="image-20230224154348036" style="zoom:50%;"></p>
+<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><p>发之前侦听，碰撞后jam</p>
+<h4 id="每路由器-基于逻辑上集中控制的控制平面"><a href="#每路由器-基于逻辑上集中控制的控制平面" class="headerlink" title="每路由器/基于逻辑上集中控制的控制平面"></a>每路由器/基于逻辑上集中控制的控制平面</h4><ul>
+<li>每路由器控制意味着一个路由算法在每个路由器中运行，每个路由器中都有一个路由组件通信以计算其转发表。在这种情况下，我们说网络控制和数据平面是以单一方式实现的，因为每个路由器作为一个独立的实体实现自己的控制和数据平面</li>
+<li>逻辑集中控制是指逻辑中央控制器计算和分配每个路由器使用的转发表，在这种情况下，数据平面在路由器中实现，控制平面是在中央服务器或多个服务器上实现</li>
+</ul>
+<h4 id="集中式和分布式路由选择算法的性质"><a href="#集中式和分布式路由选择算法的性质" class="headerlink" title="集中式和分布式路由选择算法的性质"></a>集中式和分布式路由选择算法的性质</h4><p>集中式通过网络全局知识计算源和目的地之间的最小成本。</p>
+<p>分布式方法任何节点都没有关于所有网络链路成本的完整信息。每个节点开始时只知道自己直连链路的成本，然后通过预期相邻节点进行计算和信息交换的迭代过程，节点逐步计算出到达目的地或一组目的地的最小成本路径</p>
+<h4 id="LS对比DV"><a href="#LS对比DV" class="headerlink" title="LS对比DV"></a>LS对比DV</h4><p>LS：使用完整的、全局的网络知识来计算源和目的地之间的最小成本路径</p>
+<p>DV：使用迭代、分布式的方法来计算最小成本路径，每个节点开始时只知道自己直连链路的成本，然后通过预期相邻节点进行计算和信息交换的迭代过程，节点逐步计算出到达目的地或一组目的地的最小成本路径</p>
+<h4 id="无穷计数问题"><a href="#无穷计数问题" class="headerlink" title="无穷计数问题"></a>无穷计数问题</h4><p>DV算法：当链路成本增加时，需要花很长时间才能收敛</p>
+<h4 id="AS"><a href="#AS" class="headerlink" title="AS"></a>AS</h4><p>为什么使用了不同的AS间和AS内协议？</p>
+<p>策略：在AS间，策略问题占主导地位，如一个AS的流量不能穿过另一个特定的AS。而在一个AS内部，一切都是在相同的控制名义下进行的</p>
+<p>规模：AS内部由于主机数量有限，可扩展性不是焦点问题。AS间需要处理大量网络或网络之间的路由选择的问题，规模问题需要考量</p>
+<p>性能：AS间路由面向策略，质量是次要的，而AS内关心质量</p>
+<p>AS是指一组路由器</p>
+<h4 id="ICMP"><a href="#ICMP" class="headerlink" title="ICMP"></a>ICMP</h4><p>traceroute使用：警告信息和不无法到达的目标端口ICMP消息</p>
+<p>ICMP常见的有，echo回显（ping），目标网络不可达，目标主机不可达，源抑制（拥塞控制）</p>
+<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2><h3 id="整个流程"><a href="#整个流程" class="headerlink" title="整个流程"></a>整个流程</h3><ul>
+<li><p>首先使用DHCP获取IP地址，DHCP请求报文封装在udp数据报，以太网帧中，且帧的目标地址为FF-FF-FF-FF，该帧在以太网中广播，后按照DHCP协议，计算机获得IP地址等信息</p>
+</li>
+<li><p>在发送http请求(www.baidu)前，需要知道该地址对应的ip地址，而DNS查询报文需要通过第一条路由器转发，故需要先通过ARP协议得到第一条路由器的mac地址，具体而言广播ARP查询报文，第一跳路由器单播回其mac地址</p>
+</li>
+<li>接下来将DNS查询报文封装到UDP中，封装到以太网帧中，通过第一跳路由器转发，中间利用ospf，rip，bgp等路由协议到达DNS服务器，服务器解封装后回复www.baidu.com的ip地址给客户端</li>
+<li>接下来客户端与服务器进行TCP的三次握手，握手后建立TCP连接，将http请求报文封装到tcp中，封装到ip中，封装到链路层帧中，发送给服务器，服务器应答，传送给客户机，客户抽取其中的文件显示网页</li>
+</ul>
+<h3 id="CSMA-CA"><a href="#CSMA-CA" class="headerlink" title="CSMA/CA"></a>CSMA/CA</h3><p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154008234.png" srcset="/img/loading.gif" lazyload alt="image-20230224154008234"></p>
+<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154036195.png" srcset="/img/loading.gif" lazyload alt="image-20230224154036195"></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>计网复习</div>
+      <div>http://example.com/2023/02/20/计网复习/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>荔枝</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年2月20日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/03/01/Makefile/" title="Makefile">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Makefile</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/02/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E4%B9%A0/" title="数据库复习">
+                        <span class="hidden-mobile">数据库复习</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

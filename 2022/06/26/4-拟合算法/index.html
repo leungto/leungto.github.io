@@ -1,0 +1,724 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.png">
+  <link rel="icon" href="/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="荔枝">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="1. 概述拟合的目标是寻找一个函数（曲线），使得该曲线在某种准则下与所有数据点最为接近，即曲线拟合的最好（最小化损失函数）  插值和拟合的区别 插值算法中，若使用多项式插值，得到的函数要经过所有样本点，如果样本点太多，多项式次数较高，则可能造成龙格现象 为了避免龙格现象，我们使用了分段的方法，但是当样本点较多时，分段得到的函数过于复杂，而我们很多时候并不需要保证曲线经过每个样本点，只需要保证误差足">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4.拟合算法">
+<meta property="og:url" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/index.html">
+<meta property="og:site_name" content="Leungto">
+<meta property="og:description" content="1. 概述拟合的目标是寻找一个函数（曲线），使得该曲线在某种准则下与所有数据点最为接近，即曲线拟合的最好（最小化损失函数）  插值和拟合的区别 插值算法中，若使用多项式插值，得到的函数要经过所有样本点，如果样本点太多，多项式次数较高，则可能造成龙格现象 为了避免龙格现象，我们使用了分段的方法，但是当样本点较多时，分段得到的函数过于复杂，而我们很多时候并不需要保证曲线经过每个样本点，只需要保证误差足">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629084011088.png">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/data2-16564635768302.jpg">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629105801498.png">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629110959206.png">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629115106426.png">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629150919377.png">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629151314745.png">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629112406980.png">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629112434307.png">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629153510781.png">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629154027822.png">
+<meta property="og:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629155353868.png">
+<meta property="article:published_time" content="2022-06-26T14:33:00.000Z">
+<meta property="article:modified_time" content="2022-07-20T10:52:13.823Z">
+<meta property="article:author" content="荔枝">
+<meta property="article:tag" content="插值与拟合">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629084011088.png">
+  
+  
+  
+  <title>4.拟合算法 - Leungto</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="4.拟合算法"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-06-26 22:33" pubdate>
+          2022年6月26日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          10 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">4.拟合算法</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h3><p>拟合的目标是寻找一个函数（曲线），使得该曲线在某种准则下与所有数据点最为接近，即曲线拟合的最好（最小化损失函数）</p>
+<blockquote>
+<p>插值和拟合的区别</p>
+<p>插值算法中，若使用多项式插值，得到的函数要经过所有样本点，如果样本点太多，多项式次数较高，则可能造成龙格现象</p>
+<p>为了避免龙格现象，我们使用了分段的方法，但是当样本点较多时，分段得到的函数过于复杂，而我们很多时候并不需要保证曲线经过每个样本点，只需要保证误差足够小，这就是拟合的思想</p>
+</blockquote>
+<span id="more"></span>
+<h3 id="2-拟合的过程"><a href="#2-拟合的过程" class="headerlink" title="2. 拟合的过程"></a>2. 拟合的过程</h3><h4 id="（1）确定拟合曲线类型"><a href="#（1）确定拟合曲线类型" class="headerlink" title="（1）确定拟合曲线类型"></a>（1）确定拟合曲线类型</h4><ul>
+<li>首先画出散点图，观摩一下曲线的类型，下面这种就是一次函数啦！</li>
+</ul>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629084011088.png" srcset="/img/loading.gif" lazyload alt="image-20220629084011088" style="zoom:66%;"><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/data2-16564635768302.jpg" srcset="/img/loading.gif" lazyload alt="data2" style="zoom: 15%;"></p>
+<ul>
+<li>如果题目给了拟合函数，就用题目给的</li>
+</ul>
+<h4 id="（2）确定拟合曲线参数"><a href="#（2）确定拟合曲线参数" class="headerlink" title="（2）确定拟合曲线参数"></a>（2）确定拟合曲线参数</h4><blockquote>
+<p>拟合的思想是在某种准则下误差最小，所得曲线与数据点最接近，首先我们需要构建这一准则，去衡量误差，在机器学习上叫做损失函数，下面就用机器学习的称呼吧</p>
+</blockquote>
+<h5 id="1）最小二乘法"><a href="#1）最小二乘法" class="headerlink" title="1）最小二乘法"></a>1）最小二乘法</h5><p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629105801498.png" srcset="/img/loading.gif" lazyload alt="image-20220629105801498" style="zoom:67%;"></p>
+<p>衡量数据点和拟合所得的误差，第一种方法是绝对值，将绝对值相加之和，第二种是以平方的方式将距离相加，我们将使用平方来作为损失函数</p>
+<blockquote>
+<p>在实现最小二乘法时常使用第二种方法，因为对于损失函数，我们需要对其进行求导，而绝对值不适合求导，故平方要优于绝对值，为什么不使用3次方呢？因为奇数次方将会导致正负相抵，为什么不使用更高的偶次方呢？1）避免极端数据对拟合曲线的影响 2）使用平方的最小二乘法得到的结果与MLE极大似然估计一致</p>
+</blockquote>
+<h5 id="2）求解最小二乘法"><a href="#2）求解最小二乘法" class="headerlink" title="2）求解最小二乘法"></a>2）求解最小二乘法</h5><p>下面以一次函数为例求解最小二乘法，对于更加复杂的函数可以直接使用cftool工具箱</p>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629110959206.png" srcset="/img/loading.gif" lazyload alt="image-20220629110959206" style="zoom:67%;"></p>
+<p>下面是求参数k和参数b的代码实现</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs matlab">clc;clear<br>n=<span class="hljs-built_in">size</span>(x,<span class="hljs-number">1</span>);<br>k=(n*sum(x.*y)-sum(x)*sum(y))/(n*sum(x.*x)-sum(x)*sum(x));<br>b=(sum(x.*x)*sum(y)-sum(x)*sum(x.*y))/(n*sum(x.*x)-sum(x)*sum(x));<br></code></pre></td></tr></table></figure>
+<h4 id="（3）评估拟合效果"><a href="#（3）评估拟合效果" class="headerlink" title="（3）评估拟合效果"></a>（3）评估拟合效果</h4><h5 id="1）评价所需指标"><a href="#1）评价所需指标" class="headerlink" title="1）评价所需指标"></a>1）评价所需指标</h5><p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629115106426.png" srcset="/img/loading.gif" lazyload alt="image-20220629115106426" style="zoom: 67%;"></p>
+<p>上述指标中，SSE直接计算了数据值和拟合值之间的平方差，可以作为评估误差的量度，但由于有量纲的影响，单独看一种拟合的SSE无法判断其拟合效果，对于线性函数，可以使用R^2^来直接刻画这一误差，对于非线性函数，直接使用SSE来评估误差，此时R^2^已不能作为评判指标</p>
+<h5 id="2）线性函数评价指标R-2"><a href="#2）线性函数评价指标R-2" class="headerlink" title="2）线性函数评价指标R^2^"></a>2）线性函数评价指标R^2^</h5><ul>
+<li>对于线性函数，我们可以使用R^2^来对拟合结果进行评价，其值越接近1，说明误差平方和越接近0，误差越小</li>
+</ul>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629150919377.png" srcset="/img/loading.gif" lazyload alt="image-20220629150919377" style="zoom: 67%;"></p>
+<blockquote>
+<p>需要注意的是，<code>SST=SSE+SSR</code>等式仅在函数为线性函数情况下满足，具体以<code>y=kx+b</code>为例的推导过程如下：</p>
+</blockquote>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629151314745.png" srcset="/img/loading.gif" lazyload alt="image-20220629151314745" style="zoom: 67%;"></p>
+<blockquote>
+<p>这里所说的线性函数与我们常说的不同，我们常说的是对变量而言是线性的，而这里说的是对参数而言是线性的</p>
+</blockquote>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629112406980.png" srcset="/img/loading.gif" lazyload alt="image-20220629112406980" style="zoom: 67%;"></p>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629112434307.png" srcset="/img/loading.gif" lazyload alt="image-20220629112434307" style="zoom: 67%;"></p>
+<h5 id="3）非线性函数"><a href="#3）非线性函数" class="headerlink" title="3）非线性函数"></a>3）非线性函数</h5><ul>
+<li>对于非线性函数，我们可以直接使用误差平方和来进行评估即可</li>
+</ul>
+<p>下面给出计算上述指标的代码：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs matlab">y_hat=k*x+b;<br>SSR=sum((y_hat-<span class="hljs-built_in">mean</span>(y)).^<span class="hljs-number">2</span>);<br>SSE=sum((y-y_hat).^<span class="hljs-number">2</span>);<br>SST=sum((y-<span class="hljs-built_in">mean</span>(y)).^<span class="hljs-number">2</span>);<br>R_2=SSR/SST;<br></code></pre></td></tr></table></figure>
+<h3 id="3-cftool工具箱"><a href="#3-cftool工具箱" class="headerlink" title="3. cftool工具箱"></a>3. cftool工具箱</h3><p>命令行输入<code>cftool</code>，界面如下所示</p>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629153510781.png" srcset="/img/loading.gif" lazyload alt="image-20220629153510781"></p>
+<p>这里给出一些使用上的建议：</p>
+<ol>
+<li>对于自定义函数，需要自己尝试一些参数</li>
+</ol>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629154027822.png" srcset="/img/loading.gif" lazyload alt="image-20220629154027822" style="zoom: 67%;"></p>
+<ol>
+<li>cftool可以自动生成代码，文件-&gt;generate code，例如上图得到以下函数</li>
+</ol>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[fitresult, gof]</span> = <span class="hljs-title">createFit</span><span class="hljs-params">(X, Y)</span></span><br>[xData, yData] = prepareCurveData( X, Y );<br><span class="hljs-comment">% Set up fittype and options.</span><br>ft = fittype( &#123;<span class="hljs-string">&#x27;(sin(x-pi))&#x27;</span>, <span class="hljs-string">&#x27;((x-10)^2)&#x27;</span>, <span class="hljs-string">&#x27;1&#x27;</span>&#125;, <span class="hljs-string">&#x27;independent&#x27;</span>, <span class="hljs-string">&#x27;x&#x27;</span>, <span class="hljs-string">&#x27;dependent&#x27;</span>, <span class="hljs-string">&#x27;y&#x27;</span>, <span class="hljs-string">&#x27;coefficients&#x27;</span>, &#123;<span class="hljs-string">&#x27;a&#x27;</span>, <span class="hljs-string">&#x27;b&#x27;</span>, <span class="hljs-string">&#x27;c&#x27;</span>&#125; );<br><span class="hljs-comment">% Fit model to data.</span><br>[fitresult, gof] = fit( xData, yData, ft );<br><span class="hljs-comment">% Plot fit with data.</span><br><span class="hljs-built_in">figure</span>( <span class="hljs-string">&#x27;Name&#x27;</span>, <span class="hljs-string">&#x27;untitled fit 1&#x27;</span> );<br>h = <span class="hljs-built_in">plot</span>( fitresult, xData, yData );<br><span class="hljs-built_in">legend</span>( h, <span class="hljs-string">&#x27;Y vs. X&#x27;</span>, <span class="hljs-string">&#x27;untitled fit 1&#x27;</span>, <span class="hljs-string">&#x27;Location&#x27;</span>, <span class="hljs-string">&#x27;NorthEast&#x27;</span>, <span class="hljs-string">&#x27;Interpreter&#x27;</span>, <span class="hljs-string">&#x27;none&#x27;</span> );<br><span class="hljs-comment">% Label axes</span><br>xlabel( <span class="hljs-string">&#x27;X&#x27;</span>, <span class="hljs-string">&#x27;Interpreter&#x27;</span>, <span class="hljs-string">&#x27;none&#x27;</span> );<br>ylabel( <span class="hljs-string">&#x27;Y&#x27;</span>, <span class="hljs-string">&#x27;Interpreter&#x27;</span>, <span class="hljs-string">&#x27;none&#x27;</span> );<br>grid on<br></code></pre></td></tr></table></figure>
+<ol>
+<li><p>这样生成的代码使用的时候直接粘function后面的一部分就行，即<code>[fitresult, gof] = createFit(X, Y)</code></p>
+</li>
+<li><p>下面的函数可以生成随机数据，可以用于模拟</p>
+</li>
+</ol>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629155353868.png" srcset="/img/loading.gif" lazyload alt="image-20220629155353868" style="zoom:67%;"></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%B0%E6%A8%A1/" class="category-chain-item">数模</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%8F%92%E5%80%BC%E4%B8%8E%E6%8B%9F%E5%90%88/" class="print-no-link">#插值与拟合</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>4.拟合算法</div>
+      <div>http://example.com/2022/06/26/4-拟合算法/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>荔枝</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年6月26日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/" title="5.相关系数">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">5.相关系数</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/06/25/3-%E6%8F%92%E5%80%BC%E7%AE%97%E6%B3%95/" title="3.插值算法">
+                        <span class="hidden-mobile">3.插值算法</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

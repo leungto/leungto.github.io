@@ -1,0 +1,735 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.png">
+  <link rel="icon" href="/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="荔枝">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="1. 模型简介TOPSIS 法（Technique for Order Preference by Similarity to an Ideal Solution，可翻译为逼近理想解排序法，国内常简称为优劣解距离法）是一种常用的综合评价方法，能充分利用原始数据的信息，其结果能精确地反映各评价方案之间的差距。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2.TOPSIS法">
+<meta property="og:url" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/index.html">
+<meta property="og:site_name" content="Leungto">
+<meta property="og:description" content="1. 模型简介TOPSIS 法（Technique for Order Preference by Similarity to an Ideal Solution，可翻译为逼近理想解排序法，国内常简称为优劣解距离法）是一种常用的综合评价方法，能充分利用原始数据的信息，其结果能精确地反映各评价方案之间的差距。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220622232336080.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220622233238046.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220622233904210.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220622234742933.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220623100308974.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220623102311447.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220623102435631.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220623103016809.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220624143826537.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220624144008452.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220812154417594.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220812154431036.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220812154715107.png">
+<meta property="og:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220812154750216.png">
+<meta property="article:published_time" content="2022-06-22T14:55:21.000Z">
+<meta property="article:modified_time" content="2022-08-12T07:51:30.964Z">
+<meta property="article:author" content="荔枝">
+<meta property="article:tag" content="评价类问题">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2022/06/22/2-TOPSIS%E6%B3%95/image-20220622232336080.png">
+  
+  
+  
+  <title>2.TOPSIS法 - Leungto</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="2.TOPSIS法"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-06-22 22:55" pubdate>
+          2022年6月22日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          26 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">2.TOPSIS法</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="1-模型简介"><a href="#1-模型简介" class="headerlink" title="1. 模型简介"></a>1. 模型简介</h3><p><strong>TOPSIS 法</strong>（Technique for Order Preference by Similarity to an Ideal Solution，可翻译为逼近理想解排序法，国内常简称为<strong>优劣解距离法</strong>）是一种常用的综合评价方法，能充分利用原始数据的信息，其结果能精确地反映各评价方案之间的差距。</p>
+<span id="more"></span>
+<p>基本过程为先将原始数据矩阵统一指标类型（一般正向化处理） 得到正向化的矩阵，再对正向化的矩阵进行标准化处理以消除各指标量纲的影响，并找到有限方案中的最优方案和最劣方案，然后分 别计算各评价对象与最优方案和最劣方案间的距离，获得各评价对 象与最优方案的相对接近程度，以此作为评价优劣的依据。该方法 对数据分布及样本含量没有严格限制，数据计算简单易行。</p>
+<h3 id="2-模型思路"><a href="#2-模型思路" class="headerlink" title="2. 模型思路"></a>2. 模型思路</h3><blockquote>
+<p>首先之前谈到了层次分析法的不足，大概有两点：</p>
+<ul>
+<li>如果判断矩阵的size比较大，大于15，则判断矩阵和一致矩阵差异可能会很大，而且RI表格将没有对应的n</li>
+<li>如果决策层的指标的数据是已知的，如何利用数据使评价更加准确</li>
+</ul>
+</blockquote>
+<p>既然有了数据，一个比较自然的想法是根据数据来排个序，这样就能找到最优的方案了，事实上TOPSIS也是这样想的，首先来看一个例子吧，下面是一些已有的数据</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220622232336080.png" srcset="/img/loading.gif" lazyload alt="image-20220622232336080" style="zoom:50%;"></p>
+<!--注：含氧量越高越好；PH值越接近7越好；细菌总数越少越好；植物性营养物量介于10‐20之间最佳，超 过20或低于10均不好。-->
+<p>我们常常说的排序要么从小到要么是从大到小，这里我们从大到小排，即第一名权重最大，上述表格的一个问题是，我们期待的数值的评价标准往往不是越大越好（例如PH并不是越大越好，而是越靠近7越好）所以我们不能简单地将数值作为排序的依据，而必须要将这些数值转换为一些数（例如PH以和7作差的绝对值来代替？），这些数使得对于满足我们的期待的数，其值越大，反之越小</p>
+<h4 id="（1）统一指标类型（正向化）"><a href="#（1）统一指标类型（正向化）" class="headerlink" title="（1）统一指标类型（正向化）"></a>（1）统一指标类型（正向化）</h4><p>在上文中我们介绍了为什么要进行指标的统一，这是因为我们需要排序，总结指标的类型，大体分为四类</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220622233238046.png" srcset="/img/loading.gif" lazyload alt="image-20220622233238046" style="zoom:67%;"></p>
+<p>为了方便排序，我们<strong>统一转换为极大型指标</strong>，即越好的值统一之后越大，下面介绍如何对指标进行统一（或者说正向化）</p>
+<h5 id="1）极小型指标"><a href="#1）极小型指标" class="headerlink" title="1）极小型指标"></a>1）极小型指标</h5><p>极小型指标的特点是越小越好，所以要使得越小的值在统一之后越大</p>
+<ul>
+<li><p>一种易得的想法是用最大值减去该值，即<code>max-x</code></p>
+</li>
+<li><p>如果这一指标下所有值均为正数，也可以用倒数，即<code>1/x</code></p>
+</li>
+</ul>
+<h5 id="2）中间型指标"><a href="#2）中间型指标" class="headerlink" title="2）中间型指标"></a>2）中间型指标</h5><p>中间型指标的特点是越接近某个值越好，这时候你就想起绝对值了！但这样只猜对了一半，事实上我们刻画了程度这一概念</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220622233904210.png" srcset="/img/loading.gif" lazyload alt="image-20220622233904210" style="zoom:80%;"></p>
+<p>M是距离X<em>best</em>最远的距离，用X<em>i</em>与X<em>best</em>的距离与之相除，刻画了X<em>i</em>和X<em>best</em>之间的偏移程度，越是偏离，结果越靠近1，为了正向化，我们希望越是偏离结果越小，所以用1减去了这个值</p>
+<blockquote>
+<p> 注意：正向化的公式不唯一，大家也可以结合自己的数据进行适当的修改</p>
+</blockquote>
+<h5 id="3）区间型指标"><a href="#3）区间型指标" class="headerlink" title="3）区间型指标"></a>3）区间型指标</h5><p>和中间型其实有点像，就是稍微细致考虑了符号的影响</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220622234742933.png" srcset="/img/loading.gif" lazyload alt="image-20220622234742933" style="zoom:80%;"></p>
+<h4 id="（2）标准化"><a href="#（2）标准化" class="headerlink" title="（2）标准化"></a>（2）标准化</h4><p>通过正向化，矩阵评价指标都变成极大型指标了，但是不同的正向化以及指标本身的特点将导致指标的量纲不统一，为了去除量纲的影响，我们需要进行标准化</p>
+<blockquote>
+<p>标准化的方法有很多种，其主要目的就是去除量纲的影响，未来我们还可能见到更多 种的标准化方法，例如：(x‐x的均值)/x的标准差；具体选用哪一种标准化的方法在多数情况下 并没有很大的限制，这里我们采用的是前人的论文中用的比较多的一种标准化方法</p>
+</blockquote>
+<p>这里我们使用的是如下标准化方法</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220623100308974.png" srcset="/img/loading.gif" lazyload alt="image-20220623100308974" style="zoom:67%;"></p>
+<h4 id="（3）计算得分"><a href="#（3）计算得分" class="headerlink" title="（3）计算得分"></a>（3）计算得分</h4><p>怎样得到所谓的得分呢？一种想法就是直接用排名来作为得分，但是如果这样话，我们就可以随便地修改元素值，只需要保持排名不变，最终的评分就不会变，这种做法的不合理之处在于太过粗糙，这样得出的评分虽然有相关性，但是相关性不强（我们刚刚上面两步做出的数据都没有用了！），下面介绍当只有一个指标时采用的方法：</p>
+<p>构造评分函数：<code>(x-max)/(max-min)</code></p>
+<blockquote>
+<p>这里不建议使用数据可能的最大值和最小值作为max和min，主要原因是有很多指标不存在理论的最大值和最小值</p>
+</blockquote>
+<p>下面我们考虑多个指标的情况，我们可以通过上述单一指标的情况进行推广</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220623102311447.png" srcset="/img/loading.gif" lazyload alt="image-20220623102311447" style="zoom:67%;"></p>
+<p>我们继续沿用距离这一解释，在下面使用欧氏距离来推广这一计算评分的公式</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220623102435631.png" srcset="/img/loading.gif" lazyload alt="image-20220623102435631" style="zoom: 80%;"></p>
+<p>这里的最大值就是取每个指标的最大元素，拼凑成一个点，最小值就是取每个指标的最小元素，拼凑成一个点，然后分别计算要评价的对象与两点的距离<code>D+</code>和<code>D-</code>，最终计算得分为：<code>S=D-/(D+ + D-)</code></p>
+<h4 id="（4）将得分归一化"><a href="#（4）将得分归一化" class="headerlink" title="（4）将得分归一化"></a>（4）将得分归一化</h4><p>简单地对每个计算出来的得分进行归一化</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220623103016809.png" srcset="/img/loading.gif" lazyload alt="image-20220623103016809"></p>
+<h3 id="3-代码实现"><a href="#3-代码实现" class="headerlink" title="3. 代码实现"></a>3. 代码实现</h3><h4 id="1-主函数"><a href="#1-主函数" class="headerlink" title="1.主函数"></a>1.主函数</h4><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs matlab"><span class="hljs-comment">%%  第一步，加载数据</span><br>clear;clc<br>load data_water_quality.mat<br><span class="hljs-comment">%%  第二步：判断是否需要正向化</span><br>[n,m] = <span class="hljs-built_in">size</span>(X);<br><span class="hljs-built_in">disp</span>([<span class="hljs-string">&#x27;共有&#x27;</span> num2str(n) <span class="hljs-string">&#x27;个评价对象, &#x27;</span> num2str(m) <span class="hljs-string">&#x27;个评价指标&#x27;</span>]) <br>Judge = input([<span class="hljs-string">&#x27;这&#x27;</span> num2str(m) <span class="hljs-string">&#x27;个指标是否需要经过正向化处理，需要请输入1 ，不需要输入0：  &#x27;</span>]);<br><br><span class="hljs-keyword">if</span> Judge == <span class="hljs-number">1</span><br>    Position = input(<span class="hljs-string">&#x27;请输入需要正向化处理的指标所在的列，例如第2、3、6三列需要处理，那么你需要输入[2,3,6]： &#x27;</span>); <span class="hljs-comment">%[2,3,4]</span><br>    <span class="hljs-built_in">disp</span>(<span class="hljs-string">&#x27;请输入需要处理的这些列的指标类型（1：极小型， 2：中间型， 3：区间型） &#x27;</span>)<br>    Type = input(<span class="hljs-string">&#x27;例如：第2列是极小型，第3列是区间型，第6列是中间型，就输入[1,3,2]：  &#x27;</span>); <span class="hljs-comment">%[2,1,3]</span><br>    <span class="hljs-comment">% 注意，Position和Type是两个同维度的行向量</span><br>    <span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span> = <span class="hljs-number">1</span> : <span class="hljs-built_in">size</span>(Position,<span class="hljs-number">2</span>)  <span class="hljs-comment">%这里需要对这些列分别处理，因此我们需要知道一共要处理的次数，即循环的次数</span><br>        X(:,Position(<span class="hljs-built_in">i</span>)) = Positivization(X(:,Position(<span class="hljs-built_in">i</span>)),Type(<span class="hljs-built_in">i</span>),Position(<span class="hljs-built_in">i</span>));<br>    <span class="hljs-comment">% Positivization是我们自己定义的函数，其作用是进行正向化，其一共接收三个参数</span><br>    <span class="hljs-comment">% 第一个参数是要正向化处理的那一列向量 X(:,Position(i))   回顾上一讲的知识，X(:,n)表示取第n列的全部元素</span><br>    <span class="hljs-comment">% 第二个参数是对应的这一列的指标类型（1：极小型， 2：中间型， 3：区间型）</span><br>    <span class="hljs-comment">% 第三个参数是告诉函数我们正在处理的是原始矩阵中的哪一列</span><br>    <span class="hljs-comment">% 该函数有一个返回值，它返回正向化之后的指标，我们可以将其直接赋值给我们原始要处理的那一列向量</span><br>    <span class="hljs-keyword">end</span><br>    <span class="hljs-built_in">disp</span>(<span class="hljs-string">&#x27;正向化后的矩阵 X =  &#x27;</span>)<br>    <span class="hljs-built_in">disp</span>(X)<br><span class="hljs-keyword">end</span><br><br><span class="hljs-comment">%% 第三步：对正向化后的矩阵进行标准化</span><br>Z = X ./ <span class="hljs-built_in">repmat</span>(sum(X.*X) .^ <span class="hljs-number">0.5</span>, n, <span class="hljs-number">1</span>);<br><span class="hljs-built_in">disp</span>(<span class="hljs-string">&#x27;标准化矩阵 Z = &#x27;</span>)<br><span class="hljs-built_in">disp</span>(Z)<br><br><span class="hljs-comment">%% 第四步：计算与最大值的距离和最小值的距离，并算出得分</span><br>D_P = sum([(Z - <span class="hljs-built_in">repmat</span>(<span class="hljs-built_in">max</span>(Z),n,<span class="hljs-number">1</span>)) .^ <span class="hljs-number">2</span> ],<span class="hljs-number">2</span>) .^ <span class="hljs-number">0.5</span>;   <span class="hljs-comment">% D+ 与最大值的距离向量</span><br>D_N = sum([(Z - <span class="hljs-built_in">repmat</span>(<span class="hljs-built_in">min</span>(Z),n,<span class="hljs-number">1</span>)) .^ <span class="hljs-number">2</span> ],<span class="hljs-number">2</span>) .^ <span class="hljs-number">0.5</span>;   <span class="hljs-comment">% D- 与最小值的距离向量</span><br>S = D_N ./ (D_P+D_N);    <span class="hljs-comment">% 未归一化的得分</span><br><span class="hljs-built_in">disp</span>(<span class="hljs-string">&#x27;最后的得分为：&#x27;</span>)<br>stand_S = S / sum(S)<br>[sorted_S,index] = <span class="hljs-built_in">sort</span>(stand_S ,<span class="hljs-string">&#x27;descend&#x27;</span>)<br></code></pre></td></tr></table></figure>
+<h4 id="2-Positivization函数"><a href="#2-Positivization函数" class="headerlink" title="2.Positivization函数"></a>2.Positivization函数</h4><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs matlab"><span class="hljs-comment">% function [输出变量] = 函数名称(输入变量）  </span><br><span class="hljs-comment">% 函数的中间部分都是函数体</span><br><span class="hljs-comment">% 函数的最后要用end结尾</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[posit_x]</span> = <span class="hljs-title">Positivization</span><span class="hljs-params">(x,type,i)</span></span><br><span class="hljs-comment">% 输入变量有三个：</span><br><span class="hljs-comment">% x：需要正向化处理的指标对应的原始列向量</span><br><span class="hljs-comment">% type： 指标的类型（1：极小型， 2：中间型， 3：区间型）</span><br><span class="hljs-comment">% i: 正在处理的是原始矩阵中的哪一列</span><br><span class="hljs-comment">% 输出变量posit_x表示：正向化后的列向量</span><br>    <span class="hljs-keyword">if</span> <span class="hljs-built_in">type</span> == <span class="hljs-number">1</span>  <span class="hljs-comment">%极小型</span><br>        <span class="hljs-built_in">disp</span>([<span class="hljs-string">&#x27;第&#x27;</span> num2str(<span class="hljs-built_in">i</span>) <span class="hljs-string">&#x27;列是极小型，正在正向化&#x27;</span>] )<br>        posit_x = Min2Max(x);  <span class="hljs-comment">%调用Min2Max函数来正向化</span><br>        <span class="hljs-built_in">disp</span>([<span class="hljs-string">&#x27;第&#x27;</span> num2str(<span class="hljs-built_in">i</span>) <span class="hljs-string">&#x27;列极小型正向化处理完成&#x27;</span>] )<br>        <span class="hljs-built_in">disp</span>(<span class="hljs-string">&#x27;~~~~~~~~~~~~~~~~~~~~分界线~~~~~~~~~~~~~~~~~~~~&#x27;</span>)<br>    <span class="hljs-keyword">elseif</span> <span class="hljs-built_in">type</span> == <span class="hljs-number">2</span>  <span class="hljs-comment">%中间型</span><br>        <span class="hljs-built_in">disp</span>([<span class="hljs-string">&#x27;第&#x27;</span> num2str(<span class="hljs-built_in">i</span>) <span class="hljs-string">&#x27;列是中间型&#x27;</span>] )<br>        best = input(<span class="hljs-string">&#x27;请输入最佳的那一个值： &#x27;</span>);<br>        posit_x = Mid2Max(x,best);<br>        <span class="hljs-built_in">disp</span>([<span class="hljs-string">&#x27;第&#x27;</span> num2str(<span class="hljs-built_in">i</span>) <span class="hljs-string">&#x27;列中间型正向化处理完成&#x27;</span>] )<br>        <span class="hljs-built_in">disp</span>(<span class="hljs-string">&#x27;~~~~~~~~~~~~~~~~~~~~分界线~~~~~~~~~~~~~~~~~~~~&#x27;</span>)<br>    <span class="hljs-keyword">elseif</span> <span class="hljs-built_in">type</span> == <span class="hljs-number">3</span>  <span class="hljs-comment">%区间型</span><br>        <span class="hljs-built_in">disp</span>([<span class="hljs-string">&#x27;第&#x27;</span> num2str(<span class="hljs-built_in">i</span>) <span class="hljs-string">&#x27;列是区间型&#x27;</span>] )<br>        a = input(<span class="hljs-string">&#x27;请输入区间的下界： &#x27;</span>);<br>        b = input(<span class="hljs-string">&#x27;请输入区间的上界： &#x27;</span>); <br>        posit_x = Inter2Max(x,a,b);<br>        <span class="hljs-built_in">disp</span>([<span class="hljs-string">&#x27;第&#x27;</span> num2str(<span class="hljs-built_in">i</span>) <span class="hljs-string">&#x27;列区间型正向化处理完成&#x27;</span>] )<br>        <span class="hljs-built_in">disp</span>(<span class="hljs-string">&#x27;~~~~~~~~~~~~~~~~~~~~分界线~~~~~~~~~~~~~~~~~~~~&#x27;</span>)<br>    <span class="hljs-keyword">else</span><br>        <span class="hljs-built_in">disp</span>(<span class="hljs-string">&#x27;没有这种类型的指标，请检查Type向量中是否有除了1、2、3之外的其他值&#x27;</span>)<br>    <span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
+<h4 id="3-Min2Max函数"><a href="#3-Min2Max函数" class="headerlink" title="3.Min2Max函数"></a>3.Min2Max函数</h4><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[posit_x]</span> = <span class="hljs-title">Min2Max</span><span class="hljs-params">(x)</span></span><br>    posit_x = <span class="hljs-built_in">max</span>(x) - x;<br>     <span class="hljs-comment">%posit_x = 1 ./ x;    %如果x全部都大于0，也可以这样正向化</span><br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
+<h4 id="4-Mid2Max函数"><a href="#4-Mid2Max函数" class="headerlink" title="4.Mid2Max函数"></a>4.Mid2Max函数</h4><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[posit_x]</span> = <span class="hljs-title">Mid2Max</span><span class="hljs-params">(x,best)</span></span><br>    M = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">abs</span>(x-best));<br>    posit_x = <span class="hljs-number">1</span> - <span class="hljs-built_in">abs</span>(x-best) / M;<br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
+<h4 id="5-Inter2Max函数"><a href="#5-Inter2Max函数" class="headerlink" title="5.Inter2Max函数"></a>5.Inter2Max函数</h4><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[posit_x]</span> = <span class="hljs-title">Inter2Max</span><span class="hljs-params">(x,a,b)</span></span><br>    r_x = <span class="hljs-built_in">size</span>(x,<span class="hljs-number">1</span>);  <span class="hljs-comment">% row of x </span><br>    M = <span class="hljs-built_in">max</span>([a-<span class="hljs-built_in">min</span>(x),<span class="hljs-built_in">max</span>(x)-b]);<br>    posit_x = <span class="hljs-built_in">zeros</span>(r_x,<span class="hljs-number">1</span>);   <span class="hljs-comment">%zeros函数用法: zeros(3)  zeros(3,1)  ones(3)</span><br>    <span class="hljs-comment">% 初始化posit_x全为0  初始化的目的是节省处理时间</span><br>    <span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span> = <span class="hljs-number">1</span>: r_x<br>        <span class="hljs-keyword">if</span> x(<span class="hljs-built_in">i</span>) &lt; a<br>           posit_x(<span class="hljs-built_in">i</span>) = <span class="hljs-number">1</span>-(a-x(<span class="hljs-built_in">i</span>))/M;<br>        <span class="hljs-keyword">elseif</span> x(<span class="hljs-built_in">i</span>) &gt; b<br>           posit_x(<span class="hljs-built_in">i</span>) = <span class="hljs-number">1</span>-(x(<span class="hljs-built_in">i</span>)-b)/M;<br>        <span class="hljs-keyword">else</span><br>           posit_x(<span class="hljs-built_in">i</span>) = <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">end</span><br>    <span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
+<h3 id="4-模型拓展"><a href="#4-模型拓展" class="headerlink" title="4. 模型拓展"></a>4. 模型拓展</h3><p>在上面的介绍中，我们认为每个指标同等重要，即他们的权重都是1，但很多情况下指标之间重要性不同，因此我们给予不同权重。（在最后一步计算得分时）</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220624143826537.png" srcset="/img/loading.gif" lazyload alt="image-20220624143826537" style="zoom: 80%;"></p>
+<p>权重的确定可以通过1.1中的层次分析法确定，但是层次分析法还是太主观了</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220624144008452.png" srcset="/img/loading.gif" lazyload alt="image-20220624144008452" style="zoom:80%;"></p>
+<h4 id="1-熵权法赋值权重"><a href="#1-熵权法赋值权重" class="headerlink" title="1. 熵权法赋值权重"></a>1. 熵权法赋值权重</h4><p>熵权法所谓的客观赋值，是根据指标的变异程度，即方差，通常认为若方差比较小，指标变化小，其所含信息量少，对应权重小，反之方差较大，则所含信息量大，对应权重大</p>
+<p>实现：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[W]</span> = <span class="hljs-title">Entropy_Method</span><span class="hljs-params">(Z)</span></span><br><span class="hljs-comment">% 计算有n个样本，m个指标的样本所对应的的熵权</span><br><span class="hljs-comment">% 输入</span><br><span class="hljs-comment">% Z ： n*m的矩阵（要经过正向化和标准化处理，且元素中不存在负数）</span><br><span class="hljs-comment">% 输出</span><br><span class="hljs-comment">% W：熵权，m*1的行向量</span><br><br><span class="hljs-comment">%% 计算熵权</span><br>    [n,m] = <span class="hljs-built_in">size</span>(Z);<br>    D = <span class="hljs-built_in">zeros</span>(<span class="hljs-number">1</span>,m);  <span class="hljs-comment">% 初始化保存信息效用值的行向量</span><br>    <span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span> = <span class="hljs-number">1</span>:m<br>        x = Z(:,<span class="hljs-built_in">i</span>);  <span class="hljs-comment">% 取出第i列的指标</span><br>        p = x / sum(x);<br>        <span class="hljs-comment">% 注意，p有可能为0，此时计算ln(p)*p时，Matlab会返回NaN，所以这里我们自己定义一个函数</span><br>        e = -sum(p .* mylog(p)) / <span class="hljs-built_in">log</span>(n); <span class="hljs-comment">% 计算信息熵</span><br>        D(<span class="hljs-built_in">i</span>) = <span class="hljs-number">1</span>- e; <span class="hljs-comment">% 计算信息效用值</span><br>    <span class="hljs-keyword">end</span><br>    W = D ./ sum(D);  <span class="hljs-comment">% 将信息效用值归一化，得到权重    </span><br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
+<ul>
+<li><p>在计算权重时上述的矩阵Z需要经过正向化和标准化，其中标准化需要保证所有项均大于0，如果仅仅使用上述topsis的标准化方法可能无法达到效果，可以使用max-min标准化</p>
+</li>
+<li><p>实现时借用概率这一概念，认为信息量的定义如下：</p>
+</li>
+</ul>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220812154417594.png" srcset="/img/loading.gif" lazyload alt="image-20220812154417594" style="zoom:50%;"><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220812154431036.png" srcset="/img/loading.gif" lazyload alt="image-20220812154431036" style="zoom:50%;"></p>
+<p>即发生概率越小的事情反而发生，其信息量越大，在代码中，将经过标准化后的矩阵的每一列进行归一化，将归一化后的列的每一项作为概率，计算该指标的信息熵：</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220812154715107.png" srcset="/img/loading.gif" lazyload alt="image-20220812154715107"></p>
+<p>关于这个公式和信息效用值的说明：</p>
+<p><img src="/2022/06/22/2-TOPSIS%E6%B3%95/image-20220812154750216.png" srcset="/img/loading.gif" lazyload alt="image-20220812154750216" style="zoom:67%;"></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%B0%E6%A8%A1/" class="category-chain-item">数模</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%AF%84%E4%BB%B7%E7%B1%BB%E9%97%AE%E9%A2%98/" class="print-no-link">#评价类问题</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>2.TOPSIS法</div>
+      <div>http://example.com/2022/06/22/2-TOPSIS法/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>荔枝</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年6月22日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/06/25/3-%E6%8F%92%E5%80%BC%E7%AE%97%E6%B3%95/" title="3.插值算法">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">3.插值算法</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/06/20/1-%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95%E6%A8%A1%E5%9E%8B/" title="1.层次分析法模型">
+                        <span class="hidden-mobile">1.层次分析法模型</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
