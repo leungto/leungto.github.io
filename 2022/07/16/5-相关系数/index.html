@@ -19,43 +19,43 @@
     <meta name="description" content="一、概述相关系数，衡量两个变量的相关性的大小，常用的有皮尔逊 pearson相关系数和斯皮尔曼spearman等级相关系数。在使用时，需要根据数据的条件选择不同的相关系数进行计算和分析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="5.相关系数">
-<meta property="og:url" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/index.html">
+<meta property="og:url" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/index.html">
 <meta property="og:site_name" content="Leungto">
 <meta property="og:description" content="一、概述相关系数，衡量两个变量的相关性的大小，常用的有皮尔逊 pearson相关系数和斯皮尔曼spearman等级相关系数。在使用时，需要根据数据的条件选择不同的相关系数进行计算和分析">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716201625180.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716201954993.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716202033386.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716202311220.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716202654338.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716203212133.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716203306072.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716203348864.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716203756475.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204127797.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204318506.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204422916.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204624292.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204821421.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204946698.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716211443089.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716205607026.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716205629445.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716205705096.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716205725749.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716210508925.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716210815659.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716210859374.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716211713520.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716212125033.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716212433324.png">
-<meta property="og:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716212601325.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716201625180.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716201954993.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716202033386.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716202311220.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716202654338.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716203212133.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716203306072.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716203348864.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716203756475.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204127797.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204318506.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204422916.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204624292.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204821421.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716204946698.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716211443089.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716205607026.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716205629445.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716205705096.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716205725749.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716210508925.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716210815659.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716210859374.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716211713520.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716212125033.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716212433324.png">
+<meta property="og:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716212601325.png">
 <meta property="article:published_time" content="2022-07-16T12:09:27.000Z">
 <meta property="article:modified_time" content="2022-07-16T13:34:56.566Z">
 <meta property="article:author" content="荔枝">
 <meta property="article:tag" content="相关系数">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716201625180.png">
+<meta name="twitter:image" content="https://leungto.github.io/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/image-20220716201625180.png">
   
   
   
@@ -97,7 +97,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"leungto.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -412,7 +412,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>5.相关系数</div>
-      <div>http://example.com/2022/07/16/5-相关系数/</div>
+      <div>https://leungto.github.io/2022/07/16/5-相关系数/</div>
     </div>
     <div class="license-meta">
       

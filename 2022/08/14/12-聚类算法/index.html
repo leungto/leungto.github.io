@@ -19,34 +19,34 @@
     <meta name="description" content="一、概述与分类算法不同，聚类算法并不知道分类的类别，其将样本划分为由类似对象组成的多个类。主要介绍三种聚类算法：kmean&#x2F;kmean++，系统聚类，DBSCAN">
 <meta property="og:type" content="article">
 <meta property="og:title" content="12.聚类算法">
-<meta property="og:url" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/index.html">
+<meta property="og:url" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/index.html">
 <meta property="og:site_name" content="Leungto">
 <meta property="og:description" content="一、概述与分类算法不同，聚类算法并不知道分类的类别，其将样本划分为由类似对象组成的多个类。主要介绍三种聚类算法：kmean&#x2F;kmean++，系统聚类，DBSCAN">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183817108.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184702444.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183919914.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184742899.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184810923.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190508409.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185118590.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185129648.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190628028.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190649926.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191827717.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191937374.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192138168.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192308937.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192705809.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194035710.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194121276.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194143789.png">
-<meta property="og:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194209404.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183817108.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184702444.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183919914.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184742899.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184810923.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190508409.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185118590.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185129648.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190628028.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190649926.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191827717.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191937374.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192138168.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192308937.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192705809.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194035710.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194121276.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194143789.png">
+<meta property="og:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194209404.png">
 <meta property="article:published_time" content="2022-08-14T11:16:59.000Z">
 <meta property="article:modified_time" content="2022-08-17T11:44:13.822Z">
 <meta property="article:author" content="荔枝">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183817108.png">
+<meta name="twitter:image" content="https://leungto.github.io/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183817108.png">
   
   
   
@@ -88,7 +88,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"leungto.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -369,7 +369,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>12.聚类算法</div>
-      <div>http://example.com/2022/08/14/12-聚类算法/</div>
+      <div>https://leungto.github.io/2022/08/14/12-聚类算法/</div>
     </div>
     <div class="license-meta">
       

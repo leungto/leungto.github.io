@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>10.模糊综合评价</title>
-    <url>/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/</url>
-    <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>模糊评价问题主要解决以下问题：</p>
-<ol>
-<li>将论域中的对象对应评语集中一个指定的评语</li>
-<li>将方案作为评语集并选择一个最优的方案</li>
-</ol>
-<span id="more"></span>
-<h3 id="二、模糊集合和隶属函数"><a href="#二、模糊集合和隶属函数" class="headerlink" title="二、模糊集合和隶属函数"></a>二、模糊集合和隶属函数</h3><h4 id="1-概念"><a href="#1-概念" class="headerlink" title="1. 概念"></a>1. 概念</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153845840.png" alt="image-20220813153845840"></p>
-<p>经典集合概念中，特征函数作用于论域上，使得每个元素要么位于集合中，要么不在集合中</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153934402.png" alt="image-20220813153934402"></p>
-<p>在模糊集合中，元素是否在集合中以概率的方式表示，与之对应的函数是隶属函数，其值域为[0,1]</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154055917.png" alt="image-20220813154055917"></p>
-<p>对于模糊集合的表示，zadeh表示法较为常用，但需要注意的是，上述表示方法仅仅是表示方法，并不存在所谓的除和加的关系</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154234936.png" alt="image-20220813154234936"></p>
-<h4 id="2-隶属函数的确定"><a href="#2-隶属函数的确定" class="headerlink" title="2. 隶属函数的确定"></a>2. 隶属函数的确定</h4><p>（1）模糊统计法<img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154518820.png" alt="image-20220813154518820"></p>
-<p>（2）借助已有的指标</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154532059.png" alt="image-20220813154532059"></p>
-<p>（3）指派法</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154555491.png" alt="image-20220813154555491"></p>
-<p>例2中并没有直接使用左图的梯型分布，对于中间型，其去掉了中间不变的部分</p>
-<h4 id="3-模糊综合评价"><a href="#3-模糊综合评价" class="headerlink" title="3.模糊综合评价"></a>3.模糊综合评价</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154849750.png" alt="image-20220813154849750"></p>
-<h3 id="三、应用"><a href="#三、应用" class="headerlink" title="三、应用"></a>三、应用</h3><h3 id="1-一级模糊综合评判"><a href="#1-一级模糊综合评判" class="headerlink" title="1.一级模糊综合评判"></a>1.一级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155052120.png" alt="image-20220813155052120"></p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155158365.png" alt="image-20220813155158365"></p>
-<h3 id="2-多级模糊综合评判"><a href="#2-多级模糊综合评判" class="headerlink" title="2.多级模糊综合评判"></a>2.多级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155353593.png" alt="image-20220813155353593"></p>
-<p>计算量比较小，没有用到代码</p>
-]]></content>
-      <categories>
-        <category>数模</category>
-      </categories>
-      <tags>
-        <tag>评价类问题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>1.层次分析法模型</title>
     <url>/2022/06/20/1-%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95%E6%A8%A1%E5%9E%8B/</url>
     <content><![CDATA[<h3 id="1-模型介绍"><a href="#1-模型介绍" class="headerlink" title="1. 模型介绍"></a>1. 模型介绍</h3><blockquote>
@@ -161,6 +126,76 @@
       </tags>
   </entry>
   <entry>
+    <title>10.模糊综合评价</title>
+    <url>/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/</url>
+    <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>模糊评价问题主要解决以下问题：</p>
+<ol>
+<li>将论域中的对象对应评语集中一个指定的评语</li>
+<li>将方案作为评语集并选择一个最优的方案</li>
+</ol>
+<span id="more"></span>
+<h3 id="二、模糊集合和隶属函数"><a href="#二、模糊集合和隶属函数" class="headerlink" title="二、模糊集合和隶属函数"></a>二、模糊集合和隶属函数</h3><h4 id="1-概念"><a href="#1-概念" class="headerlink" title="1. 概念"></a>1. 概念</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153845840.png" alt="image-20220813153845840"></p>
+<p>经典集合概念中，特征函数作用于论域上，使得每个元素要么位于集合中，要么不在集合中</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153934402.png" alt="image-20220813153934402"></p>
+<p>在模糊集合中，元素是否在集合中以概率的方式表示，与之对应的函数是隶属函数，其值域为[0,1]</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154055917.png" alt="image-20220813154055917"></p>
+<p>对于模糊集合的表示，zadeh表示法较为常用，但需要注意的是，上述表示方法仅仅是表示方法，并不存在所谓的除和加的关系</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154234936.png" alt="image-20220813154234936"></p>
+<h4 id="2-隶属函数的确定"><a href="#2-隶属函数的确定" class="headerlink" title="2. 隶属函数的确定"></a>2. 隶属函数的确定</h4><p>（1）模糊统计法<img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154518820.png" alt="image-20220813154518820"></p>
+<p>（2）借助已有的指标</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154532059.png" alt="image-20220813154532059"></p>
+<p>（3）指派法</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154555491.png" alt="image-20220813154555491"></p>
+<p>例2中并没有直接使用左图的梯型分布，对于中间型，其去掉了中间不变的部分</p>
+<h4 id="3-模糊综合评价"><a href="#3-模糊综合评价" class="headerlink" title="3.模糊综合评价"></a>3.模糊综合评价</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154849750.png" alt="image-20220813154849750"></p>
+<h3 id="三、应用"><a href="#三、应用" class="headerlink" title="三、应用"></a>三、应用</h3><h3 id="1-一级模糊综合评判"><a href="#1-一级模糊综合评判" class="headerlink" title="1.一级模糊综合评判"></a>1.一级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155052120.png" alt="image-20220813155052120"></p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155158365.png" alt="image-20220813155158365"></p>
+<h3 id="2-多级模糊综合评判"><a href="#2-多级模糊综合评判" class="headerlink" title="2.多级模糊综合评判"></a>2.多级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155353593.png" alt="image-20220813155353593"></p>
+<p>计算量比较小，没有用到代码</p>
+]]></content>
+      <categories>
+        <category>数模</category>
+      </categories>
+      <tags>
+        <tag>评价类问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>11.分类模型</title>
+    <url>/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>本节主要使用逻辑回归和Fisher线性判别分析来解决二分类和多分类问题。实现时只需使用spss即可</p>
+<span id="more"></span>
+<p>下述过程以鸢尾花例题进行</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170424949.png" alt="image-20220814170424949"></p>
+<p>共有三种类型的鸢尾花，已知数据有四种，要求通过下列已有数据预测鸢尾花的种类</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170744708.png" alt="image-20220814170744708"></p>
+<h3 id="二、实现过程"><a href="#二、实现过程" class="headerlink" title="二、实现过程"></a>二、实现过程</h3><h4 id="1-数据预处理"><a href="#1-数据预处理" class="headerlink" title="1.数据预处理"></a>1.数据预处理</h4><p>把种类表示成数字，这里可以使用excel的替换来完成</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170635436.png" alt="image-20220814170635436" style="zoom:67%;"></p>
+<p>这里我对种类排好序之后拖出来的</p>
+<h4 id="2-逻辑回归"><a href="#2-逻辑回归" class="headerlink" title="2.逻辑回归"></a>2.逻辑回归</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170911837.png" alt="image-20220814170911837"></p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170923189.png" alt="image-20220814170923189"></p>
+<p>这里有一条警告，告说明我们的数据区分度非常高，存在准完全分隔说明样本划分的比较彻底，这一般对于分类结果而言是好事情。</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171041908.png" alt="image-20220814171041908"></p>
+<p>最终分类结果如下：对于已有数据，模型对于三种鸢尾燕分类效果分别为97.9%,100%,98%</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171247854.png" alt="image-20220814171247854"></p>
+<p>预测结果如下：</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171932085.png" alt="image-20220814171932085"></p>
+<blockquote>
+<p>对于二分类问题，在选择的时候选二元logistic即可</p>
+<p>若最终分类效果较差，可以先生成其二次项，结合二次项进行分类，但可能会有过拟合的现象，这时可以交叉验证</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171730339.png" alt="image-20220814171730339" style="zoom: 50%;"></p>
+</blockquote>
+<h4 id="3-Fisher判别分析"><a href="#3-Fisher判别分析" class="headerlink" title="3.Fisher判别分析"></a>3.Fisher判别分析</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171823784.png" alt="image-20220814171823784"></p>
+<p>多分类问题在分组变量定义范围的时候进行设置，如该题，即可设置为1~3，分类效果如下：</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172050841.png" alt="image-20220814172050841"></p>
+<p>可以看到对于三种鸢尾花分类效果分别为97.9%，100%，95.9%，平均为97.9%的正确率，预测结果如下：</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172243033.png" alt="image-20220814172243033"></p>
+]]></content>
+      <categories>
+        <category>数模</category>
+      </categories>
+  </entry>
+  <entry>
     <title>12.聚类算法</title>
     <url>/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>与分类算法不同，聚类算法并不知道分类的类别，其将样本划分为由类似对象组成的多个类。主要介绍三种聚类算法：kmean/kmean++，系统聚类，DBSCAN</p>
@@ -199,41 +234,6 @@
 <p>只有在看上去能用DBSCAN的时候采用，一般用系统聚类就够了</p>
 </blockquote>
 <p>哈哈哈数模系列可能会烂尾了。。。。（有时间再写）</p>
-]]></content>
-      <categories>
-        <category>数模</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>11.分类模型</title>
-    <url>/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>本节主要使用逻辑回归和Fisher线性判别分析来解决二分类和多分类问题。实现时只需使用spss即可</p>
-<span id="more"></span>
-<p>下述过程以鸢尾花例题进行</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170424949.png" alt="image-20220814170424949"></p>
-<p>共有三种类型的鸢尾花，已知数据有四种，要求通过下列已有数据预测鸢尾花的种类</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170744708.png" alt="image-20220814170744708"></p>
-<h3 id="二、实现过程"><a href="#二、实现过程" class="headerlink" title="二、实现过程"></a>二、实现过程</h3><h4 id="1-数据预处理"><a href="#1-数据预处理" class="headerlink" title="1.数据预处理"></a>1.数据预处理</h4><p>把种类表示成数字，这里可以使用excel的替换来完成</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170635436.png" alt="image-20220814170635436" style="zoom:67%;"></p>
-<p>这里我对种类排好序之后拖出来的</p>
-<h4 id="2-逻辑回归"><a href="#2-逻辑回归" class="headerlink" title="2.逻辑回归"></a>2.逻辑回归</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170911837.png" alt="image-20220814170911837"></p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170923189.png" alt="image-20220814170923189"></p>
-<p>这里有一条警告，告说明我们的数据区分度非常高，存在准完全分隔说明样本划分的比较彻底，这一般对于分类结果而言是好事情。</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171041908.png" alt="image-20220814171041908"></p>
-<p>最终分类结果如下：对于已有数据，模型对于三种鸢尾燕分类效果分别为97.9%,100%,98%</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171247854.png" alt="image-20220814171247854"></p>
-<p>预测结果如下：</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171932085.png" alt="image-20220814171932085"></p>
-<blockquote>
-<p>对于二分类问题，在选择的时候选二元logistic即可</p>
-<p>若最终分类效果较差，可以先生成其二次项，结合二次项进行分类，但可能会有过拟合的现象，这时可以交叉验证</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171730339.png" alt="image-20220814171730339" style="zoom: 50%;"></p>
-</blockquote>
-<h4 id="3-Fisher判别分析"><a href="#3-Fisher判别分析" class="headerlink" title="3.Fisher判别分析"></a>3.Fisher判别分析</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171823784.png" alt="image-20220814171823784"></p>
-<p>多分类问题在分组变量定义范围的时候进行设置，如该题，即可设置为1~3，分类效果如下：</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172050841.png" alt="image-20220814172050841"></p>
-<p>可以看到对于三种鸢尾花分类效果分别为97.9%，100%，95.9%，平均为97.9%的正确率，预测结果如下：</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172243033.png" alt="image-20220814172243033"></p>
 ]]></content>
       <categories>
         <category>数模</category>
@@ -481,48 +481,6 @@
       </tags>
   </entry>
   <entry>
-    <title>6.典型相关分析</title>
-    <url>/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>典型相关分析是研究两组变量（每组变量下可能有多个指标）之间的相关关系的一种多元统计方法，它能够揭示两组变量之间的内在联系。</p>
-<span id="more"></span>
-<p>比如说这样的问题：</p>
-<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718143956038.png" alt="image-20220718143956038"></p>
-<blockquote>
-<p>与上一节的相关系数相比，典型相关分析每一组有多个变量，而不仅仅只有一个</p>
-</blockquote>
-<h3 id="二、SPSS求解"><a href="#二、SPSS求解" class="headerlink" title="二、SPSS求解"></a>二、SPSS求解</h3><blockquote>
-<p>原理有点复杂了，对于编程选手俺就跳过了，直接SPSS傻瓜求解</p>
-</blockquote>
-<p>下面以问题为例来做典型相关分析，左侧为生理指标，右侧为训练指标，探讨两指标的相关性</p>
-<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718144344348.png" alt="image-20220718144344348"></p>
-<h4 id="（1）导入数据"><a href="#（1）导入数据" class="headerlink" title="（1）导入数据"></a>（1）导入数据</h4><p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718144546940.png" alt="image-20220718144546940" style="zoom:67%;"></p>
-<h4 id="（2）检查数据类型"><a href="#（2）检查数据类型" class="headerlink" title="（2）检查数据类型"></a>（2）检查数据类型</h4><p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718144728481.png" alt="image-20220718144728481" style="zoom:67%;"></p>
-<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718144809795.png" alt="image-20220718144809795" style="zoom:67%;"></p>
-<blockquote>
-<p>注意需要将数据类型修改为标度，所谓有序类似于排名，名义类似于男女，标度为普通数据</p>
-</blockquote>
-<h4 id="（3）进行典型相关分析"><a href="#（3）进行典型相关分析" class="headerlink" title="（3）进行典型相关分析"></a>（3）进行典型相关分析</h4><blockquote>
-<p>这里如果没有安装到默认位置，就得用代码了，所以俺又重新装了一遍</p>
-</blockquote>
-<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718150613848.png" alt="image-20220718150613848" style="zoom: 80%;"></p>
-<h4 id="（4）输出结果分析"><a href="#（4）输出结果分析" class="headerlink" title="（4）输出结果分析"></a>（4）输出结果分析</h4><h5 id="2）典型相关系数"><a href="#2）典型相关系数" class="headerlink" title="2）典型相关系数"></a>2）典型相关系数</h5><h5 id><a href="#" class="headerlink" title></a><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718151243308.png" alt="image-20220718151243308"></h5><p>修改成中文如下，可以看到只有第一组的P值小于0.1，其余的都大于0.1，故只有第一组有意义，之后都只需要看第一组即可</p>
-<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718151255578.png" alt="image-20220718151255578"></p>
-<h5 id="2）典型相关变量"><a href="#2）典型相关变量" class="headerlink" title="2）典型相关变量"></a>2）典型相关变量</h5><p>将左边英文的表格翻译成右侧的表格，因为只有第一组是典型的，所以只需要写第一组的典型相关变量</p>
-<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718151508924.png" alt="image-20220718151508924" style="zoom: 67%;"><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718151527809.png" alt="image-20220718151527809" style="zoom:67%;"></p>
-<p>典型变量每个分量前面的系数代表着重要程度，可结合典型相关系数进行分析</p>
-<h5 id="3）典型载荷分析"><a href="#3）典型载荷分析" class="headerlink" title="3）典型载荷分析"></a>3）典型载荷分析</h5><p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718152435478.png" alt="image-20220718152426377" style="zoom:67%;"><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718152457310.png" alt="image-20220718152457310" style="zoom:67%;"></p>
-<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718152323228.png" alt="image-20220718152323228" style="zoom:67%;"><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718152350011.png" alt="image-20220718152350011" style="zoom:67%;"></p>
-<p>上下翻译一下，只看典型相关变量第一组，根据第一组进行分析</p>
-<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718152700173.png" alt="image-20220718152700173" style="zoom:67%;"></p>
-]]></content>
-      <categories>
-        <category>数模</category>
-      </categories>
-      <tags>
-        <tag>典型相关分析</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>5.相关系数</title>
     <url>/2022/07/16/5-%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0/</url>
     <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>相关系数，衡量两个变量的相关性的大小，常用的有皮尔逊 pearson相关系数和斯皮尔曼spearman等级相关系数。在使用时，需要根据数据的条件选择不同的相关系数进行计算和分析</p>
@@ -612,6 +570,100 @@
 ]]></content>
       <tags>
         <tag>相关系数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>6.典型相关分析</title>
+    <url>/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>典型相关分析是研究两组变量（每组变量下可能有多个指标）之间的相关关系的一种多元统计方法，它能够揭示两组变量之间的内在联系。</p>
+<span id="more"></span>
+<p>比如说这样的问题：</p>
+<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718143956038.png" alt="image-20220718143956038"></p>
+<blockquote>
+<p>与上一节的相关系数相比，典型相关分析每一组有多个变量，而不仅仅只有一个</p>
+</blockquote>
+<h3 id="二、SPSS求解"><a href="#二、SPSS求解" class="headerlink" title="二、SPSS求解"></a>二、SPSS求解</h3><blockquote>
+<p>原理有点复杂了，对于编程选手俺就跳过了，直接SPSS傻瓜求解</p>
+</blockquote>
+<p>下面以问题为例来做典型相关分析，左侧为生理指标，右侧为训练指标，探讨两指标的相关性</p>
+<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718144344348.png" alt="image-20220718144344348"></p>
+<h4 id="（1）导入数据"><a href="#（1）导入数据" class="headerlink" title="（1）导入数据"></a>（1）导入数据</h4><p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718144546940.png" alt="image-20220718144546940" style="zoom:67%;"></p>
+<h4 id="（2）检查数据类型"><a href="#（2）检查数据类型" class="headerlink" title="（2）检查数据类型"></a>（2）检查数据类型</h4><p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718144728481.png" alt="image-20220718144728481" style="zoom:67%;"></p>
+<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718144809795.png" alt="image-20220718144809795" style="zoom:67%;"></p>
+<blockquote>
+<p>注意需要将数据类型修改为标度，所谓有序类似于排名，名义类似于男女，标度为普通数据</p>
+</blockquote>
+<h4 id="（3）进行典型相关分析"><a href="#（3）进行典型相关分析" class="headerlink" title="（3）进行典型相关分析"></a>（3）进行典型相关分析</h4><blockquote>
+<p>这里如果没有安装到默认位置，就得用代码了，所以俺又重新装了一遍</p>
+</blockquote>
+<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718150613848.png" alt="image-20220718150613848" style="zoom: 80%;"></p>
+<h4 id="（4）输出结果分析"><a href="#（4）输出结果分析" class="headerlink" title="（4）输出结果分析"></a>（4）输出结果分析</h4><h5 id="2）典型相关系数"><a href="#2）典型相关系数" class="headerlink" title="2）典型相关系数"></a>2）典型相关系数</h5><h5 id><a href="#" class="headerlink" title></a><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718151243308.png" alt="image-20220718151243308"></h5><p>修改成中文如下，可以看到只有第一组的P值小于0.1，其余的都大于0.1，故只有第一组有意义，之后都只需要看第一组即可</p>
+<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718151255578.png" alt="image-20220718151255578"></p>
+<h5 id="2）典型相关变量"><a href="#2）典型相关变量" class="headerlink" title="2）典型相关变量"></a>2）典型相关变量</h5><p>将左边英文的表格翻译成右侧的表格，因为只有第一组是典型的，所以只需要写第一组的典型相关变量</p>
+<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718151508924.png" alt="image-20220718151508924" style="zoom: 67%;"><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718151527809.png" alt="image-20220718151527809" style="zoom:67%;"></p>
+<p>典型变量每个分量前面的系数代表着重要程度，可结合典型相关系数进行分析</p>
+<h5 id="3）典型载荷分析"><a href="#3）典型载荷分析" class="headerlink" title="3）典型载荷分析"></a>3）典型载荷分析</h5><p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718152435478.png" alt="image-20220718152426377" style="zoom:67%;"><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718152457310.png" alt="image-20220718152457310" style="zoom:67%;"></p>
+<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718152323228.png" alt="image-20220718152323228" style="zoom:67%;"><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718152350011.png" alt="image-20220718152350011" style="zoom:67%;"></p>
+<p>上下翻译一下，只看典型相关变量第一组，根据第一组进行分析</p>
+<p><img src="/2022/07/17/6-%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90/image-20220718152700173.png" alt="image-20220718152700173" style="zoom:67%;"></p>
+]]></content>
+      <categories>
+        <category>数模</category>
+      </categories>
+      <tags>
+        <tag>典型相关分析</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>8.图论最短路径问题</title>
+    <url>/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>没错，就是数据结构与算法（还是离散？忘了，可能都学了）上学的那个最短路径算法，课堂上用的是迪杰特斯拉和弗洛伊德算法，这里也差不多，复习一下然后用matlab实现</p>
+<span id="more"></span>
+<h3 id="二、图"><a href="#二、图" class="headerlink" title="二、图"></a>二、图</h3><h4 id="1-数据结构——图"><a href="#1-数据结构——图" class="headerlink" title="1.数据结构——图"></a>1.数据结构——图</h4><p>图论中的图（Graph）是由若干给定的点及连接两点的线 所构成的图形，这种图形通常用来描述某些事物之间的某种特定关系，用点代表事物，用连接两点的线表示相应两个事 物间具有这种关系。 </p>
+<p>一个图可以用数学语言描述为G(V(G),E(G))。V(vertex)指的是图的顶点集，E(edge)指的是图的边集。 根据边是否有方向，可将图分为有向图和无向图。 另外，有些图的边上还可能有权值，这样的图称为有权图。</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204035963.png" alt="image-20220720204035963"></p>
+<p>通过这个网址可以在线作图：<a href="https://csacademy.com/app/graph_editor/">CS Academy</a></p>
+<p>当然matlab也可以，但是比较丑：</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204134367.png" alt="image-20220720204134367" style="zoom: 67%;"></p>
+<h4 id="2-邻接矩阵"><a href="#2-邻接矩阵" class="headerlink" title="2.邻接矩阵"></a>2.邻接矩阵</h4><p>就是数据结构那个！</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204238553.png" alt="image-20220720204238553" style="zoom:67%;"></p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204251795.png" alt="image-20220720204251795" style="zoom:67%;"></p>
+<h3 id="三、迪杰特斯拉算法"><a href="#三、迪杰特斯拉算法" class="headerlink" title="三、迪杰特斯拉算法"></a>三、迪杰特斯拉算法</h3><h4 id="1-基本思想"><a href="#1-基本思想" class="headerlink" title="1.基本思想"></a>1.基本思想</h4><ol>
+<li>通过Dijkstra计算图G中的最短路径时，需要指定起点s(即从顶点s开始计算)。</li>
+<li>此外，引进两个集合S和U。S的作用是记录已求出最短路径的顶点(以及相应的最短路径长度，而U则是记录还未求出最短路径的顶点(以及该顶点到起点s的距离)。</li>
+<li>初始时，S中只有起点s；U中是除s之外的顶点，并且U中顶点的路径是”起点s到该顶点的路径”。然后，从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 然后，再从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 … 重复该操作，直到遍历完所有顶点。</li>
+</ol>
+<h4 id="2-操作步骤"><a href="#2-操作步骤" class="headerlink" title="2.操作步骤"></a>2.操作步骤</h4><ol>
+<li>初始时，S只包含起点s；U包含除s外的其他顶点，且U中顶点的距离为”起点s到该顶点的距离”[例如，U中顶点v的距离为(s,v)的长度，然后s和v不相邻，则v的距离为∞]。</li>
+<li>从U中选出”距离最短的顶点k”，并将顶点k加入到S中；同时，从U中移除顶点k。</li>
+<li>更新U中各个顶点到起点s的距离。之所以更新U中顶点的距离，是由于上一步中确定了k是求出最短路径的顶点，从而可以利用k来更新其它顶点的距离；例如，(s,v)的距离可能大于(s,k)+(k,v)的距离。</li>
+<li>重复步骤(2)和(3)，直到遍历完所有顶点。</li>
+</ol>
+<p>图解参考文章：(<a href="https://blog.csdn.net/qq_37796444/article/details/80663810">https://blog.csdn.net/qq_37796444/article/details/80663810</a>)</p>
+<h4 id="3-缺点"><a href="#3-缺点" class="headerlink" title="3.缺点"></a>3.缺点</h4><p>图的边不能有负权重呢，所以课上讲了弗洛伊德算法</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204749937.png" alt="image-20220720204749937" style="zoom: 67%;"></p>
+<p>另外：负权回路和负权重不一样，负权回路，指那种绕一圈下来和是负数的，因为只要一直绕，就可以一直变小，所以这种就不能解决</p>
+<h3 id="四、matlab实现"><a href="#四、matlab实现" class="headerlink" title="四、matlab实现"></a>四、matlab实现</h3><h4 id="1-最短路径"><a href="#1-最短路径" class="headerlink" title="1.最短路径"></a>1.最短路径</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204956337.png" alt="image-20220720204956337" style="zoom:80%;"></p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205009819.png" alt="image-20220720205009819" style="zoom:80%;"></p>
+<h4 id="2-返回任意两点的距离矩阵"><a href="#2-返回任意两点的距离矩阵" class="headerlink" title="2.返回任意两点的距离矩阵"></a>2.返回任意两点的距离矩阵</h4><p>注意：matlab里面的节点都得严格按照次序来排列，而且不是从0开始的，所以你还得转换一下</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205044933.png" alt="image-20220720205044933" style="zoom:67%;"></p>
+<h4 id="3-给定距离内的点"><a href="#3-给定距离内的点" class="headerlink" title="3.给定距离内的点"></a>3.给定距离内的点</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205144848.png" alt="image-20220720205144848" style="zoom: 67%;"></p>
+<p>以下题为例：</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210403288.png" alt="image-20220720210403288" style="zoom: 67%;"></p>
+<p>代码如下：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab">s = [<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>];<br>t = [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">8</span>];<br>w = [<span class="hljs-number">6</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">10</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">6</span>,<span class="hljs-number">10</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>];<br><span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>) <br>set( gca, <span class="hljs-string">&#x27;XTick&#x27;</span>, [], <span class="hljs-string">&#x27;YTick&#x27;</span>, [] );  <br>G = digraph(s, t,w);<br><span class="hljs-built_in">plot</span>(G)<br>[P,d] = shortestpath(G, <span class="hljs-number">1</span>, <span class="hljs-number">8</span>)  <span class="hljs-comment">%注意：该函数matlab2015b之后才有哦</span><br><br><span class="hljs-comment">% 在图中高亮我们的最短路径</span><br>myplot = <span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>);  <span class="hljs-comment">%首先将图赋给一个变量</span><br>highlight(myplot, P, <span class="hljs-string">&#x27;EdgeColor&#x27;</span>, <span class="hljs-string">&#x27;r&#x27;</span>)   <span class="hljs-comment">%对这个变量即我们刚刚绘制的图形进行高亮处理（给边加上r红色）</span><br></code></pre></td></tr></table></figure>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/untitled.jpg" alt="untitled"></p>
+<p>最终结果：1-&gt;3-&gt;2-&gt;5-&gt;8,距离为12</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210611304.png" alt="image-20220720210611304" style="zoom: 67%;"></p>
+<h3 id="五、floyd算法"><a href="#五、floyd算法" class="headerlink" title="五、floyd算法"></a>五、floyd算法</h3><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220814110800097.png" alt="image-20220814110800097"></p>
+<p>floyd算法三层for循环搞定：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[dist,path]</span> = <span class="hljs-title">Floyd_algorithm</span><span class="hljs-params">(D)</span></span><br><span class="hljs-comment">%% 该函数用于求解一个权重邻接矩阵任意两个节点之间的最短路径</span><br><span class="hljs-comment">% 输入：</span><br><span class="hljs-comment">%        D是权重邻接矩阵</span><br><span class="hljs-comment">% 输出：</span><br><span class="hljs-comment">%        dist是最短距离矩阵，其元素dist_ij表示表示i,j两个节点的最短距离</span><br><span class="hljs-comment">%        path是路径矩阵，其元素path_ij表示起点为i，终点为j的两个节点之间的最短路径要经过的节点</span><br><br>n = <span class="hljs-built_in">size</span>(D,<span class="hljs-number">1</span>);  <span class="hljs-comment">% 计算节点的个数</span><br><br><span class="hljs-comment">% 初始化dist矩阵</span><br>dist = D;<br><br><span class="hljs-comment">% 下面我们来初始化path矩阵</span><br>path = <span class="hljs-built_in">zeros</span>(n);<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span> = <span class="hljs-number">1</span>:n<br>    path(:,<span class="hljs-built_in">j</span>) = <span class="hljs-built_in">j</span>;   <span class="hljs-comment">% 将第j列的元素变为j</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span> = <span class="hljs-number">1</span>:n<br>    path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">i</span>) = <span class="hljs-number">-1</span>;  <span class="hljs-comment">% 将主对角线元素变为-1</span><br><span class="hljs-keyword">end</span><br><br><span class="hljs-comment">% 下面开始三个循环</span><br><span class="hljs-keyword">for</span> k=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 中间节点k从1- n 循环</span><br>   <span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:n     <span class="hljs-comment">% 起始节点i从1- n 循环</span><br>      <span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span>=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 终点节点j从1-n 循环</span><br>          <span class="hljs-keyword">if</span> dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)&gt;dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>)  <span class="hljs-comment">% 如果i,j两个节点间的最短距离大于i和k的最短距离+k和j的最短距离</span><br>             dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>);  <span class="hljs-comment">% 那么我们就令这两个较短的距离之和取代i,j两点之间的最短距离</span><br>             path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=path(<span class="hljs-built_in">i</span>,k);   <span class="hljs-comment">% 起点为i，终点为j的两个节点之间的最短路径要经过的节点更新为path(i,k)</span><br>             <span class="hljs-comment">% 注意，上面一行语句不能写成path(i,j) = k; 这是网上很多地方都容易犯的错误</span><br>          <span class="hljs-keyword">end</span><br>      <span class="hljs-keyword">end</span><br>   <span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>数模</category>
+      </categories>
+      <tags>
+        <tag>图论</tag>
       </tags>
   </entry>
   <entry>
@@ -763,58 +815,6 @@
       </categories>
       <tags>
         <tag>回归</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>8.图论最短路径问题</title>
-    <url>/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>没错，就是数据结构与算法（还是离散？忘了，可能都学了）上学的那个最短路径算法，课堂上用的是迪杰特斯拉和弗洛伊德算法，这里也差不多，复习一下然后用matlab实现</p>
-<span id="more"></span>
-<h3 id="二、图"><a href="#二、图" class="headerlink" title="二、图"></a>二、图</h3><h4 id="1-数据结构——图"><a href="#1-数据结构——图" class="headerlink" title="1.数据结构——图"></a>1.数据结构——图</h4><p>图论中的图（Graph）是由若干给定的点及连接两点的线 所构成的图形，这种图形通常用来描述某些事物之间的某种特定关系，用点代表事物，用连接两点的线表示相应两个事 物间具有这种关系。 </p>
-<p>一个图可以用数学语言描述为G(V(G),E(G))。V(vertex)指的是图的顶点集，E(edge)指的是图的边集。 根据边是否有方向，可将图分为有向图和无向图。 另外，有些图的边上还可能有权值，这样的图称为有权图。</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204035963.png" alt="image-20220720204035963"></p>
-<p>通过这个网址可以在线作图：<a href="https://csacademy.com/app/graph_editor/">CS Academy</a></p>
-<p>当然matlab也可以，但是比较丑：</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204134367.png" alt="image-20220720204134367" style="zoom: 67%;"></p>
-<h4 id="2-邻接矩阵"><a href="#2-邻接矩阵" class="headerlink" title="2.邻接矩阵"></a>2.邻接矩阵</h4><p>就是数据结构那个！</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204238553.png" alt="image-20220720204238553" style="zoom:67%;"></p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204251795.png" alt="image-20220720204251795" style="zoom:67%;"></p>
-<h3 id="三、迪杰特斯拉算法"><a href="#三、迪杰特斯拉算法" class="headerlink" title="三、迪杰特斯拉算法"></a>三、迪杰特斯拉算法</h3><h4 id="1-基本思想"><a href="#1-基本思想" class="headerlink" title="1.基本思想"></a>1.基本思想</h4><ol>
-<li>通过Dijkstra计算图G中的最短路径时，需要指定起点s(即从顶点s开始计算)。</li>
-<li>此外，引进两个集合S和U。S的作用是记录已求出最短路径的顶点(以及相应的最短路径长度，而U则是记录还未求出最短路径的顶点(以及该顶点到起点s的距离)。</li>
-<li>初始时，S中只有起点s；U中是除s之外的顶点，并且U中顶点的路径是”起点s到该顶点的路径”。然后，从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 然后，再从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 … 重复该操作，直到遍历完所有顶点。</li>
-</ol>
-<h4 id="2-操作步骤"><a href="#2-操作步骤" class="headerlink" title="2.操作步骤"></a>2.操作步骤</h4><ol>
-<li>初始时，S只包含起点s；U包含除s外的其他顶点，且U中顶点的距离为”起点s到该顶点的距离”[例如，U中顶点v的距离为(s,v)的长度，然后s和v不相邻，则v的距离为∞]。</li>
-<li>从U中选出”距离最短的顶点k”，并将顶点k加入到S中；同时，从U中移除顶点k。</li>
-<li>更新U中各个顶点到起点s的距离。之所以更新U中顶点的距离，是由于上一步中确定了k是求出最短路径的顶点，从而可以利用k来更新其它顶点的距离；例如，(s,v)的距离可能大于(s,k)+(k,v)的距离。</li>
-<li>重复步骤(2)和(3)，直到遍历完所有顶点。</li>
-</ol>
-<p>图解参考文章：(<a href="https://blog.csdn.net/qq_37796444/article/details/80663810">https://blog.csdn.net/qq_37796444/article/details/80663810</a>)</p>
-<h4 id="3-缺点"><a href="#3-缺点" class="headerlink" title="3.缺点"></a>3.缺点</h4><p>图的边不能有负权重呢，所以课上讲了弗洛伊德算法</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204749937.png" alt="image-20220720204749937" style="zoom: 67%;"></p>
-<p>另外：负权回路和负权重不一样，负权回路，指那种绕一圈下来和是负数的，因为只要一直绕，就可以一直变小，所以这种就不能解决</p>
-<h3 id="四、matlab实现"><a href="#四、matlab实现" class="headerlink" title="四、matlab实现"></a>四、matlab实现</h3><h4 id="1-最短路径"><a href="#1-最短路径" class="headerlink" title="1.最短路径"></a>1.最短路径</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204956337.png" alt="image-20220720204956337" style="zoom:80%;"></p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205009819.png" alt="image-20220720205009819" style="zoom:80%;"></p>
-<h4 id="2-返回任意两点的距离矩阵"><a href="#2-返回任意两点的距离矩阵" class="headerlink" title="2.返回任意两点的距离矩阵"></a>2.返回任意两点的距离矩阵</h4><p>注意：matlab里面的节点都得严格按照次序来排列，而且不是从0开始的，所以你还得转换一下</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205044933.png" alt="image-20220720205044933" style="zoom:67%;"></p>
-<h4 id="3-给定距离内的点"><a href="#3-给定距离内的点" class="headerlink" title="3.给定距离内的点"></a>3.给定距离内的点</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205144848.png" alt="image-20220720205144848" style="zoom: 67%;"></p>
-<p>以下题为例：</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210403288.png" alt="image-20220720210403288" style="zoom: 67%;"></p>
-<p>代码如下：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab">s = [<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>];<br>t = [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">8</span>];<br>w = [<span class="hljs-number">6</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">10</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">6</span>,<span class="hljs-number">10</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>];<br><span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>) <br>set( gca, <span class="hljs-string">&#x27;XTick&#x27;</span>, [], <span class="hljs-string">&#x27;YTick&#x27;</span>, [] );  <br>G = digraph(s, t,w);<br><span class="hljs-built_in">plot</span>(G)<br>[P,d] = shortestpath(G, <span class="hljs-number">1</span>, <span class="hljs-number">8</span>)  <span class="hljs-comment">%注意：该函数matlab2015b之后才有哦</span><br><br><span class="hljs-comment">% 在图中高亮我们的最短路径</span><br>myplot = <span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>);  <span class="hljs-comment">%首先将图赋给一个变量</span><br>highlight(myplot, P, <span class="hljs-string">&#x27;EdgeColor&#x27;</span>, <span class="hljs-string">&#x27;r&#x27;</span>)   <span class="hljs-comment">%对这个变量即我们刚刚绘制的图形进行高亮处理（给边加上r红色）</span><br></code></pre></td></tr></table></figure>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/untitled.jpg" alt="untitled"></p>
-<p>最终结果：1-&gt;3-&gt;2-&gt;5-&gt;8,距离为12</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210611304.png" alt="image-20220720210611304" style="zoom: 67%;"></p>
-<h3 id="五、floyd算法"><a href="#五、floyd算法" class="headerlink" title="五、floyd算法"></a>五、floyd算法</h3><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220814110800097.png" alt="image-20220814110800097"></p>
-<p>floyd算法三层for循环搞定：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[dist,path]</span> = <span class="hljs-title">Floyd_algorithm</span><span class="hljs-params">(D)</span></span><br><span class="hljs-comment">%% 该函数用于求解一个权重邻接矩阵任意两个节点之间的最短路径</span><br><span class="hljs-comment">% 输入：</span><br><span class="hljs-comment">%        D是权重邻接矩阵</span><br><span class="hljs-comment">% 输出：</span><br><span class="hljs-comment">%        dist是最短距离矩阵，其元素dist_ij表示表示i,j两个节点的最短距离</span><br><span class="hljs-comment">%        path是路径矩阵，其元素path_ij表示起点为i，终点为j的两个节点之间的最短路径要经过的节点</span><br><br>n = <span class="hljs-built_in">size</span>(D,<span class="hljs-number">1</span>);  <span class="hljs-comment">% 计算节点的个数</span><br><br><span class="hljs-comment">% 初始化dist矩阵</span><br>dist = D;<br><br><span class="hljs-comment">% 下面我们来初始化path矩阵</span><br>path = <span class="hljs-built_in">zeros</span>(n);<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span> = <span class="hljs-number">1</span>:n<br>    path(:,<span class="hljs-built_in">j</span>) = <span class="hljs-built_in">j</span>;   <span class="hljs-comment">% 将第j列的元素变为j</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span> = <span class="hljs-number">1</span>:n<br>    path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">i</span>) = <span class="hljs-number">-1</span>;  <span class="hljs-comment">% 将主对角线元素变为-1</span><br><span class="hljs-keyword">end</span><br><br><span class="hljs-comment">% 下面开始三个循环</span><br><span class="hljs-keyword">for</span> k=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 中间节点k从1- n 循环</span><br>   <span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:n     <span class="hljs-comment">% 起始节点i从1- n 循环</span><br>      <span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span>=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 终点节点j从1-n 循环</span><br>          <span class="hljs-keyword">if</span> dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)&gt;dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>)  <span class="hljs-comment">% 如果i,j两个节点间的最短距离大于i和k的最短距离+k和j的最短距离</span><br>             dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>);  <span class="hljs-comment">% 那么我们就令这两个较短的距离之和取代i,j两点之间的最短距离</span><br>             path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=path(<span class="hljs-built_in">i</span>,k);   <span class="hljs-comment">% 起点为i，终点为j的两个节点之间的最短路径要经过的节点更新为path(i,k)</span><br>             <span class="hljs-comment">% 注意，上面一行语句不能写成path(i,j) = k; 这是网上很多地方都容易犯的错误</span><br>          <span class="hljs-keyword">end</span><br>      <span class="hljs-keyword">end</span><br>   <span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>数模</category>
-      </categories>
-      <tags>
-        <tag>图论</tag>
       </tags>
   </entry>
   <entry>
@@ -1250,6 +1250,22 @@
       </tags>
   </entry>
   <entry>
+    <title>Restart Plan</title>
+    <url>/2024/01/27/Restart-Plan/</url>
+    <content><![CDATA[<h2 id="重启计划"><a href="#重启计划" class="headerlink" title="重启计划"></a>重启计划</h2><p>记录学习周报和日常，秉承着并没有人看的信心，作为本人立flag来自驱的平台</p>
+<span id="more"></span>
+<p>时间从24年寒假，即保研fudan后的第一个寒假开始进行</p>
+<p>参考了某thu学长的某计划，本人觉得有意思，也后悔本科时间断性努力</p>
+<hr>
+<h3 id="第1-2周-1-29-2-11"><a href="#第1-2周-1-29-2-11" class="headerlink" title="第1~2周 1.29~2.11"></a>第1~2周 1.29~2.11</h3><blockquote>
+<p>主要任务：学习java语言，关注实习情况</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>日常</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>algorithm plus</title>
     <url>/2023/08/15/algorithm-plus/</url>
     <content><![CDATA[<p>rt</p>
@@ -1267,26 +1283,830 @@
   <entry>
     <title>dive into deep learning</title>
     <url>/2023/07/22/dive-into-deep-learning/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h2 id="pytorch"><a href="#pytorch" class="headerlink" title="pytorch"></a>pytorch</h2><h3 id="1-环境管理"><a href="#1-环境管理" class="headerlink" title="1.环境管理"></a>1.环境管理</h3><p>建立不同的python版本环境（anaconda prompt）</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">conda</span> create -n pytorch python=<span class="hljs-number">3</span>.<span class="hljs-number">6</span> #创建一个名为pytorch的环境<br></code></pre></td></tr></table></figure>
+<p>激活/进入特定环境</p>
+<figure class="highlight applescript"><table><tr><td class="code"><pre><code class="hljs applescript">conda <span class="hljs-built_in">activate</span> pytorch<br></code></pre></td></tr></table></figure>
+<p>环境下的工具包</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">pip list</span><br></code></pre></td></tr></table></figure>
+<p>安装pytorch工具包</p>
+<p>在pytorch官网按照环境复制命令在特定环境进行下载</p>
+<p>安装完之后检查pytorch安装情况</p>
+<figure class="highlight ceylon"><table><tr><td class="code"><pre><code class="hljs ceylon">python<br><span class="hljs-keyword">import</span> torch<br>torch.cuda.<span class="hljs-keyword">is</span><span class="hljs-number">_</span>available()<br></code></pre></td></tr></table></figure>
+<p>两个工具：pycharm和jupyter</p>
+<p>pycharm创建项目记得勾选对应的interpreter(如：D:\Users\lzh\anaconda3\envs\pytorch)</p>
+<p>jupyter选择环境：在prompt下命令行开启jupyter：</p>
+<figure class="highlight mipsasm"><table><tr><td class="code"><pre><code class="hljs mipsasm">conda <span class="hljs-keyword">install </span>nb_conda<br><span class="hljs-keyword">jupyter </span>notebook<br></code></pre></td></tr></table></figure>
+<h3 id="2-两个函数"><a href="#2-两个函数" class="headerlink" title="2.两个函数"></a>2.两个函数</h3><p><img src="/2023/07/22/dive-into-deep-learning/image-20240129230520456.png" alt="image-20240129230520456"></p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">dir</span><span class="hljs-params">(torch)</span></span> <span class="hljs-selector-id">#dir</span>(package)<br><span class="hljs-function"><span class="hljs-title">dir</span><span class="hljs-params">(torch.cuda)</span></span><br><span class="hljs-function"><span class="hljs-title">dir</span><span class="hljs-params">(torch.cuda.is_available)</span></span> #输出是双下划线，双下划线表示不可修改，此时不能进一步打开了，就是函数了<br><span class="hljs-function"><span class="hljs-title">help</span><span class="hljs-params">(torch.cuda.is_available)</span></span><br></code></pre></td></tr></table></figure>
+<p><a href="https://www.bilibili.com/video/BV1hE411t7RN?t=22.9&amp;p=5">https://www.bilibili.com/video/BV1hE411t7RN?t=22.9&amp;p=5</a></p>
+]]></content>
       <tags>
         <tag>DL</tag>
       </tags>
   </entry>
   <entry>
-    <title>Restart Plan</title>
-    <url>/2024/01/27/Restart-Plan/</url>
-    <content><![CDATA[<h2 id="重启计划"><a href="#重启计划" class="headerlink" title="重启计划"></a>重启计划</h2><p>记录学习周报和日常，秉承着并没有人看的信心，作为本人立flag来自驱的平台</p>
-<span id="more"></span>
-<p>时间从24年寒假，即保研fudan后的第一个寒假开始进行</p>
-<p>参考了某thu学长的某计划，本人觉得有意思，也后悔本科时间断性努力</p>
-<hr>
-<h3 id="第1-2周-1-29-2-11"><a href="#第1-2周-1-29-2-11" class="headerlink" title="第1~2周 1.29~2.11"></a>第1~2周 1.29~2.11</h3><blockquote>
-<p>主要任务：学习java语言，关注实习情况</p>
+    <title>hot100</title>
+    <url>/2023/06/15/hot100/</url>
+    <content><![CDATA[<h3 id="构建回文串检测"><a href="#构建回文串检测" class="headerlink" title="构建回文串检测"></a>构建回文串检测</h3><p>回文：</p>
+<blockquote>
+<p>奇数项和偶数项分别指字符串中字符个数为奇数的项和字符个数为偶数的项</p>
 </blockquote>
+<p>如果截取的字符串是奇数，那么这个串是回文串要求hash后的字符只有一个个数为奇数，其他为偶数</p>
+<p>如果截取的字符串是偶数，那么这个串是回文串要求hash后的字符个数全为偶数</p>
+<p>替换就是把一个数的减少，另一个数的增加</p>
+<p>最多k次替换，</p>
+<p>考虑偶数，问题变成最少需要替换多少个字符才能将其变成偶数——调整奇数项，假设现在奇数项有2m项，将两个奇数项进行匹配，次数取较小的奇数项，故可知这个步骤所需的次数就是奇数项里最小的m个的个数的和sum（将数量最少的来匹配哪些多的字符），如果k小于sum，或者奇数项不是偶数个或者，则不是回文</p>
+<p>考虑奇数，选择数量最多的奇数项作为中心项，这样就不用将其进行匹配，然后对剩余的想进行偶数考虑的匹配</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">getmap</span><span class="hljs-params">(string s,unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp; mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;s.<span class="hljs-built_in">size</span>();i++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(mmap.<span class="hljs-built_in">find</span>(s[i])!=mmap.<span class="hljs-built_in">end</span>()) mmap[s[i]]++;<br>            <span class="hljs-keyword">else</span> mmap[s[i]]=<span class="hljs-number">1</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">getoutmost</span><span class="hljs-params">(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp;mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-type">int</span> maxi=<span class="hljs-number">-1</span>;<br>        unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;::iterator tmp=mmap.<span class="hljs-built_in">begin</span>();<br>        <span class="hljs-keyword">for</span>(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;::iterator it=mmap.<span class="hljs-built_in">begin</span>();it!=mmap.<span class="hljs-built_in">end</span>();it++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(it-&gt;second%<span class="hljs-number">2</span>&amp;&amp;it-&gt;second&gt;maxi)<br>            &#123;<br>                tmp=it;<br>                maxi=it-&gt;second;<br>            &#125;<br>        &#125;<br>        mmap.<span class="hljs-built_in">erase</span>(tmp);<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">deal</span><span class="hljs-params">(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp;mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        vector&lt;<span class="hljs-type">int</span>&gt; vtmp;<br>        <span class="hljs-type">int</span> sum=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> p:mmap)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(p.second%<span class="hljs-number">2</span>) vtmp.<span class="hljs-built_in">push_back</span>(p.second);<br>        &#125;<br>        <span class="hljs-keyword">if</span>(vtmp.<span class="hljs-built_in">size</span>()%<span class="hljs-number">2</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;<br>        <span class="hljs-keyword">else</span><br>        &#123;<br>            <span class="hljs-built_in">sort</span>(vtmp.<span class="hljs-built_in">begin</span>(),vtmp.<span class="hljs-built_in">end</span>());<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;vtmp.<span class="hljs-built_in">size</span>()/<span class="hljs-number">2</span>;i++)<br>            &#123;<br>                sum=sum+vtmp[i];<br>            &#125;<br>            <span class="hljs-keyword">return</span> sum;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">bool</span>&gt; <span class="hljs-title">canMakePaliQueries</span><span class="hljs-params">(string s, vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt;&amp; queries)</span> </span>&#123;<br>        vector&lt;<span class="hljs-type">bool</span>&gt; answer;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> p:queries)<br>        &#123;<br>            unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt; tmap;<br>            string tmp=s;<br>            <span class="hljs-type">int</span> st=p[<span class="hljs-number">0</span>];<br>            <span class="hljs-type">int</span> ed=p[<span class="hljs-number">1</span>];<br>            <span class="hljs-type">int</span> k=p[<span class="hljs-number">2</span>];<br>            <span class="hljs-type">int</span> sz=ed-st+<span class="hljs-number">1</span>;<br>            <span class="hljs-built_in">getmap</span>(s.<span class="hljs-built_in">substr</span>(st,sz),tmap);<br>            <span class="hljs-keyword">if</span>(sz%<span class="hljs-number">2</span>==<span class="hljs-number">1</span>)<br>            &#123;<br>                <span class="hljs-built_in">getoutmost</span>(tmap);<br>            &#125; <br>            <span class="hljs-type">int</span> res=<span class="hljs-built_in">deal</span>(tmap);<br>            <span class="hljs-keyword">if</span>(res==<span class="hljs-number">-1</span>||res&gt;k) answer.<span class="hljs-built_in">push_back</span>(<span class="hljs-literal">false</span>);<br>            <span class="hljs-keyword">else</span> answer.<span class="hljs-built_in">push_back</span>(<span class="hljs-literal">true</span>);<br>        &#125;<br>        <span class="hljs-keyword">return</span> answer;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 ]]></content>
-      <tags>
-        <tag>日常</tag>
-      </tags>
+  </entry>
+  <entry>
+    <title>计网复习</title>
+    <url>/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<p>rt</p>
+<span id="more"></span>
+<h2 id="第四章-网络层数据平面"><a href="#第四章-网络层数据平面" class="headerlink" title="第四章 网络层数据平面"></a>第四章 网络层数据平面</h2><h4 id="路由器与链路层交换机的区别"><a href="#路由器与链路层交换机的区别" class="headerlink" title="路由器与链路层交换机的区别"></a>路由器与链路层交换机的区别</h4><p>路由器运行网络层而交换机不运行网络层，不处理网络层字段</p>
+<p>路由器根据网络层ip地址进行转发操作，而交换机根据mac地址进行转发操作</p>
+<h4 id="数据平面和控制平面"><a href="#数据平面和控制平面" class="headerlink" title="数据平面和控制平面"></a>数据平面和控制平面</h4><p>数据平面：将分组从路由器的输入接口转发到合适的输出接口</p>
+<p>路由：使用路由选择算法来决定从发送主机到目标主机的路径</p>
+<p>路由和转发的区别在于转发是路由器本地动作，时间短，硬件实现，而路由是网络范围内的逻辑，通常用软件实现，时间长</p>
+<h4 id="基于目的的转发与通用转发"><a href="#基于目的的转发与通用转发" class="headerlink" title="基于目的的转发与通用转发"></a>基于目的的转发与通用转发</h4><p>基于目的地的转发匹配操作只基于目标ip地址，操作包括转发</p>
+<p>通用转发的匹配操作基于协议栈上不同层与不同协议相关联的多个报头字段，操作包括转发，泛洪，修改，丢弃</p>
+<p>这些字段例如ip源地址，tcp源端口，源mac地址，不包括TTL字段，数据包长度字段，首部校验和</p>
+<p>流表和转发表的不同：传统方式仅包含IP报头字段以及相应输出链路接口，openflow流表包括：</p>
+<ul>
+<li>首部字段集合：用于匹配</li>
+<li>计数器集合：当分组与流表条目匹配时进行更新</li>
+<li>当分组匹配流表项时采用的动作集合</li>
+</ul>
+<h4 id="交换结构"><a href="#交换结构" class="headerlink" title="交换结构"></a>交换结构</h4><p>基于内存的交换结构</p>
+<p>基于总线的交换结构</p>
+<p>经互联网络的交换结构</p>
+<h4 id="两版TCP报文相似字段"><a href="#两版TCP报文相似字段" class="headerlink" title="两版TCP报文相似字段"></a>两版TCP报文相似字段</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>IPV4</th>
+<th>IPV6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>版本</td>
+<td>版本</td>
+</tr>
+<tr>
+<td>服务类型</td>
+<td>流量类型</td>
+</tr>
+<tr>
+<td>数据包长度</td>
+<td>有效载荷长度</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>下一个首部</td>
+</tr>
+<tr>
+<td>寿命</td>
+<td>跳限制</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="路由聚集"><a href="#路由聚集" class="headerlink" title="路由聚集"></a>路由聚集</h4><p>路由聚集：ISP使用单个前缀为多个网络做广播，路由聚集能减少网络中通告的数量以及计算的代价</p>
+<h4 id="即插即用"><a href="#即插即用" class="headerlink" title="即插即用"></a>即插即用</h4><p>即插即用和零配置意味着该协议能自动配置主机的网络相关方面，以便将主机连接到网络中</p>
+<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154313361.png" alt="image-20230224154313361" style="zoom: 50%;"></p>
+<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154348036.png" alt="image-20230224154348036" style="zoom:50%;"></p>
+<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><p>发之前侦听，碰撞后jam</p>
+<h4 id="每路由器-基于逻辑上集中控制的控制平面"><a href="#每路由器-基于逻辑上集中控制的控制平面" class="headerlink" title="每路由器/基于逻辑上集中控制的控制平面"></a>每路由器/基于逻辑上集中控制的控制平面</h4><ul>
+<li>每路由器控制意味着一个路由算法在每个路由器中运行，每个路由器中都有一个路由组件通信以计算其转发表。在这种情况下，我们说网络控制和数据平面是以单一方式实现的，因为每个路由器作为一个独立的实体实现自己的控制和数据平面</li>
+<li>逻辑集中控制是指逻辑中央控制器计算和分配每个路由器使用的转发表，在这种情况下，数据平面在路由器中实现，控制平面是在中央服务器或多个服务器上实现</li>
+</ul>
+<h4 id="集中式和分布式路由选择算法的性质"><a href="#集中式和分布式路由选择算法的性质" class="headerlink" title="集中式和分布式路由选择算法的性质"></a>集中式和分布式路由选择算法的性质</h4><p>集中式通过网络全局知识计算源和目的地之间的最小成本。</p>
+<p>分布式方法任何节点都没有关于所有网络链路成本的完整信息。每个节点开始时只知道自己直连链路的成本，然后通过预期相邻节点进行计算和信息交换的迭代过程，节点逐步计算出到达目的地或一组目的地的最小成本路径</p>
+<h4 id="LS对比DV"><a href="#LS对比DV" class="headerlink" title="LS对比DV"></a>LS对比DV</h4><p>LS：使用完整的、全局的网络知识来计算源和目的地之间的最小成本路径</p>
+<p>DV：使用迭代、分布式的方法来计算最小成本路径，每个节点开始时只知道自己直连链路的成本，然后通过预期相邻节点进行计算和信息交换的迭代过程，节点逐步计算出到达目的地或一组目的地的最小成本路径</p>
+<h4 id="无穷计数问题"><a href="#无穷计数问题" class="headerlink" title="无穷计数问题"></a>无穷计数问题</h4><p>DV算法：当链路成本增加时，需要花很长时间才能收敛</p>
+<h4 id="AS"><a href="#AS" class="headerlink" title="AS"></a>AS</h4><p>为什么使用了不同的AS间和AS内协议？</p>
+<p>策略：在AS间，策略问题占主导地位，如一个AS的流量不能穿过另一个特定的AS。而在一个AS内部，一切都是在相同的控制名义下进行的</p>
+<p>规模：AS内部由于主机数量有限，可扩展性不是焦点问题。AS间需要处理大量网络或网络之间的路由选择的问题，规模问题需要考量</p>
+<p>性能：AS间路由面向策略，质量是次要的，而AS内关心质量</p>
+<p>AS是指一组路由器</p>
+<h4 id="ICMP"><a href="#ICMP" class="headerlink" title="ICMP"></a>ICMP</h4><p>traceroute使用：警告信息和不无法到达的目标端口ICMP消息</p>
+<p>ICMP常见的有，echo回显（ping），目标网络不可达，目标主机不可达，源抑制（拥塞控制）</p>
+<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2><h3 id="整个流程"><a href="#整个流程" class="headerlink" title="整个流程"></a>整个流程</h3><ul>
+<li><p>首先使用DHCP获取IP地址，DHCP请求报文封装在udp数据报，以太网帧中，且帧的目标地址为FF-FF-FF-FF，该帧在以太网中广播，后按照DHCP协议，计算机获得IP地址等信息</p>
+</li>
+<li><p>在发送http请求(www.baidu)前，需要知道该地址对应的ip地址，而DNS查询报文需要通过第一条路由器转发，故需要先通过ARP协议得到第一条路由器的mac地址，具体而言广播ARP查询报文，第一跳路由器单播回其mac地址</p>
+</li>
+<li>接下来将DNS查询报文封装到UDP中，封装到以太网帧中，通过第一跳路由器转发，中间利用ospf，rip，bgp等路由协议到达DNS服务器，服务器解封装后回复www.baidu.com的ip地址给客户端</li>
+<li>接下来客户端与服务器进行TCP的三次握手，握手后建立TCP连接，将http请求报文封装到tcp中，封装到ip中，封装到链路层帧中，发送给服务器，服务器应答，传送给客户机，客户抽取其中的文件显示网页</li>
+</ul>
+<h3 id="CSMA-CA"><a href="#CSMA-CA" class="headerlink" title="CSMA/CA"></a>CSMA/CA</h3><p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154008234.png" alt="image-20230224154008234"></p>
+<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154036195.png" alt="image-20230224154036195"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>数据库复习</title>
+    <url>/2023/02/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<p>rt</p>
+<span id="more"></span>
+<h1 id="数据库复习"><a href="#数据库复习" class="headerlink" title="数据库复习"></a>数据库复习</h1><h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><h3 id="group-by和select的问题"><a href="#group-by和select的问题" class="headerlink" title="group by和select的问题"></a>group by和select的问题</h3><p>所有select字段，都必须出现在group by中，例外：该字段为主键或该字段包含在聚集函数中</p>
+<p>对于一般的情况：</p>
+<p>示例一：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">select id, name from employee group by name;<br></code></pre></td></tr></table></figure>
+<p>其中id为主键，符合，故能够正常运行</p>
+<p>示例二：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">select name, sum(salary) from employee group by name;<br></code></pre></td></tr></table></figure>
+<p>salary在聚合函数中，符合，故能够正常运行</p>
+<p>示例三：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">select name,age, sum(salary) from employee group by name;<br></code></pre></td></tr></table></figure>
+<p>group by字段没有包含age， age不是主键，不符合，<strong>错误</strong></p>
+<blockquote>
+<p>对于select中字段必须在group by中出现，可理解为，若select字段中属性在相同组中取值不一，则数据库在查询时不知道选择赋予何值给该项</p>
+</blockquote>
+<h3 id="视图的相关内容"><a href="#视图的相关内容" class="headerlink" title="视图的相关内容"></a>视图的相关内容</h3><p>视图消解：从数据字典中取出视图的定义，把定义中的子查询和用户的查询结合起来，转换成等价的对基本表的查询，然后执行修正了的查询</p>
+<p>行列子集视图：由单个基本表导出，只是去掉了基本表的某些行和某些列，但保留了主码</p>
+<h3 id="试述关系数据库系统中视图的作用。是否所有的视图都可以更新？为什么？"><a href="#试述关系数据库系统中视图的作用。是否所有的视图都可以更新？为什么？" class="headerlink" title="试述关系数据库系统中视图的作用。是否所有的视图都可以更新？为什么？"></a>试述关系数据库系统中视图的作用。是否所有的视图都可以更新？为什么？</h3><p> 答：视图是从一个或几个基本表导出的表。视图本身不独立存储在数据库中，是 一个虚表。即数据库中只存放视图的定义而不存放视图对应的数据，这些数据仍存放在导出视图的基本表中。视图在概念上与基本表等同，用户可以如同基本表 那样使用视图，可以在视图上再定义视图。（3 分）不是。（1 分）视图是不实际 存储数据的虚表，因此对视图的更新，最终要转换为对基本表的更新。因为有些 视图的更新不能唯一地有意义地转换成对相应基本表的更新，所以，并不是所有 的视图都是可更新的。（2 分）</p>
+<ul>
+<li>视图能够简化用户的操作</li>
+<li>视图使用户能够以多种角度看待同一数据</li>
+<li>视图对重构数据库提供了一定程度的逻辑独立性</li>
+<li>视图能够对机密数据提供安全保护</li>
+<li>适当利用视图可以更清晰地表达查询</li>
+</ul>
+<h3 id="exists的问题"><a href="#exists的问题" class="headerlink" title="exists的问题"></a>exists的问题</h3><p>查询选修了全部课程的学生姓名</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">select</span> sname<br><span class="hljs-keyword">from</span> student<br><span class="hljs-keyword">where</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span>(<br>	<span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <br>    <span class="hljs-keyword">from</span> course<br>    <span class="hljs-keyword">where</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span>(<br>    	<span class="hljs-keyword">select</span> <span class="hljs-operator">*</span><br>        <span class="hljs-keyword">from</span> sc<br>        <span class="hljs-keyword">where</span> sc.cno<span class="hljs-operator">=</span>course.cno <span class="hljs-keyword">and</span> sc.sno<span class="hljs-operator">=</span>student.sno<br>    )<br>);<br></code></pre></td></tr></table></figure>
+<p>查询至少选修了学生1选修的全部课程的学生号码</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">select</span> sno<br><span class="hljs-keyword">from</span> sc scx<br><span class="hljs-keyword">where</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span>(<br>	<span class="hljs-keyword">select</span> <span class="hljs-operator">*</span><br>    <span class="hljs-keyword">from</span> sc scy<br>    <span class="hljs-keyword">where</span> scy.sno<span class="hljs-operator">=</span><span class="hljs-number">1</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span>(<br>    	<span class="hljs-keyword">select</span> <span class="hljs-operator">*</span><br>        <span class="hljs-keyword">from</span> sc scz<br>        <span class="hljs-keyword">where</span> scz.sno<span class="hljs-operator">=</span>scx.sno <span class="hljs-keyword">and</span> scz.cno<span class="hljs-operator">=</span>scy.cno<br>    )<br>);<br></code></pre></td></tr></table></figure>
+<h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据查询</td>
+<td>select</td>
+</tr>
+<tr>
+<td>数据定义</td>
+<td>create drop alter</td>
+</tr>
+<tr>
+<td>数据操纵</td>
+<td>insert update delete</td>
+</tr>
+<tr>
+<td>数据控制</td>
+<td>grant revoke</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> 表名()<br><span class="hljs-keyword">values</span>()<br><br><span class="hljs-keyword">update</span> 表名<br><span class="hljs-keyword">set</span> <br><span class="hljs-keyword">where</span><br><br><span class="hljs-keyword">delete</span><br><span class="hljs-keyword">from</span> 表名<br><span class="hljs-keyword">where</span><br></code></pre></td></tr></table></figure>
+<p>在查询定义操纵中，只有create table，drop table，alter table 有table</p>
+<p>alter对表中的列操作的时候统一加上column</p>
+<h2 id="第四章-数据库安全性"><a href="#第四章-数据库安全性" class="headerlink" title="第四章 数据库安全性"></a>第四章 数据库安全性</h2><h3 id="1-数据库安全性"><a href="#1-数据库安全性" class="headerlink" title="1.数据库安全性"></a>1.数据库安全性</h3><p>数据库的安全性是指保护数据库以防止不合法使用所造成的数据泄漏、更改、破坏</p>
+<p>三类计算机安全性问题：</p>
+<ul>
+<li>技术安全类</li>
+<li>管理安全类</li>
+<li>政策法律类</li>
+</ul>
+<h3 id="2-数据库的安全性控制"><a href="#2-数据库的安全性控制" class="headerlink" title="2.数据库的安全性控制"></a>2.数据库的安全性控制</h3><p>主要包括用户身份鉴别、多层存取控制、审计、视图、数据加密</p>
+<p>先进行身份鉴别，然后再进行自主存取控制和强制存取控制，进一步进行推理控制（防止低级别用户可以推导出来），后面还可以加入一系列故事</p>
+<h3 id="3-存取控制"><a href="#3-存取控制" class="headerlink" title="3.存取控制"></a>3.存取控制</h3><p>存取控制主要包括定义用户权限和合法权限检查两部分</p>
+<p>用户权限定义和合法权检查机制一起组成了 DBMS的安全子系统</p>
+<p>C2级数据库管理系统支持自主存取控制（DAC），B1级数据库管理系统支持强制存取控制（MAC）</p>
+<p>两种方式的简单定义：</p>
+<ul>
+<li>自主存取控制：用户对于不同的数据库对象有不同的存取权限，不同的用户对同一对象也有不同的权限，而且用户还可将拥有的权限转授给其他用户</li>
+<li>强制存取控制：每一个数据库对象被标以一定的密集，每个用户被授予某一个级别的许可证，对于任意一个对象，只有具有合法许可证的用户才可以存取</li>
+</ul>
+<h3 id="4-自主存取控制方法"><a href="#4-自主存取控制方法" class="headerlink" title="4.自主存取控制方法"></a>4.自主存取控制方法</h3><p>用户权限由数据库对象（对象可以是更加细粒度的列）和操作类型两个要素组成</p>
+<p>对于数据本身的存储控制权限可以通过授权和收回来完成，对于数据库模式的创建的权限在定义用户时获得</p>
+<h4 id="1）授权和收回"><a href="#1）授权和收回" class="headerlink" title="1）授权和收回"></a>1）授权和收回</h4><figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">grant</span> 权限,权限<br><span class="hljs-keyword">on</span> 对象类型 对象名,对象类型 对象名<br><span class="hljs-keyword">to</span> 用户，用户<br><span class="hljs-keyword">with</span> <span class="hljs-keyword">grant</span> option<br></code></pre></td></tr></table></figure>
+<p>权限可以是单个权限如select,update,也可以是全部all previleges，也可以对单独的某些属性如update(sno)</p>
+<p>用户可以是单个也可以是多个具体用户，也可以是全体用户public</p>
+<p>with grant option 表示可以传播此权限，即可以递归授予给其他用户，但不可授予给父辈</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">revoke</span> 权限,权限<br><span class="hljs-keyword">on</span> 对象类型 对象名，对象类型 对象名<br><span class="hljs-keyword">from</span> 用户，用户 cascade<br></code></pre></td></tr></table></figure>
+<p>cascade级联收回，即将该用户授予给其他用户的该权限收回，注意只收回直接或间接从该用户得到的权限</p>
+<p>得名自主存取控制：用户可以自主地决定将数据的存取权限授予给何人，将授予的权限授予给何人</p>
+<p>对于创建模式的权限，通过创建用户时实现</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">create</span> <span class="hljs-keyword">user</span> username [<span class="hljs-keyword">with</span>] [DBA<span class="hljs-operator">|</span>RESOURCE<span class="hljs-operator">|</span><span class="hljs-keyword">CONNECT</span>]<br></code></pre></td></tr></table></figure>
+<p>未指定则为connect，connect不能创建用户，不能创建模式，不能创建基本表，只能登录，使用授权的权限</p>
+<p>resource可以创建基本表和视图，但不能创建模式和用户</p>
+<p>DBA超级用户，干啥都行</p>
+<p>数据库角色——权限的集合，可以用于简化授权过程</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">create</span> role 角色名;<br><br><span class="hljs-keyword">grant</span> 权限<br><span class="hljs-keyword">on</span> 对象类型 对象名<br><span class="hljs-keyword">to</span> 角色;<br><br><span class="hljs-keyword">grant</span> 角色,角色<br><span class="hljs-keyword">to</span> 角色,用户<br><span class="hljs-keyword">with</span> admin option<br><span class="hljs-operator">/</span><span class="hljs-operator">/</span>每个职工分配只查看自己记录的权限<br><span class="hljs-keyword">grant</span> <span class="hljs-keyword">select</span> <br><span class="hljs-keyword">on</span> 职工<br><span class="hljs-keyword">where</span> <span class="hljs-keyword">user</span>()<span class="hljs-operator">=</span>name<br><span class="hljs-keyword">to</span> <span class="hljs-keyword">all</span><br></code></pre></td></tr></table></figure>
+<p>with admin option表示获得该权限的角色或用户可以递归授权给其他角色</p>
+<p>角色的权限=本身权限+其他角色赋予的权限</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">revoke</span> 权限<br><span class="hljs-keyword">on</span> 对象类型 对象<br><span class="hljs-keyword">from</span> 角色<br></code></pre></td></tr></table></figure>
+<h3 id="5-强制存取控制"><a href="#5-强制存取控制" class="headerlink" title="5.强制存取控制"></a>5.强制存取控制</h3><p>为什么有？在自主存取控制下仍存在数据的无意泄漏，如A将某些数据存取权限给B，但只想让B本人操纵，但B可以拷贝自身权限内的副本，不征得A同一传播该副本，根本原因是自主存取控制只对数据的存取权限来进行安全控制，而数据本身并无安全性标记</p>
+<p>在强制存取控制中，DBMS所管理的全部实体被分为主体和客体两大类：</p>
+<p>（1）主体：系统中的活动实体，包括数据库管理的实际用户，以及代表各用户的进程，</p>
+<p>（2）客体：系统中的被动实体，是受主体操纵的，包括基本表，视图，索引等</p>
+<p>（3）敏感度标记：对于主体和客体，DBMS为它们每个实例（值）指派一个敏感度标记</p>
+<p> 主体的敏感度标记称为许可证级别（Clearance Level）</p>
+<p> 客体的敏感度标记称为密级（Classification Level）</p>
+<p>强制存取控制规则（大于才能读，小于才能写）</p>
+<p> (1) 仅当主体的许可证级别大于或等于客体的密级时，该主体才能读取相应的客体</p>
+<p> (2) 仅当主体的许可证级别等于客体的密级时，该主体才能写相应的客体</p>
+<p>优点：</p>
+<ul>
+<li>保证更高程度的安全性</li>
+<li>用户不能直接感知或进行控制</li>
+<li>适用于对数据有严格而固定密级分类的部门：军事部门、 政府部门</li>
+</ul>
+<h4 id="为什么强制存取控制提供了更高级别的数据库安全性？"><a href="#为什么强制存取控制提供了更高级别的数据库安全性？" class="headerlink" title="为什么强制存取控制提供了更高级别的数据库安全性？"></a>为什么强制存取控制提供了更高级别的数据库安全性？</h4><p>正确答案: 强制存取控制（MAC）是对数据本身进行密级标记，无论数据如何复制，标记与数据是一个不可分的整体，只有符合密级标记要求的用户才可以操纵数据，从而提供了更高级别的安全性。</p>
+<h4 id="强制存取的特点"><a href="#强制存取的特点" class="headerlink" title="强制存取的特点"></a>强制存取的特点</h4><p>1）B1 级（0.5 分） 2）每一个数据对象被标以一定的密级（0.5 分） 3）每一个用户也被授予某一个级别的许可证（0.5 分） 4）对于任意一个对象，只有具有合法许可证的用户才可以存取（0.5 分）</p>
+<h4 id="强制存取控制规则"><a href="#强制存取控制规则" class="headerlink" title="强制存取控制规则"></a>强制存取控制规则</h4><p> 1）仅当主体的许可证级别大于或等于客体的密级时，该主体才能读取相应的 客体（1 分） 2）仅当主体的许可证级别小于或等于客体的密级时，该主体才能写相应的客 体（1 分） 防止高许可证级别的主体恶意降低高密级客体导致数据泄露（2 分）</p>
+<h3 id="6-视图与安全性"><a href="#6-视图与安全性" class="headerlink" title="6.视图与安全性"></a>6.视图与安全性</h3><p>视图自动对数据提供一定程度的安全保护</p>
+<h3 id="7-审计"><a href="#7-审计" class="headerlink" title="7.审计"></a>7.审计</h3><h4 id="什么是数据库的审计功能，为什么要提供审计功能"><a href="#什么是数据库的审计功能，为什么要提供审计功能" class="headerlink" title="什么是数据库的审计功能，为什么要提供审计功能"></a>什么是数据库的审计功能，为什么要提供审计功能</h4><p>（1） 定义：审计功能是把用户对数据库的所有操作自动记录下来放入审计日志（audit log）中。</p>
+<p>（2） 原因：审计员可以利用审计日志监控数据库中各种行为，重现导致数据库现有状况的一系列事件，找出非法存取数据的人、时间和内容。</p>
+<h3 id="8-其他"><a href="#8-其他" class="headerlink" title="8.其他"></a>8.其他</h3><p>数据加密：存储加密和传输加密</p>
+<p>推理控制：避免用户利用其能够访问的数据推知更高密集的数据</p>
+<p>隐蔽信道：避免用户利用反馈信息使高安全等级信息流向低安全等级</p>
+<p>。。。</p>
+<h2 id="第五章-数据库完整性"><a href="#第五章-数据库完整性" class="headerlink" title="第五章 数据库完整性"></a>第五章 数据库完整性</h2><h3 id="1-数据库的完整性"><a href="#1-数据库的完整性" class="headerlink" title="1.数据库的完整性"></a>1.数据库的完整性</h3><p>数据库的完整性是指数据的正确性和相容性</p>
+<p>正确性指数据是符合现实语义、符合实际情况的，相容性指数据库同一对象在不同关系表中的数据是符合逻辑的</p>
+<p>对比完整性和安全性</p>
+<p>安全性——坏</p>
+<p>完整性——蠢</p>
+<p>安全性是为了防止数据库中存在不符合语义，不正确的数据，（为了维护完整性，数据库需要实现完整性约束——实体、参照、用户自定义，需要提供完整性检查方法，进行违约处理），安全性保护数据库防止恶意破坏和非法获取（MAC、DAC等技术）</p>
+<h3 id="2-实体完整性"><a href="#2-实体完整性" class="headerlink" title="2.实体完整性"></a>2.实体完整性</h3><p>含义：若属性A是基本关系R的主属性，则其不能取空值</p>
+<p>定义方法：建表时设置列级完整性和表级完整性</p>
+<figure class="highlight n1ql"><table><tr><td class="code"><pre><code class="hljs n1ql">sno char(10) <span class="hljs-keyword">primary</span> <span class="hljs-keyword">key</span>,<br><br><span class="hljs-keyword">primary</span> <span class="hljs-keyword">key</span>(cno,sno)<br></code></pre></td></tr></table></figure>
+<p>完整性检查和违约处理：</p>
+<ol>
+<li>检查主码值是否唯一，不唯一则拒绝插入或者修改</li>
+<li>检查主码的各个属性是否为空，一个为空则拒绝插入或者修改</li>
+</ol>
+<p>实现方法：全表扫描（借助索引++效率）</p>
+<h3 id="3-参照完整性"><a href="#3-参照完整性" class="headerlink" title="3.参照完整性"></a>3.参照完整性</h3><p>含义：若属性F是基本关系R的外码，它与基本关系S的主码K~S~相对应，则对于R中每个元组在F上的值必须：</p>
+<ul>
+<li>或者取控制</li>
+<li>或者等于S中某个元组的主码值</li>
+</ul>
+<p>定义方法：表级完整性</p>
+<figure class="highlight isbl"><table><tr><td class="code"><pre><code class="hljs isbl"><span class="hljs-variable">foreign</span> <span class="hljs-function"><span class="hljs-title">key</span>(<span class="hljs-variable">sno</span>) <span class="hljs-variable"><span class="hljs-class">references</span></span> <span class="hljs-title">student</span>(<span class="hljs-variable">sno</span>)</span><br></code></pre></td></tr></table></figure>
+<p>完整性检查和违约处理</p>
+<p>当被参照表和参照表进行增删改操作时有可能破坏参照完整性，必须检查以保证相容性</p>
+<p>违约处理方法</p>
+<p>1）拒绝执行（no action）一般为默认操作</p>
+<p>2）级联操作 当被参照表某元组被删，级联删除所有不一致的元组</p>
+<p>3）设置为空值  不一致时被参照表中外码设置为空</p>
+<p>违约处理方法选择：如下对不同操作进行不同选择</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">foreign</span> key(...) <span class="hljs-keyword">references</span> student(..)<br><span class="hljs-keyword">on</span> <span class="hljs-keyword">delete</span> casade<br><span class="hljs-keyword">on</span> <span class="hljs-keyword">update</span> <span class="hljs-keyword">no</span> action<br></code></pre></td></tr></table></figure>
+<p>对于参照完整性，除了定义外码，还应定义外码列是否允许空值，因为外码可能作为主属性不支持为空</p>
+<h3 id="4-用户自定义的完整性"><a href="#4-用户自定义的完整性" class="headerlink" title="4.用户自定义的完整性"></a>4.用户自定义的完整性</h3><p>为了满足语义要求</p>
+<h4 id="1）属性上的约束条件"><a href="#1）属性上的约束条件" class="headerlink" title="1）属性上的约束条件"></a>1）属性上的约束条件</h4><ul>
+<li>列值非空(not null)</li>
+<li>列值唯一(unique)</li>
+<li>检查是否满足某个条件表达式(check)</li>
+</ul>
+<p>unique是自带要求不为空的</p>
+<p>check要求满足括号内的条件</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">check</span>(Ssex <span class="hljs-keyword">in</span>(<span class="hljs-string">&#x27;男&#x27;</span>,<span class="hljs-string">&#x27;女&#x27;</span>))<br><span class="hljs-keyword">check</span>(grade<span class="hljs-operator">&lt;</span><span class="hljs-number">12</span>)<br></code></pre></td></tr></table></figure>
+<p>完整性检查和违约处理：在向表中插入元组或者修改属性的值时，DBMS检查是否满足，不满足则拒绝执行</p>
+<h4 id="2）元组上的约束条件"><a href="#2）元组上的约束条件" class="headerlink" title="2）元组上的约束条件"></a>2）元组上的约束条件</h4><p>将check作为表级约束即可，涉及多个属性</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">check</span>(Ssex<span class="hljs-operator">=</span><span class="hljs-string">&#x27;女&#x27;</span><span class="hljs-keyword">or</span> Sname <span class="hljs-keyword">not</span> <span class="hljs-keyword">like</span> <span class="hljs-string">&#x27;Ms.%&#x27;</span>)<br></code></pre></td></tr></table></figure>
+<p>完整性检查和违约处理：在向表中插入元组或者修改属性的值时，DBMS检查是否满足，不满足则拒绝执行</p>
+<h3 id="5-完整性约束命名子句"><a href="#5-完整性约束命名子句" class="headerlink" title="5.完整性约束命名子句"></a>5.完整性约束命名子句</h3><figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">constraint</span> 完整性约束条件名 完整性约束条件<br><span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> sc(<br>	sno <span class="hljs-type">char</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">constraint</span> c1 <span class="hljs-keyword">check</span>(sno <span class="hljs-keyword">between</span> <span class="hljs-number">9000</span> <span class="hljs-keyword">and</span> <span class="hljs-number">9999</span>),<br>    sname <span class="hljs-type">char</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">constraint</span> c2 <span class="hljs-keyword">not</span> <span class="hljs-keyword">null</span>,<br>    <span class="hljs-keyword">constraint</span> c3 <span class="hljs-keyword">primary</span> key(sno)<br>);<br></code></pre></td></tr></table></figure>
+<p>修改完整性约束限制的时候可以先去掉原先的完整性约束，再加上新的完整性约束</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> Student <span class="hljs-keyword">drop</span> <span class="hljs-keyword">constraint</span> c1;<br><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> Student <span class="hljs-keyword">add</span> <span class="hljs-keyword">constraint</span> c1 <span class="hljs-keyword">check</span>(...)<br></code></pre></td></tr></table></figure>
+<p>断言和触发器建议直接看P167开始的几页</p>
+<h2 id="第7章-数据库设计"><a href="#第7章-数据库设计" class="headerlink" title="第7章 数据库设计"></a>第7章 数据库设计</h2><p>注意画E-R图的时候联系也有属性也要画，注意合并手段</p>
+<h3 id="数据库设计概述"><a href="#数据库设计概述" class="headerlink" title="数据库设计概述"></a>数据库设计概述</h3><p>数据库设计的特点：</p>
+<ul>
+<li>数据库建设的基本规律：三分技术，七分管理，十二分数据</li>
+<li>结构设计和处理设计相结合</li>
+</ul>
+<p>数据库设计的基本步骤：</p>
+<ul>
+<li>需求分析：整个设计的基础，最困难和耗费时间的一步。准确了解与分析用户需求（信息要求、处理要求、安全性和完整性要求）</li>
+<li>概念结构设计：对用户需求进行综合、归纳、抽象，形成独立于具体DBMS的概念模型</li>
+<li>逻辑结构设计：将概念模型转换为某个DBMS支持的数据模型，并优化</li>
+<li>物理结构设计：为逻辑数据模型选取最适合应用环境的物理结构（包括存储结构和存取方法）</li>
+<li>数据库实施：建立数据库，编写与调试应用程序，试运行</li>
+<li>数据库运行和维护：投入运行</li>
+</ul>
+<p>数据库结构设计的不同阶段形成数据库的各级模式，即： （]．）在概念设计阶段形成独立于机器特点，独立于各个DBMS产品的概念模式，在本篇中就是E一R图；（2）在逻辑设计阶段将E一R图转换成具体的数据库产品支持的数据模型，如关系模型，形成数据库逻辑模式，然后在基本表的基础上再建立必要的视图（Vi娜），形成数据的外模式；（3）在物理设计阶段，根据DBMS特点和处理的需要，进行物理存储安排，建立索引，形成数据库内模式。</p>
+<ol>
+<li>需求分析：准确了解与分析用户需求（包括数据与处理）。</li>
+</ol>
+<p>2) 概念结构设计：通过对用户需求进行综合、归纳与抽象，形成一个独立于具体DBMS的概念模型。<br>3) 逻辑结构设计：将概念结构转换为某个DBMS所支持的数据模型，并对其进行优化。<br>4) 数据库物理设计：为逻辑数据模型选取一个最适合应用环境的物理结构（包括存储结构和存取方法）。<br>5) 数据库实施：设计人员运用DBMS提供的数据语言、工具及宿主语言，根据逻辑设计和物理设计的结果建立数据库，编制与调试应用程序，组织数据入库，并进行试运行。<br>6)  数据库运行和维护：在数据库系统运行过程中对其进行评价、调整与修改。</p>
+<h3 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h3><p>调查的重点是数据和处理，需要获得用户对数据库的如下要求</p>
+<ul>
+<li>信息要求</li>
+<li>处理要求</li>
+<li>安全性与完整性要求</li>
+</ul>
+<p>数据字典</p>
+<p>数据字典是关于数据库中数据的描述，即元数据，而不是数据本身。数据字典在需求分析阶段建立，在设计的后续阶段充实完善。</p>
+<p>数据字典包括数据项，数据结构，数据流，数据存储，处理过程；</p>
+<p>数据字典的作用： 数据字典是关于数据库中数据的描述，在需求分析阶段建立，是下一步进行概念设计的基础，并在数据库设计过程中不断修改、充实、完善。</p>
+<ul>
+<li>数据项是不可再分的数据单元，其包括取值范围和数据项之间的联系，这些内容可以在逻辑设计阶段使用规范化理论进行优化</li>
+<li>数据结构由若干数据项、数据结构组成</li>
+<li>数据流是数据结构在系统内传输的路径</li>
+<li>数据存储时数据结构停留和保存的地方</li>
+<li>处理过程是简要描述处理逻辑</li>
+</ul>
+<h3 id="概念结构设计"><a href="#概念结构设计" class="headerlink" title="概念结构设计"></a>概念结构设计</h3><p>E-R图：实体（矩形），属性（椭圆），联系（无向边）</p>
+<p>联系分为：</p>
+<p>1）两个实体之间的联系：1:1，1:n，n:m</p>
+<p>对于实体集A中的每个实体，实体集B中最多有1个实体实体与之联系</p>
+<p>对于实体集A中的每个实体实体集B中有n个实体与之联系</p>
+<p>2）两个以上实体之间的联系</p>
+<p>3）单个实体型内的联系，也可以有1:1，1:n，n:m</p>
+<p>概念结构的设计</p>
+<p>1）实体与属性的划分元组</p>
+<ul>
+<li>属性不能有需要描述的性质，即属性不能再分，否则单独拿出来作为实体</li>
+<li>属性不能与其他实体之间由联系，注意这是概念模型的范畴</li>
+</ul>
+<p>2）E-R图的集成</p>
+<h3 id="逻辑结构的设计"><a href="#逻辑结构的设计" class="headerlink" title="逻辑结构的设计"></a>逻辑结构的设计</h3><p>E-R图向关系模式的转换</p>
+<p>1）1:1的联系可以转换为单独的关系，此时关系的属性包括两边的码和自己的属性，两边实体的码均为该关系的候选码；若与一侧合并，则需要带上另外一边的码和自己的属性</p>
+<p>2）1：n联系可以转换为单独的关系模式，此时关系的属性包括两边的码和自己的属性，n侧的码作为该关系的码；也可以与n侧合并</p>
+<p>3）m:n联系转换为一个关系模式，此时关系的属性包括两边的码和自己的属性，两边的码组成关系的码或码的一部分</p>
+<p>4）三个及以上实体的联系转换为一个关系模式，此时关系的属性包括两边的码和自己的属性，两边的码组成关系的码或码的一部分</p>
+<p>5）相同码的关系模式可以合并</p>
+<p>数据模型的优化，可以通过规范化理论完成，但不是规范化程度越高越好</p>
+<p>此外还包括设计用户子模式</p>
+<h3 id="物理结构设计"><a href="#物理结构设计" class="headerlink" title="物理结构设计"></a>物理结构设计</h3><p>分为两步</p>
+<ul>
+<li>确定数据库的物理结构，关系数据库中为存取方法和存储结构</li>
+<li>对物理结构进行评价</li>
+</ul>
+<p>存取方法是快速存取数据库中数据的技术</p>
+<h3 id="数据库的实施与维护"><a href="#数据库的实施与维护" class="headerlink" title="数据库的实施与维护"></a>数据库的实施与维护</h3><p>数据的试运行要求：</p>
+<ul>
+<li>数据先输入小批量做调试用，再逐步增加数据量，完成运行评价</li>
+<li>做好数据库存储和恢复工作</li>
+</ul>
+<p>数据库的运行和维护</p>
+<p>重组织和重构造</p>
+<ul>
+<li>重组织：数据库运行一段时间后，由于记录不断增删改，将会使数据库的物理存储情况变坏，降低数据的存取效率，使数据库性能下降，此时就需要进行重组织。重组织不改变逻辑和物理结构</li>
+<li>重构造：由于数据库应用环境变化，有些实体与实体间联系发生改变，原有设计不能满足需求，故需对数据库模式和内模式进行调整。重构造需要修改模式和内模式</li>
+</ul>
+<h2 id="第8章-数据库编程"><a href="#第8章-数据库编程" class="headerlink" title="第8章 数据库编程"></a>第8章 数据库编程</h2><h3 id="嵌入式SQL"><a href="#嵌入式SQL" class="headerlink" title="嵌入式SQL"></a>嵌入式SQL</h3><p>嵌入式SQL就是将SQL语句嵌入程序设计语言中，被嵌入的程序设计语言称为宿主语言，简称主语言</p>
+<p>嵌入式SQL一般采用预编译方式在预处理阶段翻译成主语言的函数调用</p>
+<p>嵌入式SQL语句与主语言之间的通信</p>
+<ul>
+<li>SQL通信区（SQLCA）向主语言传递SQL执行状态信息，主语言据此信息控制程序流程</li>
+<li>主语言向SQL提供参数——主变量</li>
+<li>SQL语句查询结果通过主变量和游标交给主语言</li>
+</ul>
+<p>1）SQL通信区</p>
+<p>SQL通信区存放SQL语句执行后的反馈信息</p>
+<p>通信区变量SQLCODE存放返回的代码，success或者错误代码以供调试</p>
+<p>2）主变量</p>
+<p>SQL语句中使用的主语言程序变量，一个主变量附带一个任选的指示变量，指示变量是个整型变量，用于指示主变量的值和条件</p>
+<p>SQL主变量名、指示变量名前加<code>:</code></p>
+<p>3）游标</p>
+<p>作用：SQL面向集合，一条SQL语句可以产生多条记录，而主语言是面向记录的，一组主变量一次只能存放一条记录，游标可以协调两种不同的处理方式</p>
+<p>游标是系统为用户开设的一个数据缓冲区</p>
+<h3 id="存储过程和函数"><a href="#存储过程和函数" class="headerlink" title="存储过程和函数"></a>存储过程和函数</h3><p>存储过程由过程化SQL书写，编译优化后存储在数据库服务器中</p>
+<p>存储过程的优点：</p>
+<ul>
+<li>运行效率高，提供了在服务器端快速执行SQL语句的有效途径</li>
+<li>降低了客户机和服务器的通信量，应用程序只需要传递调用存储过程的名字和参数</li>
+<li>方便实施企业规则，存储过程利于集中控制和维护，修改时无需修改其他应用程序</li>
+</ul>
+<p>“一次编译，终生使用”</p>
+<h2 id="第9章-关系查询处理和查询优化"><a href="#第9章-关系查询处理和查询优化" class="headerlink" title="第9章 关系查询处理和查询优化"></a>第9章 关系查询处理和查询优化</h2><h3 id="关系数据库系统的查询处理"><a href="#关系数据库系统的查询处理" class="headerlink" title="关系数据库系统的查询处理"></a>关系数据库系统的查询处理</h3><p>查询处理是DBMS执行查询语句的过程，任务是把查询语句转换为高效的查询执行计划</p>
+<p>查询处理步骤：</p>
+<ul>
+<li>查询分析，词法分析语法分析</li>
+<li>查询检查，语义分析，生成查询树等等</li>
+<li>查询优化，代数优化，物理优化</li>
+<li>查询执行，生成查询计划的代码并执行</li>
+</ul>
+<p>实现查询操作的算法</p>
+<p>1）选择操作的实现</p>
+<ul>
+<li>简单的全表扫描：按物理次序读到内存，依次检查，ok则输出</li>
+<li>索引扫描：通过索引先找到满足条件的元组指针，再通过元组指针在基本表找到元组</li>
+</ul>
+<p>相当选择率低时使用索引</p>
+<p>2）连接操作的实现</p>
+<ul>
+<li>嵌套循环算法：对外层循环的每个元组，检索内层循环的每个元组</li>
+<li><p>排序-合并算法：</p>
+<ul>
+<li>如果参与连接的表没有排好序，首先对student、sc表按连接属性sno排序</li>
+<li>取student表中第一个sno，依次扫描sc表中具有相同sno的元组，并将其连接</li>
+<li>当扫描到sno不同的第一个sc元组时，返回student表扫描他的下一个元组，再扫描sc表中具有相同sno的元组，将其连接</li>
+<li>重复上述步骤直到student表扫描完</li>
+</ul>
+</li>
+<li><p>索引连接算法</p>
+<ul>
+<li>sc表上建立sno的索引</li>
+<li>对student上的每个元组，由sno值通过sc的索引找到sc元组并连接，直到student表处理完</li>
+</ul>
+</li>
+<li><p>hash join算法</p>
+<ul>
+<li>划分阶段，创建hash表，对包含较少元组的表进行一遍处理，将表中元组按hash函数分散到hash表的桶中</li>
+<li>试探阶段，对另一个表进行一遍处理，也按同一个hash函数进行散列，找到合适的桶并与桶中匹配的元组连接</li>
+</ul>
+<p>排序合并要加上排序时间，但只需对两个表都扫描一遍，hash join要求能放入较小表到内存</p>
+</li>
+</ul>
+<h3 id="关系数据库系统的查询优化"><a href="#关系数据库系统的查询优化" class="headerlink" title="关系数据库系统的查询优化"></a>关系数据库系统的查询优化</h3><p>查询优化的优点：用户不必考虑如何最好地表达查询以获得较高的效率，且系统比用户做的更好</p>
+<p>计算查询代价时一般用查询处理读写块数作为衡量单位</p>
+<p>查询优化分为代数优化和物理优化</p>
+<h3 id="代数优化"><a href="#代数优化" class="headerlink" title="代数优化"></a>代数优化</h3><p>代数优化是通过对关系代数表达式的等价变换来提高查询效率</p>
+<p>启发式优化：</p>
+<ul>
+<li>选择运算应尽可能先做，这是最重要，最基本的一条，常常可使指向代价节约几个数量级，使中间结果大大变小</li>
+<li>把投影运算和选择运算同时进行</li>
+<li>把投影同其前或其后的双目运算结合</li>
+<li>把某些选择同在它前面执行的笛卡尔积结合为一个连接</li>
+<li>找到公共子表达式</li>
+</ul>
+<h3 id="物理优化"><a href="#物理优化" class="headerlink" title="物理优化"></a>物理优化</h3><p>物理优化指通过存取路径和底层操作算法的选择进行的优化</p>
+<p>选择存取路径的方法有：</p>
+<ul>
+<li>基于规则的启发式优化</li>
+<li>基于代价估计的优化</li>
+<li>两者结合的优化</li>
+</ul>
+<h2 id="第10章-数据库恢复技术"><a href="#第10章-数据库恢复技术" class="headerlink" title="第10章 数据库恢复技术"></a>第10章 数据库恢复技术</h2><h3 id="事务的基本概念"><a href="#事务的基本概念" class="headerlink" title="事务的基本概念"></a>事务的基本概念</h3><p>事务是用户定义的一个数据库操作序列，这些操作要么全做，要么全不做，是一个不可分割的工作单位。</p>
+<p>一般地，一个程序中包含多个事务</p>
+<p>事务的开始和结束可以由用户显式控制，事务以<code>begin transaction</code>开始，以<code>rollback</code>回滚（对数据库所有完成的操作全部撤销，回滚到事务开始的状态） 或者<code>commit</code>提交 结束</p>
+<p>事务的4个特性：ACID 原子性，一致性，隔离性，持续性</p>
+<ul>
+<li>原子性：不可分割</li>
+<li>一致性：事务执行的结果必须使数据库从一个一致性状态变到另一个一致性状态，如果只完成了事务的一部分操作，则是不一致的，一致性与原子性密切相关</li>
+<li>隔离性：一个事务的执行不能被其他事务干扰</li>
+<li>持续性：一个事务一旦提交，它对数据库中数据的改变应该是永久性的</li>
+</ul>
+<p>事务ACID特性破坏的原因：</p>
+<ul>
+<li>多个事务并行运行，不同事务的操作交叉执行</li>
+<li>事务在运行过程中被强行停止</li>
+</ul>
+<h3 id="数据库恢复概述"><a href="#数据库恢复概述" class="headerlink" title="数据库恢复概述"></a>数据库恢复概述</h3><p>数据库的恢复：DBMS必须具有将数据库从错误状态恢复到一已知的正确状态的功能</p>
+<p>保证事务的原子性、一致性、持续性</p>
+<h3 id="故障的类型"><a href="#故障的类型" class="headerlink" title="故障的类型"></a>故障的类型</h3><p>故障的影响：1.数据库本身被破坏 2. 数据不正确</p>
+<p>1）事务内部的故障</p>
+<p>事务内部的故障是事务程序的“意外”，如运算溢出等，事务故障意味着事务没有达到预期的终点（rollback或者commit）</p>
+<p>解决方法：强行回滚，做事务撤销（UNDO）</p>
+<p>2）系统故障（软故障</p>
+<p>系统故障指造成系统停止运转的任何事件，使得系统要重新启动</p>
+<p>不破坏数据库，但主存的数据丢失，如CPU故障，系统断电</p>
+<p>发送系统故障时，一些尚未完成的事务的结果可能已送入物理数据库，另一方面有些已完成的事务可能有一部分甚至全部留在缓冲区，尚未写回到磁盘上的物理数据库</p>
+<p>解决方法：撤销所有未完成的事务，重做（REDO）所有已提交的事务，以将数据库真正恢复到一致状态</p>
+<p>3）介质故障（硬故障——如磁盘损坏</p>
+<p>4）计算机病毒</p>
+<h3 id="恢复的实现技术"><a href="#恢复的实现技术" class="headerlink" title="恢复的实现技术"></a>恢复的实现技术</h3><p>1）数据转储</p>
+<p>数据库管理员定期地将整个数据库复制到磁盘、磁带或其他存储介质上保存起来的过程。备用的数据称为后备副本</p>
+<p>破坏后重装后备副本可以恢复到转储时的状态</p>
+<p>转储分为静态转储和动态转储。</p>
+<p>静态转储要求转储时无事务运行，一定是数据一致性的副本，但降低了数据库可用性（无事务运行的要求）</p>
+<p>动态转储不保证正确有效，通过建立日志文件，记录转储期间各事务对数据库的修改活动，可以将数据库恢复至某一时刻的正确状态</p>
+<p>转储分为海量转储和增量转储。海量一次全部，增量每次只转储上一次转储后更新过的数据</p>
+<p>故数据转储方法有2*2的组合：动态海量转储。。。</p>
+<p>2）登记日志文件</p>
+<p>日志文件是用来记录事务对数据库的更新操作的文件，有以记录为单位和以数据块为单位的记录</p>
+<p>日志文件作用：</p>
+<ul>
+<li>事务故障恢复和系统故障恢复必须用日志文件</li>
+<li>动态转储中后备副本和日志文件结合来恢复数据库</li>
+<li>静态转储中也可以建立日志以对故障发生时已完成的事务进行重做，对故障发生时未完成的事务进行撤销</li>
+</ul>
+<p>登记日志文件原则：</p>
+<ul>
+<li>登记的次序严格按并发事务执行的时间次序</li>
+<li>必须先写日志文件，后写数据库（若中间出错，只不过是多执行一次不必要的undo，不影响数据库的正确性，而若先写数据库再写日志，则若运行记录没有登记这个修改，就无法恢复这个修改了）</li>
+</ul>
+<h3 id="恢复策略"><a href="#恢复策略" class="headerlink" title="恢复策略"></a>恢复策略</h3><p>1）事务故障的恢复——撤销操作 系统自动完成</p>
+<p>具体：反向扫描日志文件，查找更新操作；对更新操作执行逆操作，继续反向扫描做同样处理，知道读到此事务开始标记</p>
+<p>2）系统故障的恢复——系统重新启动时自动完成</p>
+<p>发生原因：</p>
+<ul>
+<li><p>未完成事务对数据库的更新已写入数据库</p>
+</li>
+<li><p>已提交的事务对数据库的更新留在缓冲区中未写入数据库</p>
+</li>
+</ul>
+<p>具体：</p>
+<ul>
+<li>正向扫描日志文件，找出在故障发生前已经提交的事务，将其事务标识记入重做队列（REDO），找出故障发生时尚未完成的事务，将其事务标识记入撤销队列（UNDO）</li>
+<li>对撤销队列中的各个事务做撤销处理，反向扫描逆过程</li>
+<li>对重做队列中的各个事务做重做处理，正向扫描重做</li>
+</ul>
+<p>3）介质故障的恢复</p>
+<ul>
+<li>装入最新的数据库后备副本，恢复至最近一次转储时的一致性状态，对于动态转储的副本，还要结合日志文件做undo和redo操作</li>
+<li>装入相应的日志文件副本，重做已完成的事务。具体首先扫描日志文件，找出故障发生时已提交的事务的标识，将其记入重做队列，然后正向扫描日志文件，对重做队列中的所有事务进行重做处理</li>
+</ul>
+<h3 id="具有检查点的恢复技术"><a href="#具有检查点的恢复技术" class="headerlink" title="具有检查点的恢复技术"></a>具有检查点的恢复技术</h3><p>为什么需要检查点？</p>
+<ul>
+<li>搜索整个日志需要耗费大量的时间</li>
+<li>很多重做处理的事务已经将更新操作写入数据库了，然而恢复子系统又重做了，浪费时间</li>
+</ul>
+<p>新引入的结构：</p>
+<p>重新开始文件：记录日志文件中检查点记录地址</p>
+<p>日志文件中增加一类记录——检查点记录，这类记录包括：</p>
+<ul>
+<li>建立检查点时刻所有正在执行的事务清单</li>
+<li>这些事务最近一个日志记录的地址</li>
+</ul>
+<p>动态维护日志文件的方法：周期性执行建立检查点、保存数据库状态的操作，该操作具体而言：</p>
+<ul>
+<li>将日志缓冲区所有日志写入磁盘</li>
+<li>在日志文件中建立检查点记录</li>
+<li>将数据缓冲区所有数据写入</li>
+<li>将检查点记录在日志文件中的地址写入重新开始文件</li>
+</ul>
+<p>扫描点的好处：使用检查点技术可以改善恢复效率，在检查点之前提交的就无需重做。检查点的作用在于数据库在故障恢复过程中查找日志文件时寻找开始恢复的最近点，也就是说检查点之前日志所操作的数据已经被持久化到磁盘了</p>
+<p>对不同策略的解释：</p>
+<ul>
+<li>在检查点之前完成的，无需重做</li>
+<li>终点延续到检查点和系统故障之间的，它们对数据库所做的修改在故障发生时可能还在缓冲区，尚未写入数据库，故需重做</li>
+<li>终点延续到系统故障后的，撤销</li>
+</ul>
+<p>恢复的步骤：</p>
+<ul>
+<li>从重新开始文件中找到最后一个检查点记录地址，从而找到最后一个检查点记录</li>
+<li>建立undo-list和redo-list，先将检查点记录中的事务暂时放入undo-list</li>
+<li>从检查点开始正向扫描日志文件直到日志文件结束，如有新开始的事务，暂时放入undo-list，如有提交的事务，将其从undo-list移入redo-list</li>
+<li>对undo-list中每个事务执行undo，redo-list中每个事务执行redo</li>
+</ul>
+<h3 id="数据库镜像"><a href="#数据库镜像" class="headerlink" title="数据库镜像"></a>数据库镜像</h3><p>数据库镜像：根据数据库管理员要求，自动把整个数据库或其中的关键数据复制到另一个磁盘上，每当主数据库更新时，数据库管理系统自动把更新后的数据复制过去，保证一致性。用途：出现介质故障后，镜像可以继续提供使用，同时DBMS自动利用镜像磁盘数据进行数据库的恢复，而不需要关闭系统或重装数据库副本，没有出现故障时，镜像可用于并发操作</p>
+<p>缺点：运行效率</p>
+<h2 id="第11章-并发控制"><a href="#第11章-并发控制" class="headerlink" title="第11章 并发控制"></a>第11章 并发控制</h2><p>执行方式</p>
+<ul>
+<li>串行：一个一个执行</li>
+<li>交叉并发方式：单处理机系统上操作轮流执行</li>
+<li>同时并发方式：多处理机系统上同时运行多个事务</li>
+</ul>
+<p>以交叉并发方式为背景讨论并发控制</p>
+<h3 id="并发控制概述"><a href="#并发控制概述" class="headerlink" title="并发控制概述"></a>并发控制概述</h3><p>事务并发执行带来的问题：会产生<strong>多个事务</strong>同时存取<strong>同一数据</strong>的情况，可能会存取和存储<strong>不正确的数据</strong>，破坏事务<strong>隔离性</strong>和数据库的<strong>一致性</strong></p>
+<p>事务是并发控制的基本单位</p>
+<p>DBMS中并发控制机制的责任/任务：对并发操作进行正确调度，以保证事务的隔离性和一致性，保证事务的ACID特性</p>
+<p>并发控制机制：用正确的方式调度并发，使每一个用户事务的执行不受其他事务的干扰，从而避免数据的不一致性（但一些应用允许一些不一致性）</p>
+<p>并发操作带来的数据不一致性包括：</p>
+<ul>
+<li>丢失修改：A、B均在修改同一数据，但B的修改没有考虑到A的修改，而直接在原数据上进行了一次修改</li>
+<li>不可重复读：事务T1读取数据后，事务T2执行更新操作，使T1无法重现前一次读取结果（可能因为校对和验算又读了一次），具体可分为两次读取数据不一致，数据消失了，数据多了</li>
+<li>读脏数据：事务T1修改某一数据并将其写回磁盘，T2读取同一数据后，T1由于某些原因被撤销了，数据恢复为原来的数据，但T2读到的是事务T1撤销前进行修改后的数据</li>
+</ul>
+<p>下面介绍常见的并发控制方法——封锁</p>
+<h3 id="封锁"><a href="#封锁" class="headerlink" title="封锁"></a>封锁</h3><p>封锁/如何用封锁协议保证数据一致性：事务T在对某个数据对象操作前向系统发出请求，对其加锁，加锁后事务就对该数据对象有一定控制，在事务释放锁之前，其他事务不能更新该对象</p>
+<p>基本封锁类型：</p>
+<ul>
+<li>排他锁 X锁：对A加锁后只允许T读、改A，其他事务不能对A加任何锁</li>
+<li>共享锁 S锁：对A加锁后只允许T读，其他事务可以再加S锁，但不能加X锁</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>x</th>
+<th>s</th>
+<th>-</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>s</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>-（不加锁）</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="封锁协议"><a href="#封锁协议" class="headerlink" title="封锁协议"></a>封锁协议</h3><p>何时申请、持所时间等待的规则称之为封锁协议</p>
+<p>三层封锁协议：</p>
+<ul>
+<li>一级封锁协议：事务T在修改数据R之前必须先对其加X锁，事务结束后释放</li>
+<li>二级封锁协议：事务T在读取数据R之前必须对其加S锁，读取完后释放</li>
+<li>三级封锁协议：事务T在读取数据R之前必须对其加S锁，<strong>事务结束</strong>后释放</li>
+</ul>
+<p>一级：解决丢失修改</p>
+<p>二级：解决读脏数据，修改加了x锁，读取申请s锁的时候需要等待修改结束</p>
+<p>三级：解决不可重复读，读的事务运行过程中加s锁后，修改申请x锁需要等待</p>
+<p>封锁协议级别越高，一致性程度越高</p>
+<h3 id="活锁和死锁"><a href="#活锁和死锁" class="headerlink" title="活锁和死锁"></a>活锁和死锁</h3><p>1）活锁</p>
+<p>T1封锁数据R，T2等待数据R解锁，但系统一直批准给T3，T4…，T2可能永久等待，称之为活锁</p>
+<p>解决方法：采用FIFO方式，封锁子系统按封锁的先后次序排队，每次批准队列第一个事务获得锁</p>
+<p>2）死锁</p>
+<p>在数据库并发控制中，两个或多个事务同时处在相互等待状态</p>
+<p>T1锁R1，T2锁R2，T1请求R2，T2请求R1，形成死锁</p>
+<p>3）死锁的预防：一次封锁法，顺序封锁法</p>
+<p>4）死锁的诊断和解除</p>
+<p>超时法：若事务等待时间超过规定时限就认为死锁了</p>
+<p>等待图法：节点表示事务，边表示等待，A连接B表示A等待B，周期性生成等待图，若存在回路，则认为死锁</p>
+<h3 id="并发调度的可串行性"><a href="#并发调度的可串行性" class="headerlink" title="并发调度的可串行性"></a>并发调度的可串行性</h3><p>DBMS对并发事务的不同调度产生不同的结果，什么样的调度是正确的？</p>
+<p>可串行化调度：并发调度策略的结果与按某一次序（只要是一种就行）串行地执行这些事务结果相同时，称该调度策略为可串行调度</p>
+<p>可串行性是并发事务正确调度的准则，可串行化-&gt;正确调度</p>
+<p>可串行化调度的充分条件——冲突可串行化调度，但不是必要条件</p>
+<p>冲突操作：不同事务对同一个数据的读写操作和写写操作，Ri(x),Wj(x);Wi(x),Wj(x)</p>
+<p>不同事务的冲突操作和同一事务的两个操作是不能交换的</p>
+<p>判断冲突可串行化调度：一个调度sc在保证冲突操作的次序不变的情况下，通过交换两个事务不冲突操作的次序得到另一个调度sc’，如果sc‘是串行的，称sc为冲突可串行化的调度（将相同下标的放在一起，试图构造串行，最后加一句sc’是串行的，且上述变化均是保证冲突操作不变，交换两个不冲突操作次序得到，故是冲突可串行化调度）</p>
+<h4 id="两段锁协议"><a href="#两段锁协议" class="headerlink" title="两段锁协议"></a>两段锁协议</h4><p>两段锁协议是指所有事务必须分两个阶段对数据项加锁和解锁：</p>
+<ul>
+<li>在对任何数据进行读写操作前，首先要申请并获得对该数据的封锁</li>
+<li>在释放一个封锁后，事务不再申请和获得任何其他封锁</li>
+</ul>
+<p>可串行化调度的充分条件——两段锁，但不是必要</p>
+<p>扩展阶段：在读写之前，首先申请并获得任何数据项上的锁</p>
+<p>收缩阶段，在释放一个封锁后，事务不再申请和获得任何其他类型封锁</p>
+<p>两段锁协议和防止死锁的一次封锁法的异同：</p>
+<ul>
+<li>一次封锁法遵循两段锁协议，一次将所有要使用的数据全部加锁</li>
+<li>遵循两段所协议的事务可能发生死锁，因为不要求将所有使用的数据全部加锁</li>
+</ul>
+<h3 id="封锁的粒度"><a href="#封锁的粒度" class="headerlink" title="封锁的粒度"></a>封锁的粒度</h3><p>封锁对象的大小称为封锁的粒度，可以是逻辑单元，也可以是物理单元</p>
+<p>封锁对象的选择是封锁开销和并发度的权衡，一般的需要处理</p>
+<p>一个关系的大量元组的事务——粒度设置为关系</p>
+<p>多个关系的大量元组的事务——粒度设置为数据库</p>
+<p>少量元组——粒度设置为元组</p>
+<p>多粒度封锁：一个系统中同时支持多种封锁粒度供不同事务选择</p>
+<p>多粒度树（3层）</p>
+<figure class="highlight livescript"><table><tr><td class="code"><pre><code class="hljs livescript">   数据库<br>   /   <span class="hljs-string">\</span><br>关系<span class="hljs-number">1</span>  关系<span class="hljs-number">2</span><br> /<span class="hljs-string">\</span>     /<span class="hljs-string">\</span><br>元组...<br></code></pre></td></tr></table></figure>
+<p>多粒度封锁协议允许多粒度树中的每个节点被独立地加锁，对一个节点加锁意味着这个节点的所有后裔节点也被加上同样类型的锁，因此封锁方式有显式封锁和隐式封锁。两者等效用</p>
+<p>（为什么要引入意向锁）在多粒度封锁方法中，对对象加锁时需要检查上下级节点是否加冲突的锁，效率低下，引进意向锁概念，这样，DBMS就无需逐个检查下一级结点的显式封锁</p>
+<p>意向锁：如果对一个结点加意向锁，则说明该结点的下层结点正在被加锁，在任一结点加锁时，必须对它的上层结点加意向锁</p>
+<figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">上层结点1-意向锁<br>上层结点2-意向锁<br>该节点-某锁<br>下层节点-相同锁<br></code></pre></td></tr></table></figure>
+<p>IS锁：加该锁时表示它的后裔结点拟加S锁</p>
+<p>IX锁：加该锁时表示它的后裔结点拟加X锁</p>
+<p>SIX锁：如果对一个数据对象加SIX锁，表示对它加S锁，再加IX锁（同一个事务，所以可以），即SIX=S+IX</p>
+<p>强锁可以代替弱锁</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">偏序关系<br>	X<br>   SIX<br>S 		IX<br>	<span class="hljs-keyword">IS</span><br></code></pre></td></tr></table></figure>
+<p>相容矩阵</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>T1\T2</th>
+<th>S</th>
+<th>X</th>
+<th>IS</th>
+<th>IX</th>
+<th>SIX</th>
+<th>-</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S</td>
+<td>Y</td>
+<td>N</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>X</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>IS</td>
+<td>Y</td>
+<td>N</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>IX</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>SIX</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h2><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>模式：数据库中全体数据的逻辑结构和特征的描述</p>
+<p>外模式：XXX中部分数据的。。。。</p>
+<h3 id="试述数据库系统三级模式结构，这种结构的优点是什么？"><a href="#试述数据库系统三级模式结构，这种结构的优点是什么？" class="headerlink" title="试述数据库系统三级模式结构，这种结构的优点是什么？"></a>试述数据库系统三级模式结构，这种结构的优点是什么？</h3><p>数据库系统的三级模式结构由外模式、模式和内模式组成。外模式，是数据库局部数据的逻辑结构和特征的描述，是数据库用户的数据视图 模式，亦称逻辑模式，是数据库中全体数据的逻辑结构和特性的描述， 内模式，是数据在数据库系统内部的表示，即对数据的物理结构和存储方式的描述。</p>
+<p> 数据库系统的三级模式是对数据的三个抽象级别，它把数据的具体组织留给DBMS管理，使用户能逻辑抽象地处理数据，而不必关心数据在计算机中的表示和存储。 为了能够在内部实现这三个抽象层次的联系和转换，数据库系统在这三级模式之间提供了两层映象：外模式／模式映象和模式／内模式映象。正是这两层映象保证了数据库系统中的数据能够具有较高的逻辑独立性和物理独立性。</p>
+<h3 id="逻辑独立性和物理独立性"><a href="#逻辑独立性和物理独立性" class="headerlink" title="逻辑独立性和物理独立性"></a>逻辑独立性和物理独立性</h3><p>数据与程序的逻辑独立性：当模式改变时（例如增加新的关系、新的属性、改变属性的数据类型等），由数据库管理员对各个外模式／模式的映象作相应改变，可以使外模式保持不变。应用程序是依据数据的外模式编写的，从而应用程序不必修改，保证了数据与程序的逻辑独立性，简称数据的逻辑独立性。 数据与程序的物理独立性：当数据库的存储结构改变了，由数据库管理员对模式／内模式映象作相应改变，可以使模式保持不变，从而应用程序也不必改变。保证了数据与程序的物理独立性，简称数据的物理独立性。 数据库管理系统在三级模式之间提供的两层映象保证了数据库系统中的数据能够具有较高的逻辑独立性和物理独立性。</p>
+<h3 id="适合用文件系统而不是数据库系统的例子"><a href="#适合用文件系统而不是数据库系统的例子" class="headerlink" title="适合用文件系统而不是数据库系统的例子"></a>适合用文件系统而不是数据库系统的例子</h3><p>适用于文件系统而不是数据库系统的应用例子 数据的备份，软件或应用程序使用过程中的临时数据存储一般使用文件比较合适。 早期功能比较简单、比较固定的应用系统也适合用文件系统。 </p>
+<p>适用于数据库系统而非文件系统的应用例子 目前，几乎所有企业或部门的信息系统都以数据库系统为基础，都使用数据库。如一个工厂的管理信息系统（其中会包括许多子系统，如库存管理系统、物资采购系统、作业调度系统、设备管理系统、人事管理系统等等），还比如学校的学生管理系统，人事管理系统，图书馆的图书管理系统等等都适合用数据库系统</p>
+<h3 id="文件系统与数据库系统的区别和联系"><a href="#文件系统与数据库系统的区别和联系" class="headerlink" title="文件系统与数据库系统的区别和联系"></a>文件系统与数据库系统的区别和联系</h3><p>（1）文件系统与数据库系统的区别： 文件系统是面向某一应用程序的，其数据共享性差，冗余度大，数据独立性差， 文件中记录内部具有结构，但记录的结构和记录之间的联系固定在程序中，需要 程序员加以维护 数据库系统面向现实世界（一个部门、企业、跨国公司等），数据共享性高，冗 余度小，具有较高的物理独立性和一定的逻辑独立性，实现整体数据的结构化， 用数据模型描述，提供数据的安全性保护、完整性检查、并发控制和数据库恢复 能力。 </p>
+<p>（2）文件系统与数据库系统的联系： 文件系统与数据库系统都是计算机系统中管理数据的软件。  数据库中数据的组织和存储是通过操作系统中的文件系统来实现的，即数据 库是在文件系统基础上发展而来的  文件系统是操作系统的重要组成部分，DBMS 是独立于操作系统的软件。但 是 DBMS 是在操作系统的基础上实现的；</p>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>基本运算：选择投影并差笛卡尔积</p>
+<p>完整性：参照完整性为什么可以让外码为空？</p>
+<p>为空表示该值尚不确定，但要求外码不能是主属性，否则不能为空</p>
+<h3 id="什么叫数据字典，数据字典里面通常有哪些内容"><a href="#什么叫数据字典，数据字典里面通常有哪些内容" class="headerlink" title="什么叫数据字典，数据字典里面通常有哪些内容"></a>什么叫数据字典，数据字典里面通常有哪些内容</h3><p>数据字典是关系数据库管理系统内部的一组系统表，他记录了数据库中所有的定义信息，关系数据库管理系统在执行SQL的数据定义语句时，实际上就是在更新数据字典中的相应信息</p>
+<h2 id="第四五章"><a href="#第四五章" class="headerlink" title="第四五章"></a>第四五章</h2><h3 id="试述数据库完整性和安全性的联系和区别。"><a href="#试述数据库完整性和安全性的联系和区别。" class="headerlink" title="试述数据库完整性和安全性的联系和区别。"></a>试述数据库完整性和安全性的联系和区别。</h3><p>答：（1）数据库的完整性和安全性是两个不同的概念。数据库的完整性是指数据的正确性和相容性，是为了防止数据库中存在不符合语义的、不正确的数据；数据库的安全性是指保护数据库防止恶意破坏和非法存取。（2）其联系是两者都是对数据库中的数据的控制，各自所实现的功能不同。</p>
+<h3 id="DBMS的完整性控制机制应具有哪些功能？"><a href="#DBMS的完整性控制机制应具有哪些功能？" class="headerlink" title="DBMS的完整性控制机制应具有哪些功能？"></a>DBMS的完整性控制机制应具有哪些功能？</h3><p>正确答案: DBMS的完整性控制机制应具有三个方面的功能： 1. 定义功能，即提供定义完整性约束条件的机制。 2. 检查功能，即检查用户发出的操作请求是否违背了完整性约束条件。 3. 违约反应：如果发现用户的操作请求使数据违背了完整性约束条件，则采取一定的动作来保证数据的完整性。</p>
+<h2 id="第八章"><a href="#第八章" class="headerlink" title="第八章"></a>第八章</h2><h3 id="在嵌入式SQL中是如何解决数据库工作单元与源程序工作单元之间通信的？"><a href="#在嵌入式SQL中是如何解决数据库工作单元与源程序工作单元之间通信的？" class="headerlink" title="在嵌入式SQL中是如何解决数据库工作单元与源程序工作单元之间通信的？"></a>在嵌入式SQL中是如何解决数据库工作单元与源程序工作单元之间通信的？</h3><p>正确答案: 数据库工作单元与源程序工作单元之间的通信主要包括： （1）SQL通信区SQLCA，用来向主语言传递SQL语句的执行状态信息，使主语言能够根据此信息控制程序流程。 （2）主变量（Host Variable），1）用来实现主语言向SQL语句提供参数。 2）将SQL语句查询数据库的结果交主语言进一步处理 （3）游标（Cursor），解决集合性操作语言与过程性操作语言的不匹配通过游标逐一获取记录，并赋给主变量，交由主语言进一步处理。</p>
+<h3 id="在嵌入式SQL中是如何协调SQL语言的集合处理方式和主语言的单记录处理方式的？"><a href="#在嵌入式SQL中是如何协调SQL语言的集合处理方式和主语言的单记录处理方式的？" class="headerlink" title="在嵌入式SQL中是如何协调SQL语言的集合处理方式和主语言的单记录处理方式的？"></a>在嵌入式SQL中是如何协调SQL语言的集合处理方式和主语言的单记录处理方式的？</h3><p>正确答案: 用游标来协调这两种不同的处理方式。游标区是系统为用户开设的一个数据缓冲区，存放SQL语句的执行结果，每个游标区都有一个名字。用户可以通过游标逐一获取记录，并赋给主变量，交由主语言进一步处理。</p>
+<h3 id="试述事务的概念和事务的4个特性。"><a href="#试述事务的概念和事务的4个特性。" class="headerlink" title="试述事务的概念和事务的4个特性。"></a>试述事务的概念和事务的4个特性。</h3><p>答：<strong>事务</strong>：用户定义的一个数据库操作序列，这些操作要么全做，要么全不做，是一个不可分割的工作单位。</p>
+<p>事务具有4个特性：原子性、一致性、隔离性和持续性。</p>
+<p><strong>原子性</strong>：事务是数据库的逻辑工作单位，事务中包括的诸操作要么都做，要么都不做。</p>
+<p><strong>一致性</strong>：事务执行的结果必须是使数据库从一个一致性状态变到另一个一致性状态。</p>
+<p><strong>隔离性</strong>：一个事务的执行不能被其他事务干扰，即一个事物的内部操作及使用的数据对其他并发事务是隔离的，并发执行的各个事务之间不能互相干扰。</p>
+<p><strong>持续性</strong>：一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其执行结果有任何影响。</p>
+<p>评分细则：事务的概念记1分；4个特性每个记1分。</p>
+<h3 id="查询优化按照优化层次可以分为哪两种？分别解释两种查询优化的具体含义。"><a href="#查询优化按照优化层次可以分为哪两种？分别解释两种查询优化的具体含义。" class="headerlink" title="查询优化按照优化层次可以分为哪两种？分别解释两种查询优化的具体含义。"></a>查询优化按照优化层次可以分为哪两种？分别解释两种查询优化的具体含义。</h3><p>答：查询优化按照优化层次可分为代数优化和物理优化。</p>
+<p>代数优化是指通过对关系代数表达式的等价变换来提高查询效率。</p>
+<p>物理优化是指通过选择高效合理的操作算法或存取路径来求得优化的查询计划，达到查询优化的目标。</p>
+<h3 id="什么是两段锁协议？遵守两段锁协议的事务可能会发生死锁吗？试举例说明。"><a href="#什么是两段锁协议？遵守两段锁协议的事务可能会发生死锁吗？试举例说明。" class="headerlink" title="什么是两段锁协议？遵守两段锁协议的事务可能会发生死锁吗？试举例说明。"></a>什么是两段锁协议？遵守两段锁协议的事务可能会发生死锁吗？试举例说明。</h3><p>答：两段锁协议是指所有事务必须分成两个阶段对数据项加锁和解锁，即：（1）在对任何数据进行读、写操作之前，事务首先要申请并获得对该数据的封锁；（2）在释放一个封锁之后，事务不再申请和获得任何其他封锁。</p>
+<p>遵守两段锁协议的事务可能发生死锁。举例如下</p>
+<p><img src="/2023/02/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E4%B9%A0/clip_image002.gif" alt="img"></p>
+<h3 id="数据库的设计一般分为哪几个阶段？用一句话概括每个阶段的工作"><a href="#数据库的设计一般分为哪几个阶段？用一句话概括每个阶段的工作" class="headerlink" title="数据库的设计一般分为哪几个阶段？用一句话概括每个阶段的工作"></a>数据库的设计一般分为哪几个阶段？用一句话概括每个阶段的工作</h3><ul>
+<li>需求分析：准确了解和分析用户需求</li>
+<li>概念模型设计：对需求分析结果进行综合归纳抽象，形成独立于具体DBMS的概念模型</li>
+<li>逻辑模型设计：为概念模型选择DBMS支持的数据模型，并优化</li>
+<li>物理模型设计：为数据模型选择合适的物理模型，包括存储结构和存取方式</li>
+<li>数据库实施：利用DBMS提供的数据库语言、工具、宿主语言，利用逻辑设计和物理设计的结果建立数据库，编制和建立应用程序，组织数据入库，进行试运行</li>
+<li>数据库运行与维护：在数据库运行过程中对数据库进行评价修改完善</li>
+</ul>
+<h3 id="在数据库的查询优化中，什么是代数优化？什么是物理优化？"><a href="#在数据库的查询优化中，什么是代数优化？什么是物理优化？" class="headerlink" title="在数据库的查询优化中，什么是代数优化？什么是物理优化？"></a>在数据库的查询优化中，什么是代数优化？什么是物理优化？</h3><p>代数优化是对关系代数表达式进行等价变换带来的优化</p>
+<p>物理优化是对存取路径和底层算法的选择进行的优化</p>
+<h3 id="并发操作可能会产生哪几类数据不一致？用什么方法可以避免各种不一致的情况？"><a href="#并发操作可能会产生哪几类数据不一致？用什么方法可以避免各种不一致的情况？" class="headerlink" title="并发操作可能会产生哪几类数据不一致？用什么方法可以避免各种不一致的情况？"></a>并发操作可能会产生哪几类数据不一致？用什么方法可以避免各种不一致的情况？</h3><p>丢失修改、不可重复读、读到脏数据</p>
+<p>三级封锁协议</p>
+<ol>
+<li>事务T在修改数据R之前加X锁，事务结束后释放</li>
+<li>事务T在读取数据R之前加S锁，读取完毕后释放</li>
+<li>事务T在读取数据R之前加S锁，事务结束后释放</li>
+</ol>
+<h3 id="在并发控制中，封锁协议是指什么？"><a href="#在并发控制中，封锁协议是指什么？" class="headerlink" title="在并发控制中，封锁协议是指什么？"></a>在并发控制中，封锁协议是指什么？</h3><p>事务在对数据进行操作之前，先向系统申请对其加锁，在获得锁后事务对该数据有了一定的控制，从而其他事务不能更新此对象，直到释放锁</p>
+<h3 id="在数据库恢复中使用检查点有什么好处？"><a href="#在数据库恢复中使用检查点有什么好处？" class="headerlink" title="在数据库恢复中使用检查点有什么好处？"></a>在数据库恢复中使用检查点有什么好处？</h3><p>使用检查点技术可以改善恢复效率，在检查点之前提交的事务的修改一定写入数据库，故无需对其进行重做操作</p>
+<h3 id="举例说明连接操作的排序-合并实现方法"><a href="#举例说明连接操作的排序-合并实现方法" class="headerlink" title="举例说明连接操作的排序-合并实现方法"></a>举例说明连接操作的排序-合并实现方法</h3><p>以sc和student表为例</p>
+<p>首先若基本表未排好序，进行排序，对sc和student均按照sno进行排序</p>
+<p>取student表中第一个元组，在sc表中扫描与其sno一致的元组并连接</p>
+<p>当遇到第一个sno不一致的元组，取下一个student中元组并继续进行扫描，直到student中元组均讨论完</p>
+<h3 id="在数据库设计时，什么是数据字典？数据字典中通常有哪些内容？"><a href="#在数据库设计时，什么是数据字典？数据字典中通常有哪些内容？" class="headerlink" title="在数据库设计时，什么是数据字典？数据字典中通常有哪些内容？"></a>在数据库设计时，什么是数据字典？数据字典中通常有哪些内容？</h3><p>数据字典是数据库关于数据的描述，是元数据而不是数据本身，其包括数据项、数据结构、数据流、数据存储、处理过程</p>
+<h3 id="什么是死锁？如何解决死锁问题？"><a href="#什么是死锁？如何解决死锁问题？" class="headerlink" title="什么是死锁？如何解决死锁问题？"></a>什么是死锁？如何解决死锁问题？</h3><p>死锁：事务T1在对象R1上加锁，事务T2在对象R2上加锁，后T1请求封锁R2，T2请求封锁R1，此时两个事务均在等待对方，形成死锁，解决死锁的方法：1.超时法，如果一个事务的等待时间超过规定的时限，就认为形成了死锁2. 等待图法，以事务为节点，以等待关系为边，若形成回路，则形成死锁</p>
+<h3 id="在基于检查点的数据库恢复技术中，检查点记录的内容应该包括"><a href="#在基于检查点的数据库恢复技术中，检查点记录的内容应该包括" class="headerlink" title="在基于检查点的数据库恢复技术中，检查点记录的内容应该包括"></a>在基于检查点的数据库恢复技术中，检查点记录的内容应该包括</h3><ol>
+<li>建立检查点时刻正在运行事务的清单</li>
+<li>这些事务最近一次日志记录的地址</li>
+</ol>
+<h3 id="什么是视图？使用视图有什么好处？"><a href="#什么是视图？使用视图有什么好处？" class="headerlink" title="什么是视图？使用视图有什么好处？"></a>什么是视图？使用视图有什么好处？</h3><p>视图是一个或几个基本表导出的虚表，在数据库中只存储视图的定义而不具体存储其数据，好处有：</p>
+<ul>
+<li>视图能简化用户的操作</li>
+<li>使用视图可以清晰地表达查询</li>
+<li>提供了多种看待同一对象的角度</li>
+<li>为重构数据库一定程度上提供了逻辑独立性</li>
+<li>为机密数据提供安全保护</li>
+</ul>
+<h3 id="发生介质故障时，应该如何恢复数据库？"><a href="#发生介质故障时，应该如何恢复数据库？" class="headerlink" title="发生介质故障时，应该如何恢复数据库？"></a>发生介质故障时，应该如何恢复数据库？</h3><p>首先装入最近一次转储的后备副本，若为动态转储，需要借助日志文件进行undo和redo操作将数据库恢复到一致性状态</p>
+<p>具体而言正向扫描日志文件，若在故障方式前已经完成的事务，加入redo队列，未完成的事务加入undo队列，然后分别做重做和撤销</p>
+<p>然后装入相应的日志文件副本，正向扫描日志文件，找到事务发送时已提交的事务的标记，加入到redo队列，做重做处理</p>
+<h3 id="什么是数据库的审计？它有什么作用？"><a href="#什么是数据库的审计？它有什么作用？" class="headerlink" title="什么是数据库的审计？它有什么作用？"></a>什么是数据库的审计？它有什么作用？</h3><p>审计是指数据库自动将所做的所有操作记录到审计日志中。通过审计日志，管理员可以监控数据库所进行的操作，对异常操作进行重现，找出非法存取数据的人世间和内容</p>
+<h3 id="为什么要引进意向锁？-意向锁的含义是什么？"><a href="#为什么要引进意向锁？-意向锁的含义是什么？" class="headerlink" title="为什么要引进意向锁？ 意向锁的含义是什么？"></a>为什么要引进意向锁？ 意向锁的含义是什么？</h3><p>正确答案: 引进意向锁是为了提高封锁子系统的效率。在多粒度封锁方法中一个数据对象可能以两种方式加锁—显式封锁和隐式封锁。因此系统在对某一数据对象加锁时不仅要检查该数据对象上有无（显式和隐式）封锁与之冲突；还要检查其所有上级结点和所有下级结点，看申请的封锁是否与这些结点上的（显式和隐式）封锁冲突；显然，这样的检查方法效率很低。为此引进了意向锁。</p>
+<h3 id="试述活锁的产生原因和解决方法"><a href="#试述活锁的产生原因和解决方法" class="headerlink" title="试述活锁的产生原因和解决方法"></a>试述活锁的产生原因和解决方法</h3><p>正确答案: 活锁产生的原因：当一系列封锁不能按照其先后顺序执行时，就可能导致一些事务无限期等待某个封锁，从而导致活锁。 避免活锁的简单方法是采用先来先服务的策略。当多个事务请求封锁同一数据对象时，封锁子系统按请求封锁的先后次序对事务排队，数据对象上的锁一旦释放就批准申请队列中第一个事务获得锁。</p>
+]]></content>
   </entry>
   <entry>
     <title>algorithm</title>
@@ -2213,809 +3033,6 @@
 <p>类似于整数变换那题，也是树的层数未知，所以可以用变量控制层数慢慢加大，可以采用无优先级运算问题的类似框架去解这道题，不同的是这题随着层数的加大分支数也加大了，剪枝策略是当前考虑的项不能大于23，看看代码就差不多~</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> N=<span class="hljs-number">100</span>;<br><span class="hljs-type">int</span> n;<span class="hljs-comment">//需要得到的数</span><br><span class="hljs-type">int</span> x[N];<span class="hljs-comment">//加法链数组</span><br><span class="hljs-type">int</span> k;<span class="hljs-comment">//控制层数</span><br><span class="hljs-function"><span class="hljs-type">bool</span> <span class="hljs-title">traceback</span><span class="hljs-params">(<span class="hljs-type">int</span> t)</span><span class="hljs-comment">//考虑加法链的第t项</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-keyword">if</span>(t==k)<br>    &#123;<br>        <span class="hljs-keyword">if</span>(x[k<span class="hljs-number">-1</span>]==n) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>    &#125;<br>    <span class="hljs-comment">//选择加法链中的两个相加得到第t项</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;t;i++)<br>    &#123;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=<span class="hljs-number">0</span>;j&lt;t;j++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(x[i]+x[j]&lt;=n)<span class="hljs-comment">//剪枝，该项要小于等于n</span><br>            &#123;<br>                x[t]=x[i]+x[j];<br>                <span class="hljs-keyword">if</span>(<span class="hljs-built_in">traceback</span>(t+<span class="hljs-number">1</span>))<br>                &#123;<br>                    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>                &#125;<br>            &#125;<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>&#125;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    cin&gt;&gt;n;<br>    x[<span class="hljs-number">0</span>]=<span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">for</span>(k=<span class="hljs-number">1</span>;k&lt;=n;k++)<span class="hljs-comment">//最多n层</span><br>    &#123;<br>        <span class="hljs-keyword">if</span>(<span class="hljs-built_in">traceback</span>(<span class="hljs-number">1</span>))<span class="hljs-comment">//这里得是1,因为如果是0会直接返回false</span><br>        &#123;<br>            cout&lt;&lt;k<span class="hljs-number">-1</span>&lt;&lt;endl;<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;k;i++)<br>            &#123;<br>                cout&lt;&lt;x[i]&lt;&lt;<span class="hljs-string">&quot; &quot;</span>;<br>            &#125;<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 <p>完结撒花🎉~</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>hot100</title>
-    <url>/2023/06/15/hot100/</url>
-    <content><![CDATA[<h3 id="构建回文串检测"><a href="#构建回文串检测" class="headerlink" title="构建回文串检测"></a>构建回文串检测</h3><p>回文：</p>
-<blockquote>
-<p>奇数项和偶数项分别指字符串中字符个数为奇数的项和字符个数为偶数的项</p>
-</blockquote>
-<p>如果截取的字符串是奇数，那么这个串是回文串要求hash后的字符只有一个个数为奇数，其他为偶数</p>
-<p>如果截取的字符串是偶数，那么这个串是回文串要求hash后的字符个数全为偶数</p>
-<p>替换就是把一个数的减少，另一个数的增加</p>
-<p>最多k次替换，</p>
-<p>考虑偶数，问题变成最少需要替换多少个字符才能将其变成偶数——调整奇数项，假设现在奇数项有2m项，将两个奇数项进行匹配，次数取较小的奇数项，故可知这个步骤所需的次数就是奇数项里最小的m个的个数的和sum（将数量最少的来匹配哪些多的字符），如果k小于sum，或者奇数项不是偶数个或者，则不是回文</p>
-<p>考虑奇数，选择数量最多的奇数项作为中心项，这样就不用将其进行匹配，然后对剩余的想进行偶数考虑的匹配</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">getmap</span><span class="hljs-params">(string s,unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp; mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;s.<span class="hljs-built_in">size</span>();i++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(mmap.<span class="hljs-built_in">find</span>(s[i])!=mmap.<span class="hljs-built_in">end</span>()) mmap[s[i]]++;<br>            <span class="hljs-keyword">else</span> mmap[s[i]]=<span class="hljs-number">1</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">getoutmost</span><span class="hljs-params">(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp;mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-type">int</span> maxi=<span class="hljs-number">-1</span>;<br>        unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;::iterator tmp=mmap.<span class="hljs-built_in">begin</span>();<br>        <span class="hljs-keyword">for</span>(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;::iterator it=mmap.<span class="hljs-built_in">begin</span>();it!=mmap.<span class="hljs-built_in">end</span>();it++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(it-&gt;second%<span class="hljs-number">2</span>&amp;&amp;it-&gt;second&gt;maxi)<br>            &#123;<br>                tmp=it;<br>                maxi=it-&gt;second;<br>            &#125;<br>        &#125;<br>        mmap.<span class="hljs-built_in">erase</span>(tmp);<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">deal</span><span class="hljs-params">(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp;mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        vector&lt;<span class="hljs-type">int</span>&gt; vtmp;<br>        <span class="hljs-type">int</span> sum=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> p:mmap)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(p.second%<span class="hljs-number">2</span>) vtmp.<span class="hljs-built_in">push_back</span>(p.second);<br>        &#125;<br>        <span class="hljs-keyword">if</span>(vtmp.<span class="hljs-built_in">size</span>()%<span class="hljs-number">2</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;<br>        <span class="hljs-keyword">else</span><br>        &#123;<br>            <span class="hljs-built_in">sort</span>(vtmp.<span class="hljs-built_in">begin</span>(),vtmp.<span class="hljs-built_in">end</span>());<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;vtmp.<span class="hljs-built_in">size</span>()/<span class="hljs-number">2</span>;i++)<br>            &#123;<br>                sum=sum+vtmp[i];<br>            &#125;<br>            <span class="hljs-keyword">return</span> sum;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">bool</span>&gt; <span class="hljs-title">canMakePaliQueries</span><span class="hljs-params">(string s, vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt;&amp; queries)</span> </span>&#123;<br>        vector&lt;<span class="hljs-type">bool</span>&gt; answer;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> p:queries)<br>        &#123;<br>            unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt; tmap;<br>            string tmp=s;<br>            <span class="hljs-type">int</span> st=p[<span class="hljs-number">0</span>];<br>            <span class="hljs-type">int</span> ed=p[<span class="hljs-number">1</span>];<br>            <span class="hljs-type">int</span> k=p[<span class="hljs-number">2</span>];<br>            <span class="hljs-type">int</span> sz=ed-st+<span class="hljs-number">1</span>;<br>            <span class="hljs-built_in">getmap</span>(s.<span class="hljs-built_in">substr</span>(st,sz),tmap);<br>            <span class="hljs-keyword">if</span>(sz%<span class="hljs-number">2</span>==<span class="hljs-number">1</span>)<br>            &#123;<br>                <span class="hljs-built_in">getoutmost</span>(tmap);<br>            &#125; <br>            <span class="hljs-type">int</span> res=<span class="hljs-built_in">deal</span>(tmap);<br>            <span class="hljs-keyword">if</span>(res==<span class="hljs-number">-1</span>||res&gt;k) answer.<span class="hljs-built_in">push_back</span>(<span class="hljs-literal">false</span>);<br>            <span class="hljs-keyword">else</span> answer.<span class="hljs-built_in">push_back</span>(<span class="hljs-literal">true</span>);<br>        &#125;<br>        <span class="hljs-keyword">return</span> answer;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>计网复习</title>
-    <url>/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<p>rt</p>
-<span id="more"></span>
-<h2 id="第四章-网络层数据平面"><a href="#第四章-网络层数据平面" class="headerlink" title="第四章 网络层数据平面"></a>第四章 网络层数据平面</h2><h4 id="路由器与链路层交换机的区别"><a href="#路由器与链路层交换机的区别" class="headerlink" title="路由器与链路层交换机的区别"></a>路由器与链路层交换机的区别</h4><p>路由器运行网络层而交换机不运行网络层，不处理网络层字段</p>
-<p>路由器根据网络层ip地址进行转发操作，而交换机根据mac地址进行转发操作</p>
-<h4 id="数据平面和控制平面"><a href="#数据平面和控制平面" class="headerlink" title="数据平面和控制平面"></a>数据平面和控制平面</h4><p>数据平面：将分组从路由器的输入接口转发到合适的输出接口</p>
-<p>路由：使用路由选择算法来决定从发送主机到目标主机的路径</p>
-<p>路由和转发的区别在于转发是路由器本地动作，时间短，硬件实现，而路由是网络范围内的逻辑，通常用软件实现，时间长</p>
-<h4 id="基于目的的转发与通用转发"><a href="#基于目的的转发与通用转发" class="headerlink" title="基于目的的转发与通用转发"></a>基于目的的转发与通用转发</h4><p>基于目的地的转发匹配操作只基于目标ip地址，操作包括转发</p>
-<p>通用转发的匹配操作基于协议栈上不同层与不同协议相关联的多个报头字段，操作包括转发，泛洪，修改，丢弃</p>
-<p>这些字段例如ip源地址，tcp源端口，源mac地址，不包括TTL字段，数据包长度字段，首部校验和</p>
-<p>流表和转发表的不同：传统方式仅包含IP报头字段以及相应输出链路接口，openflow流表包括：</p>
-<ul>
-<li>首部字段集合：用于匹配</li>
-<li>计数器集合：当分组与流表条目匹配时进行更新</li>
-<li>当分组匹配流表项时采用的动作集合</li>
-</ul>
-<h4 id="交换结构"><a href="#交换结构" class="headerlink" title="交换结构"></a>交换结构</h4><p>基于内存的交换结构</p>
-<p>基于总线的交换结构</p>
-<p>经互联网络的交换结构</p>
-<h4 id="两版TCP报文相似字段"><a href="#两版TCP报文相似字段" class="headerlink" title="两版TCP报文相似字段"></a>两版TCP报文相似字段</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>IPV4</th>
-<th>IPV6</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>版本</td>
-<td>版本</td>
-</tr>
-<tr>
-<td>服务类型</td>
-<td>流量类型</td>
-</tr>
-<tr>
-<td>数据包长度</td>
-<td>有效载荷长度</td>
-</tr>
-<tr>
-<td>协议</td>
-<td>下一个首部</td>
-</tr>
-<tr>
-<td>寿命</td>
-<td>跳限制</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4 id="路由聚集"><a href="#路由聚集" class="headerlink" title="路由聚集"></a>路由聚集</h4><p>路由聚集：ISP使用单个前缀为多个网络做广播，路由聚集能减少网络中通告的数量以及计算的代价</p>
-<h4 id="即插即用"><a href="#即插即用" class="headerlink" title="即插即用"></a>即插即用</h4><p>即插即用和零配置意味着该协议能自动配置主机的网络相关方面，以便将主机连接到网络中</p>
-<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154313361.png" alt="image-20230224154313361" style="zoom: 50%;"></p>
-<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154348036.png" alt="image-20230224154348036" style="zoom:50%;"></p>
-<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><p>发之前侦听，碰撞后jam</p>
-<h4 id="每路由器-基于逻辑上集中控制的控制平面"><a href="#每路由器-基于逻辑上集中控制的控制平面" class="headerlink" title="每路由器/基于逻辑上集中控制的控制平面"></a>每路由器/基于逻辑上集中控制的控制平面</h4><ul>
-<li>每路由器控制意味着一个路由算法在每个路由器中运行，每个路由器中都有一个路由组件通信以计算其转发表。在这种情况下，我们说网络控制和数据平面是以单一方式实现的，因为每个路由器作为一个独立的实体实现自己的控制和数据平面</li>
-<li>逻辑集中控制是指逻辑中央控制器计算和分配每个路由器使用的转发表，在这种情况下，数据平面在路由器中实现，控制平面是在中央服务器或多个服务器上实现</li>
-</ul>
-<h4 id="集中式和分布式路由选择算法的性质"><a href="#集中式和分布式路由选择算法的性质" class="headerlink" title="集中式和分布式路由选择算法的性质"></a>集中式和分布式路由选择算法的性质</h4><p>集中式通过网络全局知识计算源和目的地之间的最小成本。</p>
-<p>分布式方法任何节点都没有关于所有网络链路成本的完整信息。每个节点开始时只知道自己直连链路的成本，然后通过预期相邻节点进行计算和信息交换的迭代过程，节点逐步计算出到达目的地或一组目的地的最小成本路径</p>
-<h4 id="LS对比DV"><a href="#LS对比DV" class="headerlink" title="LS对比DV"></a>LS对比DV</h4><p>LS：使用完整的、全局的网络知识来计算源和目的地之间的最小成本路径</p>
-<p>DV：使用迭代、分布式的方法来计算最小成本路径，每个节点开始时只知道自己直连链路的成本，然后通过预期相邻节点进行计算和信息交换的迭代过程，节点逐步计算出到达目的地或一组目的地的最小成本路径</p>
-<h4 id="无穷计数问题"><a href="#无穷计数问题" class="headerlink" title="无穷计数问题"></a>无穷计数问题</h4><p>DV算法：当链路成本增加时，需要花很长时间才能收敛</p>
-<h4 id="AS"><a href="#AS" class="headerlink" title="AS"></a>AS</h4><p>为什么使用了不同的AS间和AS内协议？</p>
-<p>策略：在AS间，策略问题占主导地位，如一个AS的流量不能穿过另一个特定的AS。而在一个AS内部，一切都是在相同的控制名义下进行的</p>
-<p>规模：AS内部由于主机数量有限，可扩展性不是焦点问题。AS间需要处理大量网络或网络之间的路由选择的问题，规模问题需要考量</p>
-<p>性能：AS间路由面向策略，质量是次要的，而AS内关心质量</p>
-<p>AS是指一组路由器</p>
-<h4 id="ICMP"><a href="#ICMP" class="headerlink" title="ICMP"></a>ICMP</h4><p>traceroute使用：警告信息和不无法到达的目标端口ICMP消息</p>
-<p>ICMP常见的有，echo回显（ping），目标网络不可达，目标主机不可达，源抑制（拥塞控制）</p>
-<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2><h3 id="整个流程"><a href="#整个流程" class="headerlink" title="整个流程"></a>整个流程</h3><ul>
-<li><p>首先使用DHCP获取IP地址，DHCP请求报文封装在udp数据报，以太网帧中，且帧的目标地址为FF-FF-FF-FF，该帧在以太网中广播，后按照DHCP协议，计算机获得IP地址等信息</p>
-</li>
-<li><p>在发送http请求(www.baidu)前，需要知道该地址对应的ip地址，而DNS查询报文需要通过第一条路由器转发，故需要先通过ARP协议得到第一条路由器的mac地址，具体而言广播ARP查询报文，第一跳路由器单播回其mac地址</p>
-</li>
-<li>接下来将DNS查询报文封装到UDP中，封装到以太网帧中，通过第一跳路由器转发，中间利用ospf，rip，bgp等路由协议到达DNS服务器，服务器解封装后回复www.baidu.com的ip地址给客户端</li>
-<li>接下来客户端与服务器进行TCP的三次握手，握手后建立TCP连接，将http请求报文封装到tcp中，封装到ip中，封装到链路层帧中，发送给服务器，服务器应答，传送给客户机，客户抽取其中的文件显示网页</li>
-</ul>
-<h3 id="CSMA-CA"><a href="#CSMA-CA" class="headerlink" title="CSMA/CA"></a>CSMA/CA</h3><p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154008234.png" alt="image-20230224154008234"></p>
-<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154036195.png" alt="image-20230224154036195"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>数据库复习</title>
-    <url>/2023/02/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<p>rt</p>
-<span id="more"></span>
-<h1 id="数据库复习"><a href="#数据库复习" class="headerlink" title="数据库复习"></a>数据库复习</h1><h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><h3 id="group-by和select的问题"><a href="#group-by和select的问题" class="headerlink" title="group by和select的问题"></a>group by和select的问题</h3><p>所有select字段，都必须出现在group by中，例外：该字段为主键或该字段包含在聚集函数中</p>
-<p>对于一般的情况：</p>
-<p>示例一：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">select id, name from employee group by name;<br></code></pre></td></tr></table></figure>
-<p>其中id为主键，符合，故能够正常运行</p>
-<p>示例二：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">select name, sum(salary) from employee group by name;<br></code></pre></td></tr></table></figure>
-<p>salary在聚合函数中，符合，故能够正常运行</p>
-<p>示例三：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs mysql">select name,age, sum(salary) from employee group by name;<br></code></pre></td></tr></table></figure>
-<p>group by字段没有包含age， age不是主键，不符合，<strong>错误</strong></p>
-<blockquote>
-<p>对于select中字段必须在group by中出现，可理解为，若select字段中属性在相同组中取值不一，则数据库在查询时不知道选择赋予何值给该项</p>
-</blockquote>
-<h3 id="视图的相关内容"><a href="#视图的相关内容" class="headerlink" title="视图的相关内容"></a>视图的相关内容</h3><p>视图消解：从数据字典中取出视图的定义，把定义中的子查询和用户的查询结合起来，转换成等价的对基本表的查询，然后执行修正了的查询</p>
-<p>行列子集视图：由单个基本表导出，只是去掉了基本表的某些行和某些列，但保留了主码</p>
-<h3 id="试述关系数据库系统中视图的作用。是否所有的视图都可以更新？为什么？"><a href="#试述关系数据库系统中视图的作用。是否所有的视图都可以更新？为什么？" class="headerlink" title="试述关系数据库系统中视图的作用。是否所有的视图都可以更新？为什么？"></a>试述关系数据库系统中视图的作用。是否所有的视图都可以更新？为什么？</h3><p> 答：视图是从一个或几个基本表导出的表。视图本身不独立存储在数据库中，是 一个虚表。即数据库中只存放视图的定义而不存放视图对应的数据，这些数据仍存放在导出视图的基本表中。视图在概念上与基本表等同，用户可以如同基本表 那样使用视图，可以在视图上再定义视图。（3 分）不是。（1 分）视图是不实际 存储数据的虚表，因此对视图的更新，最终要转换为对基本表的更新。因为有些 视图的更新不能唯一地有意义地转换成对相应基本表的更新，所以，并不是所有 的视图都是可更新的。（2 分）</p>
-<ul>
-<li>视图能够简化用户的操作</li>
-<li>视图使用户能够以多种角度看待同一数据</li>
-<li>视图对重构数据库提供了一定程度的逻辑独立性</li>
-<li>视图能够对机密数据提供安全保护</li>
-<li>适当利用视图可以更清晰地表达查询</li>
-</ul>
-<h3 id="exists的问题"><a href="#exists的问题" class="headerlink" title="exists的问题"></a>exists的问题</h3><p>查询选修了全部课程的学生姓名</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">select</span> sname<br><span class="hljs-keyword">from</span> student<br><span class="hljs-keyword">where</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span>(<br>	<span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <br>    <span class="hljs-keyword">from</span> course<br>    <span class="hljs-keyword">where</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span>(<br>    	<span class="hljs-keyword">select</span> <span class="hljs-operator">*</span><br>        <span class="hljs-keyword">from</span> sc<br>        <span class="hljs-keyword">where</span> sc.cno<span class="hljs-operator">=</span>course.cno <span class="hljs-keyword">and</span> sc.sno<span class="hljs-operator">=</span>student.sno<br>    )<br>);<br></code></pre></td></tr></table></figure>
-<p>查询至少选修了学生1选修的全部课程的学生号码</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">select</span> sno<br><span class="hljs-keyword">from</span> sc scx<br><span class="hljs-keyword">where</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span>(<br>	<span class="hljs-keyword">select</span> <span class="hljs-operator">*</span><br>    <span class="hljs-keyword">from</span> sc scy<br>    <span class="hljs-keyword">where</span> scy.sno<span class="hljs-operator">=</span><span class="hljs-number">1</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span>(<br>    	<span class="hljs-keyword">select</span> <span class="hljs-operator">*</span><br>        <span class="hljs-keyword">from</span> sc scz<br>        <span class="hljs-keyword">where</span> scz.sno<span class="hljs-operator">=</span>scx.sno <span class="hljs-keyword">and</span> scz.cno<span class="hljs-operator">=</span>scy.cno<br>    )<br>);<br></code></pre></td></tr></table></figure>
-<h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>功能</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>数据查询</td>
-<td>select</td>
-</tr>
-<tr>
-<td>数据定义</td>
-<td>create drop alter</td>
-</tr>
-<tr>
-<td>数据操纵</td>
-<td>insert update delete</td>
-</tr>
-<tr>
-<td>数据控制</td>
-<td>grant revoke</td>
-</tr>
-</tbody>
-</table>
-</div>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> 表名()<br><span class="hljs-keyword">values</span>()<br><br><span class="hljs-keyword">update</span> 表名<br><span class="hljs-keyword">set</span> <br><span class="hljs-keyword">where</span><br><br><span class="hljs-keyword">delete</span><br><span class="hljs-keyword">from</span> 表名<br><span class="hljs-keyword">where</span><br></code></pre></td></tr></table></figure>
-<p>在查询定义操纵中，只有create table，drop table，alter table 有table</p>
-<p>alter对表中的列操作的时候统一加上column</p>
-<h2 id="第四章-数据库安全性"><a href="#第四章-数据库安全性" class="headerlink" title="第四章 数据库安全性"></a>第四章 数据库安全性</h2><h3 id="1-数据库安全性"><a href="#1-数据库安全性" class="headerlink" title="1.数据库安全性"></a>1.数据库安全性</h3><p>数据库的安全性是指保护数据库以防止不合法使用所造成的数据泄漏、更改、破坏</p>
-<p>三类计算机安全性问题：</p>
-<ul>
-<li>技术安全类</li>
-<li>管理安全类</li>
-<li>政策法律类</li>
-</ul>
-<h3 id="2-数据库的安全性控制"><a href="#2-数据库的安全性控制" class="headerlink" title="2.数据库的安全性控制"></a>2.数据库的安全性控制</h3><p>主要包括用户身份鉴别、多层存取控制、审计、视图、数据加密</p>
-<p>先进行身份鉴别，然后再进行自主存取控制和强制存取控制，进一步进行推理控制（防止低级别用户可以推导出来），后面还可以加入一系列故事</p>
-<h3 id="3-存取控制"><a href="#3-存取控制" class="headerlink" title="3.存取控制"></a>3.存取控制</h3><p>存取控制主要包括定义用户权限和合法权限检查两部分</p>
-<p>用户权限定义和合法权检查机制一起组成了 DBMS的安全子系统</p>
-<p>C2级数据库管理系统支持自主存取控制（DAC），B1级数据库管理系统支持强制存取控制（MAC）</p>
-<p>两种方式的简单定义：</p>
-<ul>
-<li>自主存取控制：用户对于不同的数据库对象有不同的存取权限，不同的用户对同一对象也有不同的权限，而且用户还可将拥有的权限转授给其他用户</li>
-<li>强制存取控制：每一个数据库对象被标以一定的密集，每个用户被授予某一个级别的许可证，对于任意一个对象，只有具有合法许可证的用户才可以存取</li>
-</ul>
-<h3 id="4-自主存取控制方法"><a href="#4-自主存取控制方法" class="headerlink" title="4.自主存取控制方法"></a>4.自主存取控制方法</h3><p>用户权限由数据库对象（对象可以是更加细粒度的列）和操作类型两个要素组成</p>
-<p>对于数据本身的存储控制权限可以通过授权和收回来完成，对于数据库模式的创建的权限在定义用户时获得</p>
-<h4 id="1）授权和收回"><a href="#1）授权和收回" class="headerlink" title="1）授权和收回"></a>1）授权和收回</h4><figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">grant</span> 权限,权限<br><span class="hljs-keyword">on</span> 对象类型 对象名,对象类型 对象名<br><span class="hljs-keyword">to</span> 用户，用户<br><span class="hljs-keyword">with</span> <span class="hljs-keyword">grant</span> option<br></code></pre></td></tr></table></figure>
-<p>权限可以是单个权限如select,update,也可以是全部all previleges，也可以对单独的某些属性如update(sno)</p>
-<p>用户可以是单个也可以是多个具体用户，也可以是全体用户public</p>
-<p>with grant option 表示可以传播此权限，即可以递归授予给其他用户，但不可授予给父辈</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">revoke</span> 权限,权限<br><span class="hljs-keyword">on</span> 对象类型 对象名，对象类型 对象名<br><span class="hljs-keyword">from</span> 用户，用户 cascade<br></code></pre></td></tr></table></figure>
-<p>cascade级联收回，即将该用户授予给其他用户的该权限收回，注意只收回直接或间接从该用户得到的权限</p>
-<p>得名自主存取控制：用户可以自主地决定将数据的存取权限授予给何人，将授予的权限授予给何人</p>
-<p>对于创建模式的权限，通过创建用户时实现</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">create</span> <span class="hljs-keyword">user</span> username [<span class="hljs-keyword">with</span>] [DBA<span class="hljs-operator">|</span>RESOURCE<span class="hljs-operator">|</span><span class="hljs-keyword">CONNECT</span>]<br></code></pre></td></tr></table></figure>
-<p>未指定则为connect，connect不能创建用户，不能创建模式，不能创建基本表，只能登录，使用授权的权限</p>
-<p>resource可以创建基本表和视图，但不能创建模式和用户</p>
-<p>DBA超级用户，干啥都行</p>
-<p>数据库角色——权限的集合，可以用于简化授权过程</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">create</span> role 角色名;<br><br><span class="hljs-keyword">grant</span> 权限<br><span class="hljs-keyword">on</span> 对象类型 对象名<br><span class="hljs-keyword">to</span> 角色;<br><br><span class="hljs-keyword">grant</span> 角色,角色<br><span class="hljs-keyword">to</span> 角色,用户<br><span class="hljs-keyword">with</span> admin option<br><span class="hljs-operator">/</span><span class="hljs-operator">/</span>每个职工分配只查看自己记录的权限<br><span class="hljs-keyword">grant</span> <span class="hljs-keyword">select</span> <br><span class="hljs-keyword">on</span> 职工<br><span class="hljs-keyword">where</span> <span class="hljs-keyword">user</span>()<span class="hljs-operator">=</span>name<br><span class="hljs-keyword">to</span> <span class="hljs-keyword">all</span><br></code></pre></td></tr></table></figure>
-<p>with admin option表示获得该权限的角色或用户可以递归授权给其他角色</p>
-<p>角色的权限=本身权限+其他角色赋予的权限</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">revoke</span> 权限<br><span class="hljs-keyword">on</span> 对象类型 对象<br><span class="hljs-keyword">from</span> 角色<br></code></pre></td></tr></table></figure>
-<h3 id="5-强制存取控制"><a href="#5-强制存取控制" class="headerlink" title="5.强制存取控制"></a>5.强制存取控制</h3><p>为什么有？在自主存取控制下仍存在数据的无意泄漏，如A将某些数据存取权限给B，但只想让B本人操纵，但B可以拷贝自身权限内的副本，不征得A同一传播该副本，根本原因是自主存取控制只对数据的存取权限来进行安全控制，而数据本身并无安全性标记</p>
-<p>在强制存取控制中，DBMS所管理的全部实体被分为主体和客体两大类：</p>
-<p>（1）主体：系统中的活动实体，包括数据库管理的实际用户，以及代表各用户的进程，</p>
-<p>（2）客体：系统中的被动实体，是受主体操纵的，包括基本表，视图，索引等</p>
-<p>（3）敏感度标记：对于主体和客体，DBMS为它们每个实例（值）指派一个敏感度标记</p>
-<p> 主体的敏感度标记称为许可证级别（Clearance Level）</p>
-<p> 客体的敏感度标记称为密级（Classification Level）</p>
-<p>强制存取控制规则（大于才能读，小于才能写）</p>
-<p> (1) 仅当主体的许可证级别大于或等于客体的密级时，该主体才能读取相应的客体</p>
-<p> (2) 仅当主体的许可证级别等于客体的密级时，该主体才能写相应的客体</p>
-<p>优点：</p>
-<ul>
-<li>保证更高程度的安全性</li>
-<li>用户不能直接感知或进行控制</li>
-<li>适用于对数据有严格而固定密级分类的部门：军事部门、 政府部门</li>
-</ul>
-<h4 id="为什么强制存取控制提供了更高级别的数据库安全性？"><a href="#为什么强制存取控制提供了更高级别的数据库安全性？" class="headerlink" title="为什么强制存取控制提供了更高级别的数据库安全性？"></a>为什么强制存取控制提供了更高级别的数据库安全性？</h4><p>正确答案: 强制存取控制（MAC）是对数据本身进行密级标记，无论数据如何复制，标记与数据是一个不可分的整体，只有符合密级标记要求的用户才可以操纵数据，从而提供了更高级别的安全性。</p>
-<h4 id="强制存取的特点"><a href="#强制存取的特点" class="headerlink" title="强制存取的特点"></a>强制存取的特点</h4><p>1）B1 级（0.5 分） 2）每一个数据对象被标以一定的密级（0.5 分） 3）每一个用户也被授予某一个级别的许可证（0.5 分） 4）对于任意一个对象，只有具有合法许可证的用户才可以存取（0.5 分）</p>
-<h4 id="强制存取控制规则"><a href="#强制存取控制规则" class="headerlink" title="强制存取控制规则"></a>强制存取控制规则</h4><p> 1）仅当主体的许可证级别大于或等于客体的密级时，该主体才能读取相应的 客体（1 分） 2）仅当主体的许可证级别小于或等于客体的密级时，该主体才能写相应的客 体（1 分） 防止高许可证级别的主体恶意降低高密级客体导致数据泄露（2 分）</p>
-<h3 id="6-视图与安全性"><a href="#6-视图与安全性" class="headerlink" title="6.视图与安全性"></a>6.视图与安全性</h3><p>视图自动对数据提供一定程度的安全保护</p>
-<h3 id="7-审计"><a href="#7-审计" class="headerlink" title="7.审计"></a>7.审计</h3><h4 id="什么是数据库的审计功能，为什么要提供审计功能"><a href="#什么是数据库的审计功能，为什么要提供审计功能" class="headerlink" title="什么是数据库的审计功能，为什么要提供审计功能"></a>什么是数据库的审计功能，为什么要提供审计功能</h4><p>（1） 定义：审计功能是把用户对数据库的所有操作自动记录下来放入审计日志（audit log）中。</p>
-<p>（2） 原因：审计员可以利用审计日志监控数据库中各种行为，重现导致数据库现有状况的一系列事件，找出非法存取数据的人、时间和内容。</p>
-<h3 id="8-其他"><a href="#8-其他" class="headerlink" title="8.其他"></a>8.其他</h3><p>数据加密：存储加密和传输加密</p>
-<p>推理控制：避免用户利用其能够访问的数据推知更高密集的数据</p>
-<p>隐蔽信道：避免用户利用反馈信息使高安全等级信息流向低安全等级</p>
-<p>。。。</p>
-<h2 id="第五章-数据库完整性"><a href="#第五章-数据库完整性" class="headerlink" title="第五章 数据库完整性"></a>第五章 数据库完整性</h2><h3 id="1-数据库的完整性"><a href="#1-数据库的完整性" class="headerlink" title="1.数据库的完整性"></a>1.数据库的完整性</h3><p>数据库的完整性是指数据的正确性和相容性</p>
-<p>正确性指数据是符合现实语义、符合实际情况的，相容性指数据库同一对象在不同关系表中的数据是符合逻辑的</p>
-<p>对比完整性和安全性</p>
-<p>安全性——坏</p>
-<p>完整性——蠢</p>
-<p>安全性是为了防止数据库中存在不符合语义，不正确的数据，（为了维护完整性，数据库需要实现完整性约束——实体、参照、用户自定义，需要提供完整性检查方法，进行违约处理），安全性保护数据库防止恶意破坏和非法获取（MAC、DAC等技术）</p>
-<h3 id="2-实体完整性"><a href="#2-实体完整性" class="headerlink" title="2.实体完整性"></a>2.实体完整性</h3><p>含义：若属性A是基本关系R的主属性，则其不能取空值</p>
-<p>定义方法：建表时设置列级完整性和表级完整性</p>
-<figure class="highlight n1ql"><table><tr><td class="code"><pre><code class="hljs n1ql">sno char(10) <span class="hljs-keyword">primary</span> <span class="hljs-keyword">key</span>,<br><br><span class="hljs-keyword">primary</span> <span class="hljs-keyword">key</span>(cno,sno)<br></code></pre></td></tr></table></figure>
-<p>完整性检查和违约处理：</p>
-<ol>
-<li>检查主码值是否唯一，不唯一则拒绝插入或者修改</li>
-<li>检查主码的各个属性是否为空，一个为空则拒绝插入或者修改</li>
-</ol>
-<p>实现方法：全表扫描（借助索引++效率）</p>
-<h3 id="3-参照完整性"><a href="#3-参照完整性" class="headerlink" title="3.参照完整性"></a>3.参照完整性</h3><p>含义：若属性F是基本关系R的外码，它与基本关系S的主码K~S~相对应，则对于R中每个元组在F上的值必须：</p>
-<ul>
-<li>或者取控制</li>
-<li>或者等于S中某个元组的主码值</li>
-</ul>
-<p>定义方法：表级完整性</p>
-<figure class="highlight isbl"><table><tr><td class="code"><pre><code class="hljs isbl"><span class="hljs-variable">foreign</span> <span class="hljs-function"><span class="hljs-title">key</span>(<span class="hljs-variable">sno</span>) <span class="hljs-variable"><span class="hljs-class">references</span></span> <span class="hljs-title">student</span>(<span class="hljs-variable">sno</span>)</span><br></code></pre></td></tr></table></figure>
-<p>完整性检查和违约处理</p>
-<p>当被参照表和参照表进行增删改操作时有可能破坏参照完整性，必须检查以保证相容性</p>
-<p>违约处理方法</p>
-<p>1）拒绝执行（no action）一般为默认操作</p>
-<p>2）级联操作 当被参照表某元组被删，级联删除所有不一致的元组</p>
-<p>3）设置为空值  不一致时被参照表中外码设置为空</p>
-<p>违约处理方法选择：如下对不同操作进行不同选择</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">foreign</span> key(...) <span class="hljs-keyword">references</span> student(..)<br><span class="hljs-keyword">on</span> <span class="hljs-keyword">delete</span> casade<br><span class="hljs-keyword">on</span> <span class="hljs-keyword">update</span> <span class="hljs-keyword">no</span> action<br></code></pre></td></tr></table></figure>
-<p>对于参照完整性，除了定义外码，还应定义外码列是否允许空值，因为外码可能作为主属性不支持为空</p>
-<h3 id="4-用户自定义的完整性"><a href="#4-用户自定义的完整性" class="headerlink" title="4.用户自定义的完整性"></a>4.用户自定义的完整性</h3><p>为了满足语义要求</p>
-<h4 id="1）属性上的约束条件"><a href="#1）属性上的约束条件" class="headerlink" title="1）属性上的约束条件"></a>1）属性上的约束条件</h4><ul>
-<li>列值非空(not null)</li>
-<li>列值唯一(unique)</li>
-<li>检查是否满足某个条件表达式(check)</li>
-</ul>
-<p>unique是自带要求不为空的</p>
-<p>check要求满足括号内的条件</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">check</span>(Ssex <span class="hljs-keyword">in</span>(<span class="hljs-string">&#x27;男&#x27;</span>,<span class="hljs-string">&#x27;女&#x27;</span>))<br><span class="hljs-keyword">check</span>(grade<span class="hljs-operator">&lt;</span><span class="hljs-number">12</span>)<br></code></pre></td></tr></table></figure>
-<p>完整性检查和违约处理：在向表中插入元组或者修改属性的值时，DBMS检查是否满足，不满足则拒绝执行</p>
-<h4 id="2）元组上的约束条件"><a href="#2）元组上的约束条件" class="headerlink" title="2）元组上的约束条件"></a>2）元组上的约束条件</h4><p>将check作为表级约束即可，涉及多个属性</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">check</span>(Ssex<span class="hljs-operator">=</span><span class="hljs-string">&#x27;女&#x27;</span><span class="hljs-keyword">or</span> Sname <span class="hljs-keyword">not</span> <span class="hljs-keyword">like</span> <span class="hljs-string">&#x27;Ms.%&#x27;</span>)<br></code></pre></td></tr></table></figure>
-<p>完整性检查和违约处理：在向表中插入元组或者修改属性的值时，DBMS检查是否满足，不满足则拒绝执行</p>
-<h3 id="5-完整性约束命名子句"><a href="#5-完整性约束命名子句" class="headerlink" title="5.完整性约束命名子句"></a>5.完整性约束命名子句</h3><figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">constraint</span> 完整性约束条件名 完整性约束条件<br><span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> sc(<br>	sno <span class="hljs-type">char</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">constraint</span> c1 <span class="hljs-keyword">check</span>(sno <span class="hljs-keyword">between</span> <span class="hljs-number">9000</span> <span class="hljs-keyword">and</span> <span class="hljs-number">9999</span>),<br>    sname <span class="hljs-type">char</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">constraint</span> c2 <span class="hljs-keyword">not</span> <span class="hljs-keyword">null</span>,<br>    <span class="hljs-keyword">constraint</span> c3 <span class="hljs-keyword">primary</span> key(sno)<br>);<br></code></pre></td></tr></table></figure>
-<p>修改完整性约束限制的时候可以先去掉原先的完整性约束，再加上新的完整性约束</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs SQL"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> Student <span class="hljs-keyword">drop</span> <span class="hljs-keyword">constraint</span> c1;<br><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> Student <span class="hljs-keyword">add</span> <span class="hljs-keyword">constraint</span> c1 <span class="hljs-keyword">check</span>(...)<br></code></pre></td></tr></table></figure>
-<p>断言和触发器建议直接看P167开始的几页</p>
-<h2 id="第7章-数据库设计"><a href="#第7章-数据库设计" class="headerlink" title="第7章 数据库设计"></a>第7章 数据库设计</h2><p>注意画E-R图的时候联系也有属性也要画，注意合并手段</p>
-<h3 id="数据库设计概述"><a href="#数据库设计概述" class="headerlink" title="数据库设计概述"></a>数据库设计概述</h3><p>数据库设计的特点：</p>
-<ul>
-<li>数据库建设的基本规律：三分技术，七分管理，十二分数据</li>
-<li>结构设计和处理设计相结合</li>
-</ul>
-<p>数据库设计的基本步骤：</p>
-<ul>
-<li>需求分析：整个设计的基础，最困难和耗费时间的一步。准确了解与分析用户需求（信息要求、处理要求、安全性和完整性要求）</li>
-<li>概念结构设计：对用户需求进行综合、归纳、抽象，形成独立于具体DBMS的概念模型</li>
-<li>逻辑结构设计：将概念模型转换为某个DBMS支持的数据模型，并优化</li>
-<li>物理结构设计：为逻辑数据模型选取最适合应用环境的物理结构（包括存储结构和存取方法）</li>
-<li>数据库实施：建立数据库，编写与调试应用程序，试运行</li>
-<li>数据库运行和维护：投入运行</li>
-</ul>
-<p>数据库结构设计的不同阶段形成数据库的各级模式，即： （]．）在概念设计阶段形成独立于机器特点，独立于各个DBMS产品的概念模式，在本篇中就是E一R图；（2）在逻辑设计阶段将E一R图转换成具体的数据库产品支持的数据模型，如关系模型，形成数据库逻辑模式，然后在基本表的基础上再建立必要的视图（Vi娜），形成数据的外模式；（3）在物理设计阶段，根据DBMS特点和处理的需要，进行物理存储安排，建立索引，形成数据库内模式。</p>
-<ol>
-<li>需求分析：准确了解与分析用户需求（包括数据与处理）。</li>
-</ol>
-<p>2) 概念结构设计：通过对用户需求进行综合、归纳与抽象，形成一个独立于具体DBMS的概念模型。<br>3) 逻辑结构设计：将概念结构转换为某个DBMS所支持的数据模型，并对其进行优化。<br>4) 数据库物理设计：为逻辑数据模型选取一个最适合应用环境的物理结构（包括存储结构和存取方法）。<br>5) 数据库实施：设计人员运用DBMS提供的数据语言、工具及宿主语言，根据逻辑设计和物理设计的结果建立数据库，编制与调试应用程序，组织数据入库，并进行试运行。<br>6)  数据库运行和维护：在数据库系统运行过程中对其进行评价、调整与修改。</p>
-<h3 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h3><p>调查的重点是数据和处理，需要获得用户对数据库的如下要求</p>
-<ul>
-<li>信息要求</li>
-<li>处理要求</li>
-<li>安全性与完整性要求</li>
-</ul>
-<p>数据字典</p>
-<p>数据字典是关于数据库中数据的描述，即元数据，而不是数据本身。数据字典在需求分析阶段建立，在设计的后续阶段充实完善。</p>
-<p>数据字典包括数据项，数据结构，数据流，数据存储，处理过程；</p>
-<p>数据字典的作用： 数据字典是关于数据库中数据的描述，在需求分析阶段建立，是下一步进行概念设计的基础，并在数据库设计过程中不断修改、充实、完善。</p>
-<ul>
-<li>数据项是不可再分的数据单元，其包括取值范围和数据项之间的联系，这些内容可以在逻辑设计阶段使用规范化理论进行优化</li>
-<li>数据结构由若干数据项、数据结构组成</li>
-<li>数据流是数据结构在系统内传输的路径</li>
-<li>数据存储时数据结构停留和保存的地方</li>
-<li>处理过程是简要描述处理逻辑</li>
-</ul>
-<h3 id="概念结构设计"><a href="#概念结构设计" class="headerlink" title="概念结构设计"></a>概念结构设计</h3><p>E-R图：实体（矩形），属性（椭圆），联系（无向边）</p>
-<p>联系分为：</p>
-<p>1）两个实体之间的联系：1:1，1:n，n:m</p>
-<p>对于实体集A中的每个实体，实体集B中最多有1个实体实体与之联系</p>
-<p>对于实体集A中的每个实体实体集B中有n个实体与之联系</p>
-<p>2）两个以上实体之间的联系</p>
-<p>3）单个实体型内的联系，也可以有1:1，1:n，n:m</p>
-<p>概念结构的设计</p>
-<p>1）实体与属性的划分元组</p>
-<ul>
-<li>属性不能有需要描述的性质，即属性不能再分，否则单独拿出来作为实体</li>
-<li>属性不能与其他实体之间由联系，注意这是概念模型的范畴</li>
-</ul>
-<p>2）E-R图的集成</p>
-<h3 id="逻辑结构的设计"><a href="#逻辑结构的设计" class="headerlink" title="逻辑结构的设计"></a>逻辑结构的设计</h3><p>E-R图向关系模式的转换</p>
-<p>1）1:1的联系可以转换为单独的关系，此时关系的属性包括两边的码和自己的属性，两边实体的码均为该关系的候选码；若与一侧合并，则需要带上另外一边的码和自己的属性</p>
-<p>2）1：n联系可以转换为单独的关系模式，此时关系的属性包括两边的码和自己的属性，n侧的码作为该关系的码；也可以与n侧合并</p>
-<p>3）m:n联系转换为一个关系模式，此时关系的属性包括两边的码和自己的属性，两边的码组成关系的码或码的一部分</p>
-<p>4）三个及以上实体的联系转换为一个关系模式，此时关系的属性包括两边的码和自己的属性，两边的码组成关系的码或码的一部分</p>
-<p>5）相同码的关系模式可以合并</p>
-<p>数据模型的优化，可以通过规范化理论完成，但不是规范化程度越高越好</p>
-<p>此外还包括设计用户子模式</p>
-<h3 id="物理结构设计"><a href="#物理结构设计" class="headerlink" title="物理结构设计"></a>物理结构设计</h3><p>分为两步</p>
-<ul>
-<li>确定数据库的物理结构，关系数据库中为存取方法和存储结构</li>
-<li>对物理结构进行评价</li>
-</ul>
-<p>存取方法是快速存取数据库中数据的技术</p>
-<h3 id="数据库的实施与维护"><a href="#数据库的实施与维护" class="headerlink" title="数据库的实施与维护"></a>数据库的实施与维护</h3><p>数据的试运行要求：</p>
-<ul>
-<li>数据先输入小批量做调试用，再逐步增加数据量，完成运行评价</li>
-<li>做好数据库存储和恢复工作</li>
-</ul>
-<p>数据库的运行和维护</p>
-<p>重组织和重构造</p>
-<ul>
-<li>重组织：数据库运行一段时间后，由于记录不断增删改，将会使数据库的物理存储情况变坏，降低数据的存取效率，使数据库性能下降，此时就需要进行重组织。重组织不改变逻辑和物理结构</li>
-<li>重构造：由于数据库应用环境变化，有些实体与实体间联系发生改变，原有设计不能满足需求，故需对数据库模式和内模式进行调整。重构造需要修改模式和内模式</li>
-</ul>
-<h2 id="第8章-数据库编程"><a href="#第8章-数据库编程" class="headerlink" title="第8章 数据库编程"></a>第8章 数据库编程</h2><h3 id="嵌入式SQL"><a href="#嵌入式SQL" class="headerlink" title="嵌入式SQL"></a>嵌入式SQL</h3><p>嵌入式SQL就是将SQL语句嵌入程序设计语言中，被嵌入的程序设计语言称为宿主语言，简称主语言</p>
-<p>嵌入式SQL一般采用预编译方式在预处理阶段翻译成主语言的函数调用</p>
-<p>嵌入式SQL语句与主语言之间的通信</p>
-<ul>
-<li>SQL通信区（SQLCA）向主语言传递SQL执行状态信息，主语言据此信息控制程序流程</li>
-<li>主语言向SQL提供参数——主变量</li>
-<li>SQL语句查询结果通过主变量和游标交给主语言</li>
-</ul>
-<p>1）SQL通信区</p>
-<p>SQL通信区存放SQL语句执行后的反馈信息</p>
-<p>通信区变量SQLCODE存放返回的代码，success或者错误代码以供调试</p>
-<p>2）主变量</p>
-<p>SQL语句中使用的主语言程序变量，一个主变量附带一个任选的指示变量，指示变量是个整型变量，用于指示主变量的值和条件</p>
-<p>SQL主变量名、指示变量名前加<code>:</code></p>
-<p>3）游标</p>
-<p>作用：SQL面向集合，一条SQL语句可以产生多条记录，而主语言是面向记录的，一组主变量一次只能存放一条记录，游标可以协调两种不同的处理方式</p>
-<p>游标是系统为用户开设的一个数据缓冲区</p>
-<h3 id="存储过程和函数"><a href="#存储过程和函数" class="headerlink" title="存储过程和函数"></a>存储过程和函数</h3><p>存储过程由过程化SQL书写，编译优化后存储在数据库服务器中</p>
-<p>存储过程的优点：</p>
-<ul>
-<li>运行效率高，提供了在服务器端快速执行SQL语句的有效途径</li>
-<li>降低了客户机和服务器的通信量，应用程序只需要传递调用存储过程的名字和参数</li>
-<li>方便实施企业规则，存储过程利于集中控制和维护，修改时无需修改其他应用程序</li>
-</ul>
-<p>“一次编译，终生使用”</p>
-<h2 id="第9章-关系查询处理和查询优化"><a href="#第9章-关系查询处理和查询优化" class="headerlink" title="第9章 关系查询处理和查询优化"></a>第9章 关系查询处理和查询优化</h2><h3 id="关系数据库系统的查询处理"><a href="#关系数据库系统的查询处理" class="headerlink" title="关系数据库系统的查询处理"></a>关系数据库系统的查询处理</h3><p>查询处理是DBMS执行查询语句的过程，任务是把查询语句转换为高效的查询执行计划</p>
-<p>查询处理步骤：</p>
-<ul>
-<li>查询分析，词法分析语法分析</li>
-<li>查询检查，语义分析，生成查询树等等</li>
-<li>查询优化，代数优化，物理优化</li>
-<li>查询执行，生成查询计划的代码并执行</li>
-</ul>
-<p>实现查询操作的算法</p>
-<p>1）选择操作的实现</p>
-<ul>
-<li>简单的全表扫描：按物理次序读到内存，依次检查，ok则输出</li>
-<li>索引扫描：通过索引先找到满足条件的元组指针，再通过元组指针在基本表找到元组</li>
-</ul>
-<p>相当选择率低时使用索引</p>
-<p>2）连接操作的实现</p>
-<ul>
-<li>嵌套循环算法：对外层循环的每个元组，检索内层循环的每个元组</li>
-<li><p>排序-合并算法：</p>
-<ul>
-<li>如果参与连接的表没有排好序，首先对student、sc表按连接属性sno排序</li>
-<li>取student表中第一个sno，依次扫描sc表中具有相同sno的元组，并将其连接</li>
-<li>当扫描到sno不同的第一个sc元组时，返回student表扫描他的下一个元组，再扫描sc表中具有相同sno的元组，将其连接</li>
-<li>重复上述步骤直到student表扫描完</li>
-</ul>
-</li>
-<li><p>索引连接算法</p>
-<ul>
-<li>sc表上建立sno的索引</li>
-<li>对student上的每个元组，由sno值通过sc的索引找到sc元组并连接，直到student表处理完</li>
-</ul>
-</li>
-<li><p>hash join算法</p>
-<ul>
-<li>划分阶段，创建hash表，对包含较少元组的表进行一遍处理，将表中元组按hash函数分散到hash表的桶中</li>
-<li>试探阶段，对另一个表进行一遍处理，也按同一个hash函数进行散列，找到合适的桶并与桶中匹配的元组连接</li>
-</ul>
-<p>排序合并要加上排序时间，但只需对两个表都扫描一遍，hash join要求能放入较小表到内存</p>
-</li>
-</ul>
-<h3 id="关系数据库系统的查询优化"><a href="#关系数据库系统的查询优化" class="headerlink" title="关系数据库系统的查询优化"></a>关系数据库系统的查询优化</h3><p>查询优化的优点：用户不必考虑如何最好地表达查询以获得较高的效率，且系统比用户做的更好</p>
-<p>计算查询代价时一般用查询处理读写块数作为衡量单位</p>
-<p>查询优化分为代数优化和物理优化</p>
-<h3 id="代数优化"><a href="#代数优化" class="headerlink" title="代数优化"></a>代数优化</h3><p>代数优化是通过对关系代数表达式的等价变换来提高查询效率</p>
-<p>启发式优化：</p>
-<ul>
-<li>选择运算应尽可能先做，这是最重要，最基本的一条，常常可使指向代价节约几个数量级，使中间结果大大变小</li>
-<li>把投影运算和选择运算同时进行</li>
-<li>把投影同其前或其后的双目运算结合</li>
-<li>把某些选择同在它前面执行的笛卡尔积结合为一个连接</li>
-<li>找到公共子表达式</li>
-</ul>
-<h3 id="物理优化"><a href="#物理优化" class="headerlink" title="物理优化"></a>物理优化</h3><p>物理优化指通过存取路径和底层操作算法的选择进行的优化</p>
-<p>选择存取路径的方法有：</p>
-<ul>
-<li>基于规则的启发式优化</li>
-<li>基于代价估计的优化</li>
-<li>两者结合的优化</li>
-</ul>
-<h2 id="第10章-数据库恢复技术"><a href="#第10章-数据库恢复技术" class="headerlink" title="第10章 数据库恢复技术"></a>第10章 数据库恢复技术</h2><h3 id="事务的基本概念"><a href="#事务的基本概念" class="headerlink" title="事务的基本概念"></a>事务的基本概念</h3><p>事务是用户定义的一个数据库操作序列，这些操作要么全做，要么全不做，是一个不可分割的工作单位。</p>
-<p>一般地，一个程序中包含多个事务</p>
-<p>事务的开始和结束可以由用户显式控制，事务以<code>begin transaction</code>开始，以<code>rollback</code>回滚（对数据库所有完成的操作全部撤销，回滚到事务开始的状态） 或者<code>commit</code>提交 结束</p>
-<p>事务的4个特性：ACID 原子性，一致性，隔离性，持续性</p>
-<ul>
-<li>原子性：不可分割</li>
-<li>一致性：事务执行的结果必须使数据库从一个一致性状态变到另一个一致性状态，如果只完成了事务的一部分操作，则是不一致的，一致性与原子性密切相关</li>
-<li>隔离性：一个事务的执行不能被其他事务干扰</li>
-<li>持续性：一个事务一旦提交，它对数据库中数据的改变应该是永久性的</li>
-</ul>
-<p>事务ACID特性破坏的原因：</p>
-<ul>
-<li>多个事务并行运行，不同事务的操作交叉执行</li>
-<li>事务在运行过程中被强行停止</li>
-</ul>
-<h3 id="数据库恢复概述"><a href="#数据库恢复概述" class="headerlink" title="数据库恢复概述"></a>数据库恢复概述</h3><p>数据库的恢复：DBMS必须具有将数据库从错误状态恢复到一已知的正确状态的功能</p>
-<p>保证事务的原子性、一致性、持续性</p>
-<h3 id="故障的类型"><a href="#故障的类型" class="headerlink" title="故障的类型"></a>故障的类型</h3><p>故障的影响：1.数据库本身被破坏 2. 数据不正确</p>
-<p>1）事务内部的故障</p>
-<p>事务内部的故障是事务程序的“意外”，如运算溢出等，事务故障意味着事务没有达到预期的终点（rollback或者commit）</p>
-<p>解决方法：强行回滚，做事务撤销（UNDO）</p>
-<p>2）系统故障（软故障</p>
-<p>系统故障指造成系统停止运转的任何事件，使得系统要重新启动</p>
-<p>不破坏数据库，但主存的数据丢失，如CPU故障，系统断电</p>
-<p>发送系统故障时，一些尚未完成的事务的结果可能已送入物理数据库，另一方面有些已完成的事务可能有一部分甚至全部留在缓冲区，尚未写回到磁盘上的物理数据库</p>
-<p>解决方法：撤销所有未完成的事务，重做（REDO）所有已提交的事务，以将数据库真正恢复到一致状态</p>
-<p>3）介质故障（硬故障——如磁盘损坏</p>
-<p>4）计算机病毒</p>
-<h3 id="恢复的实现技术"><a href="#恢复的实现技术" class="headerlink" title="恢复的实现技术"></a>恢复的实现技术</h3><p>1）数据转储</p>
-<p>数据库管理员定期地将整个数据库复制到磁盘、磁带或其他存储介质上保存起来的过程。备用的数据称为后备副本</p>
-<p>破坏后重装后备副本可以恢复到转储时的状态</p>
-<p>转储分为静态转储和动态转储。</p>
-<p>静态转储要求转储时无事务运行，一定是数据一致性的副本，但降低了数据库可用性（无事务运行的要求）</p>
-<p>动态转储不保证正确有效，通过建立日志文件，记录转储期间各事务对数据库的修改活动，可以将数据库恢复至某一时刻的正确状态</p>
-<p>转储分为海量转储和增量转储。海量一次全部，增量每次只转储上一次转储后更新过的数据</p>
-<p>故数据转储方法有2*2的组合：动态海量转储。。。</p>
-<p>2）登记日志文件</p>
-<p>日志文件是用来记录事务对数据库的更新操作的文件，有以记录为单位和以数据块为单位的记录</p>
-<p>日志文件作用：</p>
-<ul>
-<li>事务故障恢复和系统故障恢复必须用日志文件</li>
-<li>动态转储中后备副本和日志文件结合来恢复数据库</li>
-<li>静态转储中也可以建立日志以对故障发生时已完成的事务进行重做，对故障发生时未完成的事务进行撤销</li>
-</ul>
-<p>登记日志文件原则：</p>
-<ul>
-<li>登记的次序严格按并发事务执行的时间次序</li>
-<li>必须先写日志文件，后写数据库（若中间出错，只不过是多执行一次不必要的undo，不影响数据库的正确性，而若先写数据库再写日志，则若运行记录没有登记这个修改，就无法恢复这个修改了）</li>
-</ul>
-<h3 id="恢复策略"><a href="#恢复策略" class="headerlink" title="恢复策略"></a>恢复策略</h3><p>1）事务故障的恢复——撤销操作 系统自动完成</p>
-<p>具体：反向扫描日志文件，查找更新操作；对更新操作执行逆操作，继续反向扫描做同样处理，知道读到此事务开始标记</p>
-<p>2）系统故障的恢复——系统重新启动时自动完成</p>
-<p>发生原因：</p>
-<ul>
-<li><p>未完成事务对数据库的更新已写入数据库</p>
-</li>
-<li><p>已提交的事务对数据库的更新留在缓冲区中未写入数据库</p>
-</li>
-</ul>
-<p>具体：</p>
-<ul>
-<li>正向扫描日志文件，找出在故障发生前已经提交的事务，将其事务标识记入重做队列（REDO），找出故障发生时尚未完成的事务，将其事务标识记入撤销队列（UNDO）</li>
-<li>对撤销队列中的各个事务做撤销处理，反向扫描逆过程</li>
-<li>对重做队列中的各个事务做重做处理，正向扫描重做</li>
-</ul>
-<p>3）介质故障的恢复</p>
-<ul>
-<li>装入最新的数据库后备副本，恢复至最近一次转储时的一致性状态，对于动态转储的副本，还要结合日志文件做undo和redo操作</li>
-<li>装入相应的日志文件副本，重做已完成的事务。具体首先扫描日志文件，找出故障发生时已提交的事务的标识，将其记入重做队列，然后正向扫描日志文件，对重做队列中的所有事务进行重做处理</li>
-</ul>
-<h3 id="具有检查点的恢复技术"><a href="#具有检查点的恢复技术" class="headerlink" title="具有检查点的恢复技术"></a>具有检查点的恢复技术</h3><p>为什么需要检查点？</p>
-<ul>
-<li>搜索整个日志需要耗费大量的时间</li>
-<li>很多重做处理的事务已经将更新操作写入数据库了，然而恢复子系统又重做了，浪费时间</li>
-</ul>
-<p>新引入的结构：</p>
-<p>重新开始文件：记录日志文件中检查点记录地址</p>
-<p>日志文件中增加一类记录——检查点记录，这类记录包括：</p>
-<ul>
-<li>建立检查点时刻所有正在执行的事务清单</li>
-<li>这些事务最近一个日志记录的地址</li>
-</ul>
-<p>动态维护日志文件的方法：周期性执行建立检查点、保存数据库状态的操作，该操作具体而言：</p>
-<ul>
-<li>将日志缓冲区所有日志写入磁盘</li>
-<li>在日志文件中建立检查点记录</li>
-<li>将数据缓冲区所有数据写入</li>
-<li>将检查点记录在日志文件中的地址写入重新开始文件</li>
-</ul>
-<p>扫描点的好处：使用检查点技术可以改善恢复效率，在检查点之前提交的就无需重做。检查点的作用在于数据库在故障恢复过程中查找日志文件时寻找开始恢复的最近点，也就是说检查点之前日志所操作的数据已经被持久化到磁盘了</p>
-<p>对不同策略的解释：</p>
-<ul>
-<li>在检查点之前完成的，无需重做</li>
-<li>终点延续到检查点和系统故障之间的，它们对数据库所做的修改在故障发生时可能还在缓冲区，尚未写入数据库，故需重做</li>
-<li>终点延续到系统故障后的，撤销</li>
-</ul>
-<p>恢复的步骤：</p>
-<ul>
-<li>从重新开始文件中找到最后一个检查点记录地址，从而找到最后一个检查点记录</li>
-<li>建立undo-list和redo-list，先将检查点记录中的事务暂时放入undo-list</li>
-<li>从检查点开始正向扫描日志文件直到日志文件结束，如有新开始的事务，暂时放入undo-list，如有提交的事务，将其从undo-list移入redo-list</li>
-<li>对undo-list中每个事务执行undo，redo-list中每个事务执行redo</li>
-</ul>
-<h3 id="数据库镜像"><a href="#数据库镜像" class="headerlink" title="数据库镜像"></a>数据库镜像</h3><p>数据库镜像：根据数据库管理员要求，自动把整个数据库或其中的关键数据复制到另一个磁盘上，每当主数据库更新时，数据库管理系统自动把更新后的数据复制过去，保证一致性。用途：出现介质故障后，镜像可以继续提供使用，同时DBMS自动利用镜像磁盘数据进行数据库的恢复，而不需要关闭系统或重装数据库副本，没有出现故障时，镜像可用于并发操作</p>
-<p>缺点：运行效率</p>
-<h2 id="第11章-并发控制"><a href="#第11章-并发控制" class="headerlink" title="第11章 并发控制"></a>第11章 并发控制</h2><p>执行方式</p>
-<ul>
-<li>串行：一个一个执行</li>
-<li>交叉并发方式：单处理机系统上操作轮流执行</li>
-<li>同时并发方式：多处理机系统上同时运行多个事务</li>
-</ul>
-<p>以交叉并发方式为背景讨论并发控制</p>
-<h3 id="并发控制概述"><a href="#并发控制概述" class="headerlink" title="并发控制概述"></a>并发控制概述</h3><p>事务并发执行带来的问题：会产生<strong>多个事务</strong>同时存取<strong>同一数据</strong>的情况，可能会存取和存储<strong>不正确的数据</strong>，破坏事务<strong>隔离性</strong>和数据库的<strong>一致性</strong></p>
-<p>事务是并发控制的基本单位</p>
-<p>DBMS中并发控制机制的责任/任务：对并发操作进行正确调度，以保证事务的隔离性和一致性，保证事务的ACID特性</p>
-<p>并发控制机制：用正确的方式调度并发，使每一个用户事务的执行不受其他事务的干扰，从而避免数据的不一致性（但一些应用允许一些不一致性）</p>
-<p>并发操作带来的数据不一致性包括：</p>
-<ul>
-<li>丢失修改：A、B均在修改同一数据，但B的修改没有考虑到A的修改，而直接在原数据上进行了一次修改</li>
-<li>不可重复读：事务T1读取数据后，事务T2执行更新操作，使T1无法重现前一次读取结果（可能因为校对和验算又读了一次），具体可分为两次读取数据不一致，数据消失了，数据多了</li>
-<li>读脏数据：事务T1修改某一数据并将其写回磁盘，T2读取同一数据后，T1由于某些原因被撤销了，数据恢复为原来的数据，但T2读到的是事务T1撤销前进行修改后的数据</li>
-</ul>
-<p>下面介绍常见的并发控制方法——封锁</p>
-<h3 id="封锁"><a href="#封锁" class="headerlink" title="封锁"></a>封锁</h3><p>封锁/如何用封锁协议保证数据一致性：事务T在对某个数据对象操作前向系统发出请求，对其加锁，加锁后事务就对该数据对象有一定控制，在事务释放锁之前，其他事务不能更新该对象</p>
-<p>基本封锁类型：</p>
-<ul>
-<li>排他锁 X锁：对A加锁后只允许T读、改A，其他事务不能对A加任何锁</li>
-<li>共享锁 S锁：对A加锁后只允许T读，其他事务可以再加S锁，但不能加X锁</li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th></th>
-<th>x</th>
-<th>s</th>
-<th>-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>x</td>
-<td>no</td>
-<td>no</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>s</td>
-<td>no</td>
-<td>yes</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>-（不加锁）</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="封锁协议"><a href="#封锁协议" class="headerlink" title="封锁协议"></a>封锁协议</h3><p>何时申请、持所时间等待的规则称之为封锁协议</p>
-<p>三层封锁协议：</p>
-<ul>
-<li>一级封锁协议：事务T在修改数据R之前必须先对其加X锁，事务结束后释放</li>
-<li>二级封锁协议：事务T在读取数据R之前必须对其加S锁，读取完后释放</li>
-<li>三级封锁协议：事务T在读取数据R之前必须对其加S锁，<strong>事务结束</strong>后释放</li>
-</ul>
-<p>一级：解决丢失修改</p>
-<p>二级：解决读脏数据，修改加了x锁，读取申请s锁的时候需要等待修改结束</p>
-<p>三级：解决不可重复读，读的事务运行过程中加s锁后，修改申请x锁需要等待</p>
-<p>封锁协议级别越高，一致性程度越高</p>
-<h3 id="活锁和死锁"><a href="#活锁和死锁" class="headerlink" title="活锁和死锁"></a>活锁和死锁</h3><p>1）活锁</p>
-<p>T1封锁数据R，T2等待数据R解锁，但系统一直批准给T3，T4…，T2可能永久等待，称之为活锁</p>
-<p>解决方法：采用FIFO方式，封锁子系统按封锁的先后次序排队，每次批准队列第一个事务获得锁</p>
-<p>2）死锁</p>
-<p>在数据库并发控制中，两个或多个事务同时处在相互等待状态</p>
-<p>T1锁R1，T2锁R2，T1请求R2，T2请求R1，形成死锁</p>
-<p>3）死锁的预防：一次封锁法，顺序封锁法</p>
-<p>4）死锁的诊断和解除</p>
-<p>超时法：若事务等待时间超过规定时限就认为死锁了</p>
-<p>等待图法：节点表示事务，边表示等待，A连接B表示A等待B，周期性生成等待图，若存在回路，则认为死锁</p>
-<h3 id="并发调度的可串行性"><a href="#并发调度的可串行性" class="headerlink" title="并发调度的可串行性"></a>并发调度的可串行性</h3><p>DBMS对并发事务的不同调度产生不同的结果，什么样的调度是正确的？</p>
-<p>可串行化调度：并发调度策略的结果与按某一次序（只要是一种就行）串行地执行这些事务结果相同时，称该调度策略为可串行调度</p>
-<p>可串行性是并发事务正确调度的准则，可串行化-&gt;正确调度</p>
-<p>可串行化调度的充分条件——冲突可串行化调度，但不是必要条件</p>
-<p>冲突操作：不同事务对同一个数据的读写操作和写写操作，Ri(x),Wj(x);Wi(x),Wj(x)</p>
-<p>不同事务的冲突操作和同一事务的两个操作是不能交换的</p>
-<p>判断冲突可串行化调度：一个调度sc在保证冲突操作的次序不变的情况下，通过交换两个事务不冲突操作的次序得到另一个调度sc’，如果sc‘是串行的，称sc为冲突可串行化的调度（将相同下标的放在一起，试图构造串行，最后加一句sc’是串行的，且上述变化均是保证冲突操作不变，交换两个不冲突操作次序得到，故是冲突可串行化调度）</p>
-<h4 id="两段锁协议"><a href="#两段锁协议" class="headerlink" title="两段锁协议"></a>两段锁协议</h4><p>两段锁协议是指所有事务必须分两个阶段对数据项加锁和解锁：</p>
-<ul>
-<li>在对任何数据进行读写操作前，首先要申请并获得对该数据的封锁</li>
-<li>在释放一个封锁后，事务不再申请和获得任何其他封锁</li>
-</ul>
-<p>可串行化调度的充分条件——两段锁，但不是必要</p>
-<p>扩展阶段：在读写之前，首先申请并获得任何数据项上的锁</p>
-<p>收缩阶段，在释放一个封锁后，事务不再申请和获得任何其他类型封锁</p>
-<p>两段锁协议和防止死锁的一次封锁法的异同：</p>
-<ul>
-<li>一次封锁法遵循两段锁协议，一次将所有要使用的数据全部加锁</li>
-<li>遵循两段所协议的事务可能发生死锁，因为不要求将所有使用的数据全部加锁</li>
-</ul>
-<h3 id="封锁的粒度"><a href="#封锁的粒度" class="headerlink" title="封锁的粒度"></a>封锁的粒度</h3><p>封锁对象的大小称为封锁的粒度，可以是逻辑单元，也可以是物理单元</p>
-<p>封锁对象的选择是封锁开销和并发度的权衡，一般的需要处理</p>
-<p>一个关系的大量元组的事务——粒度设置为关系</p>
-<p>多个关系的大量元组的事务——粒度设置为数据库</p>
-<p>少量元组——粒度设置为元组</p>
-<p>多粒度封锁：一个系统中同时支持多种封锁粒度供不同事务选择</p>
-<p>多粒度树（3层）</p>
-<figure class="highlight livescript"><table><tr><td class="code"><pre><code class="hljs livescript">   数据库<br>   /   <span class="hljs-string">\</span><br>关系<span class="hljs-number">1</span>  关系<span class="hljs-number">2</span><br> /<span class="hljs-string">\</span>     /<span class="hljs-string">\</span><br>元组...<br></code></pre></td></tr></table></figure>
-<p>多粒度封锁协议允许多粒度树中的每个节点被独立地加锁，对一个节点加锁意味着这个节点的所有后裔节点也被加上同样类型的锁，因此封锁方式有显式封锁和隐式封锁。两者等效用</p>
-<p>（为什么要引入意向锁）在多粒度封锁方法中，对对象加锁时需要检查上下级节点是否加冲突的锁，效率低下，引进意向锁概念，这样，DBMS就无需逐个检查下一级结点的显式封锁</p>
-<p>意向锁：如果对一个结点加意向锁，则说明该结点的下层结点正在被加锁，在任一结点加锁时，必须对它的上层结点加意向锁</p>
-<figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">上层结点1-意向锁<br>上层结点2-意向锁<br>该节点-某锁<br>下层节点-相同锁<br></code></pre></td></tr></table></figure>
-<p>IS锁：加该锁时表示它的后裔结点拟加S锁</p>
-<p>IX锁：加该锁时表示它的后裔结点拟加X锁</p>
-<p>SIX锁：如果对一个数据对象加SIX锁，表示对它加S锁，再加IX锁（同一个事务，所以可以），即SIX=S+IX</p>
-<p>强锁可以代替弱锁</p>
-<figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">偏序关系<br>	X<br>   SIX<br>S 		IX<br>	<span class="hljs-keyword">IS</span><br></code></pre></td></tr></table></figure>
-<p>相容矩阵</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>T1\T2</th>
-<th>S</th>
-<th>X</th>
-<th>IS</th>
-<th>IX</th>
-<th>SIX</th>
-<th>-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>S</td>
-<td>Y</td>
-<td>N</td>
-<td>Y</td>
-<td>N</td>
-<td>N</td>
-<td>Y</td>
-</tr>
-<tr>
-<td>X</td>
-<td>N</td>
-<td>N</td>
-<td>N</td>
-<td>N</td>
-<td>N</td>
-<td>Y</td>
-</tr>
-<tr>
-<td>IS</td>
-<td>Y</td>
-<td>N</td>
-<td>Y</td>
-<td>Y</td>
-<td>Y</td>
-<td>Y</td>
-</tr>
-<tr>
-<td>IX</td>
-<td>N</td>
-<td>N</td>
-<td>Y</td>
-<td>Y</td>
-<td>N</td>
-<td>Y</td>
-</tr>
-<tr>
-<td>SIX</td>
-<td>N</td>
-<td>N</td>
-<td>Y</td>
-<td>N</td>
-<td>N</td>
-<td>Y</td>
-</tr>
-<tr>
-<td>-</td>
-<td>Y</td>
-<td>Y</td>
-<td>Y</td>
-<td>Y</td>
-<td>Y</td>
-<td>Y</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h2><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>模式：数据库中全体数据的逻辑结构和特征的描述</p>
-<p>外模式：XXX中部分数据的。。。。</p>
-<h3 id="试述数据库系统三级模式结构，这种结构的优点是什么？"><a href="#试述数据库系统三级模式结构，这种结构的优点是什么？" class="headerlink" title="试述数据库系统三级模式结构，这种结构的优点是什么？"></a>试述数据库系统三级模式结构，这种结构的优点是什么？</h3><p>数据库系统的三级模式结构由外模式、模式和内模式组成。外模式，是数据库局部数据的逻辑结构和特征的描述，是数据库用户的数据视图 模式，亦称逻辑模式，是数据库中全体数据的逻辑结构和特性的描述， 内模式，是数据在数据库系统内部的表示，即对数据的物理结构和存储方式的描述。</p>
-<p> 数据库系统的三级模式是对数据的三个抽象级别，它把数据的具体组织留给DBMS管理，使用户能逻辑抽象地处理数据，而不必关心数据在计算机中的表示和存储。 为了能够在内部实现这三个抽象层次的联系和转换，数据库系统在这三级模式之间提供了两层映象：外模式／模式映象和模式／内模式映象。正是这两层映象保证了数据库系统中的数据能够具有较高的逻辑独立性和物理独立性。</p>
-<h3 id="逻辑独立性和物理独立性"><a href="#逻辑独立性和物理独立性" class="headerlink" title="逻辑独立性和物理独立性"></a>逻辑独立性和物理独立性</h3><p>数据与程序的逻辑独立性：当模式改变时（例如增加新的关系、新的属性、改变属性的数据类型等），由数据库管理员对各个外模式／模式的映象作相应改变，可以使外模式保持不变。应用程序是依据数据的外模式编写的，从而应用程序不必修改，保证了数据与程序的逻辑独立性，简称数据的逻辑独立性。 数据与程序的物理独立性：当数据库的存储结构改变了，由数据库管理员对模式／内模式映象作相应改变，可以使模式保持不变，从而应用程序也不必改变。保证了数据与程序的物理独立性，简称数据的物理独立性。 数据库管理系统在三级模式之间提供的两层映象保证了数据库系统中的数据能够具有较高的逻辑独立性和物理独立性。</p>
-<h3 id="适合用文件系统而不是数据库系统的例子"><a href="#适合用文件系统而不是数据库系统的例子" class="headerlink" title="适合用文件系统而不是数据库系统的例子"></a>适合用文件系统而不是数据库系统的例子</h3><p>适用于文件系统而不是数据库系统的应用例子 数据的备份，软件或应用程序使用过程中的临时数据存储一般使用文件比较合适。 早期功能比较简单、比较固定的应用系统也适合用文件系统。 </p>
-<p>适用于数据库系统而非文件系统的应用例子 目前，几乎所有企业或部门的信息系统都以数据库系统为基础，都使用数据库。如一个工厂的管理信息系统（其中会包括许多子系统，如库存管理系统、物资采购系统、作业调度系统、设备管理系统、人事管理系统等等），还比如学校的学生管理系统，人事管理系统，图书馆的图书管理系统等等都适合用数据库系统</p>
-<h3 id="文件系统与数据库系统的区别和联系"><a href="#文件系统与数据库系统的区别和联系" class="headerlink" title="文件系统与数据库系统的区别和联系"></a>文件系统与数据库系统的区别和联系</h3><p>（1）文件系统与数据库系统的区别： 文件系统是面向某一应用程序的，其数据共享性差，冗余度大，数据独立性差， 文件中记录内部具有结构，但记录的结构和记录之间的联系固定在程序中，需要 程序员加以维护 数据库系统面向现实世界（一个部门、企业、跨国公司等），数据共享性高，冗 余度小，具有较高的物理独立性和一定的逻辑独立性，实现整体数据的结构化， 用数据模型描述，提供数据的安全性保护、完整性检查、并发控制和数据库恢复 能力。 </p>
-<p>（2）文件系统与数据库系统的联系： 文件系统与数据库系统都是计算机系统中管理数据的软件。  数据库中数据的组织和存储是通过操作系统中的文件系统来实现的，即数据 库是在文件系统基础上发展而来的  文件系统是操作系统的重要组成部分，DBMS 是独立于操作系统的软件。但 是 DBMS 是在操作系统的基础上实现的；</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>基本运算：选择投影并差笛卡尔积</p>
-<p>完整性：参照完整性为什么可以让外码为空？</p>
-<p>为空表示该值尚不确定，但要求外码不能是主属性，否则不能为空</p>
-<h3 id="什么叫数据字典，数据字典里面通常有哪些内容"><a href="#什么叫数据字典，数据字典里面通常有哪些内容" class="headerlink" title="什么叫数据字典，数据字典里面通常有哪些内容"></a>什么叫数据字典，数据字典里面通常有哪些内容</h3><p>数据字典是关系数据库管理系统内部的一组系统表，他记录了数据库中所有的定义信息，关系数据库管理系统在执行SQL的数据定义语句时，实际上就是在更新数据字典中的相应信息</p>
-<h2 id="第四五章"><a href="#第四五章" class="headerlink" title="第四五章"></a>第四五章</h2><h3 id="试述数据库完整性和安全性的联系和区别。"><a href="#试述数据库完整性和安全性的联系和区别。" class="headerlink" title="试述数据库完整性和安全性的联系和区别。"></a>试述数据库完整性和安全性的联系和区别。</h3><p>答：（1）数据库的完整性和安全性是两个不同的概念。数据库的完整性是指数据的正确性和相容性，是为了防止数据库中存在不符合语义的、不正确的数据；数据库的安全性是指保护数据库防止恶意破坏和非法存取。（2）其联系是两者都是对数据库中的数据的控制，各自所实现的功能不同。</p>
-<h3 id="DBMS的完整性控制机制应具有哪些功能？"><a href="#DBMS的完整性控制机制应具有哪些功能？" class="headerlink" title="DBMS的完整性控制机制应具有哪些功能？"></a>DBMS的完整性控制机制应具有哪些功能？</h3><p>正确答案: DBMS的完整性控制机制应具有三个方面的功能： 1. 定义功能，即提供定义完整性约束条件的机制。 2. 检查功能，即检查用户发出的操作请求是否违背了完整性约束条件。 3. 违约反应：如果发现用户的操作请求使数据违背了完整性约束条件，则采取一定的动作来保证数据的完整性。</p>
-<h2 id="第八章"><a href="#第八章" class="headerlink" title="第八章"></a>第八章</h2><h3 id="在嵌入式SQL中是如何解决数据库工作单元与源程序工作单元之间通信的？"><a href="#在嵌入式SQL中是如何解决数据库工作单元与源程序工作单元之间通信的？" class="headerlink" title="在嵌入式SQL中是如何解决数据库工作单元与源程序工作单元之间通信的？"></a>在嵌入式SQL中是如何解决数据库工作单元与源程序工作单元之间通信的？</h3><p>正确答案: 数据库工作单元与源程序工作单元之间的通信主要包括： （1）SQL通信区SQLCA，用来向主语言传递SQL语句的执行状态信息，使主语言能够根据此信息控制程序流程。 （2）主变量（Host Variable），1）用来实现主语言向SQL语句提供参数。 2）将SQL语句查询数据库的结果交主语言进一步处理 （3）游标（Cursor），解决集合性操作语言与过程性操作语言的不匹配通过游标逐一获取记录，并赋给主变量，交由主语言进一步处理。</p>
-<h3 id="在嵌入式SQL中是如何协调SQL语言的集合处理方式和主语言的单记录处理方式的？"><a href="#在嵌入式SQL中是如何协调SQL语言的集合处理方式和主语言的单记录处理方式的？" class="headerlink" title="在嵌入式SQL中是如何协调SQL语言的集合处理方式和主语言的单记录处理方式的？"></a>在嵌入式SQL中是如何协调SQL语言的集合处理方式和主语言的单记录处理方式的？</h3><p>正确答案: 用游标来协调这两种不同的处理方式。游标区是系统为用户开设的一个数据缓冲区，存放SQL语句的执行结果，每个游标区都有一个名字。用户可以通过游标逐一获取记录，并赋给主变量，交由主语言进一步处理。</p>
-<h3 id="试述事务的概念和事务的4个特性。"><a href="#试述事务的概念和事务的4个特性。" class="headerlink" title="试述事务的概念和事务的4个特性。"></a>试述事务的概念和事务的4个特性。</h3><p>答：<strong>事务</strong>：用户定义的一个数据库操作序列，这些操作要么全做，要么全不做，是一个不可分割的工作单位。</p>
-<p>事务具有4个特性：原子性、一致性、隔离性和持续性。</p>
-<p><strong>原子性</strong>：事务是数据库的逻辑工作单位，事务中包括的诸操作要么都做，要么都不做。</p>
-<p><strong>一致性</strong>：事务执行的结果必须是使数据库从一个一致性状态变到另一个一致性状态。</p>
-<p><strong>隔离性</strong>：一个事务的执行不能被其他事务干扰，即一个事物的内部操作及使用的数据对其他并发事务是隔离的，并发执行的各个事务之间不能互相干扰。</p>
-<p><strong>持续性</strong>：一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其执行结果有任何影响。</p>
-<p>评分细则：事务的概念记1分；4个特性每个记1分。</p>
-<h3 id="查询优化按照优化层次可以分为哪两种？分别解释两种查询优化的具体含义。"><a href="#查询优化按照优化层次可以分为哪两种？分别解释两种查询优化的具体含义。" class="headerlink" title="查询优化按照优化层次可以分为哪两种？分别解释两种查询优化的具体含义。"></a>查询优化按照优化层次可以分为哪两种？分别解释两种查询优化的具体含义。</h3><p>答：查询优化按照优化层次可分为代数优化和物理优化。</p>
-<p>代数优化是指通过对关系代数表达式的等价变换来提高查询效率。</p>
-<p>物理优化是指通过选择高效合理的操作算法或存取路径来求得优化的查询计划，达到查询优化的目标。</p>
-<h3 id="什么是两段锁协议？遵守两段锁协议的事务可能会发生死锁吗？试举例说明。"><a href="#什么是两段锁协议？遵守两段锁协议的事务可能会发生死锁吗？试举例说明。" class="headerlink" title="什么是两段锁协议？遵守两段锁协议的事务可能会发生死锁吗？试举例说明。"></a>什么是两段锁协议？遵守两段锁协议的事务可能会发生死锁吗？试举例说明。</h3><p>答：两段锁协议是指所有事务必须分成两个阶段对数据项加锁和解锁，即：（1）在对任何数据进行读、写操作之前，事务首先要申请并获得对该数据的封锁；（2）在释放一个封锁之后，事务不再申请和获得任何其他封锁。</p>
-<p>遵守两段锁协议的事务可能发生死锁。举例如下</p>
-<p><img src="/2023/02/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%8D%E4%B9%A0/clip_image002.gif" alt="img"></p>
-<h3 id="数据库的设计一般分为哪几个阶段？用一句话概括每个阶段的工作"><a href="#数据库的设计一般分为哪几个阶段？用一句话概括每个阶段的工作" class="headerlink" title="数据库的设计一般分为哪几个阶段？用一句话概括每个阶段的工作"></a>数据库的设计一般分为哪几个阶段？用一句话概括每个阶段的工作</h3><ul>
-<li>需求分析：准确了解和分析用户需求</li>
-<li>概念模型设计：对需求分析结果进行综合归纳抽象，形成独立于具体DBMS的概念模型</li>
-<li>逻辑模型设计：为概念模型选择DBMS支持的数据模型，并优化</li>
-<li>物理模型设计：为数据模型选择合适的物理模型，包括存储结构和存取方式</li>
-<li>数据库实施：利用DBMS提供的数据库语言、工具、宿主语言，利用逻辑设计和物理设计的结果建立数据库，编制和建立应用程序，组织数据入库，进行试运行</li>
-<li>数据库运行与维护：在数据库运行过程中对数据库进行评价修改完善</li>
-</ul>
-<h3 id="在数据库的查询优化中，什么是代数优化？什么是物理优化？"><a href="#在数据库的查询优化中，什么是代数优化？什么是物理优化？" class="headerlink" title="在数据库的查询优化中，什么是代数优化？什么是物理优化？"></a>在数据库的查询优化中，什么是代数优化？什么是物理优化？</h3><p>代数优化是对关系代数表达式进行等价变换带来的优化</p>
-<p>物理优化是对存取路径和底层算法的选择进行的优化</p>
-<h3 id="并发操作可能会产生哪几类数据不一致？用什么方法可以避免各种不一致的情况？"><a href="#并发操作可能会产生哪几类数据不一致？用什么方法可以避免各种不一致的情况？" class="headerlink" title="并发操作可能会产生哪几类数据不一致？用什么方法可以避免各种不一致的情况？"></a>并发操作可能会产生哪几类数据不一致？用什么方法可以避免各种不一致的情况？</h3><p>丢失修改、不可重复读、读到脏数据</p>
-<p>三级封锁协议</p>
-<ol>
-<li>事务T在修改数据R之前加X锁，事务结束后释放</li>
-<li>事务T在读取数据R之前加S锁，读取完毕后释放</li>
-<li>事务T在读取数据R之前加S锁，事务结束后释放</li>
-</ol>
-<h3 id="在并发控制中，封锁协议是指什么？"><a href="#在并发控制中，封锁协议是指什么？" class="headerlink" title="在并发控制中，封锁协议是指什么？"></a>在并发控制中，封锁协议是指什么？</h3><p>事务在对数据进行操作之前，先向系统申请对其加锁，在获得锁后事务对该数据有了一定的控制，从而其他事务不能更新此对象，直到释放锁</p>
-<h3 id="在数据库恢复中使用检查点有什么好处？"><a href="#在数据库恢复中使用检查点有什么好处？" class="headerlink" title="在数据库恢复中使用检查点有什么好处？"></a>在数据库恢复中使用检查点有什么好处？</h3><p>使用检查点技术可以改善恢复效率，在检查点之前提交的事务的修改一定写入数据库，故无需对其进行重做操作</p>
-<h3 id="举例说明连接操作的排序-合并实现方法"><a href="#举例说明连接操作的排序-合并实现方法" class="headerlink" title="举例说明连接操作的排序-合并实现方法"></a>举例说明连接操作的排序-合并实现方法</h3><p>以sc和student表为例</p>
-<p>首先若基本表未排好序，进行排序，对sc和student均按照sno进行排序</p>
-<p>取student表中第一个元组，在sc表中扫描与其sno一致的元组并连接</p>
-<p>当遇到第一个sno不一致的元组，取下一个student中元组并继续进行扫描，直到student中元组均讨论完</p>
-<h3 id="在数据库设计时，什么是数据字典？数据字典中通常有哪些内容？"><a href="#在数据库设计时，什么是数据字典？数据字典中通常有哪些内容？" class="headerlink" title="在数据库设计时，什么是数据字典？数据字典中通常有哪些内容？"></a>在数据库设计时，什么是数据字典？数据字典中通常有哪些内容？</h3><p>数据字典是数据库关于数据的描述，是元数据而不是数据本身，其包括数据项、数据结构、数据流、数据存储、处理过程</p>
-<h3 id="什么是死锁？如何解决死锁问题？"><a href="#什么是死锁？如何解决死锁问题？" class="headerlink" title="什么是死锁？如何解决死锁问题？"></a>什么是死锁？如何解决死锁问题？</h3><p>死锁：事务T1在对象R1上加锁，事务T2在对象R2上加锁，后T1请求封锁R2，T2请求封锁R1，此时两个事务均在等待对方，形成死锁，解决死锁的方法：1.超时法，如果一个事务的等待时间超过规定的时限，就认为形成了死锁2. 等待图法，以事务为节点，以等待关系为边，若形成回路，则形成死锁</p>
-<h3 id="在基于检查点的数据库恢复技术中，检查点记录的内容应该包括"><a href="#在基于检查点的数据库恢复技术中，检查点记录的内容应该包括" class="headerlink" title="在基于检查点的数据库恢复技术中，检查点记录的内容应该包括"></a>在基于检查点的数据库恢复技术中，检查点记录的内容应该包括</h3><ol>
-<li>建立检查点时刻正在运行事务的清单</li>
-<li>这些事务最近一次日志记录的地址</li>
-</ol>
-<h3 id="什么是视图？使用视图有什么好处？"><a href="#什么是视图？使用视图有什么好处？" class="headerlink" title="什么是视图？使用视图有什么好处？"></a>什么是视图？使用视图有什么好处？</h3><p>视图是一个或几个基本表导出的虚表，在数据库中只存储视图的定义而不具体存储其数据，好处有：</p>
-<ul>
-<li>视图能简化用户的操作</li>
-<li>使用视图可以清晰地表达查询</li>
-<li>提供了多种看待同一对象的角度</li>
-<li>为重构数据库一定程度上提供了逻辑独立性</li>
-<li>为机密数据提供安全保护</li>
-</ul>
-<h3 id="发生介质故障时，应该如何恢复数据库？"><a href="#发生介质故障时，应该如何恢复数据库？" class="headerlink" title="发生介质故障时，应该如何恢复数据库？"></a>发生介质故障时，应该如何恢复数据库？</h3><p>首先装入最近一次转储的后备副本，若为动态转储，需要借助日志文件进行undo和redo操作将数据库恢复到一致性状态</p>
-<p>具体而言正向扫描日志文件，若在故障方式前已经完成的事务，加入redo队列，未完成的事务加入undo队列，然后分别做重做和撤销</p>
-<p>然后装入相应的日志文件副本，正向扫描日志文件，找到事务发送时已提交的事务的标记，加入到redo队列，做重做处理</p>
-<h3 id="什么是数据库的审计？它有什么作用？"><a href="#什么是数据库的审计？它有什么作用？" class="headerlink" title="什么是数据库的审计？它有什么作用？"></a>什么是数据库的审计？它有什么作用？</h3><p>审计是指数据库自动将所做的所有操作记录到审计日志中。通过审计日志，管理员可以监控数据库所进行的操作，对异常操作进行重现，找出非法存取数据的人世间和内容</p>
-<h3 id="为什么要引进意向锁？-意向锁的含义是什么？"><a href="#为什么要引进意向锁？-意向锁的含义是什么？" class="headerlink" title="为什么要引进意向锁？ 意向锁的含义是什么？"></a>为什么要引进意向锁？ 意向锁的含义是什么？</h3><p>正确答案: 引进意向锁是为了提高封锁子系统的效率。在多粒度封锁方法中一个数据对象可能以两种方式加锁—显式封锁和隐式封锁。因此系统在对某一数据对象加锁时不仅要检查该数据对象上有无（显式和隐式）封锁与之冲突；还要检查其所有上级结点和所有下级结点，看申请的封锁是否与这些结点上的（显式和隐式）封锁冲突；显然，这样的检查方法效率很低。为此引进了意向锁。</p>
-<h3 id="试述活锁的产生原因和解决方法"><a href="#试述活锁的产生原因和解决方法" class="headerlink" title="试述活锁的产生原因和解决方法"></a>试述活锁的产生原因和解决方法</h3><p>正确答案: 活锁产生的原因：当一系列封锁不能按照其先后顺序执行时，就可能导致一些事务无限期等待某个封锁，从而导致活锁。 避免活锁的简单方法是采用先来先服务的策略。当多个事务请求封锁同一数据对象时，封锁子系统按请求封锁的先后次序对事务排队，数据对象上的锁一旦释放就批准申请队列中第一个事务获得锁。</p>
 ]]></content>
   </entry>
 </search>
