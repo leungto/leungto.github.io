@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>10.模糊综合评价</title>
-    <url>/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/</url>
-    <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>模糊评价问题主要解决以下问题：</p>
-<ol>
-<li>将论域中的对象对应评语集中一个指定的评语</li>
-<li>将方案作为评语集并选择一个最优的方案</li>
-</ol>
-<span id="more"></span>
-<h3 id="二、模糊集合和隶属函数"><a href="#二、模糊集合和隶属函数" class="headerlink" title="二、模糊集合和隶属函数"></a>二、模糊集合和隶属函数</h3><h4 id="1-概念"><a href="#1-概念" class="headerlink" title="1. 概念"></a>1. 概念</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153845840.png" alt="image-20220813153845840"></p>
-<p>经典集合概念中，特征函数作用于论域上，使得每个元素要么位于集合中，要么不在集合中</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153934402.png" alt="image-20220813153934402"></p>
-<p>在模糊集合中，元素是否在集合中以概率的方式表示，与之对应的函数是隶属函数，其值域为[0,1]</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154055917.png" alt="image-20220813154055917"></p>
-<p>对于模糊集合的表示，zadeh表示法较为常用，但需要注意的是，上述表示方法仅仅是表示方法，并不存在所谓的除和加的关系</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154234936.png" alt="image-20220813154234936"></p>
-<h4 id="2-隶属函数的确定"><a href="#2-隶属函数的确定" class="headerlink" title="2. 隶属函数的确定"></a>2. 隶属函数的确定</h4><p>（1）模糊统计法<img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154518820.png" alt="image-20220813154518820"></p>
-<p>（2）借助已有的指标</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154532059.png" alt="image-20220813154532059"></p>
-<p>（3）指派法</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154555491.png" alt="image-20220813154555491"></p>
-<p>例2中并没有直接使用左图的梯型分布，对于中间型，其去掉了中间不变的部分</p>
-<h4 id="3-模糊综合评价"><a href="#3-模糊综合评价" class="headerlink" title="3.模糊综合评价"></a>3.模糊综合评价</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154849750.png" alt="image-20220813154849750"></p>
-<h3 id="三、应用"><a href="#三、应用" class="headerlink" title="三、应用"></a>三、应用</h3><h3 id="1-一级模糊综合评判"><a href="#1-一级模糊综合评判" class="headerlink" title="1.一级模糊综合评判"></a>1.一级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155052120.png" alt="image-20220813155052120"></p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155158365.png" alt="image-20220813155158365"></p>
-<h3 id="2-多级模糊综合评判"><a href="#2-多级模糊综合评判" class="headerlink" title="2.多级模糊综合评判"></a>2.多级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155353593.png" alt="image-20220813155353593"></p>
-<p>计算量比较小，没有用到代码</p>
-]]></content>
-      <categories>
-        <category>数模</category>
-      </categories>
-      <tags>
-        <tag>评价类问题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>1.层次分析法模型</title>
     <url>/2022/06/20/1-%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95%E6%A8%A1%E5%9E%8B/</url>
     <content><![CDATA[<h3 id="1-模型介绍"><a href="#1-模型介绍" class="headerlink" title="1. 模型介绍"></a>1. 模型介绍</h3><blockquote>
@@ -161,39 +126,39 @@
       </tags>
   </entry>
   <entry>
-    <title>11.分类模型</title>
-    <url>/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>本节主要使用逻辑回归和Fisher线性判别分析来解决二分类和多分类问题。实现时只需使用spss即可</p>
+    <title>10.模糊综合评价</title>
+    <url>/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/</url>
+    <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>模糊评价问题主要解决以下问题：</p>
+<ol>
+<li>将论域中的对象对应评语集中一个指定的评语</li>
+<li>将方案作为评语集并选择一个最优的方案</li>
+</ol>
 <span id="more"></span>
-<p>下述过程以鸢尾花例题进行</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170424949.png" alt="image-20220814170424949"></p>
-<p>共有三种类型的鸢尾花，已知数据有四种，要求通过下列已有数据预测鸢尾花的种类</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170744708.png" alt="image-20220814170744708"></p>
-<h3 id="二、实现过程"><a href="#二、实现过程" class="headerlink" title="二、实现过程"></a>二、实现过程</h3><h4 id="1-数据预处理"><a href="#1-数据预处理" class="headerlink" title="1.数据预处理"></a>1.数据预处理</h4><p>把种类表示成数字，这里可以使用excel的替换来完成</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170635436.png" alt="image-20220814170635436" style="zoom:67%;"></p>
-<p>这里我对种类排好序之后拖出来的</p>
-<h4 id="2-逻辑回归"><a href="#2-逻辑回归" class="headerlink" title="2.逻辑回归"></a>2.逻辑回归</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170911837.png" alt="image-20220814170911837"></p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170923189.png" alt="image-20220814170923189"></p>
-<p>这里有一条警告，告说明我们的数据区分度非常高，存在准完全分隔说明样本划分的比较彻底，这一般对于分类结果而言是好事情。</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171041908.png" alt="image-20220814171041908"></p>
-<p>最终分类结果如下：对于已有数据，模型对于三种鸢尾燕分类效果分别为97.9%,100%,98%</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171247854.png" alt="image-20220814171247854"></p>
-<p>预测结果如下：</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171932085.png" alt="image-20220814171932085"></p>
-<blockquote>
-<p>对于二分类问题，在选择的时候选二元logistic即可</p>
-<p>若最终分类效果较差，可以先生成其二次项，结合二次项进行分类，但可能会有过拟合的现象，这时可以交叉验证</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171730339.png" alt="image-20220814171730339" style="zoom: 50%;"></p>
-</blockquote>
-<h4 id="3-Fisher判别分析"><a href="#3-Fisher判别分析" class="headerlink" title="3.Fisher判别分析"></a>3.Fisher判别分析</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171823784.png" alt="image-20220814171823784"></p>
-<p>多分类问题在分组变量定义范围的时候进行设置，如该题，即可设置为1~3，分类效果如下：</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172050841.png" alt="image-20220814172050841"></p>
-<p>可以看到对于三种鸢尾花分类效果分别为97.9%，100%，95.9%，平均为97.9%的正确率，预测结果如下：</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172243033.png" alt="image-20220814172243033"></p>
+<h3 id="二、模糊集合和隶属函数"><a href="#二、模糊集合和隶属函数" class="headerlink" title="二、模糊集合和隶属函数"></a>二、模糊集合和隶属函数</h3><h4 id="1-概念"><a href="#1-概念" class="headerlink" title="1. 概念"></a>1. 概念</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153845840.png" alt="image-20220813153845840"></p>
+<p>经典集合概念中，特征函数作用于论域上，使得每个元素要么位于集合中，要么不在集合中</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153934402.png" alt="image-20220813153934402"></p>
+<p>在模糊集合中，元素是否在集合中以概率的方式表示，与之对应的函数是隶属函数，其值域为[0,1]</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154055917.png" alt="image-20220813154055917"></p>
+<p>对于模糊集合的表示，zadeh表示法较为常用，但需要注意的是，上述表示方法仅仅是表示方法，并不存在所谓的除和加的关系</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154234936.png" alt="image-20220813154234936"></p>
+<h4 id="2-隶属函数的确定"><a href="#2-隶属函数的确定" class="headerlink" title="2. 隶属函数的确定"></a>2. 隶属函数的确定</h4><p>（1）模糊统计法<img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154518820.png" alt="image-20220813154518820"></p>
+<p>（2）借助已有的指标</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154532059.png" alt="image-20220813154532059"></p>
+<p>（3）指派法</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154555491.png" alt="image-20220813154555491"></p>
+<p>例2中并没有直接使用左图的梯型分布，对于中间型，其去掉了中间不变的部分</p>
+<h4 id="3-模糊综合评价"><a href="#3-模糊综合评价" class="headerlink" title="3.模糊综合评价"></a>3.模糊综合评价</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154849750.png" alt="image-20220813154849750"></p>
+<h3 id="三、应用"><a href="#三、应用" class="headerlink" title="三、应用"></a>三、应用</h3><h3 id="1-一级模糊综合评判"><a href="#1-一级模糊综合评判" class="headerlink" title="1.一级模糊综合评判"></a>1.一级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155052120.png" alt="image-20220813155052120"></p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155158365.png" alt="image-20220813155158365"></p>
+<h3 id="2-多级模糊综合评判"><a href="#2-多级模糊综合评判" class="headerlink" title="2.多级模糊综合评判"></a>2.多级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155353593.png" alt="image-20220813155353593"></p>
+<p>计算量比较小，没有用到代码</p>
 ]]></content>
       <categories>
         <category>数模</category>
       </categories>
+      <tags>
+        <tag>评价类问题</tag>
+      </tags>
   </entry>
   <entry>
     <title>2.TOPSIS法</title>
@@ -278,6 +243,41 @@
       <tags>
         <tag>评价类问题</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>11.分类模型</title>
+    <url>/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>本节主要使用逻辑回归和Fisher线性判别分析来解决二分类和多分类问题。实现时只需使用spss即可</p>
+<span id="more"></span>
+<p>下述过程以鸢尾花例题进行</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170424949.png" alt="image-20220814170424949"></p>
+<p>共有三种类型的鸢尾花，已知数据有四种，要求通过下列已有数据预测鸢尾花的种类</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170744708.png" alt="image-20220814170744708"></p>
+<h3 id="二、实现过程"><a href="#二、实现过程" class="headerlink" title="二、实现过程"></a>二、实现过程</h3><h4 id="1-数据预处理"><a href="#1-数据预处理" class="headerlink" title="1.数据预处理"></a>1.数据预处理</h4><p>把种类表示成数字，这里可以使用excel的替换来完成</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170635436.png" alt="image-20220814170635436" style="zoom:67%;"></p>
+<p>这里我对种类排好序之后拖出来的</p>
+<h4 id="2-逻辑回归"><a href="#2-逻辑回归" class="headerlink" title="2.逻辑回归"></a>2.逻辑回归</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170911837.png" alt="image-20220814170911837"></p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170923189.png" alt="image-20220814170923189"></p>
+<p>这里有一条警告，告说明我们的数据区分度非常高，存在准完全分隔说明样本划分的比较彻底，这一般对于分类结果而言是好事情。</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171041908.png" alt="image-20220814171041908"></p>
+<p>最终分类结果如下：对于已有数据，模型对于三种鸢尾燕分类效果分别为97.9%,100%,98%</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171247854.png" alt="image-20220814171247854"></p>
+<p>预测结果如下：</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171932085.png" alt="image-20220814171932085"></p>
+<blockquote>
+<p>对于二分类问题，在选择的时候选二元logistic即可</p>
+<p>若最终分类效果较差，可以先生成其二次项，结合二次项进行分类，但可能会有过拟合的现象，这时可以交叉验证</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171730339.png" alt="image-20220814171730339" style="zoom: 50%;"></p>
+</blockquote>
+<h4 id="3-Fisher判别分析"><a href="#3-Fisher判别分析" class="headerlink" title="3.Fisher判别分析"></a>3.Fisher判别分析</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171823784.png" alt="image-20220814171823784"></p>
+<p>多分类问题在分组变量定义范围的时候进行设置，如该题，即可设置为1~3，分类效果如下：</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172050841.png" alt="image-20220814172050841"></p>
+<p>可以看到对于三种鸢尾花分类效果分别为97.9%，100%，95.9%，平均为97.9%的正确率，预测结果如下：</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172243033.png" alt="image-20220814172243033"></p>
+]]></content>
+      <categories>
+        <category>数模</category>
+      </categories>
   </entry>
   <entry>
     <title>12.聚类算法</title>
@@ -615,58 +615,6 @@
       </tags>
   </entry>
   <entry>
-    <title>8.图论最短路径问题</title>
-    <url>/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>没错，就是数据结构与算法（还是离散？忘了，可能都学了）上学的那个最短路径算法，课堂上用的是迪杰特斯拉和弗洛伊德算法，这里也差不多，复习一下然后用matlab实现</p>
-<span id="more"></span>
-<h3 id="二、图"><a href="#二、图" class="headerlink" title="二、图"></a>二、图</h3><h4 id="1-数据结构——图"><a href="#1-数据结构——图" class="headerlink" title="1.数据结构——图"></a>1.数据结构——图</h4><p>图论中的图（Graph）是由若干给定的点及连接两点的线 所构成的图形，这种图形通常用来描述某些事物之间的某种特定关系，用点代表事物，用连接两点的线表示相应两个事 物间具有这种关系。 </p>
-<p>一个图可以用数学语言描述为G(V(G),E(G))。V(vertex)指的是图的顶点集，E(edge)指的是图的边集。 根据边是否有方向，可将图分为有向图和无向图。 另外，有些图的边上还可能有权值，这样的图称为有权图。</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204035963.png" alt="image-20220720204035963"></p>
-<p>通过这个网址可以在线作图：<a href="https://csacademy.com/app/graph_editor/">CS Academy</a></p>
-<p>当然matlab也可以，但是比较丑：</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204134367.png" alt="image-20220720204134367" style="zoom: 67%;"></p>
-<h4 id="2-邻接矩阵"><a href="#2-邻接矩阵" class="headerlink" title="2.邻接矩阵"></a>2.邻接矩阵</h4><p>就是数据结构那个！</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204238553.png" alt="image-20220720204238553" style="zoom:67%;"></p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204251795.png" alt="image-20220720204251795" style="zoom:67%;"></p>
-<h3 id="三、迪杰特斯拉算法"><a href="#三、迪杰特斯拉算法" class="headerlink" title="三、迪杰特斯拉算法"></a>三、迪杰特斯拉算法</h3><h4 id="1-基本思想"><a href="#1-基本思想" class="headerlink" title="1.基本思想"></a>1.基本思想</h4><ol>
-<li>通过Dijkstra计算图G中的最短路径时，需要指定起点s(即从顶点s开始计算)。</li>
-<li>此外，引进两个集合S和U。S的作用是记录已求出最短路径的顶点(以及相应的最短路径长度，而U则是记录还未求出最短路径的顶点(以及该顶点到起点s的距离)。</li>
-<li>初始时，S中只有起点s；U中是除s之外的顶点，并且U中顶点的路径是”起点s到该顶点的路径”。然后，从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 然后，再从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 … 重复该操作，直到遍历完所有顶点。</li>
-</ol>
-<h4 id="2-操作步骤"><a href="#2-操作步骤" class="headerlink" title="2.操作步骤"></a>2.操作步骤</h4><ol>
-<li>初始时，S只包含起点s；U包含除s外的其他顶点，且U中顶点的距离为”起点s到该顶点的距离”[例如，U中顶点v的距离为(s,v)的长度，然后s和v不相邻，则v的距离为∞]。</li>
-<li>从U中选出”距离最短的顶点k”，并将顶点k加入到S中；同时，从U中移除顶点k。</li>
-<li>更新U中各个顶点到起点s的距离。之所以更新U中顶点的距离，是由于上一步中确定了k是求出最短路径的顶点，从而可以利用k来更新其它顶点的距离；例如，(s,v)的距离可能大于(s,k)+(k,v)的距离。</li>
-<li>重复步骤(2)和(3)，直到遍历完所有顶点。</li>
-</ol>
-<p>图解参考文章：(<a href="https://blog.csdn.net/qq_37796444/article/details/80663810">https://blog.csdn.net/qq_37796444/article/details/80663810</a>)</p>
-<h4 id="3-缺点"><a href="#3-缺点" class="headerlink" title="3.缺点"></a>3.缺点</h4><p>图的边不能有负权重呢，所以课上讲了弗洛伊德算法</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204749937.png" alt="image-20220720204749937" style="zoom: 67%;"></p>
-<p>另外：负权回路和负权重不一样，负权回路，指那种绕一圈下来和是负数的，因为只要一直绕，就可以一直变小，所以这种就不能解决</p>
-<h3 id="四、matlab实现"><a href="#四、matlab实现" class="headerlink" title="四、matlab实现"></a>四、matlab实现</h3><h4 id="1-最短路径"><a href="#1-最短路径" class="headerlink" title="1.最短路径"></a>1.最短路径</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204956337.png" alt="image-20220720204956337" style="zoom:80%;"></p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205009819.png" alt="image-20220720205009819" style="zoom:80%;"></p>
-<h4 id="2-返回任意两点的距离矩阵"><a href="#2-返回任意两点的距离矩阵" class="headerlink" title="2.返回任意两点的距离矩阵"></a>2.返回任意两点的距离矩阵</h4><p>注意：matlab里面的节点都得严格按照次序来排列，而且不是从0开始的，所以你还得转换一下</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205044933.png" alt="image-20220720205044933" style="zoom:67%;"></p>
-<h4 id="3-给定距离内的点"><a href="#3-给定距离内的点" class="headerlink" title="3.给定距离内的点"></a>3.给定距离内的点</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205144848.png" alt="image-20220720205144848" style="zoom: 67%;"></p>
-<p>以下题为例：</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210403288.png" alt="image-20220720210403288" style="zoom: 67%;"></p>
-<p>代码如下：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab">s = [<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>];<br>t = [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">8</span>];<br>w = [<span class="hljs-number">6</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">10</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">6</span>,<span class="hljs-number">10</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>];<br><span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>) <br>set( gca, <span class="hljs-string">&#x27;XTick&#x27;</span>, [], <span class="hljs-string">&#x27;YTick&#x27;</span>, [] );  <br>G = digraph(s, t,w);<br><span class="hljs-built_in">plot</span>(G)<br>[P,d] = shortestpath(G, <span class="hljs-number">1</span>, <span class="hljs-number">8</span>)  <span class="hljs-comment">%注意：该函数matlab2015b之后才有哦</span><br><br><span class="hljs-comment">% 在图中高亮我们的最短路径</span><br>myplot = <span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>);  <span class="hljs-comment">%首先将图赋给一个变量</span><br>highlight(myplot, P, <span class="hljs-string">&#x27;EdgeColor&#x27;</span>, <span class="hljs-string">&#x27;r&#x27;</span>)   <span class="hljs-comment">%对这个变量即我们刚刚绘制的图形进行高亮处理（给边加上r红色）</span><br></code></pre></td></tr></table></figure>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/untitled.jpg" alt="untitled"></p>
-<p>最终结果：1-&gt;3-&gt;2-&gt;5-&gt;8,距离为12</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210611304.png" alt="image-20220720210611304" style="zoom: 67%;"></p>
-<h3 id="五、floyd算法"><a href="#五、floyd算法" class="headerlink" title="五、floyd算法"></a>五、floyd算法</h3><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220814110800097.png" alt="image-20220814110800097"></p>
-<p>floyd算法三层for循环搞定：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[dist,path]</span> = <span class="hljs-title">Floyd_algorithm</span><span class="hljs-params">(D)</span></span><br><span class="hljs-comment">%% 该函数用于求解一个权重邻接矩阵任意两个节点之间的最短路径</span><br><span class="hljs-comment">% 输入：</span><br><span class="hljs-comment">%        D是权重邻接矩阵</span><br><span class="hljs-comment">% 输出：</span><br><span class="hljs-comment">%        dist是最短距离矩阵，其元素dist_ij表示表示i,j两个节点的最短距离</span><br><span class="hljs-comment">%        path是路径矩阵，其元素path_ij表示起点为i，终点为j的两个节点之间的最短路径要经过的节点</span><br><br>n = <span class="hljs-built_in">size</span>(D,<span class="hljs-number">1</span>);  <span class="hljs-comment">% 计算节点的个数</span><br><br><span class="hljs-comment">% 初始化dist矩阵</span><br>dist = D;<br><br><span class="hljs-comment">% 下面我们来初始化path矩阵</span><br>path = <span class="hljs-built_in">zeros</span>(n);<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span> = <span class="hljs-number">1</span>:n<br>    path(:,<span class="hljs-built_in">j</span>) = <span class="hljs-built_in">j</span>;   <span class="hljs-comment">% 将第j列的元素变为j</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span> = <span class="hljs-number">1</span>:n<br>    path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">i</span>) = <span class="hljs-number">-1</span>;  <span class="hljs-comment">% 将主对角线元素变为-1</span><br><span class="hljs-keyword">end</span><br><br><span class="hljs-comment">% 下面开始三个循环</span><br><span class="hljs-keyword">for</span> k=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 中间节点k从1- n 循环</span><br>   <span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:n     <span class="hljs-comment">% 起始节点i从1- n 循环</span><br>      <span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span>=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 终点节点j从1-n 循环</span><br>          <span class="hljs-keyword">if</span> dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)&gt;dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>)  <span class="hljs-comment">% 如果i,j两个节点间的最短距离大于i和k的最短距离+k和j的最短距离</span><br>             dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>);  <span class="hljs-comment">% 那么我们就令这两个较短的距离之和取代i,j两点之间的最短距离</span><br>             path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=path(<span class="hljs-built_in">i</span>,k);   <span class="hljs-comment">% 起点为i，终点为j的两个节点之间的最短路径要经过的节点更新为path(i,k)</span><br>             <span class="hljs-comment">% 注意，上面一行语句不能写成path(i,j) = k; 这是网上很多地方都容易犯的错误</span><br>          <span class="hljs-keyword">end</span><br>      <span class="hljs-keyword">end</span><br>   <span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>数模</category>
-      </categories>
-      <tags>
-        <tag>图论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>7.多元回归分析</title>
     <url>/2022/07/20/7-%E5%A4%9A%E5%85%83%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>回归分析是数据分析中最基本和最重要的分析工具，其任务是研究自变量x与因变量y之间的相关关系，尝试解释y的形成机制，使用x去预测y</p>
@@ -818,6 +766,58 @@
       </tags>
   </entry>
   <entry>
+    <title>8.图论最短路径问题</title>
+    <url>/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>没错，就是数据结构与算法（还是离散？忘了，可能都学了）上学的那个最短路径算法，课堂上用的是迪杰特斯拉和弗洛伊德算法，这里也差不多，复习一下然后用matlab实现</p>
+<span id="more"></span>
+<h3 id="二、图"><a href="#二、图" class="headerlink" title="二、图"></a>二、图</h3><h4 id="1-数据结构——图"><a href="#1-数据结构——图" class="headerlink" title="1.数据结构——图"></a>1.数据结构——图</h4><p>图论中的图（Graph）是由若干给定的点及连接两点的线 所构成的图形，这种图形通常用来描述某些事物之间的某种特定关系，用点代表事物，用连接两点的线表示相应两个事 物间具有这种关系。 </p>
+<p>一个图可以用数学语言描述为G(V(G),E(G))。V(vertex)指的是图的顶点集，E(edge)指的是图的边集。 根据边是否有方向，可将图分为有向图和无向图。 另外，有些图的边上还可能有权值，这样的图称为有权图。</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204035963.png" alt="image-20220720204035963"></p>
+<p>通过这个网址可以在线作图：<a href="https://csacademy.com/app/graph_editor/">CS Academy</a></p>
+<p>当然matlab也可以，但是比较丑：</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204134367.png" alt="image-20220720204134367" style="zoom: 67%;"></p>
+<h4 id="2-邻接矩阵"><a href="#2-邻接矩阵" class="headerlink" title="2.邻接矩阵"></a>2.邻接矩阵</h4><p>就是数据结构那个！</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204238553.png" alt="image-20220720204238553" style="zoom:67%;"></p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204251795.png" alt="image-20220720204251795" style="zoom:67%;"></p>
+<h3 id="三、迪杰特斯拉算法"><a href="#三、迪杰特斯拉算法" class="headerlink" title="三、迪杰特斯拉算法"></a>三、迪杰特斯拉算法</h3><h4 id="1-基本思想"><a href="#1-基本思想" class="headerlink" title="1.基本思想"></a>1.基本思想</h4><ol>
+<li>通过Dijkstra计算图G中的最短路径时，需要指定起点s(即从顶点s开始计算)。</li>
+<li>此外，引进两个集合S和U。S的作用是记录已求出最短路径的顶点(以及相应的最短路径长度，而U则是记录还未求出最短路径的顶点(以及该顶点到起点s的距离)。</li>
+<li>初始时，S中只有起点s；U中是除s之外的顶点，并且U中顶点的路径是”起点s到该顶点的路径”。然后，从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 然后，再从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 … 重复该操作，直到遍历完所有顶点。</li>
+</ol>
+<h4 id="2-操作步骤"><a href="#2-操作步骤" class="headerlink" title="2.操作步骤"></a>2.操作步骤</h4><ol>
+<li>初始时，S只包含起点s；U包含除s外的其他顶点，且U中顶点的距离为”起点s到该顶点的距离”[例如，U中顶点v的距离为(s,v)的长度，然后s和v不相邻，则v的距离为∞]。</li>
+<li>从U中选出”距离最短的顶点k”，并将顶点k加入到S中；同时，从U中移除顶点k。</li>
+<li>更新U中各个顶点到起点s的距离。之所以更新U中顶点的距离，是由于上一步中确定了k是求出最短路径的顶点，从而可以利用k来更新其它顶点的距离；例如，(s,v)的距离可能大于(s,k)+(k,v)的距离。</li>
+<li>重复步骤(2)和(3)，直到遍历完所有顶点。</li>
+</ol>
+<p>图解参考文章：(<a href="https://blog.csdn.net/qq_37796444/article/details/80663810">https://blog.csdn.net/qq_37796444/article/details/80663810</a>)</p>
+<h4 id="3-缺点"><a href="#3-缺点" class="headerlink" title="3.缺点"></a>3.缺点</h4><p>图的边不能有负权重呢，所以课上讲了弗洛伊德算法</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204749937.png" alt="image-20220720204749937" style="zoom: 67%;"></p>
+<p>另外：负权回路和负权重不一样，负权回路，指那种绕一圈下来和是负数的，因为只要一直绕，就可以一直变小，所以这种就不能解决</p>
+<h3 id="四、matlab实现"><a href="#四、matlab实现" class="headerlink" title="四、matlab实现"></a>四、matlab实现</h3><h4 id="1-最短路径"><a href="#1-最短路径" class="headerlink" title="1.最短路径"></a>1.最短路径</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204956337.png" alt="image-20220720204956337" style="zoom:80%;"></p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205009819.png" alt="image-20220720205009819" style="zoom:80%;"></p>
+<h4 id="2-返回任意两点的距离矩阵"><a href="#2-返回任意两点的距离矩阵" class="headerlink" title="2.返回任意两点的距离矩阵"></a>2.返回任意两点的距离矩阵</h4><p>注意：matlab里面的节点都得严格按照次序来排列，而且不是从0开始的，所以你还得转换一下</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205044933.png" alt="image-20220720205044933" style="zoom:67%;"></p>
+<h4 id="3-给定距离内的点"><a href="#3-给定距离内的点" class="headerlink" title="3.给定距离内的点"></a>3.给定距离内的点</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205144848.png" alt="image-20220720205144848" style="zoom: 67%;"></p>
+<p>以下题为例：</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210403288.png" alt="image-20220720210403288" style="zoom: 67%;"></p>
+<p>代码如下：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab">s = [<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>];<br>t = [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">8</span>];<br>w = [<span class="hljs-number">6</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">10</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">6</span>,<span class="hljs-number">10</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>];<br><span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>) <br>set( gca, <span class="hljs-string">&#x27;XTick&#x27;</span>, [], <span class="hljs-string">&#x27;YTick&#x27;</span>, [] );  <br>G = digraph(s, t,w);<br><span class="hljs-built_in">plot</span>(G)<br>[P,d] = shortestpath(G, <span class="hljs-number">1</span>, <span class="hljs-number">8</span>)  <span class="hljs-comment">%注意：该函数matlab2015b之后才有哦</span><br><br><span class="hljs-comment">% 在图中高亮我们的最短路径</span><br>myplot = <span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>);  <span class="hljs-comment">%首先将图赋给一个变量</span><br>highlight(myplot, P, <span class="hljs-string">&#x27;EdgeColor&#x27;</span>, <span class="hljs-string">&#x27;r&#x27;</span>)   <span class="hljs-comment">%对这个变量即我们刚刚绘制的图形进行高亮处理（给边加上r红色）</span><br></code></pre></td></tr></table></figure>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/untitled.jpg" alt="untitled"></p>
+<p>最终结果：1-&gt;3-&gt;2-&gt;5-&gt;8,距离为12</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210611304.png" alt="image-20220720210611304" style="zoom: 67%;"></p>
+<h3 id="五、floyd算法"><a href="#五、floyd算法" class="headerlink" title="五、floyd算法"></a>五、floyd算法</h3><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220814110800097.png" alt="image-20220814110800097"></p>
+<p>floyd算法三层for循环搞定：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[dist,path]</span> = <span class="hljs-title">Floyd_algorithm</span><span class="hljs-params">(D)</span></span><br><span class="hljs-comment">%% 该函数用于求解一个权重邻接矩阵任意两个节点之间的最短路径</span><br><span class="hljs-comment">% 输入：</span><br><span class="hljs-comment">%        D是权重邻接矩阵</span><br><span class="hljs-comment">% 输出：</span><br><span class="hljs-comment">%        dist是最短距离矩阵，其元素dist_ij表示表示i,j两个节点的最短距离</span><br><span class="hljs-comment">%        path是路径矩阵，其元素path_ij表示起点为i，终点为j的两个节点之间的最短路径要经过的节点</span><br><br>n = <span class="hljs-built_in">size</span>(D,<span class="hljs-number">1</span>);  <span class="hljs-comment">% 计算节点的个数</span><br><br><span class="hljs-comment">% 初始化dist矩阵</span><br>dist = D;<br><br><span class="hljs-comment">% 下面我们来初始化path矩阵</span><br>path = <span class="hljs-built_in">zeros</span>(n);<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span> = <span class="hljs-number">1</span>:n<br>    path(:,<span class="hljs-built_in">j</span>) = <span class="hljs-built_in">j</span>;   <span class="hljs-comment">% 将第j列的元素变为j</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span> = <span class="hljs-number">1</span>:n<br>    path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">i</span>) = <span class="hljs-number">-1</span>;  <span class="hljs-comment">% 将主对角线元素变为-1</span><br><span class="hljs-keyword">end</span><br><br><span class="hljs-comment">% 下面开始三个循环</span><br><span class="hljs-keyword">for</span> k=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 中间节点k从1- n 循环</span><br>   <span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:n     <span class="hljs-comment">% 起始节点i从1- n 循环</span><br>      <span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span>=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 终点节点j从1-n 循环</span><br>          <span class="hljs-keyword">if</span> dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)&gt;dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>)  <span class="hljs-comment">% 如果i,j两个节点间的最短距离大于i和k的最短距离+k和j的最短距离</span><br>             dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>);  <span class="hljs-comment">% 那么我们就令这两个较短的距离之和取代i,j两点之间的最短距离</span><br>             path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=path(<span class="hljs-built_in">i</span>,k);   <span class="hljs-comment">% 起点为i，终点为j的两个节点之间的最短路径要经过的节点更新为path(i,k)</span><br>             <span class="hljs-comment">% 注意，上面一行语句不能写成path(i,j) = k; 这是网上很多地方都容易犯的错误</span><br>          <span class="hljs-keyword">end</span><br>      <span class="hljs-keyword">end</span><br>   <span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>数模</category>
+      </categories>
+      <tags>
+        <tag>图论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>9.灰色关联分析</title>
     <url>/2022/08/12/9-%E7%81%B0%E8%89%B2%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p><img src="/2022/08/12/9-%E7%81%B0%E8%89%B2%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90/image-20220812160636917.png" alt="image-20220812160636917" style="zoom: 67%;"></p>
@@ -879,22 +879,6 @@
       <categories>
         <category>数模</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Restart Plan</title>
-    <url>/2024/01/27/Restart-Plan/</url>
-    <content><![CDATA[<h2 id="重启计划"><a href="#重启计划" class="headerlink" title="重启计划"></a>重启计划</h2><p>记录学习周报和日常，秉承着并没有人看的信心，作为本人立flag来自驱的平台</p>
-<span id="more"></span>
-<p>时间从24年寒假，即保研fudan后的第一个寒假开始进行</p>
-<p>参考了某thu学长的某计划，本人觉得有意思，也后悔本科时间断性努力</p>
-<hr>
-<h3 id="第1-2周-1-29-2-11"><a href="#第1-2周-1-29-2-11" class="headerlink" title="第1~2周 1.29~2.11"></a>第1~2周 1.29~2.11</h3><blockquote>
-<p>主要任务：学习java语言，关注实习情况</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>日常</tag>
-      </tags>
   </entry>
   <entry>
     <title>Makefile</title>
@@ -1266,20 +1250,20 @@
 ]]></content>
   </entry>
   <entry>
-    <title>hot100</title>
-    <url>/2023/06/15/hot100/</url>
-    <content><![CDATA[<h3 id="构建回文串检测"><a href="#构建回文串检测" class="headerlink" title="构建回文串检测"></a>构建回文串检测</h3><p>回文：</p>
-<blockquote>
-<p>奇数项和偶数项分别指字符串中字符个数为奇数的项和字符个数为偶数的项</p>
+    <title>Restart Plan</title>
+    <url>/2024/01/27/Restart-Plan/</url>
+    <content><![CDATA[<h2 id="重启计划"><a href="#重启计划" class="headerlink" title="重启计划"></a>重启计划</h2><p>记录学习周报和日常，秉承着并没有人看的信心，作为本人立flag来自驱的平台</p>
+<span id="more"></span>
+<p>时间从24年寒假，即保研fudan后的第一个寒假开始进行</p>
+<p>参考了某thu学长的某计划，本人觉得有意思，也后悔本科时间断性努力</p>
+<hr>
+<h3 id="第1-2周-1-29-2-11"><a href="#第1-2周-1-29-2-11" class="headerlink" title="第1~2周 1.29~2.11"></a>第1~2周 1.29~2.11</h3><blockquote>
+<p>主要任务：学习java语言，关注实习情况</p>
 </blockquote>
-<p>如果截取的字符串是奇数，那么这个串是回文串要求hash后的字符只有一个个数为奇数，其他为偶数</p>
-<p>如果截取的字符串是偶数，那么这个串是回文串要求hash后的字符个数全为偶数</p>
-<p>替换就是把一个数的减少，另一个数的增加</p>
-<p>最多k次替换，</p>
-<p>考虑偶数，问题变成最少需要替换多少个字符才能将其变成偶数——调整奇数项，假设现在奇数项有2m项，将两个奇数项进行匹配，次数取较小的奇数项，故可知这个步骤所需的次数就是奇数项里最小的m个的个数的和sum（将数量最少的来匹配哪些多的字符），如果k小于sum，或者奇数项不是偶数个或者，则不是回文</p>
-<p>考虑奇数，选择数量最多的奇数项作为中心项，这样就不用将其进行匹配，然后对剩余的想进行偶数考虑的匹配</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">getmap</span><span class="hljs-params">(string s,unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp; mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;s.<span class="hljs-built_in">size</span>();i++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(mmap.<span class="hljs-built_in">find</span>(s[i])!=mmap.<span class="hljs-built_in">end</span>()) mmap[s[i]]++;<br>            <span class="hljs-keyword">else</span> mmap[s[i]]=<span class="hljs-number">1</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">getoutmost</span><span class="hljs-params">(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp;mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-type">int</span> maxi=<span class="hljs-number">-1</span>;<br>        unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;::iterator tmp=mmap.<span class="hljs-built_in">begin</span>();<br>        <span class="hljs-keyword">for</span>(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;::iterator it=mmap.<span class="hljs-built_in">begin</span>();it!=mmap.<span class="hljs-built_in">end</span>();it++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(it-&gt;second%<span class="hljs-number">2</span>&amp;&amp;it-&gt;second&gt;maxi)<br>            &#123;<br>                tmp=it;<br>                maxi=it-&gt;second;<br>            &#125;<br>        &#125;<br>        mmap.<span class="hljs-built_in">erase</span>(tmp);<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">deal</span><span class="hljs-params">(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp;mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        vector&lt;<span class="hljs-type">int</span>&gt; vtmp;<br>        <span class="hljs-type">int</span> sum=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> p:mmap)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(p.second%<span class="hljs-number">2</span>) vtmp.<span class="hljs-built_in">push_back</span>(p.second);<br>        &#125;<br>        <span class="hljs-keyword">if</span>(vtmp.<span class="hljs-built_in">size</span>()%<span class="hljs-number">2</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;<br>        <span class="hljs-keyword">else</span><br>        &#123;<br>            <span class="hljs-built_in">sort</span>(vtmp.<span class="hljs-built_in">begin</span>(),vtmp.<span class="hljs-built_in">end</span>());<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;vtmp.<span class="hljs-built_in">size</span>()/<span class="hljs-number">2</span>;i++)<br>            &#123;<br>                sum=sum+vtmp[i];<br>            &#125;<br>            <span class="hljs-keyword">return</span> sum;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">bool</span>&gt; <span class="hljs-title">canMakePaliQueries</span><span class="hljs-params">(string s, vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt;&amp; queries)</span> </span>&#123;<br>        vector&lt;<span class="hljs-type">bool</span>&gt; answer;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> p:queries)<br>        &#123;<br>            unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt; tmap;<br>            string tmp=s;<br>            <span class="hljs-type">int</span> st=p[<span class="hljs-number">0</span>];<br>            <span class="hljs-type">int</span> ed=p[<span class="hljs-number">1</span>];<br>            <span class="hljs-type">int</span> k=p[<span class="hljs-number">2</span>];<br>            <span class="hljs-type">int</span> sz=ed-st+<span class="hljs-number">1</span>;<br>            <span class="hljs-built_in">getmap</span>(s.<span class="hljs-built_in">substr</span>(st,sz),tmap);<br>            <span class="hljs-keyword">if</span>(sz%<span class="hljs-number">2</span>==<span class="hljs-number">1</span>)<br>            &#123;<br>                <span class="hljs-built_in">getoutmost</span>(tmap);<br>            &#125; <br>            <span class="hljs-type">int</span> res=<span class="hljs-built_in">deal</span>(tmap);<br>            <span class="hljs-keyword">if</span>(res==<span class="hljs-number">-1</span>||res&gt;k) answer.<span class="hljs-built_in">push_back</span>(<span class="hljs-literal">false</span>);<br>            <span class="hljs-keyword">else</span> answer.<span class="hljs-built_in">push_back</span>(<span class="hljs-literal">true</span>);<br>        &#125;<br>        <span class="hljs-keyword">return</span> answer;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 ]]></content>
+      <tags>
+        <tag>日常</tag>
+      </tags>
   </entry>
   <entry>
     <title>algorithm plus</title>
@@ -2086,6 +2070,23 @@
       <tags>
         <tag>DL</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>hot100</title>
+    <url>/2023/06/15/hot100/</url>
+    <content><![CDATA[<span id="more"></span>
+<h3 id="构建回文串检测"><a href="#构建回文串检测" class="headerlink" title="构建回文串检测"></a>构建回文串检测</h3><p>回文：</p>
+<blockquote>
+<p>奇数项和偶数项分别指字符串中字符个数为奇数的项和字符个数为偶数的项</p>
+</blockquote>
+<p>如果截取的字符串是奇数，那么这个串是回文串要求hash后的字符只有一个个数为奇数，其他为偶数</p>
+<p>如果截取的字符串是偶数，那么这个串是回文串要求hash后的字符个数全为偶数</p>
+<p>替换就是把一个数的减少，另一个数的增加</p>
+<p>最多k次替换，</p>
+<p>考虑偶数，问题变成最少需要替换多少个字符才能将其变成偶数——调整奇数项，假设现在奇数项有2m项，将两个奇数项进行匹配，次数取较小的奇数项，故可知这个步骤所需的次数就是奇数项里最小的m个的个数的和sum（将数量最少的来匹配哪些多的字符），如果k小于sum，或者奇数项不是偶数个或者，则不是回文</p>
+<p>考虑奇数，选择数量最多的奇数项作为中心项，这样就不用将其进行匹配，然后对剩余的想进行偶数考虑的匹配</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">getmap</span><span class="hljs-params">(string s,unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp; mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;s.<span class="hljs-built_in">size</span>();i++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(mmap.<span class="hljs-built_in">find</span>(s[i])!=mmap.<span class="hljs-built_in">end</span>()) mmap[s[i]]++;<br>            <span class="hljs-keyword">else</span> mmap[s[i]]=<span class="hljs-number">1</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">getoutmost</span><span class="hljs-params">(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp;mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-type">int</span> maxi=<span class="hljs-number">-1</span>;<br>        unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;::iterator tmp=mmap.<span class="hljs-built_in">begin</span>();<br>        <span class="hljs-keyword">for</span>(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;::iterator it=mmap.<span class="hljs-built_in">begin</span>();it!=mmap.<span class="hljs-built_in">end</span>();it++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(it-&gt;second%<span class="hljs-number">2</span>&amp;&amp;it-&gt;second&gt;maxi)<br>            &#123;<br>                tmp=it;<br>                maxi=it-&gt;second;<br>            &#125;<br>        &#125;<br>        mmap.<span class="hljs-built_in">erase</span>(tmp);<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">deal</span><span class="hljs-params">(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp;mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        vector&lt;<span class="hljs-type">int</span>&gt; vtmp;<br>        <span class="hljs-type">int</span> sum=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> p:mmap)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(p.second%<span class="hljs-number">2</span>) vtmp.<span class="hljs-built_in">push_back</span>(p.second);<br>        &#125;<br>        <span class="hljs-keyword">if</span>(vtmp.<span class="hljs-built_in">size</span>()%<span class="hljs-number">2</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;<br>        <span class="hljs-keyword">else</span><br>        &#123;<br>            <span class="hljs-built_in">sort</span>(vtmp.<span class="hljs-built_in">begin</span>(),vtmp.<span class="hljs-built_in">end</span>());<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;vtmp.<span class="hljs-built_in">size</span>()/<span class="hljs-number">2</span>;i++)<br>            &#123;<br>                sum=sum+vtmp[i];<br>            &#125;<br>            <span class="hljs-keyword">return</span> sum;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">bool</span>&gt; <span class="hljs-title">canMakePaliQueries</span><span class="hljs-params">(string s, vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt;&amp; queries)</span> </span>&#123;<br>        vector&lt;<span class="hljs-type">bool</span>&gt; answer;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> p:queries)<br>        &#123;<br>            unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt; tmap;<br>            string tmp=s;<br>            <span class="hljs-type">int</span> st=p[<span class="hljs-number">0</span>];<br>            <span class="hljs-type">int</span> ed=p[<span class="hljs-number">1</span>];<br>            <span class="hljs-type">int</span> k=p[<span class="hljs-number">2</span>];<br>            <span class="hljs-type">int</span> sz=ed-st+<span class="hljs-number">1</span>;<br>            <span class="hljs-built_in">getmap</span>(s.<span class="hljs-built_in">substr</span>(st,sz),tmap);<br>            <span class="hljs-keyword">if</span>(sz%<span class="hljs-number">2</span>==<span class="hljs-number">1</span>)<br>            &#123;<br>                <span class="hljs-built_in">getoutmost</span>(tmap);<br>            &#125; <br>            <span class="hljs-type">int</span> res=<span class="hljs-built_in">deal</span>(tmap);<br>            <span class="hljs-keyword">if</span>(res==<span class="hljs-number">-1</span>||res&gt;k) answer.<span class="hljs-built_in">push_back</span>(<span class="hljs-literal">false</span>);<br>            <span class="hljs-keyword">else</span> answer.<span class="hljs-built_in">push_back</span>(<span class="hljs-literal">true</span>);<br>        &#125;<br>        <span class="hljs-keyword">return</span> answer;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+]]></content>
   </entry>
   <entry>
     <title>计网复习</title>
