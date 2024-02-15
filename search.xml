@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>10.模糊综合评价</title>
+    <url>/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/</url>
+    <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>模糊评价问题主要解决以下问题：</p>
+<ol>
+<li>将论域中的对象对应评语集中一个指定的评语</li>
+<li>将方案作为评语集并选择一个最优的方案</li>
+</ol>
+<span id="more"></span>
+<h3 id="二、模糊集合和隶属函数"><a href="#二、模糊集合和隶属函数" class="headerlink" title="二、模糊集合和隶属函数"></a>二、模糊集合和隶属函数</h3><h4 id="1-概念"><a href="#1-概念" class="headerlink" title="1. 概念"></a>1. 概念</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153845840.png" alt="image-20220813153845840"></p>
+<p>经典集合概念中，特征函数作用于论域上，使得每个元素要么位于集合中，要么不在集合中</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153934402.png" alt="image-20220813153934402"></p>
+<p>在模糊集合中，元素是否在集合中以概率的方式表示，与之对应的函数是隶属函数，其值域为[0,1]</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154055917.png" alt="image-20220813154055917"></p>
+<p>对于模糊集合的表示，zadeh表示法较为常用，但需要注意的是，上述表示方法仅仅是表示方法，并不存在所谓的除和加的关系</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154234936.png" alt="image-20220813154234936"></p>
+<h4 id="2-隶属函数的确定"><a href="#2-隶属函数的确定" class="headerlink" title="2. 隶属函数的确定"></a>2. 隶属函数的确定</h4><p>（1）模糊统计法<img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154518820.png" alt="image-20220813154518820"></p>
+<p>（2）借助已有的指标</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154532059.png" alt="image-20220813154532059"></p>
+<p>（3）指派法</p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154555491.png" alt="image-20220813154555491"></p>
+<p>例2中并没有直接使用左图的梯型分布，对于中间型，其去掉了中间不变的部分</p>
+<h4 id="3-模糊综合评价"><a href="#3-模糊综合评价" class="headerlink" title="3.模糊综合评价"></a>3.模糊综合评价</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154849750.png" alt="image-20220813154849750"></p>
+<h3 id="三、应用"><a href="#三、应用" class="headerlink" title="三、应用"></a>三、应用</h3><h3 id="1-一级模糊综合评判"><a href="#1-一级模糊综合评判" class="headerlink" title="1.一级模糊综合评判"></a>1.一级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155052120.png" alt="image-20220813155052120"></p>
+<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155158365.png" alt="image-20220813155158365"></p>
+<h3 id="2-多级模糊综合评判"><a href="#2-多级模糊综合评判" class="headerlink" title="2.多级模糊综合评判"></a>2.多级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155353593.png" alt="image-20220813155353593"></p>
+<p>计算量比较小，没有用到代码</p>
+]]></content>
+      <categories>
+        <category>数模</category>
+      </categories>
+      <tags>
+        <tag>评价类问题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>1.层次分析法模型</title>
     <url>/2022/06/20/1-%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95%E6%A8%A1%E5%9E%8B/</url>
     <content><![CDATA[<h3 id="1-模型介绍"><a href="#1-模型介绍" class="headerlink" title="1. 模型介绍"></a>1. 模型介绍</h3><blockquote>
@@ -126,39 +161,83 @@
       </tags>
   </entry>
   <entry>
-    <title>10.模糊综合评价</title>
-    <url>/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/</url>
-    <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>模糊评价问题主要解决以下问题：</p>
-<ol>
-<li>将论域中的对象对应评语集中一个指定的评语</li>
-<li>将方案作为评语集并选择一个最优的方案</li>
-</ol>
+    <title>11.分类模型</title>
+    <url>/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>本节主要使用逻辑回归和Fisher线性判别分析来解决二分类和多分类问题。实现时只需使用spss即可</p>
 <span id="more"></span>
-<h3 id="二、模糊集合和隶属函数"><a href="#二、模糊集合和隶属函数" class="headerlink" title="二、模糊集合和隶属函数"></a>二、模糊集合和隶属函数</h3><h4 id="1-概念"><a href="#1-概念" class="headerlink" title="1. 概念"></a>1. 概念</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153845840.png" alt="image-20220813153845840"></p>
-<p>经典集合概念中，特征函数作用于论域上，使得每个元素要么位于集合中，要么不在集合中</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813153934402.png" alt="image-20220813153934402"></p>
-<p>在模糊集合中，元素是否在集合中以概率的方式表示，与之对应的函数是隶属函数，其值域为[0,1]</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154055917.png" alt="image-20220813154055917"></p>
-<p>对于模糊集合的表示，zadeh表示法较为常用，但需要注意的是，上述表示方法仅仅是表示方法，并不存在所谓的除和加的关系</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154234936.png" alt="image-20220813154234936"></p>
-<h4 id="2-隶属函数的确定"><a href="#2-隶属函数的确定" class="headerlink" title="2. 隶属函数的确定"></a>2. 隶属函数的确定</h4><p>（1）模糊统计法<img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154518820.png" alt="image-20220813154518820"></p>
-<p>（2）借助已有的指标</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154532059.png" alt="image-20220813154532059"></p>
-<p>（3）指派法</p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154555491.png" alt="image-20220813154555491"></p>
-<p>例2中并没有直接使用左图的梯型分布，对于中间型，其去掉了中间不变的部分</p>
-<h4 id="3-模糊综合评价"><a href="#3-模糊综合评价" class="headerlink" title="3.模糊综合评价"></a>3.模糊综合评价</h4><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813154849750.png" alt="image-20220813154849750"></p>
-<h3 id="三、应用"><a href="#三、应用" class="headerlink" title="三、应用"></a>三、应用</h3><h3 id="1-一级模糊综合评判"><a href="#1-一级模糊综合评判" class="headerlink" title="1.一级模糊综合评判"></a>1.一级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155052120.png" alt="image-20220813155052120"></p>
-<p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155158365.png" alt="image-20220813155158365"></p>
-<h3 id="2-多级模糊综合评判"><a href="#2-多级模糊综合评判" class="headerlink" title="2.多级模糊综合评判"></a>2.多级模糊综合评判</h3><p><img src="/2022/08/13/10-%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/image-20220813155353593.png" alt="image-20220813155353593"></p>
-<p>计算量比较小，没有用到代码</p>
+<p>下述过程以鸢尾花例题进行</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170424949.png" alt="image-20220814170424949"></p>
+<p>共有三种类型的鸢尾花，已知数据有四种，要求通过下列已有数据预测鸢尾花的种类</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170744708.png" alt="image-20220814170744708"></p>
+<h3 id="二、实现过程"><a href="#二、实现过程" class="headerlink" title="二、实现过程"></a>二、实现过程</h3><h4 id="1-数据预处理"><a href="#1-数据预处理" class="headerlink" title="1.数据预处理"></a>1.数据预处理</h4><p>把种类表示成数字，这里可以使用excel的替换来完成</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170635436.png" alt="image-20220814170635436" style="zoom:67%;"></p>
+<p>这里我对种类排好序之后拖出来的</p>
+<h4 id="2-逻辑回归"><a href="#2-逻辑回归" class="headerlink" title="2.逻辑回归"></a>2.逻辑回归</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170911837.png" alt="image-20220814170911837"></p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170923189.png" alt="image-20220814170923189"></p>
+<p>这里有一条警告，告说明我们的数据区分度非常高，存在准完全分隔说明样本划分的比较彻底，这一般对于分类结果而言是好事情。</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171041908.png" alt="image-20220814171041908"></p>
+<p>最终分类结果如下：对于已有数据，模型对于三种鸢尾燕分类效果分别为97.9%,100%,98%</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171247854.png" alt="image-20220814171247854"></p>
+<p>预测结果如下：</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171932085.png" alt="image-20220814171932085"></p>
+<blockquote>
+<p>对于二分类问题，在选择的时候选二元logistic即可</p>
+<p>若最终分类效果较差，可以先生成其二次项，结合二次项进行分类，但可能会有过拟合的现象，这时可以交叉验证</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171730339.png" alt="image-20220814171730339" style="zoom: 50%;"></p>
+</blockquote>
+<h4 id="3-Fisher判别分析"><a href="#3-Fisher判别分析" class="headerlink" title="3.Fisher判别分析"></a>3.Fisher判别分析</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171823784.png" alt="image-20220814171823784"></p>
+<p>多分类问题在分组变量定义范围的时候进行设置，如该题，即可设置为1~3，分类效果如下：</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172050841.png" alt="image-20220814172050841"></p>
+<p>可以看到对于三种鸢尾花分类效果分别为97.9%，100%，95.9%，平均为97.9%的正确率，预测结果如下：</p>
+<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172243033.png" alt="image-20220814172243033"></p>
 ]]></content>
       <categories>
         <category>数模</category>
       </categories>
-      <tags>
-        <tag>评价类问题</tag>
-      </tags>
+  </entry>
+  <entry>
+    <title>12.聚类算法</title>
+    <url>/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>与分类算法不同，聚类算法并不知道分类的类别，其将样本划分为由类似对象组成的多个类。主要介绍三种聚类算法：kmean/kmean++，系统聚类，DBSCAN</p>
+<span id="more"></span>
+<p>以下面的数据进行分析：</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183817108.png" alt="image-20220817183817108" style="zoom: 67%;"></p>
+<p>由于数据的量纲不同，在聚类前进行z-score标准化操作：（spss-分析-描述-将标准化值另存为变量）</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184702444.png" alt="image-20220817184702444"></p>
+<h3 id="二、kmean"><a href="#二、kmean" class="headerlink" title="二、kmean"></a>二、kmean</h3><h4 id="1-原理"><a href="#1-原理" class="headerlink" title="1.原理"></a>1.原理</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183919914.png" alt="image-20220817183919914" style="zoom:67%;"></p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184742899.png" alt="image-20220817184742899" style="zoom: 67%;"></p>
+<p>kmeans++算法对kmeans算法进行了优化：</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184810923.png" alt="image-20220817184810923"></p>
+<h4 id="2-算法流程图"><a href="#2-算法流程图" class="headerlink" title="2.算法流程图"></a>2.算法流程图</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190508409.png" alt="image-20220817190508409"></p>
+<h4 id="3-实现"><a href="#3-实现" class="headerlink" title="3.实现"></a>3.实现</h4><p>spss默认使用kmeans++算法进行聚类（分析-分类-kmeans聚类）</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185118590.png" alt="image-20220817185118590"><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185129648.png" alt="image-20220817185129648"></p>
+<p>因为kmeans算法需要指定分类的类别数量，这里进行了尝试，选择分2类，这一选择取决个人感觉，能解释即可</p>
+<h3 id="三、系统聚类"><a href="#三、系统聚类" class="headerlink" title="三、系统聚类"></a>三、系统聚类</h3><h4 id="1-原理-1"><a href="#1-原理-1" class="headerlink" title="1.原理"></a>1.原理</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190628028.png" alt="image-20220817190628028" style="zoom:67%;"></p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190649926.png" alt="image-20220817190649926" style="zoom:67%;"></p>
+<h4 id="2-实现"><a href="#2-实现" class="headerlink" title="2.实现"></a>2.实现</h4><p>（1）聚类</p>
+<p>spss分析-分类-系统聚类</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191827717.png" alt="image-20220817191827717" style="zoom:67%;"></p>
+<p>得到谱系图如下，按竖线往下可进行分类</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191937374.png" alt="image-20220817191937374"></p>
+<p>（2）使用肘部法则得到较优的分类数量</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192138168.png" alt="image-20220817192138168"></p>
+<p>下图中的系数体现了畸变程度，在阶段1时分为n类，n为个体数，在最后的阶段分为1类，故畸变程度较大，将该列移至excel并按降序排列作图</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192308937.png" alt="image-20220817192308937" style="zoom:67%;"></p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192705809.png" alt="image-20220817192705809" style="zoom:67%;"></p>
+<p>由上图可知类别为4就挺好的啦！（肘部）</p>
+<h3 id="四、DBSCAN算法"><a href="#四、DBSCAN算法" class="headerlink" title="四、DBSCAN算法"></a>四、DBSCAN算法</h3><h4 id="1-原理-2"><a href="#1-原理-2" class="headerlink" title="1.原理"></a>1.原理</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194035710.png" alt="image-20220817194035710" style="zoom:67%;"></p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194121276.png" alt="image-20220817194121276" style="zoom:67%;"></p>
+<p>伪代码如下：</p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194143789.png" alt="image-20220817194143789"></p>
+<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194209404.png" alt="image-20220817194209404"></p>
+<blockquote>
+<p>只有在看上去能用DBSCAN的时候采用，一般用系统聚类就够了</p>
+</blockquote>
+<p>哈哈哈数模系列可能会烂尾了。。。。（有时间再写）</p>
+]]></content>
+      <categories>
+        <category>数模</category>
+      </categories>
   </entry>
   <entry>
     <title>2.TOPSIS法</title>
@@ -245,85 +324,6 @@
       </tags>
   </entry>
   <entry>
-    <title>11.分类模型</title>
-    <url>/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>本节主要使用逻辑回归和Fisher线性判别分析来解决二分类和多分类问题。实现时只需使用spss即可</p>
-<span id="more"></span>
-<p>下述过程以鸢尾花例题进行</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170424949.png" alt="image-20220814170424949"></p>
-<p>共有三种类型的鸢尾花，已知数据有四种，要求通过下列已有数据预测鸢尾花的种类</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170744708.png" alt="image-20220814170744708"></p>
-<h3 id="二、实现过程"><a href="#二、实现过程" class="headerlink" title="二、实现过程"></a>二、实现过程</h3><h4 id="1-数据预处理"><a href="#1-数据预处理" class="headerlink" title="1.数据预处理"></a>1.数据预处理</h4><p>把种类表示成数字，这里可以使用excel的替换来完成</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170635436.png" alt="image-20220814170635436" style="zoom:67%;"></p>
-<p>这里我对种类排好序之后拖出来的</p>
-<h4 id="2-逻辑回归"><a href="#2-逻辑回归" class="headerlink" title="2.逻辑回归"></a>2.逻辑回归</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170911837.png" alt="image-20220814170911837"></p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814170923189.png" alt="image-20220814170923189"></p>
-<p>这里有一条警告，告说明我们的数据区分度非常高，存在准完全分隔说明样本划分的比较彻底，这一般对于分类结果而言是好事情。</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171041908.png" alt="image-20220814171041908"></p>
-<p>最终分类结果如下：对于已有数据，模型对于三种鸢尾燕分类效果分别为97.9%,100%,98%</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171247854.png" alt="image-20220814171247854"></p>
-<p>预测结果如下：</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171932085.png" alt="image-20220814171932085"></p>
-<blockquote>
-<p>对于二分类问题，在选择的时候选二元logistic即可</p>
-<p>若最终分类效果较差，可以先生成其二次项，结合二次项进行分类，但可能会有过拟合的现象，这时可以交叉验证</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171730339.png" alt="image-20220814171730339" style="zoom: 50%;"></p>
-</blockquote>
-<h4 id="3-Fisher判别分析"><a href="#3-Fisher判别分析" class="headerlink" title="3.Fisher判别分析"></a>3.Fisher判别分析</h4><p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814171823784.png" alt="image-20220814171823784"></p>
-<p>多分类问题在分组变量定义范围的时候进行设置，如该题，即可设置为1~3，分类效果如下：</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172050841.png" alt="image-20220814172050841"></p>
-<p>可以看到对于三种鸢尾花分类效果分别为97.9%，100%，95.9%，平均为97.9%的正确率，预测结果如下：</p>
-<p><img src="/2022/08/14/11-%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/image-20220814172243033.png" alt="image-20220814172243033"></p>
-]]></content>
-      <categories>
-        <category>数模</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>12.聚类算法</title>
-    <url>/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>与分类算法不同，聚类算法并不知道分类的类别，其将样本划分为由类似对象组成的多个类。主要介绍三种聚类算法：kmean/kmean++，系统聚类，DBSCAN</p>
-<span id="more"></span>
-<p>以下面的数据进行分析：</p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183817108.png" alt="image-20220817183817108" style="zoom: 67%;"></p>
-<p>由于数据的量纲不同，在聚类前进行z-score标准化操作：（spss-分析-描述-将标准化值另存为变量）</p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184702444.png" alt="image-20220817184702444"></p>
-<h3 id="二、kmean"><a href="#二、kmean" class="headerlink" title="二、kmean"></a>二、kmean</h3><h4 id="1-原理"><a href="#1-原理" class="headerlink" title="1.原理"></a>1.原理</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817183919914.png" alt="image-20220817183919914" style="zoom:67%;"></p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184742899.png" alt="image-20220817184742899" style="zoom: 67%;"></p>
-<p>kmeans++算法对kmeans算法进行了优化：</p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817184810923.png" alt="image-20220817184810923"></p>
-<h4 id="2-算法流程图"><a href="#2-算法流程图" class="headerlink" title="2.算法流程图"></a>2.算法流程图</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190508409.png" alt="image-20220817190508409"></p>
-<h4 id="3-实现"><a href="#3-实现" class="headerlink" title="3.实现"></a>3.实现</h4><p>spss默认使用kmeans++算法进行聚类（分析-分类-kmeans聚类）</p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185118590.png" alt="image-20220817185118590"><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817185129648.png" alt="image-20220817185129648"></p>
-<p>因为kmeans算法需要指定分类的类别数量，这里进行了尝试，选择分2类，这一选择取决个人感觉，能解释即可</p>
-<h3 id="三、系统聚类"><a href="#三、系统聚类" class="headerlink" title="三、系统聚类"></a>三、系统聚类</h3><h4 id="1-原理-1"><a href="#1-原理-1" class="headerlink" title="1.原理"></a>1.原理</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190628028.png" alt="image-20220817190628028" style="zoom:67%;"></p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817190649926.png" alt="image-20220817190649926" style="zoom:67%;"></p>
-<h4 id="2-实现"><a href="#2-实现" class="headerlink" title="2.实现"></a>2.实现</h4><p>（1）聚类</p>
-<p>spss分析-分类-系统聚类</p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191827717.png" alt="image-20220817191827717" style="zoom:67%;"></p>
-<p>得到谱系图如下，按竖线往下可进行分类</p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817191937374.png" alt="image-20220817191937374"></p>
-<p>（2）使用肘部法则得到较优的分类数量</p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192138168.png" alt="image-20220817192138168"></p>
-<p>下图中的系数体现了畸变程度，在阶段1时分为n类，n为个体数，在最后的阶段分为1类，故畸变程度较大，将该列移至excel并按降序排列作图</p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192308937.png" alt="image-20220817192308937" style="zoom:67%;"></p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817192705809.png" alt="image-20220817192705809" style="zoom:67%;"></p>
-<p>由上图可知类别为4就挺好的啦！（肘部）</p>
-<h3 id="四、DBSCAN算法"><a href="#四、DBSCAN算法" class="headerlink" title="四、DBSCAN算法"></a>四、DBSCAN算法</h3><h4 id="1-原理-2"><a href="#1-原理-2" class="headerlink" title="1.原理"></a>1.原理</h4><p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194035710.png" alt="image-20220817194035710" style="zoom:67%;"></p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194121276.png" alt="image-20220817194121276" style="zoom:67%;"></p>
-<p>伪代码如下：</p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194143789.png" alt="image-20220817194143789"></p>
-<p><img src="/2022/08/14/12-%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/image-20220817194209404.png" alt="image-20220817194209404"></p>
-<blockquote>
-<p>只有在看上去能用DBSCAN的时候采用，一般用系统聚类就够了</p>
-</blockquote>
-<p>哈哈哈数模系列可能会烂尾了。。。。（有时间再写）</p>
-]]></content>
-      <categories>
-        <category>数模</category>
-      </categories>
-  </entry>
-  <entry>
     <title>3.插值算法</title>
     <url>/2022/06/25/3-%E6%8F%92%E5%80%BC%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h3><blockquote>
@@ -397,81 +397,6 @@
 <p>下面是画图的效果，可以看到三次样条插值的效果非常像sin函数了！</p>
 <p><img src="/2022/06/25/3-%E6%8F%92%E5%80%BC%E7%AE%97%E6%B3%95/image-20220625193759930.png" alt="image-20220625193759930" style="zoom: 67%;"></p>
 <h3 id="3-n维插值问题"><a href="#3-n维插值问题" class="headerlink" title="3. n维插值问题"></a>3. n维插值问题</h3><p><img src="/2022/06/25/3-%E6%8F%92%E5%80%BC%E7%AE%97%E6%B3%95/image-20220625194049036.png" alt="image-20220625194049036" style="zoom:67%;"></p>
-]]></content>
-      <categories>
-        <category>数模</category>
-      </categories>
-      <tags>
-        <tag>插值与拟合</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.拟合算法</title>
-    <url>/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h3><p>拟合的目标是寻找一个函数（曲线），使得该曲线在某种准则下与所有数据点最为接近，即曲线拟合的最好（最小化损失函数）</p>
-<blockquote>
-<p>插值和拟合的区别</p>
-<p>插值算法中，若使用多项式插值，得到的函数要经过所有样本点，如果样本点太多，多项式次数较高，则可能造成龙格现象</p>
-<p>为了避免龙格现象，我们使用了分段的方法，但是当样本点较多时，分段得到的函数过于复杂，而我们很多时候并不需要保证曲线经过每个样本点，只需要保证误差足够小，这就是拟合的思想</p>
-</blockquote>
-<span id="more"></span>
-<h3 id="2-拟合的过程"><a href="#2-拟合的过程" class="headerlink" title="2. 拟合的过程"></a>2. 拟合的过程</h3><h4 id="（1）确定拟合曲线类型"><a href="#（1）确定拟合曲线类型" class="headerlink" title="（1）确定拟合曲线类型"></a>（1）确定拟合曲线类型</h4><ul>
-<li>首先画出散点图，观摩一下曲线的类型，下面这种就是一次函数啦！</li>
-</ul>
-<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629084011088.png" alt="image-20220629084011088" style="zoom:66%;"><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/data2-16564635768302.jpg" alt="data2" style="zoom: 15%;"></p>
-<ul>
-<li>如果题目给了拟合函数，就用题目给的</li>
-</ul>
-<h4 id="（2）确定拟合曲线参数"><a href="#（2）确定拟合曲线参数" class="headerlink" title="（2）确定拟合曲线参数"></a>（2）确定拟合曲线参数</h4><blockquote>
-<p>拟合的思想是在某种准则下误差最小，所得曲线与数据点最接近，首先我们需要构建这一准则，去衡量误差，在机器学习上叫做损失函数，下面就用机器学习的称呼吧</p>
-</blockquote>
-<h5 id="1）最小二乘法"><a href="#1）最小二乘法" class="headerlink" title="1）最小二乘法"></a>1）最小二乘法</h5><p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629105801498.png" alt="image-20220629105801498" style="zoom:67%;"></p>
-<p>衡量数据点和拟合所得的误差，第一种方法是绝对值，将绝对值相加之和，第二种是以平方的方式将距离相加，我们将使用平方来作为损失函数</p>
-<blockquote>
-<p>在实现最小二乘法时常使用第二种方法，因为对于损失函数，我们需要对其进行求导，而绝对值不适合求导，故平方要优于绝对值，为什么不使用3次方呢？因为奇数次方将会导致正负相抵，为什么不使用更高的偶次方呢？1）避免极端数据对拟合曲线的影响 2）使用平方的最小二乘法得到的结果与MLE极大似然估计一致</p>
-</blockquote>
-<h5 id="2）求解最小二乘法"><a href="#2）求解最小二乘法" class="headerlink" title="2）求解最小二乘法"></a>2）求解最小二乘法</h5><p>下面以一次函数为例求解最小二乘法，对于更加复杂的函数可以直接使用cftool工具箱</p>
-<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629110959206.png" alt="image-20220629110959206" style="zoom:67%;"></p>
-<p>下面是求参数k和参数b的代码实现</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab">clc;clear<br>n=<span class="hljs-built_in">size</span>(x,<span class="hljs-number">1</span>);<br>k=(n*sum(x.*y)-sum(x)*sum(y))/(n*sum(x.*x)-sum(x)*sum(x));<br>b=(sum(x.*x)*sum(y)-sum(x)*sum(x.*y))/(n*sum(x.*x)-sum(x)*sum(x));<br></code></pre></td></tr></table></figure>
-<h4 id="（3）评估拟合效果"><a href="#（3）评估拟合效果" class="headerlink" title="（3）评估拟合效果"></a>（3）评估拟合效果</h4><h5 id="1）评价所需指标"><a href="#1）评价所需指标" class="headerlink" title="1）评价所需指标"></a>1）评价所需指标</h5><p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629115106426.png" alt="image-20220629115106426" style="zoom: 67%;"></p>
-<p>上述指标中，SSE直接计算了数据值和拟合值之间的平方差，可以作为评估误差的量度，但由于有量纲的影响，单独看一种拟合的SSE无法判断其拟合效果，对于线性函数，可以使用R^2^来直接刻画这一误差，对于非线性函数，直接使用SSE来评估误差，此时R^2^已不能作为评判指标</p>
-<h5 id="2）线性函数评价指标R-2"><a href="#2）线性函数评价指标R-2" class="headerlink" title="2）线性函数评价指标R^2^"></a>2）线性函数评价指标R^2^</h5><ul>
-<li>对于线性函数，我们可以使用R^2^来对拟合结果进行评价，其值越接近1，说明误差平方和越接近0，误差越小</li>
-</ul>
-<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629150919377.png" alt="image-20220629150919377" style="zoom: 67%;"></p>
-<blockquote>
-<p>需要注意的是，<code>SST=SSE+SSR</code>等式仅在函数为线性函数情况下满足，具体以<code>y=kx+b</code>为例的推导过程如下：</p>
-</blockquote>
-<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629151314745.png" alt="image-20220629151314745" style="zoom: 67%;"></p>
-<blockquote>
-<p>这里所说的线性函数与我们常说的不同，我们常说的是对变量而言是线性的，而这里说的是对参数而言是线性的</p>
-</blockquote>
-<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629112406980.png" alt="image-20220629112406980" style="zoom: 67%;"></p>
-<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629112434307.png" alt="image-20220629112434307" style="zoom: 67%;"></p>
-<h5 id="3）非线性函数"><a href="#3）非线性函数" class="headerlink" title="3）非线性函数"></a>3）非线性函数</h5><ul>
-<li>对于非线性函数，我们可以直接使用误差平方和来进行评估即可</li>
-</ul>
-<p>下面给出计算上述指标的代码：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab">y_hat=k*x+b;<br>SSR=sum((y_hat-<span class="hljs-built_in">mean</span>(y)).^<span class="hljs-number">2</span>);<br>SSE=sum((y-y_hat).^<span class="hljs-number">2</span>);<br>SST=sum((y-<span class="hljs-built_in">mean</span>(y)).^<span class="hljs-number">2</span>);<br>R_2=SSR/SST;<br></code></pre></td></tr></table></figure>
-<h3 id="3-cftool工具箱"><a href="#3-cftool工具箱" class="headerlink" title="3. cftool工具箱"></a>3. cftool工具箱</h3><p>命令行输入<code>cftool</code>，界面如下所示</p>
-<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629153510781.png" alt="image-20220629153510781"></p>
-<p>这里给出一些使用上的建议：</p>
-<ol>
-<li>对于自定义函数，需要自己尝试一些参数</li>
-</ol>
-<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629154027822.png" alt="image-20220629154027822" style="zoom: 67%;"></p>
-<ol>
-<li>cftool可以自动生成代码，文件-&gt;generate code，例如上图得到以下函数</li>
-</ol>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[fitresult, gof]</span> = <span class="hljs-title">createFit</span><span class="hljs-params">(X, Y)</span></span><br>[xData, yData] = prepareCurveData( X, Y );<br><span class="hljs-comment">% Set up fittype and options.</span><br>ft = fittype( &#123;<span class="hljs-string">&#x27;(sin(x-pi))&#x27;</span>, <span class="hljs-string">&#x27;((x-10)^2)&#x27;</span>, <span class="hljs-string">&#x27;1&#x27;</span>&#125;, <span class="hljs-string">&#x27;independent&#x27;</span>, <span class="hljs-string">&#x27;x&#x27;</span>, <span class="hljs-string">&#x27;dependent&#x27;</span>, <span class="hljs-string">&#x27;y&#x27;</span>, <span class="hljs-string">&#x27;coefficients&#x27;</span>, &#123;<span class="hljs-string">&#x27;a&#x27;</span>, <span class="hljs-string">&#x27;b&#x27;</span>, <span class="hljs-string">&#x27;c&#x27;</span>&#125; );<br><span class="hljs-comment">% Fit model to data.</span><br>[fitresult, gof] = fit( xData, yData, ft );<br><span class="hljs-comment">% Plot fit with data.</span><br><span class="hljs-built_in">figure</span>( <span class="hljs-string">&#x27;Name&#x27;</span>, <span class="hljs-string">&#x27;untitled fit 1&#x27;</span> );<br>h = <span class="hljs-built_in">plot</span>( fitresult, xData, yData );<br><span class="hljs-built_in">legend</span>( h, <span class="hljs-string">&#x27;Y vs. X&#x27;</span>, <span class="hljs-string">&#x27;untitled fit 1&#x27;</span>, <span class="hljs-string">&#x27;Location&#x27;</span>, <span class="hljs-string">&#x27;NorthEast&#x27;</span>, <span class="hljs-string">&#x27;Interpreter&#x27;</span>, <span class="hljs-string">&#x27;none&#x27;</span> );<br><span class="hljs-comment">% Label axes</span><br>xlabel( <span class="hljs-string">&#x27;X&#x27;</span>, <span class="hljs-string">&#x27;Interpreter&#x27;</span>, <span class="hljs-string">&#x27;none&#x27;</span> );<br>ylabel( <span class="hljs-string">&#x27;Y&#x27;</span>, <span class="hljs-string">&#x27;Interpreter&#x27;</span>, <span class="hljs-string">&#x27;none&#x27;</span> );<br>grid on<br></code></pre></td></tr></table></figure>
-<ol>
-<li><p>这样生成的代码使用的时候直接粘function后面的一部分就行，即<code>[fitresult, gof] = createFit(X, Y)</code></p>
-</li>
-<li><p>下面的函数可以生成随机数据，可以用于模拟</p>
-</li>
-</ol>
-<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629155353868.png" alt="image-20220629155353868" style="zoom:67%;"></p>
 ]]></content>
       <categories>
         <category>数模</category>
@@ -570,6 +495,81 @@
 ]]></content>
       <tags>
         <tag>相关系数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.拟合算法</title>
+    <url>/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h3><p>拟合的目标是寻找一个函数（曲线），使得该曲线在某种准则下与所有数据点最为接近，即曲线拟合的最好（最小化损失函数）</p>
+<blockquote>
+<p>插值和拟合的区别</p>
+<p>插值算法中，若使用多项式插值，得到的函数要经过所有样本点，如果样本点太多，多项式次数较高，则可能造成龙格现象</p>
+<p>为了避免龙格现象，我们使用了分段的方法，但是当样本点较多时，分段得到的函数过于复杂，而我们很多时候并不需要保证曲线经过每个样本点，只需要保证误差足够小，这就是拟合的思想</p>
+</blockquote>
+<span id="more"></span>
+<h3 id="2-拟合的过程"><a href="#2-拟合的过程" class="headerlink" title="2. 拟合的过程"></a>2. 拟合的过程</h3><h4 id="（1）确定拟合曲线类型"><a href="#（1）确定拟合曲线类型" class="headerlink" title="（1）确定拟合曲线类型"></a>（1）确定拟合曲线类型</h4><ul>
+<li>首先画出散点图，观摩一下曲线的类型，下面这种就是一次函数啦！</li>
+</ul>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629084011088.png" alt="image-20220629084011088" style="zoom:66%;"><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/data2-16564635768302.jpg" alt="data2" style="zoom: 15%;"></p>
+<ul>
+<li>如果题目给了拟合函数，就用题目给的</li>
+</ul>
+<h4 id="（2）确定拟合曲线参数"><a href="#（2）确定拟合曲线参数" class="headerlink" title="（2）确定拟合曲线参数"></a>（2）确定拟合曲线参数</h4><blockquote>
+<p>拟合的思想是在某种准则下误差最小，所得曲线与数据点最接近，首先我们需要构建这一准则，去衡量误差，在机器学习上叫做损失函数，下面就用机器学习的称呼吧</p>
+</blockquote>
+<h5 id="1）最小二乘法"><a href="#1）最小二乘法" class="headerlink" title="1）最小二乘法"></a>1）最小二乘法</h5><p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629105801498.png" alt="image-20220629105801498" style="zoom:67%;"></p>
+<p>衡量数据点和拟合所得的误差，第一种方法是绝对值，将绝对值相加之和，第二种是以平方的方式将距离相加，我们将使用平方来作为损失函数</p>
+<blockquote>
+<p>在实现最小二乘法时常使用第二种方法，因为对于损失函数，我们需要对其进行求导，而绝对值不适合求导，故平方要优于绝对值，为什么不使用3次方呢？因为奇数次方将会导致正负相抵，为什么不使用更高的偶次方呢？1）避免极端数据对拟合曲线的影响 2）使用平方的最小二乘法得到的结果与MLE极大似然估计一致</p>
+</blockquote>
+<h5 id="2）求解最小二乘法"><a href="#2）求解最小二乘法" class="headerlink" title="2）求解最小二乘法"></a>2）求解最小二乘法</h5><p>下面以一次函数为例求解最小二乘法，对于更加复杂的函数可以直接使用cftool工具箱</p>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629110959206.png" alt="image-20220629110959206" style="zoom:67%;"></p>
+<p>下面是求参数k和参数b的代码实现</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab">clc;clear<br>n=<span class="hljs-built_in">size</span>(x,<span class="hljs-number">1</span>);<br>k=(n*sum(x.*y)-sum(x)*sum(y))/(n*sum(x.*x)-sum(x)*sum(x));<br>b=(sum(x.*x)*sum(y)-sum(x)*sum(x.*y))/(n*sum(x.*x)-sum(x)*sum(x));<br></code></pre></td></tr></table></figure>
+<h4 id="（3）评估拟合效果"><a href="#（3）评估拟合效果" class="headerlink" title="（3）评估拟合效果"></a>（3）评估拟合效果</h4><h5 id="1）评价所需指标"><a href="#1）评价所需指标" class="headerlink" title="1）评价所需指标"></a>1）评价所需指标</h5><p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629115106426.png" alt="image-20220629115106426" style="zoom: 67%;"></p>
+<p>上述指标中，SSE直接计算了数据值和拟合值之间的平方差，可以作为评估误差的量度，但由于有量纲的影响，单独看一种拟合的SSE无法判断其拟合效果，对于线性函数，可以使用R^2^来直接刻画这一误差，对于非线性函数，直接使用SSE来评估误差，此时R^2^已不能作为评判指标</p>
+<h5 id="2）线性函数评价指标R-2"><a href="#2）线性函数评价指标R-2" class="headerlink" title="2）线性函数评价指标R^2^"></a>2）线性函数评价指标R^2^</h5><ul>
+<li>对于线性函数，我们可以使用R^2^来对拟合结果进行评价，其值越接近1，说明误差平方和越接近0，误差越小</li>
+</ul>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629150919377.png" alt="image-20220629150919377" style="zoom: 67%;"></p>
+<blockquote>
+<p>需要注意的是，<code>SST=SSE+SSR</code>等式仅在函数为线性函数情况下满足，具体以<code>y=kx+b</code>为例的推导过程如下：</p>
+</blockquote>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629151314745.png" alt="image-20220629151314745" style="zoom: 67%;"></p>
+<blockquote>
+<p>这里所说的线性函数与我们常说的不同，我们常说的是对变量而言是线性的，而这里说的是对参数而言是线性的</p>
+</blockquote>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629112406980.png" alt="image-20220629112406980" style="zoom: 67%;"></p>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629112434307.png" alt="image-20220629112434307" style="zoom: 67%;"></p>
+<h5 id="3）非线性函数"><a href="#3）非线性函数" class="headerlink" title="3）非线性函数"></a>3）非线性函数</h5><ul>
+<li>对于非线性函数，我们可以直接使用误差平方和来进行评估即可</li>
+</ul>
+<p>下面给出计算上述指标的代码：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab">y_hat=k*x+b;<br>SSR=sum((y_hat-<span class="hljs-built_in">mean</span>(y)).^<span class="hljs-number">2</span>);<br>SSE=sum((y-y_hat).^<span class="hljs-number">2</span>);<br>SST=sum((y-<span class="hljs-built_in">mean</span>(y)).^<span class="hljs-number">2</span>);<br>R_2=SSR/SST;<br></code></pre></td></tr></table></figure>
+<h3 id="3-cftool工具箱"><a href="#3-cftool工具箱" class="headerlink" title="3. cftool工具箱"></a>3. cftool工具箱</h3><p>命令行输入<code>cftool</code>，界面如下所示</p>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629153510781.png" alt="image-20220629153510781"></p>
+<p>这里给出一些使用上的建议：</p>
+<ol>
+<li>对于自定义函数，需要自己尝试一些参数</li>
+</ol>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629154027822.png" alt="image-20220629154027822" style="zoom: 67%;"></p>
+<ol>
+<li>cftool可以自动生成代码，文件-&gt;generate code，例如上图得到以下函数</li>
+</ol>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[fitresult, gof]</span> = <span class="hljs-title">createFit</span><span class="hljs-params">(X, Y)</span></span><br>[xData, yData] = prepareCurveData( X, Y );<br><span class="hljs-comment">% Set up fittype and options.</span><br>ft = fittype( &#123;<span class="hljs-string">&#x27;(sin(x-pi))&#x27;</span>, <span class="hljs-string">&#x27;((x-10)^2)&#x27;</span>, <span class="hljs-string">&#x27;1&#x27;</span>&#125;, <span class="hljs-string">&#x27;independent&#x27;</span>, <span class="hljs-string">&#x27;x&#x27;</span>, <span class="hljs-string">&#x27;dependent&#x27;</span>, <span class="hljs-string">&#x27;y&#x27;</span>, <span class="hljs-string">&#x27;coefficients&#x27;</span>, &#123;<span class="hljs-string">&#x27;a&#x27;</span>, <span class="hljs-string">&#x27;b&#x27;</span>, <span class="hljs-string">&#x27;c&#x27;</span>&#125; );<br><span class="hljs-comment">% Fit model to data.</span><br>[fitresult, gof] = fit( xData, yData, ft );<br><span class="hljs-comment">% Plot fit with data.</span><br><span class="hljs-built_in">figure</span>( <span class="hljs-string">&#x27;Name&#x27;</span>, <span class="hljs-string">&#x27;untitled fit 1&#x27;</span> );<br>h = <span class="hljs-built_in">plot</span>( fitresult, xData, yData );<br><span class="hljs-built_in">legend</span>( h, <span class="hljs-string">&#x27;Y vs. X&#x27;</span>, <span class="hljs-string">&#x27;untitled fit 1&#x27;</span>, <span class="hljs-string">&#x27;Location&#x27;</span>, <span class="hljs-string">&#x27;NorthEast&#x27;</span>, <span class="hljs-string">&#x27;Interpreter&#x27;</span>, <span class="hljs-string">&#x27;none&#x27;</span> );<br><span class="hljs-comment">% Label axes</span><br>xlabel( <span class="hljs-string">&#x27;X&#x27;</span>, <span class="hljs-string">&#x27;Interpreter&#x27;</span>, <span class="hljs-string">&#x27;none&#x27;</span> );<br>ylabel( <span class="hljs-string">&#x27;Y&#x27;</span>, <span class="hljs-string">&#x27;Interpreter&#x27;</span>, <span class="hljs-string">&#x27;none&#x27;</span> );<br>grid on<br></code></pre></td></tr></table></figure>
+<ol>
+<li><p>这样生成的代码使用的时候直接粘function后面的一部分就行，即<code>[fitresult, gof] = createFit(X, Y)</code></p>
+</li>
+<li><p>下面的函数可以生成随机数据，可以用于模拟</p>
+</li>
+</ol>
+<p><img src="/2022/06/26/4-%E6%8B%9F%E5%90%88%E7%AE%97%E6%B3%95/image-20220629155353868.png" alt="image-20220629155353868" style="zoom:67%;"></p>
+]]></content>
+      <categories>
+        <category>数模</category>
+      </categories>
+      <tags>
+        <tag>插值与拟合</tag>
       </tags>
   </entry>
   <entry>
@@ -766,58 +766,6 @@
       </tags>
   </entry>
   <entry>
-    <title>8.图论最短路径问题</title>
-    <url>/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>没错，就是数据结构与算法（还是离散？忘了，可能都学了）上学的那个最短路径算法，课堂上用的是迪杰特斯拉和弗洛伊德算法，这里也差不多，复习一下然后用matlab实现</p>
-<span id="more"></span>
-<h3 id="二、图"><a href="#二、图" class="headerlink" title="二、图"></a>二、图</h3><h4 id="1-数据结构——图"><a href="#1-数据结构——图" class="headerlink" title="1.数据结构——图"></a>1.数据结构——图</h4><p>图论中的图（Graph）是由若干给定的点及连接两点的线 所构成的图形，这种图形通常用来描述某些事物之间的某种特定关系，用点代表事物，用连接两点的线表示相应两个事 物间具有这种关系。 </p>
-<p>一个图可以用数学语言描述为G(V(G),E(G))。V(vertex)指的是图的顶点集，E(edge)指的是图的边集。 根据边是否有方向，可将图分为有向图和无向图。 另外，有些图的边上还可能有权值，这样的图称为有权图。</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204035963.png" alt="image-20220720204035963"></p>
-<p>通过这个网址可以在线作图：<a href="https://csacademy.com/app/graph_editor/">CS Academy</a></p>
-<p>当然matlab也可以，但是比较丑：</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204134367.png" alt="image-20220720204134367" style="zoom: 67%;"></p>
-<h4 id="2-邻接矩阵"><a href="#2-邻接矩阵" class="headerlink" title="2.邻接矩阵"></a>2.邻接矩阵</h4><p>就是数据结构那个！</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204238553.png" alt="image-20220720204238553" style="zoom:67%;"></p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204251795.png" alt="image-20220720204251795" style="zoom:67%;"></p>
-<h3 id="三、迪杰特斯拉算法"><a href="#三、迪杰特斯拉算法" class="headerlink" title="三、迪杰特斯拉算法"></a>三、迪杰特斯拉算法</h3><h4 id="1-基本思想"><a href="#1-基本思想" class="headerlink" title="1.基本思想"></a>1.基本思想</h4><ol>
-<li>通过Dijkstra计算图G中的最短路径时，需要指定起点s(即从顶点s开始计算)。</li>
-<li>此外，引进两个集合S和U。S的作用是记录已求出最短路径的顶点(以及相应的最短路径长度，而U则是记录还未求出最短路径的顶点(以及该顶点到起点s的距离)。</li>
-<li>初始时，S中只有起点s；U中是除s之外的顶点，并且U中顶点的路径是”起点s到该顶点的路径”。然后，从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 然后，再从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 … 重复该操作，直到遍历完所有顶点。</li>
-</ol>
-<h4 id="2-操作步骤"><a href="#2-操作步骤" class="headerlink" title="2.操作步骤"></a>2.操作步骤</h4><ol>
-<li>初始时，S只包含起点s；U包含除s外的其他顶点，且U中顶点的距离为”起点s到该顶点的距离”[例如，U中顶点v的距离为(s,v)的长度，然后s和v不相邻，则v的距离为∞]。</li>
-<li>从U中选出”距离最短的顶点k”，并将顶点k加入到S中；同时，从U中移除顶点k。</li>
-<li>更新U中各个顶点到起点s的距离。之所以更新U中顶点的距离，是由于上一步中确定了k是求出最短路径的顶点，从而可以利用k来更新其它顶点的距离；例如，(s,v)的距离可能大于(s,k)+(k,v)的距离。</li>
-<li>重复步骤(2)和(3)，直到遍历完所有顶点。</li>
-</ol>
-<p>图解参考文章：(<a href="https://blog.csdn.net/qq_37796444/article/details/80663810">https://blog.csdn.net/qq_37796444/article/details/80663810</a>)</p>
-<h4 id="3-缺点"><a href="#3-缺点" class="headerlink" title="3.缺点"></a>3.缺点</h4><p>图的边不能有负权重呢，所以课上讲了弗洛伊德算法</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204749937.png" alt="image-20220720204749937" style="zoom: 67%;"></p>
-<p>另外：负权回路和负权重不一样，负权回路，指那种绕一圈下来和是负数的，因为只要一直绕，就可以一直变小，所以这种就不能解决</p>
-<h3 id="四、matlab实现"><a href="#四、matlab实现" class="headerlink" title="四、matlab实现"></a>四、matlab实现</h3><h4 id="1-最短路径"><a href="#1-最短路径" class="headerlink" title="1.最短路径"></a>1.最短路径</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204956337.png" alt="image-20220720204956337" style="zoom:80%;"></p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205009819.png" alt="image-20220720205009819" style="zoom:80%;"></p>
-<h4 id="2-返回任意两点的距离矩阵"><a href="#2-返回任意两点的距离矩阵" class="headerlink" title="2.返回任意两点的距离矩阵"></a>2.返回任意两点的距离矩阵</h4><p>注意：matlab里面的节点都得严格按照次序来排列，而且不是从0开始的，所以你还得转换一下</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205044933.png" alt="image-20220720205044933" style="zoom:67%;"></p>
-<h4 id="3-给定距离内的点"><a href="#3-给定距离内的点" class="headerlink" title="3.给定距离内的点"></a>3.给定距离内的点</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205144848.png" alt="image-20220720205144848" style="zoom: 67%;"></p>
-<p>以下题为例：</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210403288.png" alt="image-20220720210403288" style="zoom: 67%;"></p>
-<p>代码如下：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab">s = [<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>];<br>t = [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">8</span>];<br>w = [<span class="hljs-number">6</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">10</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">6</span>,<span class="hljs-number">10</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>];<br><span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>) <br>set( gca, <span class="hljs-string">&#x27;XTick&#x27;</span>, [], <span class="hljs-string">&#x27;YTick&#x27;</span>, [] );  <br>G = digraph(s, t,w);<br><span class="hljs-built_in">plot</span>(G)<br>[P,d] = shortestpath(G, <span class="hljs-number">1</span>, <span class="hljs-number">8</span>)  <span class="hljs-comment">%注意：该函数matlab2015b之后才有哦</span><br><br><span class="hljs-comment">% 在图中高亮我们的最短路径</span><br>myplot = <span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>);  <span class="hljs-comment">%首先将图赋给一个变量</span><br>highlight(myplot, P, <span class="hljs-string">&#x27;EdgeColor&#x27;</span>, <span class="hljs-string">&#x27;r&#x27;</span>)   <span class="hljs-comment">%对这个变量即我们刚刚绘制的图形进行高亮处理（给边加上r红色）</span><br></code></pre></td></tr></table></figure>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/untitled.jpg" alt="untitled"></p>
-<p>最终结果：1-&gt;3-&gt;2-&gt;5-&gt;8,距离为12</p>
-<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210611304.png" alt="image-20220720210611304" style="zoom: 67%;"></p>
-<h3 id="五、floyd算法"><a href="#五、floyd算法" class="headerlink" title="五、floyd算法"></a>五、floyd算法</h3><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220814110800097.png" alt="image-20220814110800097"></p>
-<p>floyd算法三层for循环搞定：</p>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[dist,path]</span> = <span class="hljs-title">Floyd_algorithm</span><span class="hljs-params">(D)</span></span><br><span class="hljs-comment">%% 该函数用于求解一个权重邻接矩阵任意两个节点之间的最短路径</span><br><span class="hljs-comment">% 输入：</span><br><span class="hljs-comment">%        D是权重邻接矩阵</span><br><span class="hljs-comment">% 输出：</span><br><span class="hljs-comment">%        dist是最短距离矩阵，其元素dist_ij表示表示i,j两个节点的最短距离</span><br><span class="hljs-comment">%        path是路径矩阵，其元素path_ij表示起点为i，终点为j的两个节点之间的最短路径要经过的节点</span><br><br>n = <span class="hljs-built_in">size</span>(D,<span class="hljs-number">1</span>);  <span class="hljs-comment">% 计算节点的个数</span><br><br><span class="hljs-comment">% 初始化dist矩阵</span><br>dist = D;<br><br><span class="hljs-comment">% 下面我们来初始化path矩阵</span><br>path = <span class="hljs-built_in">zeros</span>(n);<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span> = <span class="hljs-number">1</span>:n<br>    path(:,<span class="hljs-built_in">j</span>) = <span class="hljs-built_in">j</span>;   <span class="hljs-comment">% 将第j列的元素变为j</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span> = <span class="hljs-number">1</span>:n<br>    path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">i</span>) = <span class="hljs-number">-1</span>;  <span class="hljs-comment">% 将主对角线元素变为-1</span><br><span class="hljs-keyword">end</span><br><br><span class="hljs-comment">% 下面开始三个循环</span><br><span class="hljs-keyword">for</span> k=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 中间节点k从1- n 循环</span><br>   <span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:n     <span class="hljs-comment">% 起始节点i从1- n 循环</span><br>      <span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span>=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 终点节点j从1-n 循环</span><br>          <span class="hljs-keyword">if</span> dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)&gt;dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>)  <span class="hljs-comment">% 如果i,j两个节点间的最短距离大于i和k的最短距离+k和j的最短距离</span><br>             dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>);  <span class="hljs-comment">% 那么我们就令这两个较短的距离之和取代i,j两点之间的最短距离</span><br>             path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=path(<span class="hljs-built_in">i</span>,k);   <span class="hljs-comment">% 起点为i，终点为j的两个节点之间的最短路径要经过的节点更新为path(i,k)</span><br>             <span class="hljs-comment">% 注意，上面一行语句不能写成path(i,j) = k; 这是网上很多地方都容易犯的错误</span><br>          <span class="hljs-keyword">end</span><br>      <span class="hljs-keyword">end</span><br>   <span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>数模</category>
-      </categories>
-      <tags>
-        <tag>图论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>9.灰色关联分析</title>
     <url>/2022/08/12/9-%E7%81%B0%E8%89%B2%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p><img src="/2022/08/12/9-%E7%81%B0%E8%89%B2%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90/image-20220812160636917.png" alt="image-20220812160636917" style="zoom: 67%;"></p>
@@ -879,6 +827,58 @@
       <categories>
         <category>数模</category>
       </categories>
+  </entry>
+  <entry>
+    <title>8.图论最短路径问题</title>
+    <url>/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>没错，就是数据结构与算法（还是离散？忘了，可能都学了）上学的那个最短路径算法，课堂上用的是迪杰特斯拉和弗洛伊德算法，这里也差不多，复习一下然后用matlab实现</p>
+<span id="more"></span>
+<h3 id="二、图"><a href="#二、图" class="headerlink" title="二、图"></a>二、图</h3><h4 id="1-数据结构——图"><a href="#1-数据结构——图" class="headerlink" title="1.数据结构——图"></a>1.数据结构——图</h4><p>图论中的图（Graph）是由若干给定的点及连接两点的线 所构成的图形，这种图形通常用来描述某些事物之间的某种特定关系，用点代表事物，用连接两点的线表示相应两个事 物间具有这种关系。 </p>
+<p>一个图可以用数学语言描述为G(V(G),E(G))。V(vertex)指的是图的顶点集，E(edge)指的是图的边集。 根据边是否有方向，可将图分为有向图和无向图。 另外，有些图的边上还可能有权值，这样的图称为有权图。</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204035963.png" alt="image-20220720204035963"></p>
+<p>通过这个网址可以在线作图：<a href="https://csacademy.com/app/graph_editor/">CS Academy</a></p>
+<p>当然matlab也可以，但是比较丑：</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204134367.png" alt="image-20220720204134367" style="zoom: 67%;"></p>
+<h4 id="2-邻接矩阵"><a href="#2-邻接矩阵" class="headerlink" title="2.邻接矩阵"></a>2.邻接矩阵</h4><p>就是数据结构那个！</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204238553.png" alt="image-20220720204238553" style="zoom:67%;"></p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204251795.png" alt="image-20220720204251795" style="zoom:67%;"></p>
+<h3 id="三、迪杰特斯拉算法"><a href="#三、迪杰特斯拉算法" class="headerlink" title="三、迪杰特斯拉算法"></a>三、迪杰特斯拉算法</h3><h4 id="1-基本思想"><a href="#1-基本思想" class="headerlink" title="1.基本思想"></a>1.基本思想</h4><ol>
+<li>通过Dijkstra计算图G中的最短路径时，需要指定起点s(即从顶点s开始计算)。</li>
+<li>此外，引进两个集合S和U。S的作用是记录已求出最短路径的顶点(以及相应的最短路径长度，而U则是记录还未求出最短路径的顶点(以及该顶点到起点s的距离)。</li>
+<li>初始时，S中只有起点s；U中是除s之外的顶点，并且U中顶点的路径是”起点s到该顶点的路径”。然后，从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 然后，再从U中找出路径最短的顶点，并将其加入到S中；接着，更新U中的顶点和顶点对应的路径。 … 重复该操作，直到遍历完所有顶点。</li>
+</ol>
+<h4 id="2-操作步骤"><a href="#2-操作步骤" class="headerlink" title="2.操作步骤"></a>2.操作步骤</h4><ol>
+<li>初始时，S只包含起点s；U包含除s外的其他顶点，且U中顶点的距离为”起点s到该顶点的距离”[例如，U中顶点v的距离为(s,v)的长度，然后s和v不相邻，则v的距离为∞]。</li>
+<li>从U中选出”距离最短的顶点k”，并将顶点k加入到S中；同时，从U中移除顶点k。</li>
+<li>更新U中各个顶点到起点s的距离。之所以更新U中顶点的距离，是由于上一步中确定了k是求出最短路径的顶点，从而可以利用k来更新其它顶点的距离；例如，(s,v)的距离可能大于(s,k)+(k,v)的距离。</li>
+<li>重复步骤(2)和(3)，直到遍历完所有顶点。</li>
+</ol>
+<p>图解参考文章：(<a href="https://blog.csdn.net/qq_37796444/article/details/80663810">https://blog.csdn.net/qq_37796444/article/details/80663810</a>)</p>
+<h4 id="3-缺点"><a href="#3-缺点" class="headerlink" title="3.缺点"></a>3.缺点</h4><p>图的边不能有负权重呢，所以课上讲了弗洛伊德算法</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204749937.png" alt="image-20220720204749937" style="zoom: 67%;"></p>
+<p>另外：负权回路和负权重不一样，负权回路，指那种绕一圈下来和是负数的，因为只要一直绕，就可以一直变小，所以这种就不能解决</p>
+<h3 id="四、matlab实现"><a href="#四、matlab实现" class="headerlink" title="四、matlab实现"></a>四、matlab实现</h3><h4 id="1-最短路径"><a href="#1-最短路径" class="headerlink" title="1.最短路径"></a>1.最短路径</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720204956337.png" alt="image-20220720204956337" style="zoom:80%;"></p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205009819.png" alt="image-20220720205009819" style="zoom:80%;"></p>
+<h4 id="2-返回任意两点的距离矩阵"><a href="#2-返回任意两点的距离矩阵" class="headerlink" title="2.返回任意两点的距离矩阵"></a>2.返回任意两点的距离矩阵</h4><p>注意：matlab里面的节点都得严格按照次序来排列，而且不是从0开始的，所以你还得转换一下</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205044933.png" alt="image-20220720205044933" style="zoom:67%;"></p>
+<h4 id="3-给定距离内的点"><a href="#3-给定距离内的点" class="headerlink" title="3.给定距离内的点"></a>3.给定距离内的点</h4><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720205144848.png" alt="image-20220720205144848" style="zoom: 67%;"></p>
+<p>以下题为例：</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210403288.png" alt="image-20220720210403288" style="zoom: 67%;"></p>
+<p>代码如下：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab">s = [<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>];<br>t = [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">8</span>];<br>w = [<span class="hljs-number">6</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">10</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">6</span>,<span class="hljs-number">10</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>];<br><span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>) <br>set( gca, <span class="hljs-string">&#x27;XTick&#x27;</span>, [], <span class="hljs-string">&#x27;YTick&#x27;</span>, [] );  <br>G = digraph(s, t,w);<br><span class="hljs-built_in">plot</span>(G)<br>[P,d] = shortestpath(G, <span class="hljs-number">1</span>, <span class="hljs-number">8</span>)  <span class="hljs-comment">%注意：该函数matlab2015b之后才有哦</span><br><br><span class="hljs-comment">% 在图中高亮我们的最短路径</span><br>myplot = <span class="hljs-built_in">plot</span>(G, <span class="hljs-string">&#x27;EdgeLabel&#x27;</span>, G.Edges.Weight, <span class="hljs-string">&#x27;linewidth&#x27;</span>, <span class="hljs-number">2</span>);  <span class="hljs-comment">%首先将图赋给一个变量</span><br>highlight(myplot, P, <span class="hljs-string">&#x27;EdgeColor&#x27;</span>, <span class="hljs-string">&#x27;r&#x27;</span>)   <span class="hljs-comment">%对这个变量即我们刚刚绘制的图形进行高亮处理（给边加上r红色）</span><br></code></pre></td></tr></table></figure>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/untitled.jpg" alt="untitled"></p>
+<p>最终结果：1-&gt;3-&gt;2-&gt;5-&gt;8,距离为12</p>
+<p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220720210611304.png" alt="image-20220720210611304" style="zoom: 67%;"></p>
+<h3 id="五、floyd算法"><a href="#五、floyd算法" class="headerlink" title="五、floyd算法"></a>五、floyd算法</h3><p><img src="/2022/07/20/8-%E5%9B%BE%E8%AE%BA%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/image-20220814110800097.png" alt="image-20220814110800097"></p>
+<p>floyd算法三层for循环搞定：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><code class="hljs matlab"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">[dist,path]</span> = <span class="hljs-title">Floyd_algorithm</span><span class="hljs-params">(D)</span></span><br><span class="hljs-comment">%% 该函数用于求解一个权重邻接矩阵任意两个节点之间的最短路径</span><br><span class="hljs-comment">% 输入：</span><br><span class="hljs-comment">%        D是权重邻接矩阵</span><br><span class="hljs-comment">% 输出：</span><br><span class="hljs-comment">%        dist是最短距离矩阵，其元素dist_ij表示表示i,j两个节点的最短距离</span><br><span class="hljs-comment">%        path是路径矩阵，其元素path_ij表示起点为i，终点为j的两个节点之间的最短路径要经过的节点</span><br><br>n = <span class="hljs-built_in">size</span>(D,<span class="hljs-number">1</span>);  <span class="hljs-comment">% 计算节点的个数</span><br><br><span class="hljs-comment">% 初始化dist矩阵</span><br>dist = D;<br><br><span class="hljs-comment">% 下面我们来初始化path矩阵</span><br>path = <span class="hljs-built_in">zeros</span>(n);<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span> = <span class="hljs-number">1</span>:n<br>    path(:,<span class="hljs-built_in">j</span>) = <span class="hljs-built_in">j</span>;   <span class="hljs-comment">% 将第j列的元素变为j</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span> = <span class="hljs-number">1</span>:n<br>    path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">i</span>) = <span class="hljs-number">-1</span>;  <span class="hljs-comment">% 将主对角线元素变为-1</span><br><span class="hljs-keyword">end</span><br><br><span class="hljs-comment">% 下面开始三个循环</span><br><span class="hljs-keyword">for</span> k=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 中间节点k从1- n 循环</span><br>   <span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:n     <span class="hljs-comment">% 起始节点i从1- n 循环</span><br>      <span class="hljs-keyword">for</span> <span class="hljs-built_in">j</span>=<span class="hljs-number">1</span>:n    <span class="hljs-comment">% 终点节点j从1-n 循环</span><br>          <span class="hljs-keyword">if</span> dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)&gt;dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>)  <span class="hljs-comment">% 如果i,j两个节点间的最短距离大于i和k的最短距离+k和j的最短距离</span><br>             dist(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=dist(<span class="hljs-built_in">i</span>,k)+dist(k,<span class="hljs-built_in">j</span>);  <span class="hljs-comment">% 那么我们就令这两个较短的距离之和取代i,j两点之间的最短距离</span><br>             path(<span class="hljs-built_in">i</span>,<span class="hljs-built_in">j</span>)=path(<span class="hljs-built_in">i</span>,k);   <span class="hljs-comment">% 起点为i，终点为j的两个节点之间的最短路径要经过的节点更新为path(i,k)</span><br>             <span class="hljs-comment">% 注意，上面一行语句不能写成path(i,j) = k; 这是网上很多地方都容易犯的错误</span><br>          <span class="hljs-keyword">end</span><br>      <span class="hljs-keyword">end</span><br>   <span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>数模</category>
+      </categories>
+      <tags>
+        <tag>图论</tag>
+      </tags>
   </entry>
   <entry>
     <title>Makefile</title>
@@ -1976,7 +1976,12 @@
   <entry>
     <title>dive into deep learning</title>
     <url>/2023/07/22/dive-into-deep-learning/</url>
-    <content><![CDATA[<h2 id="pytorch"><a href="#pytorch" class="headerlink" title="pytorch"></a>pytorch</h2><span id="more"></span>
+    <content><![CDATA[<p>深度学习</p>
+<span id="more"></span>
+<h3 id="pytorch"><a href="#pytorch" class="headerlink" title="pytorch"></a>pytorch</h3><blockquote>
+<p>【PyTorch深度学习快速入门教程（绝对通俗易懂！）【小土堆】】 </p>
+<p><a href="https://www.bilibili.com/video/BV1hE411t7RN/?share_source=copy_web&amp;vd_source=f21aab4ae7e1148acd5e06c0dddddfd9">https://www.bilibili.com/video/BV1hE411t7RN/?share_source=copy_web&amp;vd_source=f21aab4ae7e1148acd5e06c0dddddfd9</a></p>
+</blockquote>
 <h3 id="1-环境管理"><a href="#1-环境管理" class="headerlink" title="1.环境管理"></a>1.环境管理</h3><p>建立不同的python版本环境（anaconda prompt）</p>
 <figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">conda</span> create -n pytorch python=<span class="hljs-number">3</span>.<span class="hljs-number">6</span> #创建一个名为pytorch的环境<br></code></pre></td></tr></table></figure>
 <p>激活/进入特定环境</p>
@@ -2065,7 +2070,60 @@
 <p>pycharm的断点调试</p>
 <p><img src="/2023/07/22/dive-into-deep-learning/image-20240201173022707.png" alt="image-20240201173022707"></p>
 </blockquote>
-<p><a href="https://www.bilibili.com/video/BV1hE411t7RN?t=21.8&amp;p=17">https://www.bilibili.com/video/BV1hE411t7RN?t=21.8&amp;p=17</a></p>
+<h3 id="9-卷积操作"><a href="#9-卷积操作" class="headerlink" title="9.卷积操作"></a>9.卷积操作</h3><p><img src="/2023/07/22/dive-into-deep-learning/image-20240202104746409.png" alt="image-20240202104746409"></p>
+<blockquote>
+<p>torch.nn.functional.conv2d(<em>input</em>, <em>weight</em>, <em>bias=None</em>, <em>stride=1</em>, <em>padding=0</em>, <em>dilation=1</em>, <em>groups=1</em>)</p>
+</blockquote>
+<ul>
+<li>stride：卷积核移动的步长</li>
+<li>padding：输入图像是否填充</li>
+<li>weight：卷积核</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">import</span> torch.nn.functional <span class="hljs-keyword">as</span> F<br><span class="hljs-comment"># 输入图像</span><br><span class="hljs-built_in">input</span> = torch.tensor([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">1</span>],<br>                      [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">1</span>],<br>                      [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],<br>                      [<span class="hljs-number">5</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>],<br>                      [<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>]])<br><span class="hljs-comment"># 卷积核</span><br>kernel = torch.tensor([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>],<br>                       [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>],<br>                       [<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>]])<br><br><span class="hljs-built_in">input</span> = torch.reshape(<span class="hljs-built_in">input</span>, (<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">5</span>))<br>kernel = torch.reshape(kernel, (<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>))<br><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">input</span>.shape)<br><span class="hljs-built_in">print</span>(kernel.shape)<br><span class="hljs-comment"># 卷积操作</span><br>output = F.conv2d(<span class="hljs-built_in">input</span>, kernel, stride=<span class="hljs-number">1</span>)<br><span class="hljs-built_in">print</span>(output)<br><br>output2 = F.conv2d(<span class="hljs-built_in">input</span>, kernel, stride=<span class="hljs-number">2</span>)<br><span class="hljs-built_in">print</span>(output2)<br><br>output3 = F.conv2d(<span class="hljs-built_in">input</span>, kernel, stride=<span class="hljs-number">1</span>, padding=<span class="hljs-number">1</span>)<br><span class="hljs-built_in">print</span>(output3)<br></code></pre></td></tr></table></figure>
+<h3 id="10-神经网络"><a href="#10-神经网络" class="headerlink" title="10.神经网络"></a>10.神经网络</h3><h4 id="卷积层"><a href="#卷积层" class="headerlink" title="卷积层"></a>卷积层</h4><blockquote>
+<p>torch.nn.Conv2d(<em>in_channels</em>, <em>out_channels</em>, <em>kernel_size</em>, <em>stride=1</em>, <em>padding=0</em>, <em>dilation=1</em>, <em>groups=1</em>, <em>bias=True</em>, <em>padding_mode=’zeros’</em>, <em>device=None</em>, <em>dtype=None</em>)</p>
+</blockquote>
+<ul>
+<li>in_channels：输入通道数</li>
+<li>out_channels：卷积层内部可通过增加卷积核数量来增加通道数</li>
+<li>kernel_size：只需要设置kernel_size，参数训练中调整</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">import</span> torchvision<br><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><span class="hljs-keyword">from</span> torch.nn <span class="hljs-keyword">import</span> Conv2d<br><span class="hljs-keyword">from</span> torch.utils.data <span class="hljs-keyword">import</span> DataLoader<br><span class="hljs-keyword">from</span> torch.utils.tensorboard <span class="hljs-keyword">import</span> SummaryWriter<br><br>dataset = torchvision.datasets.CIFAR10(<span class="hljs-string">&quot;./dataset&quot;</span>,train=<span class="hljs-literal">False</span>,transform=torchvision.transforms.ToTensor(),download=<span class="hljs-literal">True</span>)<br><br>dataloader = DataLoader(dataset, batch_size=<span class="hljs-number">64</span>)<br><span class="hljs-comment"># 建立神经网络模型</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Tudui</span>(nn.Module):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-built_in">super</span>(Tudui, self).__init__() <span class="hljs-comment"># 初始化nn.module</span><br>        self.conv1 = Conv2d(in_channels=<span class="hljs-number">3</span>, out_channels=<span class="hljs-number">6</span>, kernel_size=<span class="hljs-number">3</span>, stride=<span class="hljs-number">1</span>, padding=<span class="hljs-number">0</span>)<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">forward</span>(<span class="hljs-params">self,x</span>):<br>        x = self.conv1(x)<br>        <span class="hljs-keyword">return</span> x<br><br>tudui = Tudui()<br>writer = SummaryWriter(<span class="hljs-string">&quot;logs&quot;</span>)<br>step = <span class="hljs-number">0</span><br><span class="hljs-comment"># 检测模型</span><br><span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> dataloader:<br>    imgs, targets = data<br>    output = tudui(imgs)<br>    <span class="hljs-comment"># print(imgs.shape)</span><br>    <span class="hljs-comment"># print(output.shape)</span><br><br>    writer.add_images(<span class="hljs-string">&quot;input&quot;</span>, imgs, step)<br>	<span class="hljs-comment"># 为了能够用tensorboard展示进行reshape,但仅此而已</span><br>    output = torch.reshape(output, (-<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">30</span>, <span class="hljs-number">30</span>))<br>    writer.add_images(<span class="hljs-string">&quot;output&quot;</span>, output, step)<br>    step = step + <span class="hljs-number">1</span><br>writer.close()<br></code></pre></td></tr></table></figure>
+<h4 id="池化层"><a href="#池化层" class="headerlink" title="池化层"></a>池化层</h4><blockquote>
+<p>池化的作用是减少参数量，下采样</p>
+</blockquote>
+<p>池化层的stride默认是池化核的size</p>
+<p>ceil_model为true表示当输入图片不足池化核时仍然进行池化，false表示不进行</p>
+<p><img src="/2023/07/22/dive-into-deep-learning/image-20240202171432750.png" alt="image-20240202171432750"></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">import</span> torchvision<br><span class="hljs-keyword">from</span> torch.utils.data <span class="hljs-keyword">import</span> DataLoader<br><span class="hljs-keyword">from</span> torch.utils.tensorboard <span class="hljs-keyword">import</span> SummaryWriter<br><br><span class="hljs-comment"># 构建神经网络</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Tudui</span>(nn.Module):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-built_in">super</span>(Tudui, self).__init__()<br>        self.maxpool1 = nn.MaxPool2d(kernel_size=<span class="hljs-number">3</span>,ceil_mode=<span class="hljs-literal">True</span>)<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">forward</span>(<span class="hljs-params">self, <span class="hljs-built_in">input</span></span>):<br>        output = self.maxpool1(<span class="hljs-built_in">input</span>)<br>        <span class="hljs-keyword">return</span> output<br><span class="hljs-comment"># 数据集</span><br>dataset = torchvision.datasets.CIFAR10(<span class="hljs-string">&quot;dataset&quot;</span>, train=<span class="hljs-literal">False</span>, transform=torchvision.transforms.ToTensor(), download=<span class="hljs-literal">True</span>)<br>dataloader = DataLoader(dataset, batch_size=<span class="hljs-number">64</span>)<br><span class="hljs-comment"># 运行并展示</span><br>writer = SummaryWriter(<span class="hljs-string">&quot;maxpool&quot;</span>)<br>tudui = Tudui()<br>step = <span class="hljs-number">0</span><br><span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> dataloader:<br>    imgs, targets = data<br>    writer.add_images(<span class="hljs-string">&quot;imgs&quot;</span>, imgs, step)<br>    output = tudui(imgs)<br>    writer.add_images(<span class="hljs-string">&quot;output&quot;</span>, output, step)<br>    step = step + <span class="hljs-number">1</span><br>writer.close()<br></code></pre></td></tr></table></figure>
+<h4 id="非线性激活"><a href="#非线性激活" class="headerlink" title="非线性激活"></a>非线性激活</h4><p>引入非线性特征。relu、sigmoid</p>
+<p>参数 inplace：一般inplace为false不覆盖</p>
+<p><img src="/2023/07/22/dive-into-deep-learning/image-20240203110744742.png" alt="image-20240203110744742"></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><span class="hljs-keyword">import</span> torchvision<br><span class="hljs-keyword">from</span> torch.utils.data <span class="hljs-keyword">import</span> DataLoader<br><span class="hljs-keyword">from</span> torch.utils.tensorboard <span class="hljs-keyword">import</span> SummaryWriter<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Tudui</span>(nn.Module):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-built_in">super</span>(Tudui, self).__init__()<br>        self.relu = nn.ReLU(inplace=<span class="hljs-literal">False</span>)<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">forward</span>(<span class="hljs-params">self,<span class="hljs-built_in">input</span></span>):<br>        output = self.relu(<span class="hljs-built_in">input</span>)<br>        <span class="hljs-keyword">return</span> output<br><br>dataset = torchvision.datasets.CIFAR10(<span class="hljs-string">&quot;./dataset&quot;</span>,train=<span class="hljs-literal">False</span>,transform=torchvision.transforms.ToTensor(),download=<span class="hljs-literal">True</span>)<br><br>dataloader = DataLoader(dataset,batch_size=<span class="hljs-number">64</span>)<br><br>tudui = Tudui()<br>writer = SummaryWriter(<span class="hljs-string">&quot;relu&quot;</span>)<br>step = <span class="hljs-number">0</span><br><span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> dataloader:<br>    imgs, targets = data<br>    writer.add_images(<span class="hljs-string">&quot;input&quot;</span>, imgs, step)<br>    output = tudui(imgs)<br>    writer.add_images(<span class="hljs-string">&quot;output&quot;</span>, output, step)<br>    step = step + <span class="hljs-number">1</span><br>writer.close()<br></code></pre></td></tr></table></figure>
+<h4 id="线性层和其他层"><a href="#线性层和其他层" class="headerlink" title="线性层和其他层"></a>线性层和其他层</h4><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><span class="hljs-keyword">import</span> torchvision<br><span class="hljs-keyword">from</span> torch.utils.data <span class="hljs-keyword">import</span> DataLoader<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Tudui</span>(nn.Module):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-built_in">super</span>(Tudui, self).__init__()<br>        self.linear = nn.Linear(<span class="hljs-number">196608</span>,<span class="hljs-number">10</span>)<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">forward</span>(<span class="hljs-params">self, <span class="hljs-built_in">input</span></span>):<br>        output = self.linear(<span class="hljs-built_in">input</span>)<br>        <span class="hljs-keyword">return</span> output<br><br>dataset = torchvision.datasets.CIFAR10(<span class="hljs-string">&quot;./dataset&quot;</span>,train=<span class="hljs-literal">False</span>,transform=torchvision.transforms.ToTensor(),download=<span class="hljs-literal">True</span>)<br>dataloader = DataLoader(dataset, batch_size=<span class="hljs-number">64</span>, drop_last=<span class="hljs-literal">True</span>)<br>tudui = Tudui()<br><span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> dataloader:<br>    imgs, targets = data<br>    output = torch.flatten(imgs)<br>    output = tudui(output)<br>    <span class="hljs-built_in">print</span>(output.shape)<br></code></pre></td></tr></table></figure>
+<h4 id="sequential的使用"><a href="#sequential的使用" class="headerlink" title="sequential的使用"></a>sequential的使用</h4><p><img src="/2023/07/22/dive-into-deep-learning/image-20240203114533994.png" alt="image-20240203114533994"></p>
+<p><img src="/2023/07/22/dive-into-deep-learning/image-20240203120850526.png" alt="image-20240203120850526"></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><span class="hljs-keyword">from</span> torch.nn <span class="hljs-keyword">import</span> Sequential, Conv2d, MaxPool2d, Flatten, Linear<br><span class="hljs-keyword">from</span> torch.utils.tensorboard <span class="hljs-keyword">import</span> SummaryWriter<br><br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Tudui</span>(nn.Module):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-built_in">super</span>(Tudui, self).__init__()<br>        self.model1 = Sequential(<br>            Conv2d(<span class="hljs-number">3</span>, <span class="hljs-number">32</span>, <span class="hljs-number">5</span>, padding=<span class="hljs-number">2</span>),<br>            MaxPool2d(<span class="hljs-number">2</span>),<br>            Conv2d(<span class="hljs-number">32</span>, <span class="hljs-number">32</span>, <span class="hljs-number">5</span>, padding=<span class="hljs-number">2</span>),<br>            MaxPool2d(<span class="hljs-number">2</span>),<br>            Conv2d(<span class="hljs-number">32</span>, <span class="hljs-number">64</span>, <span class="hljs-number">5</span>, padding=<span class="hljs-number">2</span>),<br>            MaxPool2d(<span class="hljs-number">2</span>),<br>            Flatten(),<br>            Linear(<span class="hljs-number">1024</span>, <span class="hljs-number">64</span>),<br>            Linear(<span class="hljs-number">64</span>, <span class="hljs-number">10</span>)<br>        )<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">forward</span>(<span class="hljs-params">self, x</span>):<br>        x = self.model1(x)<br>        <span class="hljs-keyword">return</span> x<br><br>tudui = Tudui()<br><span class="hljs-built_in">print</span>(tudui)<br><span class="hljs-built_in">input</span> = torch.ones((<span class="hljs-number">64</span>, <span class="hljs-number">3</span>, <span class="hljs-number">32</span>, <span class="hljs-number">32</span>))<br>output = tudui(<span class="hljs-built_in">input</span>)<br><span class="hljs-built_in">print</span>(output.shape)<br><br>writer = SummaryWriter(<span class="hljs-string">&quot;seq&quot;</span>)<br>writer.add_graph(tudui, <span class="hljs-built_in">input</span>)<br>writer.close()<br></code></pre></td></tr></table></figure>
+<h4 id="损失函数与反向传播"><a href="#损失函数与反向传播" class="headerlink" title="损失函数与反向传播"></a>损失函数与反向传播</h4><p>loss计算output和target之间的差距，loss越小越好，loss作为反向传播的依据</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">import</span> torchvision<br><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><span class="hljs-keyword">from</span> torch.nn <span class="hljs-keyword">import</span> Sequential, Conv2d, MaxPool2d, Flatten, Linear<br><span class="hljs-keyword">from</span> torch.utils.data <span class="hljs-keyword">import</span> DataLoader<br><span class="hljs-keyword">from</span> torch.utils.tensorboard <span class="hljs-keyword">import</span> SummaryWriter<br><br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Tudui</span>(nn.Module):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-built_in">super</span>(Tudui, self).__init__()<br>        self.model1 = Sequential(<br>            Conv2d(<span class="hljs-number">3</span>, <span class="hljs-number">32</span>, <span class="hljs-number">5</span>, padding=<span class="hljs-number">2</span>),<br>            MaxPool2d(<span class="hljs-number">2</span>),<br>            Conv2d(<span class="hljs-number">32</span>, <span class="hljs-number">32</span>, <span class="hljs-number">5</span>, padding=<span class="hljs-number">2</span>),<br>            MaxPool2d(<span class="hljs-number">2</span>),<br>            Conv2d(<span class="hljs-number">32</span>, <span class="hljs-number">64</span>, <span class="hljs-number">5</span>, padding=<span class="hljs-number">2</span>),<br>            MaxPool2d(<span class="hljs-number">2</span>),<br>            Flatten(),<br>            Linear(<span class="hljs-number">1024</span>, <span class="hljs-number">64</span>),<br>            Linear(<span class="hljs-number">64</span>, <span class="hljs-number">10</span>)<br>        )<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">forward</span>(<span class="hljs-params">self, x</span>):<br>        x = self.model1(x)<br>        <span class="hljs-keyword">return</span> x<br><br>dataset = torchvision.datasets.CIFAR10(<span class="hljs-string">&quot;./dataset&quot;</span>,train=<span class="hljs-literal">False</span>,transform=torchvision.transforms.ToTensor(),download=<span class="hljs-literal">True</span>)<br><br>dataloader = DataLoader(dataset, batch_size=<span class="hljs-number">64</span>)<br><br><span class="hljs-comment"># 损失函数</span><br>loss = nn.CrossEntropyLoss()<br>tudui = Tudui()<br><br><span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> dataloader:<br>    imgs, targets = data<br>    output = tudui(imgs)<br>    result_loss = loss(output, targets)<br>    <span class="hljs-built_in">print</span>(result_loss)<br>    <span class="hljs-built_in">input</span>()<br></code></pre></td></tr></table></figure>
+<h4 id="优化器"><a href="#优化器" class="headerlink" title="优化器"></a>优化器</h4><p>lr：学习速率</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">import</span> torchvision<br><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><span class="hljs-keyword">from</span> torch.nn <span class="hljs-keyword">import</span> Sequential, Conv2d, MaxPool2d, Flatten, Linear<br><span class="hljs-keyword">from</span> torch.utils.data <span class="hljs-keyword">import</span> DataLoader<br><span class="hljs-keyword">from</span> torch.utils.tensorboard <span class="hljs-keyword">import</span> SummaryWriter<br><br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Tudui</span>(nn.Module):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-built_in">super</span>(Tudui, self).__init__()<br>        self.model1 = Sequential(<br>            Conv2d(<span class="hljs-number">3</span>, <span class="hljs-number">32</span>, <span class="hljs-number">5</span>, padding=<span class="hljs-number">2</span>),<br>            MaxPool2d(<span class="hljs-number">2</span>),<br>            Conv2d(<span class="hljs-number">32</span>, <span class="hljs-number">32</span>, <span class="hljs-number">5</span>, padding=<span class="hljs-number">2</span>),<br>            MaxPool2d(<span class="hljs-number">2</span>),<br>            Conv2d(<span class="hljs-number">32</span>, <span class="hljs-number">64</span>, <span class="hljs-number">5</span>, padding=<span class="hljs-number">2</span>),<br>            MaxPool2d(<span class="hljs-number">2</span>),<br>            Flatten(),<br>            Linear(<span class="hljs-number">1024</span>, <span class="hljs-number">64</span>),<br>            Linear(<span class="hljs-number">64</span>, <span class="hljs-number">10</span>)<br>        )<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">forward</span>(<span class="hljs-params">self, x</span>):<br>        x = self.model1(x)<br>        <span class="hljs-keyword">return</span> x<br><br><span class="hljs-comment"># 数据集</span><br>dataset= torchvision.datasets.CIFAR10(<span class="hljs-string">&quot;./dataset&quot;</span>,train=<span class="hljs-literal">False</span>,transform=torchvision.transforms.ToTensor(),<br>                                      download=<span class="hljs-literal">True</span>)<br><br>dataloader = DataLoader(dataset, batch_size=<span class="hljs-number">64</span>)<br><br><span class="hljs-comment"># loss、模型、优化器</span><br>loss = nn.CrossEntropyLoss()<br>tudui = Tudui()<br>optim = torch.optim.SGD(tudui.parameters(), lr=<span class="hljs-number">0.01</span>)<br><br><span class="hljs-comment"># 模型训练</span><br><span class="hljs-keyword">for</span> epoch <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">20</span>):<br>    running_loss = <span class="hljs-number">0.0</span><br>    <span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> dataloader:<br>        imgs, targets = data<br>        output = tudui(imgs)<br>        result_loss = loss(output, targets)<br>        optim.zero_grad() <span class="hljs-comment"># 将梯度清零</span><br>        result_loss.backward() <span class="hljs-comment"># 计算新的梯度</span><br>        optim.step() <span class="hljs-comment"># 根据梯度更新参数</span><br>        running_loss = running_loss + result_loss<br>    <span class="hljs-built_in">print</span>(running_loss)<br></code></pre></td></tr></table></figure>
+<h4 id="现有模型的修改与使用"><a href="#现有模型的修改与使用" class="headerlink" title="现有模型的修改与使用"></a>现有模型的修改与使用</h4><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torchvision<br><br><span class="hljs-comment"># train_data = torchvision.datasets.ImageNet(&quot;../data_image_net&quot;, split=&#x27;train&#x27;, download=True,</span><br><span class="hljs-comment">#                                            transform=torchvision.transforms.ToTensor())</span><br><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><br>vgg16_false = torchvision.models.vgg16(pretrained=<span class="hljs-literal">False</span>)<br>vgg16_true = torchvision.models.vgg16(pretrained=<span class="hljs-literal">True</span>)<br><br><span class="hljs-built_in">print</span>(vgg16_true)<br><br>train_data = torchvision.datasets.CIFAR10(<span class="hljs-string">&#x27;../data&#x27;</span>, train=<span class="hljs-literal">True</span>, transform=torchvision.transforms.ToTensor(),<br>                                          download=<span class="hljs-literal">True</span>)<br><span class="hljs-comment"># 在现有模型后添加一层网络</span><br>vgg16_true.classifier.add_module(<span class="hljs-string">&#x27;add_linear&#x27;</span>, nn.Linear(<span class="hljs-number">1000</span>, <span class="hljs-number">10</span>))<br><span class="hljs-built_in">print</span>(vgg16_true)<br><br><span class="hljs-built_in">print</span>(vgg16_false)<br><span class="hljs-comment"># 修改现有模型某一层的参数值</span><br>vgg16_false.classifier[<span class="hljs-number">6</span>] = nn.Linear(<span class="hljs-number">4096</span>, <span class="hljs-number">10</span>)<br><span class="hljs-built_in">print</span>(vgg16_false)<br></code></pre></td></tr></table></figure>
+<h3 id="11-完整训练套路"><a href="#11-完整训练套路" class="headerlink" title="11.完整训练套路"></a>11.完整训练套路</h3><p>CPU：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">import</span> torchvision<br><span class="hljs-keyword">from</span> torch.utils.tensorboard <span class="hljs-keyword">import</span> SummaryWriter<br><span class="hljs-keyword">from</span> model <span class="hljs-keyword">import</span> *<br><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><span class="hljs-keyword">from</span> torch.utils.data <span class="hljs-keyword">import</span> DataLoader<br><br><span class="hljs-comment"># 准备数据集</span><br>train_data = torchvision.datasets.CIFAR10(root=<span class="hljs-string">&quot;./dataset&quot;</span>, train=<span class="hljs-literal">True</span>, transform=torchvision.transforms.ToTensor(),<br>                                          download=<span class="hljs-literal">True</span>)<br>test_data = torchvision.datasets.CIFAR10(root=<span class="hljs-string">&quot;./dataset&quot;</span>, train=<span class="hljs-literal">False</span>, transform=torchvision.transforms.ToTensor(),<br>                                        download=<span class="hljs-literal">True</span>)<br><br><span class="hljs-comment"># 数据集长度</span><br>train_data_size = <span class="hljs-built_in">len</span>(train_data)<br>test_data_size = <span class="hljs-built_in">len</span>(test_data)<br><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;训练数据集的长度为:&#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(train_data_size))<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;测试数据集的长度为:&#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(test_data_size))<br><br><span class="hljs-comment"># 利用DataLoader来加载数据集</span><br>train_dataloader = DataLoader(train_data, batch_size=<span class="hljs-number">64</span>)<br>test_dataloader = DataLoader(test_data, batch_size=<span class="hljs-number">64</span>)<br><br><span class="hljs-comment"># 创建网络模型</span><br>tudui = Tudui()<br><br><span class="hljs-comment"># 损失函数</span><br>loss_fn = nn.CrossEntropyLoss()<br><br><span class="hljs-comment"># 优化器</span><br>learning_rate = <span class="hljs-number">0.01</span><br>optimizer = torch.optim.SGD(tudui.parameters(), lr=learning_rate)<br><br><span class="hljs-comment"># 训练网络的一些参数</span><br><span class="hljs-comment"># 记录训练次数</span><br>total_train_step = <span class="hljs-number">0</span><br><span class="hljs-comment"># 记录测试次数</span><br>total_test_step = <span class="hljs-number">0</span><br><span class="hljs-comment"># 训练的轮数</span><br>epoch = <span class="hljs-number">10</span><br><br><span class="hljs-comment"># 添加tensorboard</span><br>writer = SummaryWriter(<span class="hljs-string">&quot;logs_train&quot;</span>)<br><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(epoch):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;--------第&#123;&#125;轮训练开始--------&quot;</span>.<span class="hljs-built_in">format</span>(i))<br>    <span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> train_dataloader:<br>        imgs, targets = data<br>        output = tudui(imgs)<br>        loss = loss_fn(output, targets) <span class="hljs-comment"># 计算loss</span><br>        optimizer.zero_grad() <span class="hljs-comment"># 梯度清零</span><br>        loss.backward() <span class="hljs-comment"># 计算梯度</span><br>        optimizer.step() <span class="hljs-comment"># 调整参数</span><br><br>        total_train_step = total_train_step + <span class="hljs-number">1</span><br>        <span class="hljs-keyword">if</span> total_train_step % <span class="hljs-number">100</span> == <span class="hljs-number">0</span>:<br>            <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;训练次数: &#123;&#125;, Loss: &#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(total_train_step,loss.item()))<br>            writer.add_scalar(<span class="hljs-string">&quot;train_loss&quot;</span>,loss.item(),total_train_step)<br><br>    <span class="hljs-comment"># 测试步骤</span><br>    tudui.<span class="hljs-built_in">eval</span>()<br>    total_test_loss = <span class="hljs-number">0</span><br>    total_accuracy = <span class="hljs-number">0</span><br>    <span class="hljs-keyword">with</span> torch.no_grad():<br>        <span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> test_dataloader:<br>            imgs, targets = data<br>            outputs = tudui(imgs)<br>            loss = loss_fn(outputs, targets)<br>            total_test_loss = total_test_loss + loss.item()<br>            accuracy = (outputs.argmax(<span class="hljs-number">1</span>) == targets).<span class="hljs-built_in">sum</span>()<br>            total_accuracy = total_accuracy + accuracy<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;整体测试集上的Loss: &#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(total_test_loss))<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;整体测试集上的正确率: &#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(total_accuracy / test_data_size))<br>    writer.add_scalar(<span class="hljs-string">&quot;test_loss&quot;</span>, total_test_loss, total_test_step)<br>    writer.add_scalar(<span class="hljs-string">&quot;test_accuracy&quot;</span>, total_accuracy / test_data_size, total_test_step)<br>    total_test_step = total_test_step + <span class="hljs-number">1</span><br><br>    torch.save(tudui, <span class="hljs-string">&quot;tudui_&#123;&#125;.pth&quot;</span>.<span class="hljs-built_in">format</span>(i))<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;模型已保存&quot;</span>)<br><br>writer.close()<br></code></pre></td></tr></table></figure>
+<h3 id="12-利用GPU训练"><a href="#12-利用GPU训练" class="headerlink" title="12. 利用GPU训练"></a>12. 利用GPU训练</h3><p>方法一：调用 网络模型、数据（输入、标注）、损失函数的 cuda方法</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> torch.cuda.is_available(): <span class="hljs-comment"># 判断cuda是否可用</span><br>	xxx<br></code></pre></td></tr></table></figure>
+<p>GPU版：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">import</span> torchvision<br><span class="hljs-keyword">from</span> torch.utils.tensorboard <span class="hljs-keyword">import</span> SummaryWriter<br><span class="hljs-keyword">from</span> model <span class="hljs-keyword">import</span> *<br><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><span class="hljs-keyword">from</span> torch.utils.data <span class="hljs-keyword">import</span> DataLoader<br><br><span class="hljs-comment"># 准备数据集</span><br>train_data = torchvision.datasets.CIFAR10(root=<span class="hljs-string">&quot;./dataset&quot;</span>, train=<span class="hljs-literal">True</span>, transform=torchvision.transforms.ToTensor(),<br>                                          download=<span class="hljs-literal">True</span>)<br>test_data = torchvision.datasets.CIFAR10(root=<span class="hljs-string">&quot;./dataset&quot;</span>, train=<span class="hljs-literal">False</span>, transform=torchvision.transforms.ToTensor(),<br>                                        download=<span class="hljs-literal">True</span>)<br><br><span class="hljs-comment"># 数据集长度</span><br>train_data_size = <span class="hljs-built_in">len</span>(train_data)<br>test_data_size = <span class="hljs-built_in">len</span>(test_data)<br><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;训练数据集的长度为:&#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(train_data_size))<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;测试数据集的长度为:&#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(test_data_size))<br><br><span class="hljs-comment"># 利用DataLoader来加载数据集</span><br>train_dataloader = DataLoader(train_data, batch_size=<span class="hljs-number">64</span>)<br>test_dataloader = DataLoader(test_data, batch_size=<span class="hljs-number">64</span>)<br><br><span class="hljs-comment"># 创建网络模型</span><br>tudui = Tudui()<br><span class="hljs-keyword">if</span> torch.cuda.is_available():<br>    tudui = tudui.cuda()<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;yes&quot;</span>)<br><span class="hljs-comment"># 损失函数</span><br>loss_fn = nn.CrossEntropyLoss()<br><span class="hljs-keyword">if</span> torch.cuda.is_available():<br>    loss_fn = loss_fn.cuda()<br><span class="hljs-comment"># 优化器</span><br>learning_rate = <span class="hljs-number">0.01</span><br>optimizer = torch.optim.SGD(tudui.parameters(), lr=learning_rate)<br><br><span class="hljs-comment"># 训练网络的一些参数</span><br><span class="hljs-comment"># 记录训练次数</span><br>total_train_step = <span class="hljs-number">0</span><br><span class="hljs-comment"># 记录测试次数</span><br>total_test_step = <span class="hljs-number">0</span><br><span class="hljs-comment"># 训练的轮数</span><br>epoch = <span class="hljs-number">10</span><br><br><span class="hljs-comment"># 添加tensorboard</span><br>writer = SummaryWriter(<span class="hljs-string">&quot;logs_train&quot;</span>)<br><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(epoch):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;--------第&#123;&#125;轮训练开始--------&quot;</span>.<span class="hljs-built_in">format</span>(i))<br>    <span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> train_dataloader:<br>        imgs, targets = data<br>        <span class="hljs-keyword">if</span> torch.cuda.is_available():<br>            targets = targets.cuda()<br>            imgs = imgs.cuda()<br>        output = tudui(imgs)<br>        loss = loss_fn(output, targets) <span class="hljs-comment"># 计算loss</span><br>        optimizer.zero_grad() <span class="hljs-comment"># 梯度清零</span><br>        loss.backward() <span class="hljs-comment"># 计算梯度</span><br>        optimizer.step() <span class="hljs-comment"># 调整参数</span><br><br>        total_train_step = total_train_step + <span class="hljs-number">1</span><br>        <span class="hljs-keyword">if</span> total_train_step % <span class="hljs-number">100</span> == <span class="hljs-number">0</span>:<br>            <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;训练次数: &#123;&#125;, Loss: &#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(total_train_step,loss.item()))<br>            writer.add_scalar(<span class="hljs-string">&quot;train_loss&quot;</span>,loss.item(),total_train_step)<br><br>    <span class="hljs-comment"># 测试步骤</span><br>    tudui.<span class="hljs-built_in">eval</span>()<br>    total_test_loss = <span class="hljs-number">0</span><br>    total_accuracy = <span class="hljs-number">0</span><br>    <span class="hljs-keyword">with</span> torch.no_grad():<br>        <span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> test_dataloader:<br>            imgs, targets = data<br>            <span class="hljs-keyword">if</span> torch.cuda.is_available():<br>                targets = targets.cuda()<br>                imgs = imgs.cuda()<br>            outputs = tudui(imgs)<br>            loss = loss_fn(outputs, targets)<br>            total_test_loss = total_test_loss + loss.item()<br>            accuracy = (outputs.argmax(<span class="hljs-number">1</span>) == targets).<span class="hljs-built_in">sum</span>()<br>            total_accuracy = total_accuracy + accuracy<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;整体测试集上的Loss: &#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(total_test_loss))<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;整体测试集上的正确率: &#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(total_accuracy / test_data_size))<br>    writer.add_scalar(<span class="hljs-string">&quot;test_loss&quot;</span>, total_test_loss, total_test_step)<br>    writer.add_scalar(<span class="hljs-string">&quot;test_accuracy&quot;</span>, total_accuracy / test_data_size, total_test_step)<br>    total_test_step = total_test_step + <span class="hljs-number">1</span><br><br>    torch.save(tudui, <span class="hljs-string">&quot;tudui_&#123;&#125;.pth&quot;</span>.<span class="hljs-built_in">format</span>(i))<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;模型已保存&quot;</span>)<br><br>writer.close()<br></code></pre></td></tr></table></figure>
+<p>方法二：</p>
+<p>首先创建device，然后调用 网络模型、数据（输入、标注）、损失函数 的to方法</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">torch.device(<span class="hljs-string">&quot;cuda&quot;</span>)<br>torch.device(<span class="hljs-string">&quot;cpu&quot;</span>)<br>device = torch.device(<span class="hljs-string">&quot;cuda&quot;</span> <span class="hljs-keyword">if</span> torch.cuda.is_available() <span class="hljs-keyword">else</span> <span class="hljs-string">&quot;cpu&quot;</span>)<br></code></pre></td></tr></table></figure>
+<p>GPU版：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">import</span> torchvision<br><span class="hljs-keyword">from</span> torch.utils.tensorboard <span class="hljs-keyword">import</span> SummaryWriter<br><span class="hljs-keyword">from</span> model <span class="hljs-keyword">import</span> *<br><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><span class="hljs-keyword">from</span> torch.utils.data <span class="hljs-keyword">import</span> DataLoader<br><br>device = torch.device(<span class="hljs-string">&quot;cuda&quot;</span> <span class="hljs-keyword">if</span> torch.cuda.is_available() <span class="hljs-keyword">else</span> <span class="hljs-string">&quot;cpu&quot;</span>)<br><br><span class="hljs-comment"># 准备数据集</span><br>train_data = torchvision.datasets.CIFAR10(root=<span class="hljs-string">&quot;./dataset&quot;</span>, train=<span class="hljs-literal">True</span>, transform=torchvision.transforms.ToTensor(),<br>                                          download=<span class="hljs-literal">True</span>)<br>test_data = torchvision.datasets.CIFAR10(root=<span class="hljs-string">&quot;./dataset&quot;</span>, train=<span class="hljs-literal">False</span>, transform=torchvision.transforms.ToTensor(),<br>                                        download=<span class="hljs-literal">True</span>)<br><br><span class="hljs-comment"># 数据集长度</span><br>train_data_size = <span class="hljs-built_in">len</span>(train_data)<br>test_data_size = <span class="hljs-built_in">len</span>(test_data)<br><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;训练数据集的长度为:&#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(train_data_size))<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;测试数据集的长度为:&#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(test_data_size))<br><br><span class="hljs-comment"># 利用DataLoader来加载数据集</span><br>train_dataloader = DataLoader(train_data, batch_size=<span class="hljs-number">64</span>)<br>test_dataloader = DataLoader(test_data, batch_size=<span class="hljs-number">64</span>)<br><br><span class="hljs-comment"># 创建网络模型</span><br>tudui = Tudui()<br>tudui = tudui.to(device)<br><span class="hljs-comment"># 损失函数</span><br>loss_fn = nn.CrossEntropyLoss()<br>loss_fn = loss_fn.to(device)<br><span class="hljs-comment"># 优化器</span><br>learning_rate = <span class="hljs-number">0.01</span><br>optimizer = torch.optim.SGD(tudui.parameters(), lr=learning_rate)<br><br><span class="hljs-comment"># 训练网络的一些参数</span><br><span class="hljs-comment"># 记录训练次数</span><br>total_train_step = <span class="hljs-number">0</span><br><span class="hljs-comment"># 记录测试次数</span><br>total_test_step = <span class="hljs-number">0</span><br><span class="hljs-comment"># 训练的轮数</span><br>epoch = <span class="hljs-number">10</span><br><br><span class="hljs-comment"># 添加tensorboard</span><br>writer = SummaryWriter(<span class="hljs-string">&quot;logs_train&quot;</span>)<br><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(epoch):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;--------第&#123;&#125;轮训练开始--------&quot;</span>.<span class="hljs-built_in">format</span>(i))<br>    <span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> train_dataloader:<br>        imgs, targets = data<br>        targets = targets.to(device)<br>        imgs = imgs.to(device)<br>        output = tudui(imgs)<br>        loss = loss_fn(output, targets) <span class="hljs-comment"># 计算loss</span><br>        optimizer.zero_grad() <span class="hljs-comment"># 梯度清零</span><br>        loss.backward() <span class="hljs-comment"># 计算梯度</span><br>        optimizer.step() <span class="hljs-comment"># 调整参数</span><br><br>        total_train_step = total_train_step + <span class="hljs-number">1</span><br>        <span class="hljs-keyword">if</span> total_train_step % <span class="hljs-number">100</span> == <span class="hljs-number">0</span>:<br>            <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;训练次数: &#123;&#125;, Loss: &#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(total_train_step,loss.item()))<br>            writer.add_scalar(<span class="hljs-string">&quot;train_loss&quot;</span>,loss.item(),total_train_step)<br><br>    <span class="hljs-comment"># 测试步骤</span><br>    tudui.<span class="hljs-built_in">eval</span>()<br>    total_test_loss = <span class="hljs-number">0</span><br>    total_accuracy = <span class="hljs-number">0</span><br>    <span class="hljs-keyword">with</span> torch.no_grad():<br>        <span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> test_dataloader:<br>            imgs, targets = data<br>            targets = targets.to(device)<br>            imgs = imgs.to(device)<br>            outputs = tudui(imgs)<br>            loss = loss_fn(outputs, targets)<br>            total_test_loss = total_test_loss + loss.item()<br>            accuracy = (outputs.argmax(<span class="hljs-number">1</span>) == targets).<span class="hljs-built_in">sum</span>()<br>            total_accuracy = total_accuracy + accuracy<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;整体测试集上的Loss: &#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(total_test_loss))<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;整体测试集上的正确率: &#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(total_accuracy / test_data_size))<br>    writer.add_scalar(<span class="hljs-string">&quot;test_loss&quot;</span>, total_test_loss, total_test_step)<br>    writer.add_scalar(<span class="hljs-string">&quot;test_accuracy&quot;</span>, total_accuracy / test_data_size, total_test_step)<br>    total_test_step = total_test_step + <span class="hljs-number">1</span><br><br>    torch.save(tudui, <span class="hljs-string">&quot;tudui_&#123;&#125;.pth&quot;</span>.<span class="hljs-built_in">format</span>(i))<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;模型已保存&quot;</span>)<br><br>writer.close()<br></code></pre></td></tr></table></figure>
+<h3 id="13-模型验证"><a href="#13-模型验证" class="headerlink" title="13.模型验证"></a>13.模型验证</h3><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">tudui = torch.load(<span class="hljs-string">&quot;tudui_9.pth&quot;</span>, map_location=torch.device(<span class="hljs-string">&#x27;cpu&#x27;</span>)) <br><span class="hljs-comment"># 如果使用GPU训练的模型，使用map_location映射到cpu上</span><br>...<br><span class="hljs-comment"># 测试之前：</span><br>tudui.<span class="hljs-built_in">eval</span>()<br><span class="hljs-keyword">with</span> torch.no_grad():<br></code></pre></td></tr></table></figure>
+<p>test.py</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> torch<br><span class="hljs-keyword">import</span> torchvision<br><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image<br><span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> nn<br><span class="hljs-keyword">from</span> model <span class="hljs-keyword">import</span> *<br><br><br>image_path = <span class="hljs-string">&quot;dataset/dog.jpg&quot;</span><br>image = Image.<span class="hljs-built_in">open</span>(image_path)<br><span class="hljs-built_in">print</span>(image)<br>image = image.convert(<span class="hljs-string">&#x27;RGB&#x27;</span>)<br>transform = torchvision.transforms.Compose([torchvision.transforms.Resize((<span class="hljs-number">32</span>,<span class="hljs-number">32</span>)),<br>                                            torchvision.transforms.ToTensor()])<br><br>image = transform(image)<br><span class="hljs-built_in">print</span>(image)<br><br>tudui = torch.load(<span class="hljs-string">&quot;tudui_9.pth&quot;</span>, map_location=torch.device(<span class="hljs-string">&#x27;cpu&#x27;</span>))<br><span class="hljs-built_in">print</span>(tudui)<br><br>image = torch.reshape(image, (<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">32</span>, <span class="hljs-number">32</span>))<br>tudui.<span class="hljs-built_in">eval</span>()<br><span class="hljs-keyword">with</span> torch.no_grad():<br>    output = tudui(image)<br><span class="hljs-built_in">print</span>(output)<br><span class="hljs-built_in">print</span>(output.argmax(<span class="hljs-number">1</span>))<br></code></pre></td></tr></table></figure>
+<p>pytorch入门部分 完结撒花😊</p>
 ]]></content>
       <tags>
         <tag>DL</tag>
@@ -2086,93 +2144,6 @@
 <p>考虑偶数，问题变成最少需要替换多少个字符才能将其变成偶数——调整奇数项，假设现在奇数项有2m项，将两个奇数项进行匹配，次数取较小的奇数项，故可知这个步骤所需的次数就是奇数项里最小的m个的个数的和sum（将数量最少的来匹配哪些多的字符），如果k小于sum，或者奇数项不是偶数个或者，则不是回文</p>
 <p>考虑奇数，选择数量最多的奇数项作为中心项，这样就不用将其进行匹配，然后对剩余的想进行偶数考虑的匹配</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">getmap</span><span class="hljs-params">(string s,unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp; mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;s.<span class="hljs-built_in">size</span>();i++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(mmap.<span class="hljs-built_in">find</span>(s[i])!=mmap.<span class="hljs-built_in">end</span>()) mmap[s[i]]++;<br>            <span class="hljs-keyword">else</span> mmap[s[i]]=<span class="hljs-number">1</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">getoutmost</span><span class="hljs-params">(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp;mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-type">int</span> maxi=<span class="hljs-number">-1</span>;<br>        unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;::iterator tmp=mmap.<span class="hljs-built_in">begin</span>();<br>        <span class="hljs-keyword">for</span>(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;::iterator it=mmap.<span class="hljs-built_in">begin</span>();it!=mmap.<span class="hljs-built_in">end</span>();it++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(it-&gt;second%<span class="hljs-number">2</span>&amp;&amp;it-&gt;second&gt;maxi)<br>            &#123;<br>                tmp=it;<br>                maxi=it-&gt;second;<br>            &#125;<br>        &#125;<br>        mmap.<span class="hljs-built_in">erase</span>(tmp);<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">deal</span><span class="hljs-params">(unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt;&amp;mmap)</span></span><br><span class="hljs-function">    </span>&#123;<br>        vector&lt;<span class="hljs-type">int</span>&gt; vtmp;<br>        <span class="hljs-type">int</span> sum=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> p:mmap)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(p.second%<span class="hljs-number">2</span>) vtmp.<span class="hljs-built_in">push_back</span>(p.second);<br>        &#125;<br>        <span class="hljs-keyword">if</span>(vtmp.<span class="hljs-built_in">size</span>()%<span class="hljs-number">2</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;<br>        <span class="hljs-keyword">else</span><br>        &#123;<br>            <span class="hljs-built_in">sort</span>(vtmp.<span class="hljs-built_in">begin</span>(),vtmp.<span class="hljs-built_in">end</span>());<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;vtmp.<span class="hljs-built_in">size</span>()/<span class="hljs-number">2</span>;i++)<br>            &#123;<br>                sum=sum+vtmp[i];<br>            &#125;<br>            <span class="hljs-keyword">return</span> sum;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">bool</span>&gt; <span class="hljs-title">canMakePaliQueries</span><span class="hljs-params">(string s, vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt;&amp; queries)</span> </span>&#123;<br>        vector&lt;<span class="hljs-type">bool</span>&gt; answer;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> p:queries)<br>        &#123;<br>            unordered_map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt; tmap;<br>            string tmp=s;<br>            <span class="hljs-type">int</span> st=p[<span class="hljs-number">0</span>];<br>            <span class="hljs-type">int</span> ed=p[<span class="hljs-number">1</span>];<br>            <span class="hljs-type">int</span> k=p[<span class="hljs-number">2</span>];<br>            <span class="hljs-type">int</span> sz=ed-st+<span class="hljs-number">1</span>;<br>            <span class="hljs-built_in">getmap</span>(s.<span class="hljs-built_in">substr</span>(st,sz),tmap);<br>            <span class="hljs-keyword">if</span>(sz%<span class="hljs-number">2</span>==<span class="hljs-number">1</span>)<br>            &#123;<br>                <span class="hljs-built_in">getoutmost</span>(tmap);<br>            &#125; <br>            <span class="hljs-type">int</span> res=<span class="hljs-built_in">deal</span>(tmap);<br>            <span class="hljs-keyword">if</span>(res==<span class="hljs-number">-1</span>||res&gt;k) answer.<span class="hljs-built_in">push_back</span>(<span class="hljs-literal">false</span>);<br>            <span class="hljs-keyword">else</span> answer.<span class="hljs-built_in">push_back</span>(<span class="hljs-literal">true</span>);<br>        &#125;<br>        <span class="hljs-keyword">return</span> answer;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>计网复习</title>
-    <url>/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<p>rt</p>
-<span id="more"></span>
-<h2 id="第四章-网络层数据平面"><a href="#第四章-网络层数据平面" class="headerlink" title="第四章 网络层数据平面"></a>第四章 网络层数据平面</h2><h4 id="路由器与链路层交换机的区别"><a href="#路由器与链路层交换机的区别" class="headerlink" title="路由器与链路层交换机的区别"></a>路由器与链路层交换机的区别</h4><p>路由器运行网络层而交换机不运行网络层，不处理网络层字段</p>
-<p>路由器根据网络层ip地址进行转发操作，而交换机根据mac地址进行转发操作</p>
-<h4 id="数据平面和控制平面"><a href="#数据平面和控制平面" class="headerlink" title="数据平面和控制平面"></a>数据平面和控制平面</h4><p>数据平面：将分组从路由器的输入接口转发到合适的输出接口</p>
-<p>路由：使用路由选择算法来决定从发送主机到目标主机的路径</p>
-<p>路由和转发的区别在于转发是路由器本地动作，时间短，硬件实现，而路由是网络范围内的逻辑，通常用软件实现，时间长</p>
-<h4 id="基于目的的转发与通用转发"><a href="#基于目的的转发与通用转发" class="headerlink" title="基于目的的转发与通用转发"></a>基于目的的转发与通用转发</h4><p>基于目的地的转发匹配操作只基于目标ip地址，操作包括转发</p>
-<p>通用转发的匹配操作基于协议栈上不同层与不同协议相关联的多个报头字段，操作包括转发，泛洪，修改，丢弃</p>
-<p>这些字段例如ip源地址，tcp源端口，源mac地址，不包括TTL字段，数据包长度字段，首部校验和</p>
-<p>流表和转发表的不同：传统方式仅包含IP报头字段以及相应输出链路接口，openflow流表包括：</p>
-<ul>
-<li>首部字段集合：用于匹配</li>
-<li>计数器集合：当分组与流表条目匹配时进行更新</li>
-<li>当分组匹配流表项时采用的动作集合</li>
-</ul>
-<h4 id="交换结构"><a href="#交换结构" class="headerlink" title="交换结构"></a>交换结构</h4><p>基于内存的交换结构</p>
-<p>基于总线的交换结构</p>
-<p>经互联网络的交换结构</p>
-<h4 id="两版TCP报文相似字段"><a href="#两版TCP报文相似字段" class="headerlink" title="两版TCP报文相似字段"></a>两版TCP报文相似字段</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>IPV4</th>
-<th>IPV6</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>版本</td>
-<td>版本</td>
-</tr>
-<tr>
-<td>服务类型</td>
-<td>流量类型</td>
-</tr>
-<tr>
-<td>数据包长度</td>
-<td>有效载荷长度</td>
-</tr>
-<tr>
-<td>协议</td>
-<td>下一个首部</td>
-</tr>
-<tr>
-<td>寿命</td>
-<td>跳限制</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4 id="路由聚集"><a href="#路由聚集" class="headerlink" title="路由聚集"></a>路由聚集</h4><p>路由聚集：ISP使用单个前缀为多个网络做广播，路由聚集能减少网络中通告的数量以及计算的代价</p>
-<h4 id="即插即用"><a href="#即插即用" class="headerlink" title="即插即用"></a>即插即用</h4><p>即插即用和零配置意味着该协议能自动配置主机的网络相关方面，以便将主机连接到网络中</p>
-<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154313361.png" alt="image-20230224154313361" style="zoom: 50%;"></p>
-<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154348036.png" alt="image-20230224154348036" style="zoom:50%;"></p>
-<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><p>发之前侦听，碰撞后jam</p>
-<h4 id="每路由器-基于逻辑上集中控制的控制平面"><a href="#每路由器-基于逻辑上集中控制的控制平面" class="headerlink" title="每路由器/基于逻辑上集中控制的控制平面"></a>每路由器/基于逻辑上集中控制的控制平面</h4><ul>
-<li>每路由器控制意味着一个路由算法在每个路由器中运行，每个路由器中都有一个路由组件通信以计算其转发表。在这种情况下，我们说网络控制和数据平面是以单一方式实现的，因为每个路由器作为一个独立的实体实现自己的控制和数据平面</li>
-<li>逻辑集中控制是指逻辑中央控制器计算和分配每个路由器使用的转发表，在这种情况下，数据平面在路由器中实现，控制平面是在中央服务器或多个服务器上实现</li>
-</ul>
-<h4 id="集中式和分布式路由选择算法的性质"><a href="#集中式和分布式路由选择算法的性质" class="headerlink" title="集中式和分布式路由选择算法的性质"></a>集中式和分布式路由选择算法的性质</h4><p>集中式通过网络全局知识计算源和目的地之间的最小成本。</p>
-<p>分布式方法任何节点都没有关于所有网络链路成本的完整信息。每个节点开始时只知道自己直连链路的成本，然后通过预期相邻节点进行计算和信息交换的迭代过程，节点逐步计算出到达目的地或一组目的地的最小成本路径</p>
-<h4 id="LS对比DV"><a href="#LS对比DV" class="headerlink" title="LS对比DV"></a>LS对比DV</h4><p>LS：使用完整的、全局的网络知识来计算源和目的地之间的最小成本路径</p>
-<p>DV：使用迭代、分布式的方法来计算最小成本路径，每个节点开始时只知道自己直连链路的成本，然后通过预期相邻节点进行计算和信息交换的迭代过程，节点逐步计算出到达目的地或一组目的地的最小成本路径</p>
-<h4 id="无穷计数问题"><a href="#无穷计数问题" class="headerlink" title="无穷计数问题"></a>无穷计数问题</h4><p>DV算法：当链路成本增加时，需要花很长时间才能收敛</p>
-<h4 id="AS"><a href="#AS" class="headerlink" title="AS"></a>AS</h4><p>为什么使用了不同的AS间和AS内协议？</p>
-<p>策略：在AS间，策略问题占主导地位，如一个AS的流量不能穿过另一个特定的AS。而在一个AS内部，一切都是在相同的控制名义下进行的</p>
-<p>规模：AS内部由于主机数量有限，可扩展性不是焦点问题。AS间需要处理大量网络或网络之间的路由选择的问题，规模问题需要考量</p>
-<p>性能：AS间路由面向策略，质量是次要的，而AS内关心质量</p>
-<p>AS是指一组路由器</p>
-<h4 id="ICMP"><a href="#ICMP" class="headerlink" title="ICMP"></a>ICMP</h4><p>traceroute使用：警告信息和不无法到达的目标端口ICMP消息</p>
-<p>ICMP常见的有，echo回显（ping），目标网络不可达，目标主机不可达，源抑制（拥塞控制）</p>
-<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2><h3 id="整个流程"><a href="#整个流程" class="headerlink" title="整个流程"></a>整个流程</h3><ul>
-<li><p>首先使用DHCP获取IP地址，DHCP请求报文封装在udp数据报，以太网帧中，且帧的目标地址为FF-FF-FF-FF，该帧在以太网中广播，后按照DHCP协议，计算机获得IP地址等信息</p>
-</li>
-<li><p>在发送http请求(www.baidu)前，需要知道该地址对应的ip地址，而DNS查询报文需要通过第一条路由器转发，故需要先通过ARP协议得到第一条路由器的mac地址，具体而言广播ARP查询报文，第一跳路由器单播回其mac地址</p>
-</li>
-<li>接下来将DNS查询报文封装到UDP中，封装到以太网帧中，通过第一跳路由器转发，中间利用ospf，rip，bgp等路由协议到达DNS服务器，服务器解封装后回复www.baidu.com的ip地址给客户端</li>
-<li>接下来客户端与服务器进行TCP的三次握手，握手后建立TCP连接，将http请求报文封装到tcp中，封装到ip中，封装到链路层帧中，发送给服务器，服务器应答，传送给客户机，客户抽取其中的文件显示网页</li>
-</ul>
-<h3 id="CSMA-CA"><a href="#CSMA-CA" class="headerlink" title="CSMA/CA"></a>CSMA/CA</h3><p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154008234.png" alt="image-20230224154008234"></p>
-<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154036195.png" alt="image-20230224154036195"></p>
 ]]></content>
   </entry>
   <entry>
@@ -3107,6 +3078,93 @@
 <h3 id="什么是数据库的审计？它有什么作用？"><a href="#什么是数据库的审计？它有什么作用？" class="headerlink" title="什么是数据库的审计？它有什么作用？"></a>什么是数据库的审计？它有什么作用？</h3><p>审计是指数据库自动将所做的所有操作记录到审计日志中。通过审计日志，管理员可以监控数据库所进行的操作，对异常操作进行重现，找出非法存取数据的人世间和内容</p>
 <h3 id="为什么要引进意向锁？-意向锁的含义是什么？"><a href="#为什么要引进意向锁？-意向锁的含义是什么？" class="headerlink" title="为什么要引进意向锁？ 意向锁的含义是什么？"></a>为什么要引进意向锁？ 意向锁的含义是什么？</h3><p>正确答案: 引进意向锁是为了提高封锁子系统的效率。在多粒度封锁方法中一个数据对象可能以两种方式加锁—显式封锁和隐式封锁。因此系统在对某一数据对象加锁时不仅要检查该数据对象上有无（显式和隐式）封锁与之冲突；还要检查其所有上级结点和所有下级结点，看申请的封锁是否与这些结点上的（显式和隐式）封锁冲突；显然，这样的检查方法效率很低。为此引进了意向锁。</p>
 <h3 id="试述活锁的产生原因和解决方法"><a href="#试述活锁的产生原因和解决方法" class="headerlink" title="试述活锁的产生原因和解决方法"></a>试述活锁的产生原因和解决方法</h3><p>正确答案: 活锁产生的原因：当一系列封锁不能按照其先后顺序执行时，就可能导致一些事务无限期等待某个封锁，从而导致活锁。 避免活锁的简单方法是采用先来先服务的策略。当多个事务请求封锁同一数据对象时，封锁子系统按请求封锁的先后次序对事务排队，数据对象上的锁一旦释放就批准申请队列中第一个事务获得锁。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>计网复习</title>
+    <url>/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<p>rt</p>
+<span id="more"></span>
+<h2 id="第四章-网络层数据平面"><a href="#第四章-网络层数据平面" class="headerlink" title="第四章 网络层数据平面"></a>第四章 网络层数据平面</h2><h4 id="路由器与链路层交换机的区别"><a href="#路由器与链路层交换机的区别" class="headerlink" title="路由器与链路层交换机的区别"></a>路由器与链路层交换机的区别</h4><p>路由器运行网络层而交换机不运行网络层，不处理网络层字段</p>
+<p>路由器根据网络层ip地址进行转发操作，而交换机根据mac地址进行转发操作</p>
+<h4 id="数据平面和控制平面"><a href="#数据平面和控制平面" class="headerlink" title="数据平面和控制平面"></a>数据平面和控制平面</h4><p>数据平面：将分组从路由器的输入接口转发到合适的输出接口</p>
+<p>路由：使用路由选择算法来决定从发送主机到目标主机的路径</p>
+<p>路由和转发的区别在于转发是路由器本地动作，时间短，硬件实现，而路由是网络范围内的逻辑，通常用软件实现，时间长</p>
+<h4 id="基于目的的转发与通用转发"><a href="#基于目的的转发与通用转发" class="headerlink" title="基于目的的转发与通用转发"></a>基于目的的转发与通用转发</h4><p>基于目的地的转发匹配操作只基于目标ip地址，操作包括转发</p>
+<p>通用转发的匹配操作基于协议栈上不同层与不同协议相关联的多个报头字段，操作包括转发，泛洪，修改，丢弃</p>
+<p>这些字段例如ip源地址，tcp源端口，源mac地址，不包括TTL字段，数据包长度字段，首部校验和</p>
+<p>流表和转发表的不同：传统方式仅包含IP报头字段以及相应输出链路接口，openflow流表包括：</p>
+<ul>
+<li>首部字段集合：用于匹配</li>
+<li>计数器集合：当分组与流表条目匹配时进行更新</li>
+<li>当分组匹配流表项时采用的动作集合</li>
+</ul>
+<h4 id="交换结构"><a href="#交换结构" class="headerlink" title="交换结构"></a>交换结构</h4><p>基于内存的交换结构</p>
+<p>基于总线的交换结构</p>
+<p>经互联网络的交换结构</p>
+<h4 id="两版TCP报文相似字段"><a href="#两版TCP报文相似字段" class="headerlink" title="两版TCP报文相似字段"></a>两版TCP报文相似字段</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>IPV4</th>
+<th>IPV6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>版本</td>
+<td>版本</td>
+</tr>
+<tr>
+<td>服务类型</td>
+<td>流量类型</td>
+</tr>
+<tr>
+<td>数据包长度</td>
+<td>有效载荷长度</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>下一个首部</td>
+</tr>
+<tr>
+<td>寿命</td>
+<td>跳限制</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="路由聚集"><a href="#路由聚集" class="headerlink" title="路由聚集"></a>路由聚集</h4><p>路由聚集：ISP使用单个前缀为多个网络做广播，路由聚集能减少网络中通告的数量以及计算的代价</p>
+<h4 id="即插即用"><a href="#即插即用" class="headerlink" title="即插即用"></a>即插即用</h4><p>即插即用和零配置意味着该协议能自动配置主机的网络相关方面，以便将主机连接到网络中</p>
+<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154313361.png" alt="image-20230224154313361" style="zoom: 50%;"></p>
+<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154348036.png" alt="image-20230224154348036" style="zoom:50%;"></p>
+<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><p>发之前侦听，碰撞后jam</p>
+<h4 id="每路由器-基于逻辑上集中控制的控制平面"><a href="#每路由器-基于逻辑上集中控制的控制平面" class="headerlink" title="每路由器/基于逻辑上集中控制的控制平面"></a>每路由器/基于逻辑上集中控制的控制平面</h4><ul>
+<li>每路由器控制意味着一个路由算法在每个路由器中运行，每个路由器中都有一个路由组件通信以计算其转发表。在这种情况下，我们说网络控制和数据平面是以单一方式实现的，因为每个路由器作为一个独立的实体实现自己的控制和数据平面</li>
+<li>逻辑集中控制是指逻辑中央控制器计算和分配每个路由器使用的转发表，在这种情况下，数据平面在路由器中实现，控制平面是在中央服务器或多个服务器上实现</li>
+</ul>
+<h4 id="集中式和分布式路由选择算法的性质"><a href="#集中式和分布式路由选择算法的性质" class="headerlink" title="集中式和分布式路由选择算法的性质"></a>集中式和分布式路由选择算法的性质</h4><p>集中式通过网络全局知识计算源和目的地之间的最小成本。</p>
+<p>分布式方法任何节点都没有关于所有网络链路成本的完整信息。每个节点开始时只知道自己直连链路的成本，然后通过预期相邻节点进行计算和信息交换的迭代过程，节点逐步计算出到达目的地或一组目的地的最小成本路径</p>
+<h4 id="LS对比DV"><a href="#LS对比DV" class="headerlink" title="LS对比DV"></a>LS对比DV</h4><p>LS：使用完整的、全局的网络知识来计算源和目的地之间的最小成本路径</p>
+<p>DV：使用迭代、分布式的方法来计算最小成本路径，每个节点开始时只知道自己直连链路的成本，然后通过预期相邻节点进行计算和信息交换的迭代过程，节点逐步计算出到达目的地或一组目的地的最小成本路径</p>
+<h4 id="无穷计数问题"><a href="#无穷计数问题" class="headerlink" title="无穷计数问题"></a>无穷计数问题</h4><p>DV算法：当链路成本增加时，需要花很长时间才能收敛</p>
+<h4 id="AS"><a href="#AS" class="headerlink" title="AS"></a>AS</h4><p>为什么使用了不同的AS间和AS内协议？</p>
+<p>策略：在AS间，策略问题占主导地位，如一个AS的流量不能穿过另一个特定的AS。而在一个AS内部，一切都是在相同的控制名义下进行的</p>
+<p>规模：AS内部由于主机数量有限，可扩展性不是焦点问题。AS间需要处理大量网络或网络之间的路由选择的问题，规模问题需要考量</p>
+<p>性能：AS间路由面向策略，质量是次要的，而AS内关心质量</p>
+<p>AS是指一组路由器</p>
+<h4 id="ICMP"><a href="#ICMP" class="headerlink" title="ICMP"></a>ICMP</h4><p>traceroute使用：警告信息和不无法到达的目标端口ICMP消息</p>
+<p>ICMP常见的有，echo回显（ping），目标网络不可达，目标主机不可达，源抑制（拥塞控制）</p>
+<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2><h3 id="整个流程"><a href="#整个流程" class="headerlink" title="整个流程"></a>整个流程</h3><ul>
+<li><p>首先使用DHCP获取IP地址，DHCP请求报文封装在udp数据报，以太网帧中，且帧的目标地址为FF-FF-FF-FF，该帧在以太网中广播，后按照DHCP协议，计算机获得IP地址等信息</p>
+</li>
+<li><p>在发送http请求(www.baidu)前，需要知道该地址对应的ip地址，而DNS查询报文需要通过第一条路由器转发，故需要先通过ARP协议得到第一条路由器的mac地址，具体而言广播ARP查询报文，第一跳路由器单播回其mac地址</p>
+</li>
+<li>接下来将DNS查询报文封装到UDP中，封装到以太网帧中，通过第一跳路由器转发，中间利用ospf，rip，bgp等路由协议到达DNS服务器，服务器解封装后回复www.baidu.com的ip地址给客户端</li>
+<li>接下来客户端与服务器进行TCP的三次握手，握手后建立TCP连接，将http请求报文封装到tcp中，封装到ip中，封装到链路层帧中，发送给服务器，服务器应答，传送给客户机，客户抽取其中的文件显示网页</li>
+</ul>
+<h3 id="CSMA-CA"><a href="#CSMA-CA" class="headerlink" title="CSMA/CA"></a>CSMA/CA</h3><p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154008234.png" alt="image-20230224154008234"></p>
+<p><img src="/2023/02/20/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/image-20230224154036195.png" alt="image-20230224154036195"></p>
 ]]></content>
   </entry>
 </search>
