@@ -1,0 +1,929 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.png">
+  <link rel="icon" href="/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="荔枝">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="rt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI复习">
+<meta property="og:url" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:site_name" content="荔枝的博客">
+<meta property="og:description" content="rt">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230325111448505.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230601211354704.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230325193304288.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230325193353844.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230325200321263.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230325200333529.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230408170148150.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230408170204044.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230408170222932.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230408170301752.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230408202147877.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230531153127240.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230531153140819.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230601164616302.png">
+<meta property="og:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/Typical_cnn.png">
+<meta property="article:published_time" content="2023-03-25T03:07:17.000Z">
+<meta property="article:modified_time" content="2023-06-03T15:54:01.634Z">
+<meta property="article:author" content="荔枝">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://leungto.github.io/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230325111448505.png">
+  
+  
+  
+  <title>AI复习 - 荔枝的博客</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"leungto.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="AI复习"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-03-25 11:07" pubdate>
+          2023年3月25日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          8.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          69 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">AI复习</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>rt</p>
+<span id="more"></span>
+<blockquote>
+<ul>
+<li>早中晚各背一次简答题</li>
+<li>复习总结的知识点，先努力回忆，然后复习</li>
+<li>对着知识点查漏补缺</li>
+<li>刷完习题并总结注意事项，看完强化学习</li>
+<li>看看深度学习和人工神经网络部分，梯度下降算法和反向传播算法</li>
+</ul>
+</blockquote>
+<h1 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h1><p>什么是人工智能？定义人工智能的四种观点：</p>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230325111448505.png" srcset="/img/loading.gif" lazyload alt="image-20230325111448505" style="zoom: 67%;"></p>
+<blockquote>
+<p>什么是图灵测试？假定如下3个人工智能应用：机器人作诗、机器人聊天、机器人算算数，</p>
+<p>你觉得哪一个最接近通过图灵测试，为什么？</p>
+</blockquote>
+<p>图灵测试是由英国电脑科学家艾伦·图灵于1950年提出的思想实验，目的是测试机器能否表现出与人一样的智力水准。测试时测试者透过电脑键盘输入文本并透过屏幕输出文本。如果一个人（代号C）使用测试对象皆理解的语言去询问两个他不能看见的对象任意一串问题。对象为：一个是正常思维的人（代号B）、一个是机器（代号A）。如果经过若干询问以后，C不能得出实质的区别来分辨A与B的不同，则此机器A通过图灵测试²³。</p>
+<p>对于您提到的三个人工智能应用，我无法确定哪一个最接近通过图灵测试，因为这取决于每个应用程序的具体实现和性能。但是，如果一个聊天机器人能够通过与人类进行自然语言对话并使测试者无法确定它是否是机器人，那么它可能更接近通过图灵测试。</p>
+<h1 id="第二章-智能agent"><a href="#第二章-智能agent" class="headerlink" title="第二章 智能agent"></a>第二章 智能agent</h1><h4 id="agent"><a href="#agent" class="headerlink" title="agent"></a>agent</h4><p>agent定义为通过感知器感知环境并通过执行器采取行动对所处的环境产生影响的实体</p>
+<p>agent三个部分是：感知器，<strong>信息处理部分</strong>，执行器；</p>
+<p>以下为各个agent的特点：</p>
+<ul>
+<li>简单反射agent：<strong>基于当前感知选择行动，不关注感知历史</strong>；根据当前状态匹配条件，按相应的规则行动。（不维护历史感知）</li>
+<li>基于模型的反射agent：<strong>根据感知历史维持内部状态，并随时更新内部状态</strong>；使用内部模型跟踪世界当前状态，按照与反射Agent相同的方式选择行动。<strong>根据当前感知信息以及历史的状态、行为进行当前状态的更新， 再根据更新后的状态决定下一步的行为</strong>。（要求能精确描述当前状态（完全可观察，确定的），以及自身行动如何影响世界）</li>
+<li>基于目标的agent：根据感知信息和目标信息选择行动。产生一个当前的世界的描述，根据产生的世界的描述，生成一个候选的动作集，根据感知信息和目标确定一个动作。也就是<strong>除了感知信息，还需要目标信息选择行动</strong>（多目标冲突时，不一定能实现最佳动作）</li>
+<li>基于效用的agent：产生一个当前世界状态描述，根据产生的世界的描述，产生一个候选动作集，对候选动作进行效用评估，得到一个排序，根据效用评估，选择一个动作。多目标行为需要考虑效率（该agent在达到目标有多种时，会考虑效率，可以在环境是部分可观察和随机的、不确定下情况下，选择效用最高的agent）</li>
+</ul>
+<h4 id="agent函数和程序"><a href="#agent函数和程序" class="headerlink" title="agent函数和程序"></a>agent函数和程序</h4><p>agent函数把任何感知历史数据映射为行动</p>
+<p>agent程序在物理系统上运行实现agent函数</p>
+<p>注意程序仅仅以当前感知作为输入而不是以整个历史感知为输入，其输出为执行器的行动</p>
+<h4 id="理性agent"><a href="#理性agent" class="headerlink" title="理性agent"></a>理性agent</h4><ul>
+<li><p>理性的agent就是做事正确的agent，对于每个可能的感知序列，根据已知感知序列提供的证据和agent具有的先验知识，理性agent应该采取一个行动以达到最大的性能</p>
+</li>
+<li><p>理性agent不一定能产生完美的结果，理性是使期望的性能最大化，而完美是使实际的性能最大化，同样的Agent在不同的环境下就会变成非理性的，并且Agent感知环境的信息特性有多种，有部分可观察的，不确定性，动态的，这些都会导致采取的行动不是完美的。</p>
+</li>
+</ul>
+<blockquote>
+</blockquote>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230601211354704.png" srcset="/img/loading.gif" lazyload alt="image-20230601211354704"></p>
+<blockquote>
+<p>考虑一个医疗诊断系统的Agent，讨论该Agent最合适的种类(简单Agent，基于模型的Agent，基于目标的Agent和基于效用的Agent)并解释你的结论。</p>
+</blockquote>
+<p>最合适该Agent的种类：基于效用的Agent</p>
+<p>理由：<br>1.简单反射agent：基于当前的感知选择行动，不关注感知历史；根据当前状态匹配条件，按相应的规则行动。<br>分析：医疗诊断需要考虑病人之前的治疗历史、诊断结果和治疗方案，故简单反射agent不合适；</p>
+<p>2.基于模型的反射agent：根据感知历史维持内部状态，并随时更新内部状态；使用内部模型跟踪世界当前状态，按照与反射Agent相同的方式选择行动。<br>分析：基于模型的反射agent需要知道世界是如何独立于agent而发展的信息，同时要<strong>清楚自身的行动是如何影响世界的</strong>。其在部分可观察环境中时不能精准确定当前的状态，而医疗诊断系统所处的环境——病人、医院、医护人员等环境是部分可观察的，此时基于模型的反射agent<strong>无法精准确定当前状态</strong>，故不选择。</p>
+<p>3.基于目标的agent：根据感知信息和目标信息选择行动。产生一个当前的世界的描述，根据产生的世界的描述，生成一个候选的动作集，根据目标确定一个动作。也就是除了感知信息，还需要目标信息选择行动。<br>分析：基于目标的agent能产生并记录要达到的目标集合，并选择最终能导致目标达成的行动。但当有多个目标相互冲突时，此类agent不一定能实现最佳动作，而医疗诊断系统agent需要考虑的冲突情况有很多，如病人的疗效、治疗的费用、方案的成功性和风险性等因素，故不选择此类agent。</p>
+<p>4.基于效用的agent：产生一个当前世界状态描述，产生一个候选动作集，对候选动作进行效用评估，得到一个排序，根据效用评估，选择一个动作。多目标行为需要考虑效率。<br>分析：该agent在达到目标有多种时，会考虑效率，可以在环境是部分可观察和随机的、不确定下情况下，选择效用最高的agent。故综合考虑，最适合医疗诊断系统agent的种类为基于效用的agent。</p>
+<h4 id="学习agent"><a href="#学习agent" class="headerlink" title="学习agent"></a>学习agent</h4><p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230325193304288.png" srcset="/img/loading.gif" lazyload alt="image-20230325193304288"></p>
+<h4 id="PEAS描述"><a href="#PEAS描述" class="headerlink" title="PEAS描述"></a>PEAS描述</h4><p>性能度量、环境、执行器、传感器</p>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230325193353844.png" srcset="/img/loading.gif" lazyload alt="image-20230325193353844" style="zoom: 67%;"></p>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230325200321263.png" srcset="/img/loading.gif" lazyload alt="image-20230325200321263" style="zoom: 80%;"></p>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230325200333529.png" srcset="/img/loading.gif" lazyload alt="image-20230325200333529" style="zoom: 80%;"></p>
+<h4 id="环境性质"><a href="#环境性质" class="headerlink" title="环境性质"></a>环境性质</h4><p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230408170148150.png" srcset="/img/loading.gif" lazyload alt="image-20230408170148150" style="zoom:67%;"></p>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230408170204044.png" srcset="/img/loading.gif" lazyload alt="image-20230408170204044" style="zoom: 67%;"></p>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230408170222932.png" srcset="/img/loading.gif" lazyload alt="image-20230408170222932" style="zoom: 67%;"></p>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230408170301752.png" srcset="/img/loading.gif" lazyload alt="image-20230408170301752"></p>
+<h1 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h1><p>一致代价搜索按节点的最优路径顺序扩展结点，这是对任何单步代价函数都是最优的算法，它不再扩展深度最浅的结点。一致代价搜索与宽度优先搜索类似，是完备的，最优的。 贪婪最佳优先搜索试图扩展离目标最近的结点，理由是这样可以很快找到解。贪婪最佳优先搜索与深度优先搜索类似，即使是有限状态空间，但也是不完备的，容易导致死循环； 贪婪最佳优先搜索不能保证最优性。 A<em>搜索是完备的，此外，A\</em>算法对于任何给定的满足一致性的启发函数都是最优的</p>
+<p>一致代价搜索先拓展已有代价较小的节点，当扩展到目标节点时，其一定是当前最小的目标节点，故一致代价搜索是完备的、最优的，贪婪最佳搜索试图扩展离目标节点最近的节点，贪婪最佳搜索类似于深搜，在有限状态空间的图搜索中是完备的，但不是最优的，在树搜索中不是完备的、不是最优的，A<em>搜索是完备的，若启发式是可采纳的，则A\</em>搜索的树搜索是最优的，若启发式是一致的，A*搜索的图搜索是最优的</p>
+<h1 id="超越经典"><a href="#超越经典" class="headerlink" title="超越经典"></a>超越经典</h1><blockquote>
+<p> 从最优性的角度比较爬山法、模拟退火算法、局部束算法、遗传算法的性能优越</p>
+</blockquote>
+<p>这些算法都是局部搜索算法，它们的基本原理是在临近解中迭代，使目标函数逐步优化，直至不能再优化为止。但是它们之间也有一些区别：</p>
+<ul>
+<li>爬山法是一种贪心算法，每次都选择一个当前最优解，因此只能搜索到局部的最优值，容易陷入局部最优解</li>
+<li>模拟退火算法也是一种贪心算法，但是它的搜索过程引入了随机因素，以一定的概率来接受一个比当前解差的解，从而有可能跳出局部最优解，寻找全局最优解</li>
+<li>局部束算法是一种启发式搜索算法，它维护了一个固定大小的候选解集合，<strong>每次从集合中选择最好的k个解进行扩展，并将扩展后的解重新加入集合</strong>，直到达到终止条件</li>
+<li>遗传算法是一种模拟自然进化过程的搜索算法，它也维护了一个候选解集合，但是每次从集合中随机选择两个解进行交叉和变异操作，并根据适应度函数来评估和选择新的解</li>
+</ul>
+<p>从最优性的角度来看，模拟退火算法和遗传算法都有可能找到全局最优解，但是它们也需要更多的计算时间和资源。爬山法和局部束算法则更快速和简单，但是它们只能保证找到局部最优解。因此，在选择合适的算法时，需要根据问题的特点和需求来权衡不同的因素。</p>
+<blockquote>
+<p>什么是遗传算法？试说明遗传算法的基本原理，并给出算法流程图。（15分）</p>
+</blockquote>
+<p>答案与评分：</p>
+<p>遗传算法维护解的集合，每次从集合中随机选择两个解进行交叉变异操作，再通过适应度函数进行评估和选择新的解</p>
+<p>i)        遗传算法是随机搜索的一个变形，通过把两个父状态结合来生成后继，而不是通过修改单一状态进行。（5分，类似的描述均可）</p>
+<p>ii)       基本原理：</p>
+<ol>
+<li>一个后继状态由两个父状态决定，一个状态表示成一个字符串</li>
+<li>以k个随机产生的状态开始(population)</li>
+<li>定义一个健康度量函数用来评价状态的好坏程度</li>
+<li>通过选择，交叉，突变的操作产生下一轮状态  </li>
+</ol>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230408202147877.png" srcset="/img/loading.gif" lazyload alt="image-20230408202147877" style="zoom:200%;"></p>
+<blockquote>
+<p>遗传算法终止的条件是什么？如果一个问题不知道目标状态的条件下遗传算法的终止条件是什么？</p>
+</blockquote>
+<p>遗传算法的终止条件通常有以下几种：1. 染色体变化不大，群体趋于稳定。2. 目标函数达到预设的要求。3. 迭代次数满足最大代数。在一个问题不知道目标状态的条件下，遗传算法的终止条件可能是迭代次数满足最大代数或者染色体变化不大，群体趋于稳定。</p>
+<blockquote>
+<p>A. 模拟退火算法相对于爬山法最大的改进在哪里？模拟退火算法能保证得到全局最优解吗？(10分)</p>
+</blockquote>
+<p>【Answer】：模拟退火算法引入了随机性，使得状态不一定向最好的方向移动，从而避免了陷入局部最优，增大了找到全局最优的可能性(6分)。但模拟退火算法不能确保找到全局最优。（4分）</p>
+<blockquote>
+<p>B. 局部束搜索相对于模拟退火算法最大的改进是什么？局部束算法能保证全局最优吗？如果不能，有什么策略增加算法得到全局最优的概率？(10分)</p>
+</blockquote>
+<p> 【Answer】：局部束算法每次保留多个中间状态，从而增大了找到全局最优的可能性。（5分）局部束算法也不能保证全局最优，可以通过增加中间状态的个数，增加状态之间的多样性等来增加找到全局最优的概率（5分）</p>
+<h1 id="对抗搜索"><a href="#对抗搜索" class="headerlink" title="对抗搜索"></a>对抗搜索</h1><p>除alpha-beta剪枝外，阐述其他两种对抗搜索的加速策略</p>
+<blockquote>
+<p>除了剪枝算法列举其他三种加快对抗搜索算法时间效率的策略并进行最优性分析。（6分）  </p>
+</blockquote>
+<p>答案：</p>
+<p>截断搜索，在某一层或者一定时间范围内强制回溯，非最优；（2分）</p>
+<p>采用搜索表的形式，记忆最佳行棋，非最优；（2分）</p>
+<p>柱搜索，每次只考虑部分分支<strong>，</strong>非最优（2分）</p>
+<blockquote>
+<p>飞行棋求解也是一种博弈问题求解，它与普通的双人博弈问题如围棋的差别在哪里？请从问题本身以及问题求解两个层面进行阐述。</p>
+</blockquote>
+<p>  答案：飞行棋是一种多agent的随机博弈问题(4分)，而围棋是双agent的确定博弈问题(2分)，</p>
+<p>在求解思路上<strong>，</strong>飞行棋除了考虑自身的利益之外，有时需要跟对手把合作针对第三方行棋，因此，存在合作与竞争的关系。</p>
+<blockquote>
+<p>(a)  什么是博弈问题，它和其他搜索方法比较有什么特点？</p>
+<p><strong>(b)</strong> 提高博弈问题的搜索效率有什么方法并分析每种方法对算法最优性的影响。</p>
+</blockquote>
+<p> <a href="卷积神经网络相比于人工神经网络的优点：">answer</a>:</p>
+<p>(a) 有完整信息的、确定的、轮流行动的、两个以上Agent的对抗搜索问题。（2分）</p>
+<p>  与其他搜索算法相比，它主要的特点是多agent（1分）和更加注重实时性（1分）</p>
+<p>(b)  提高搜索算法效率的方法：（4点答出3点即得满分）</p>
+<p>（1）α-β剪枝，不影响算法的最优性 （2分）</p>
+<p>（2）采用评估函数和截断测试的方式，影响算法的最优性（2分）</p>
+<p>（3）向前剪枝策略只考虑最优的部分分支，影响算法的最优性（2分）</p>
+<p>（4）采用搜索表的方式，不影响算法的最优性（2分）</p>
+<h1 id="CSP"><a href="#CSP" class="headerlink" title="CSP"></a>CSP</h1><p>提高CSP回溯算法的效率</p>
+<ul>
+<li>选择变量赋值的顺序：最受约束变量（优先选择最少剩余值的变量进行赋值），约束最多变量（优先选择最能约束其他变量的变量进行赋值）</li>
+<li>选择值域中赋值的顺序：最少约束值（选择使得变量赋值空间更大的值）</li>
+<li>更早地检测不可避免的失败：前向检验（追踪未赋值变量的剩余合法赋值，当任何一个剩余变量没有合法赋值时搜索终止，前向检验能从赋值变量向未赋值变量传播信息，但不能对失败提供早期检测）</li>
+</ul>
+<p>还有什么智能回溯，建立冲突集</p>
+<h1 id="贝叶斯"><a href="#贝叶斯" class="headerlink" title="贝叶斯"></a>贝叶斯</h1><blockquote>
+<p>请简述什么是贝叶斯网络的近似推理？为什么要引入近似推理？（10分）</p>
+</blockquote>
+<p>  【answer】：近似推理是指根据原有贝叶斯网络的拓扑结构以及条件概率表构造大量的数据样本，再在样本的基础上进行概率统计的方法。(5分) </p>
+<p>精确枚举算法虽然计算正确， 但当网络结构复杂层次很深的时候计算量巨大，而近似推理的方法大大地降低了计算的复杂度。(5分)</p>
+<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><blockquote>
+<p>请用简短的语句描述熵和信息增益的定义</p>
+</blockquote>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230531153127240.png" srcset="/img/loading.gif" lazyload alt="image-20230531153127240"></p>
+<p>熵表示事物的混乱程度，公式表示为</p>
+<p>信息熵表示未按照某个属性划分前的熵减去按照某个属性划分后的熵</p>
+<p>信息增益表示在已知特征X的情况下类Y的不确定性的减少程度</p>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230531153140819.png" srcset="/img/loading.gif" lazyload alt="image-20230531153140819"></p>
+<blockquote>
+<p>(b). 判断下列语句的对错并说明原因： 当所有的候选属性的信息增益都为0的时候当前这个节点应该选为叶子节点(4分) 。</p>
+</blockquote>
+<p>【answer】： 错误（2分）所有属性的信息增益为0说明所有属性对于区分样本没有任何帮助，并不表示样本已经区分开来，因而不能作为叶子节点 （2分）</p>
+<blockquote>
+<p>(c). 在构造完一棵决策树后我们发现该决策树在训练数据上的性能很高但在测试数据上的性能下降，请解释原因并给出解决方案（8分）。</p>
+</blockquote>
+<p>【answer】： 产生了过拟合现象（3分） 过拟合现象说明当前训练的模型过分的拟合了训练数据，学到了一些无关的信息导致在测试数据上的性能下降 （2分）；</p>
+<p> 解决方案：对决策树进行剪枝，剪掉一些层次很深，信息量不大的属性 （3分）；</p>
+<blockquote>
+<p>阐述如何采用剪枝策略来避免决策树的过拟合（5分）；</p>
+</blockquote>
+<ol>
+<li><p>限定每个叶子节点的最小样本数量；</p>
+</li>
+<li><p>限制树的深度；</p>
+</li>
+<li>采用X方策略删除信息增益小的节点</li>
+</ol>
+<blockquote>
+<p>  <strong>2.</strong>  请阐述训练集、测试集与验证集的作用?什么是K-折交叉验证？其作用是什么？（10分）</p>
+</blockquote>
+<p>训练集的作用：更新模型参数。（2分）</p>
+<p>验证集的作用：评估多个训练模型的性能，根据模型在验证集的性能对模型进行选择和调参。（2分）</p>
+<p>测试集的作用：对最终筛选出来模型的泛化能力进行评价。（2分）</p>
+<p>K-折交叉验证：将数据集随机分为 K个包，每次将其中一个包作为测试集，剩下K-1个包作为训练集进行训练，最后取平均测试误差做为泛化误差。（2分）</p>
+<p>K-折交叉验证的好处：k折交叉验证能够有效提高模型的学习能力，类似于增加了训练样本数量，使得学习的模型更加稳健，鲁棒性更强，选择合适的 k 值能够有效避免过拟合。（2分）</p>
+<blockquote>
+<p>比较有监督学习，无监督学习和半监督之间的差异，并简述三种学习方式的优点；（10分）</p>
+</blockquote>
+<p>【answer】：</p>
+<p>有监督学习是在带有标签的数据上进行学习； （1分）</p>
+<p>无监督学习是在没有标签的数据上进行学习； （1分）</p>
+<p>半监督学习是同时使用有标签和无标签的数据进行学习；（2分）</p>
+<p>有监督学习的方式性能优良；（2分） 无监督的学习方式不需要人工标注的数据，因而节约了标注的成本（2分） 半监督学习的方式只使用少量的标注数据取得接近有监督学习的性能，在节约标注成本的同时保持了较高的性能；（2分）</p>
+<blockquote>
+<p> 比较有监督学习，无监督学习和半监督之间的差异，并简述三种学习方式的优点；（9分）</p>
+</blockquote>
+<p>有监督学习采用带标签的数据进行学习；（2分）其主要的优点是性能较好；（1分）</p>
+<p>无监督学习采用不带标间的数据进行学习；（2分）其主要的优点是节约了数据标注的时间（1分）</p>
+<p>半监督学习融合了两者的特点，既使用带标签的数据又使用不带标签的数据进行学习；（2分）其主要的优点是既保证了性能进行又节约了人工标注的代价（1分）</p>
+<blockquote>
+<p>简述分类和回归的差别？YOLO算法采用的是分类还是回归？其主要的原理是什么？（10分）</p>
+</blockquote>
+<p>输入变量和输出变量均为连续变量的预测问题为回归问题，回归使输出变量离回归平面越近越好</p>
+<p>输出变量为有限个离散变量的预测问题为分类问题，分类使输出变量离分类平面越远越好</p>
+<h1 id><a href="#" class="headerlink" title></a><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/image-20230601164616302.png" srcset="/img/loading.gif" lazyload alt="image-20230601164616302"></h1><blockquote>
+<p>什么是机器学习？机器学习的主要步骤是什么？</p>
+</blockquote>
+<p>机器学习就是机器可以自动学习的算法，从数据中自动分析获得规律，并利用规律对未知数据进行预测的算法</p>
+<p>步骤为：</p>
+<ul>
+<li>从原始数据中提取特征</li>
+<li>学习映射函数f</li>
+<li>通过映射函数f将原始数据映射到语义空间，寻找数据和任务目标之间的关系</li>
+</ul>
+<p>机器学习的分类：监督学习、无监督学习、强化学习</p>
+<p>按推理方式分：基于解释学习、基于归纳的学习</p>
+<h1 id="人工神经网络"><a href="#人工神经网络" class="headerlink" title="人工神经网络"></a>人工神经网络</h1><blockquote>
+<p>感知器得到的分类超平面是唯一的吗？如果不是请说明理由。</p>
+</blockquote>
+<p><strong><a href="卷积神经网络相比于人工神经网络的优点：">answer</a>:</strong></p>
+<p> 不一样，（3分）初始权值的设定，学习率的大小、数据输入的顺序都影响结果。（2分）</p>
+<blockquote>
+<p>（c）感知器算法的缺点是什么？</p>
+</blockquote>
+<p><strong><a href="卷积神经网络相比于人工神经网络的优点：">answer</a>:</strong>只能处理线性可分的数据，对于线性不可分的数据无效。</p>
+<h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><blockquote>
+<p>请依据你对深度学习的了解，说明列举两种不同类型的深度神经网络模型，说明其基本原理、训练方法与应用领域？</p>
+</blockquote>
+<p>卷积神经网络是人工神经网络的一种，已成为当前语音分析和图像识别领域的研究热点。它的权值共享网络结构使之更类似于生物神经网络，降低了网络模型的复杂度，减少了权值的数量。该优点在网络的输入是多维图像时表现的更为明显，使图像可以直接作为网络的输入，避免了传统识别算法中复杂的特征提取和数据重建过程。卷积网络是为识别二维形状而特殊设计的一个多层感知器，这种网络结构对平移、比例缩放、倾斜或者共他形式的变</p>
+<p>模型优缺点：</p>
+<p>(1)优点：</p>
+<p>（1）、权重共享策略减少了需要训练的参数，相同的权重可以让滤波器不受信号位置的影响来检测信号的特性，使得训练出来的模型的泛化能力更强；</p>
+<p>（2）、池化运算可以降低网络的空间分辨率，从而消除信号的微小偏移和扭曲，从而对输入数据的平移不变性要求不高。</p>
+<p>(2)缺点：</p>
+<p>（1）、深度模型容易出现梯度消散问题。</p>
+<p>在深度学习领域，传统的多层感知机为基础的上述各网络结构具有出色的表现，取得了许多成功，它曾在许多不同的任务上——包括手写数字识别和目标分类上创造了记录。但是，他们也存在一定的问题，上述模型都无法分析输入信息之间的整体逻辑序列。这些信息序列富含有大量的内容，信息彼此间有着复杂的时间关联性，并且信息长度各种各样。这是以上模型所无法解决的，递归神经网络正是为了解决这种序列问题应运而生，其关键之处在于当前网络的隐藏状态会保留先前的输入信息，用来作当前网络的输出。</p>
+<p>许多任务需要处理序列数据，比如Image captioning, speech synthesis, and music generation 均需要模型生成序列数据，其他领域比如 time series prediction, video analysis, and musical information retrieval 等要求模型的输入为序列数据，其他任务比如机器翻译，人机对话，controlling a robot 的模型要求输入输出均为序列数据</p>
+<p>模型优缺点：</p>
+<p>(1)优点：</p>
+<p>（1）、模型是时间维度上的深度模型，可以对序列内容建模；</p>
+<p>(2)缺点：</p>
+<p>（1）、需要训练的参数较多，容易出现梯度消散或梯度爆炸问题；</p>
+<p>（2）、不具有特征学习能力。</p>
+<blockquote>
+<p> 请比较人工神经网络与支持向量机在处理非线性问题上的策略差异以及最优性比较。(4分) </p>
+</blockquote>
+<p>由于核函数的引入，支持向量机通过变换将非线性输入映射到高维特征空间，然后再进行最优化求解，使其有效的处理非线性学习问题。</p>
+<p>神经网络由大量神经元组成，自身是线性的,其主要采用非线性的激活函数来处理非线性问题。</p>
+<p>支持向量机是全局最优解,人工神经网络是局部最优解。</p>
+<blockquote>
+<p>深度卷积神经网络的卷积操作相比于多层人工神经网络的优势是什么？为什么卷积之后要进行池化？池化有什么缺点?（10分）</p>
+</blockquote>
+<ol>
+<li>局部感知：采用卷积核对原图像进行特征提取，卷积核每次提取的是局部区域的特征而非全局特征，更加符合人眼视觉感知的特点。（2分）</li>
+<li>权值共享：一组连接可以共享同一批卷积核权重，而不是每个连接有一个不同的权重，减少了参数量。（2分）</li>
+</ol>
+<p>缺点：深度模型容易出现梯度消散问题。</p>
+<p>多层人工神经网络的优点：</p>
+<p>优点：模型是时间维度上的深度模型，可以对序列内容建模；</p>
+<p>缺点：需要训练的参数较多，容易出现梯度消散或梯度爆炸问题；不具有特征学习能力。</p>
+<p>卷积的作用就是为了提取特征，而池化是对图像进行子抽样，减少数据量的同时保留了图像的有用信息。（4分）</p>
+<p>然而，池化操作丢失了部分细节信息，可能会导致图像图像处理任务的失败。（2分）</p>
+<blockquote>
+<p>对比Relu函数与sigmoid函数之间的优缺点 (4分)</p>
+</blockquote>
+<p><a href="卷积神经网络相比于人工神经网络的优点：">answer</a>:</p>
+<p>Relu优点：</p>
+<p>（1）relu函数在大于0的部分梯度为常数，所以不会产生梯度弥散现象。而对于sigmod函数，在正负饱和区的梯度都接近于0，可能会导致梯度消失现象。</p>
+<p>（2）Relu函数的导数计算更快，所以使用梯度下降时比Sigmod收敛起来要快很多。</p>
+<p>Relu缺点：Relu死亡问题。当 x 是小于 0 的时候，那么从此所以流过这个神经元的梯度将都变成 0；这个时候这个 ReLU 单元在训练中将死亡（也就是参数无法更新），这也导致了数据多样化的丢失。</p>
+<p>Sigmod优点：具有很好的解释性，将线性函数的组合输出为0，1之间的概率。</p>
+<p>Sigmodu缺点：</p>
+<p>（1）激活函数计算量大，反向传播求梯度时，求导涉及除法。</p>
+<p>（2）反向传播时，在饱和区两边导数容易为0，即容易出现梯度消失的情况，从而无法完成深层网络的训练。</p>
+<blockquote>
+<p>以图像分类为例，请简述卷积神经网络最主要的三个操作以及每个操作的主要作用？（9分）</p>
+</blockquote>
+<p>  卷积层：采用卷积操作来提取图像的卷积特征，其主要的作用是图像语义特征提取；（3分）</p>
+<p>  池化层：采用池化操作来对卷积后的特征进行降维，其主要作用是在保留图像信息的同时降低特征维度；（3分）</p>
+<p>  全连接层：根据提取的特征进行预测输出值，其主要的作用是预测图像分类结果。（3分）</p>
+<p>然而，池化操作丢失了部分细节信息，可能会导致图像图像处理任务的失败。（2分）</p>
+<blockquote>
+<p>防止卷积神经网络过拟合的操作</p>
+</blockquote>
+<p>数据增强、dropout、正则化、提前终止</p>
+<blockquote>
+<p>深度学习的原理是什么？以一个典型的深度学习算法为例进行说明。</p>
+</blockquote>
+<p>深度学习的原理是通过一系列的数据变换（层）来实现输入数据到目标结果的映射。每一层都是一个函数，可以对输入数据进行某种形式的特征提取或抽象。深度学习的网络结构通常包含多个隐藏层，这些隐藏层可以学习数据中错综复杂的结构和表示。</p>
+<p>以一个典型的深度学习算法为例，我们可以介绍卷积神经网络（CNN）。CNN是一种用于图像识别和处理的深度学习模型，它由多个卷积层、池化层和全连接层组成。卷积层可以对输入图像进行局部感知和特征提取，池化层可以对特征进行降维和不变性增强，全连接层可以对特征进行分类或回归。CNN的工作原理如下图所示：</p>
+<p><img src="/2023/03/25/AI%E5%A4%8D%E4%B9%A0/Typical_cnn.png" srcset="/img/loading.gif" lazyload alt="CNN"></p>
+<p>图中，输入图像经过第一个卷积层后，得到多个特征图（feature map），每个特征图对应一个卷积核（convolutional kernel），用于检测图像中的某种特征。然后，特征图经过第一个池化层后，得到降采样后的特征图，这样可以减少计算量和参数数量，同时保留重要的特征信息。接着，重复卷积层和池化层的操作，使得特征图越来越小，但是越来越深，也就是说特征越来越抽象和高级。最后，将最后一层的特征图展平成一个向量，输入到全连接层中，进行分类或回归任务。全连接层相当于一个传统的神经网络，可以使用激活函数和损失函数来优化输出结果。</p>
+<p>这就是一个简单的CNN的工作原理，当然实际上CNN还有很多变种和优化方法，比如使用不同的卷积核大小、步长、填充方式、激活函数、正则化方法、批量归一化、残差连接等等。CNN是深度学习中最成功和最广泛应用的算法之一，在图像分类、目标检测、语义分割、人脸识别、风格迁移等领域都有着优异的表现。</p>
+<h1 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h1><blockquote>
+<p>简述什么是强化学习，其主要的特点是什么？（10分）</p>
+</blockquote>
+<p>强化学习是智能体（Agent）以“试错”的方式进行学习，通过与环境进行交互获得的奖赏指导行为，目标是使智能体获得最大的奖赏，强化学习不同于连接主义学习中的监督学习，主要表现在强化信号上，强化学习中由环境提供的强化信号是对产生动作的好坏作一种评价(通常为标量信号)，而不是告诉强化学习系统RLS(reinforcement learning system)如何去产生正确的动作。由于外部环境提供的信息很少，RLS必须靠自身的经历进行学习。通过这种方式，RLS在行动-评价的环境中获得知识，改进行动方案以适应环境。（5分）</p>
+<p>强化学习的特点： （5分，答对3个给满分，少一个扣2分）</p>
+<p>交互式学习</p>
+<p>强化信息的延迟性</p>
+<p>无需先验知识</p>
+<p>增量式的在线学习</p>
+<p>可应用于不确定环境</p>
+<p>强化学习是智能体以试错的方式进行学习，通过与环境进行交互获得的奖赏指导行动，目标是使智能体获得最大的奖赏，强化学习与监督学习的不同主要在强化信号上，强化信号是由环境对产生动作好坏的一种评价，而不是告诉强化系统如何产生正确动作，由于环境提供信息较少，强化系统在行动-评价的</p>
+<p>交互式学习</p>
+<p>增量式的在线学习</p>
+<p>无需先验知识</p>
+<p>可用于不确定环境</p>
+<p>强化信息的延迟性</p>
+<ol>
+<li></li>
+</ol>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>AI复习</div>
+      <div>https://leungto.github.io/2023/03/25/AI复习/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>荔枝</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年3月25日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/07/22/dive-into-deep-learning/" title="dive into deep learning">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">dive into deep learning</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/01/02/%E5%9B%9E%E6%BA%AF%E6%B3%95%E9%A2%98%E8%A7%A3/" title="回溯法题解">
+                        <span class="hidden-mobile">回溯法题解</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
