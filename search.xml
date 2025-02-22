@@ -39,8 +39,7 @@
   <entry>
     <title>algorithm plus</title>
     <url>/2023/08/15/algorithm-plus/</url>
-    <content><![CDATA[<p>rt</p>
-<span id="more"></span>
+    <content><![CDATA[<span id="more"></span>
 <h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><h2 id="数字三角形模型"><a href="#数字三角形模型" class="headerlink" title="数字三角形模型"></a>数字三角形模型</h2><h3 id="摘花生"><a href="#摘花生" class="headerlink" title="摘花生"></a>摘花生</h3><p><img src="/2023/08/15/algorithm-plus/image-20230816214435544.png" alt="image-20230816214435544" style="zoom:50%;"></p>
 <p>因为只能从上面和左边过来，所以有状态转移方程：<code>dp[i][j]=(dp[i-1][j],dp[i][j-1])+a[i][j]</code></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">105</span>;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> a[N][N],dp[N][N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="type">int</span> r,c;</span><br><span class="line">    <span class="keyword">while</span>(n--)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;r&gt;&gt;c;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=r;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=c;j++)</span><br><span class="line">            &#123;</span><br><span class="line">                cin&gt;&gt;a[i][j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=r;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=c;j++)</span><br><span class="line">            &#123;</span><br><span class="line">                dp[i][j]=<span class="built_in">max</span>(dp[i<span class="number">-1</span>][j],dp[i][j<span class="number">-1</span>])+a[i][j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        cout&lt;&lt;dp[r][c]&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -54,8 +53,7 @@
   <entry>
     <title>dive into deep learning</title>
     <url>/2023/07/22/dive-into-deep-learning/</url>
-    <content><![CDATA[<p>深度学习</p>
-<span id="more"></span>
+    <content><![CDATA[<span id="more"></span>
 <h3 id="pytorch"><a href="#pytorch" class="headerlink" title="pytorch"></a>pytorch</h3><blockquote>
 <p>【PyTorch深度学习快速入门教程（绝对通俗易懂！）【小土堆】】 </p>
 <p><a href="https://www.bilibili.com/video/BV1hE411t7RN/?share_source=copy_web&amp;vd_source=f21aab4ae7e1148acd5e06c0dddddfd9">https://www.bilibili.com/video/BV1hE411t7RN/?share_source=copy_web&amp;vd_source=f21aab4ae7e1148acd5e06c0dddddfd9</a></p>
@@ -210,8 +208,7 @@
   <entry>
     <title>回溯法题解</title>
     <url>/2023/01/02/%E5%9B%9E%E6%BA%AF%E6%B3%95%E9%A2%98%E8%A7%A3/</url>
-    <content><![CDATA[<p>《算法设计与分析》一书中回溯法习题求解</p>
-<span id="more"></span>
+    <content><![CDATA[<span id="more"></span>
 <p>书写结构：解空间和解结构，剪枝策略，示例，代码，时间复杂度分析</p>
 <h1 id="5-1子集和问题"><a href="#5-1子集和问题" class="headerlink" title="5-1子集和问题"></a>5-1子集和问题</h1><p><img src="/2023/01/02/%E5%9B%9E%E6%BA%AF%E6%B3%95%E9%A2%98%E8%A7%A3/image-20230102174153224.png" alt="image-20230102174153224" style="zoom: 67%;"></p>
 <h3 id="1-解空间和解结构"><a href="#1-解空间和解结构" class="headerlink" title="1. 解空间和解结构"></a>1. 解空间和解结构</h3><p>类似于0-1背包问题，对于S大小为n的子集和问题，解空间是由长度为n的0-1向量组成，解的结构为子集树，如对于上述示例的解，解空间即为(1,1,1,0,0,0)</p>
@@ -444,8 +441,7 @@
   <entry>
     <title>algorithm</title>
     <url>/2022/12/14/algorithm/</url>
-    <content><![CDATA[<p>代码参考acwing-yxc</p>
-<span id="more"></span>
+    <content><![CDATA[<span id="more"></span>
 <h1 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h1><ul>
 <li>c++里面1e7和1e8的复杂度大概1s能够计算得到</li>
 <li>10的9次方以内或者32位整数用int存放，10的18次方以内或者64位整数用long long 存放</li>
