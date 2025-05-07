@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>NN-zero-to-hero-P2-makemore-MLP | 小凉的博客</title><meta name="author" content="小凉"><meta name="copyright" content="小凉"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="利用MLP构建二元语言模型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NN-zero-to-hero-P2-makemore-MLP">
+<meta property="og:url" content="https://leungto.github.io/2025/05/07/NN-zero-to-hero-P2-makemore-MLP/index.html">
+<meta property="og:site_name" content="小凉的博客">
+<meta property="og:description" content="利用MLP构建二元语言模型">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://leungto.github.io/img/avatar.png">
+<meta property="article:published_time" content="2025-05-07T06:55:25.000Z">
+<meta property="article:modified_time" content="2025-05-07T07:36:01.027Z">
+<meta property="article:author" content="小凉">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://leungto.github.io/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "NN-zero-to-hero-P2-makemore-MLP",
+  "url": "https://leungto.github.io/2025/05/07/NN-zero-to-hero-P2-makemore-MLP/",
+  "image": "https://leungto.github.io/img/avatar.png",
+  "datePublished": "2025-05-07T06:55:25.000Z",
+  "dateModified": "2025-05-07T07:36:01.027Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "小凉",
+      "url": "https://leungto.github.io/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://leungto.github.io/2025/05/07/NN-zero-to-hero-P2-makemore-MLP/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'NN-zero-to-hero-P2-makemore-MLP',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"></a><a class="nav-page-title" href="/"><span class="site-name">NN-zero-to-hero-P2-makemore-MLP</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">NN-zero-to-hero-P2-makemore-MLP</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-07T06:55:25.000Z" title="发表于 2025-05-07 14:55:25">2025-05-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-07T07:36:01.027Z" title="更新于 2025-05-07 15:36:01">2025-05-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>利用MLP构建二元语言模型，参考下面的模型进行构建：</p>
+<p><img src="/2025/05/07/NN-zero-to-hero-P2-makemore-MLP/image-20250507145906481.png" alt="image-20250507145906481" style="zoom:50%;"></p>
+<p>context window 长度是3，也就是前三个字符预测后一个字符，首先用字符索引对应的embedding，然后经过一层网络，<code>tanh</code>处理后再经过一层网络，做<code>softmax</code>操作得到每个字符的概率</p>
+<p>所以模型的参数包括：embedding<code>C</code>，中间层和最后的神经网络的参数</p>
+<p>下面是具体的代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torch.nn.functional <span class="keyword">as</span> F</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt <span class="comment"># for making figures</span></span><br><span class="line">%matplotlib inline</span><br></pre></td></tr></table></figure>
+<p>读文件，是一堆名字组成的list</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># read in all the words</span></span><br><span class="line">words = <span class="built_in">open</span>(<span class="string">&#x27;names.txt&#x27;</span>, <span class="string">&#x27;r&#x27;</span>).read().splitlines()</span><br><span class="line">words[:<span class="number">8</span>]</span><br></pre></td></tr></table></figure>
+<pre><code>[&#39;emma&#39;, &#39;olivia&#39;, &#39;ava&#39;, &#39;isabella&#39;, &#39;sophia&#39;, &#39;charlotte&#39;, &#39;mia&#39;, &#39;amelia&#39;]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">len</span>(words)</span><br></pre></td></tr></table></figure>
+<pre><code>32033
+</code></pre><p>构建索引，<code>string2int</code>以及<code>int2string</code>    </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># build the vocabulary of characters and mappings to/from integers</span></span><br><span class="line">chars = <span class="built_in">sorted</span>(<span class="built_in">list</span>(<span class="built_in">set</span>(<span class="string">&#x27;&#x27;</span>.join(words))))</span><br><span class="line">stoi = &#123;s:i+<span class="number">1</span> <span class="keyword">for</span> i,s <span class="keyword">in</span> <span class="built_in">enumerate</span>(chars)&#125;</span><br><span class="line">stoi[<span class="string">&#x27;.&#x27;</span>] = <span class="number">0</span></span><br><span class="line">itos = &#123;i:s <span class="keyword">for</span> s,i <span class="keyword">in</span> stoi.items()&#125;</span><br><span class="line"><span class="built_in">print</span>(itos)</span><br></pre></td></tr></table></figure>
+<pre><code>&#123;1: &#39;a&#39;, 2: &#39;b&#39;, 3: &#39;c&#39;, 4: &#39;d&#39;, 5: &#39;e&#39;, 6: &#39;f&#39;, 7: &#39;g&#39;, 8: &#39;h&#39;, 9: &#39;i&#39;, 10: &#39;j&#39;, 11: &#39;k&#39;, 12: &#39;l&#39;, 13: &#39;m&#39;, 14: &#39;n&#39;, 15: &#39;o&#39;, 16: &#39;p&#39;, 17: &#39;q&#39;, 18: &#39;r&#39;, 19: &#39;s&#39;, 20: &#39;t&#39;, 21: &#39;u&#39;, 22: &#39;v&#39;, 23: &#39;w&#39;, 24: &#39;x&#39;, 25: &#39;y&#39;, 26: &#39;z&#39;, 0: &#39;.&#39;&#125;
+</code></pre><p>构建数据集，context window length为3，也就是这里的block_size</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># build the dataset</span></span><br><span class="line"></span><br><span class="line">block_size = <span class="number">3</span> <span class="comment"># context length: how many characters do we take to predict the next one?</span></span><br><span class="line">X, Y = [], []</span><br><span class="line"><span class="keyword">for</span> w <span class="keyword">in</span> words:</span><br><span class="line">  </span><br><span class="line">  <span class="comment">#print(w)</span></span><br><span class="line">  context = [<span class="number">0</span>] * block_size</span><br><span class="line">  <span class="keyword">for</span> ch <span class="keyword">in</span> w + <span class="string">&#x27;.&#x27;</span>:</span><br><span class="line">    ix = stoi[ch]</span><br><span class="line">    X.append(context)</span><br><span class="line">    Y.append(ix)</span><br><span class="line">    <span class="comment">#print(&#x27;&#x27;.join(itos[i] for i in context), &#x27;---&gt;&#x27;, itos[ix])</span></span><br><span class="line">    context = context[<span class="number">1</span>:] + [ix] <span class="comment"># crop and append</span></span><br><span class="line">  </span><br><span class="line">X = torch.tensor(X)</span><br><span class="line">Y = torch.tensor(Y)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X.shape, X.dtype, Y.shape, Y.dtype</span><br></pre></td></tr></table></figure>
+<pre><code>(torch.Size([228146, 3]), torch.int64, torch.Size([228146]), torch.int64)
+</code></pre><p>下面是规范的构建数据集的过程，这里还对数据集进行了划分，训练集 开发集 测试集 80% 10% 10%</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># build the dataset</span></span><br><span class="line">block_size = <span class="number">3</span> <span class="comment"># context length: how many characters do we take to predict the next one?</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">build_dataset</span>(<span class="params">words</span>):  </span><br><span class="line">  X, Y = [], []</span><br><span class="line">  <span class="keyword">for</span> w <span class="keyword">in</span> words:</span><br><span class="line"></span><br><span class="line">    <span class="comment">#print(w)</span></span><br><span class="line">    context = [<span class="number">0</span>] * block_size</span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> w + <span class="string">&#x27;.&#x27;</span>:</span><br><span class="line">      ix = stoi[ch]</span><br><span class="line">      X.append(context)</span><br><span class="line">      Y.append(ix)</span><br><span class="line">      <span class="comment">#print(&#x27;&#x27;.join(itos[i] for i in context), &#x27;---&gt;&#x27;, itos[ix])</span></span><br><span class="line">      context = context[<span class="number">1</span>:] + [ix] <span class="comment"># crop and append</span></span><br><span class="line"></span><br><span class="line">  X = torch.tensor(X)</span><br><span class="line">  Y = torch.tensor(Y)</span><br><span class="line">  <span class="built_in">print</span>(X.shape, Y.shape)</span><br><span class="line">  <span class="keyword">return</span> X, Y</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line">random.seed(<span class="number">42</span>)</span><br><span class="line">random.shuffle(words)</span><br><span class="line">n1 = <span class="built_in">int</span>(<span class="number">0.8</span>*<span class="built_in">len</span>(words))</span><br><span class="line">n2 = <span class="built_in">int</span>(<span class="number">0.9</span>*<span class="built_in">len</span>(words))</span><br><span class="line"></span><br><span class="line"><span class="comment"># training split, dev/validation split, test split</span></span><br><span class="line"><span class="comment"># 80%, 10%, 10%</span></span><br><span class="line"></span><br><span class="line">Xtr, Ytr = build_dataset(words[:n1])</span><br><span class="line">Xdev, Ydev = build_dataset(words[n1:n2])</span><br><span class="line">Xte, Yte = build_dataset(words[n2:])</span><br></pre></td></tr></table></figure>
+<pre><code>torch.Size([182625, 3]) torch.Size([182625])
+torch.Size([22655, 3]) torch.Size([22655])
+torch.Size([22866, 3]) torch.Size([22866])
+</code></pre><p>尝试将embedding长度设置为2，也就是将27个字符压缩到2维空间表示，之前是用one-hot编码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C = torch.randn((<span class="number">27</span>, <span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">emb = C[X] <span class="comment"># 索引方式获取embedding</span></span><br><span class="line">emb.shape</span><br></pre></td></tr></table></figure>
+<pre><code>torch.Size([228146, 3, 2])
+</code></pre><p>为了方便计算，需要将3个字符的向量进行拼接也就是把shape变成<code>torch.Size([228146, 6])</code>，然后和<code>W1</code>相乘</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">W1 = torch.randn((<span class="number">6</span>, <span class="number">100</span>)) <span class="comment"># 100相当于hidden_size</span></span><br><span class="line">b1 = torch.randn(<span class="number">100</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">h = torch.tanh(emb.view(-<span class="number">1</span>, <span class="number">6</span>) @ W1 + b1) <span class="comment"># view高效的进行维度的变换，要求最后一维是6</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">h</span><br></pre></td></tr></table></figure>
+<pre><code>tensor([[-0.9635, -0.9175, -0.9873,  ..., -0.9958,  0.8321, -0.9806],
+        [ 0.9335, -0.0820,  0.6465,  ..., -0.9810, -0.6320,  0.8664],
+        [ 0.9764,  1.0000, -0.9878,  ...,  0.6863, -0.9981,  0.9999],
+        ...,
+        [-0.7309, -0.3933,  0.9428,  ...,  0.6721, -0.9989,  0.9627],
+        [ 0.9991, -0.9995,  1.0000,  ..., -0.9868, -0.9941,  0.9993],
+        [ 0.2479,  0.9941,  0.4721,  ...,  0.9912,  0.7920,  1.0000]])
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">h.shape</span><br></pre></td></tr></table></figure>
+<pre><code>torch.Size([228146, 100])
+</code></pre><p>下面是输出层的神经网络，因为hidden_size是100，所以第一个维度是100</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">W2 = torch.randn((<span class="number">100</span>, <span class="number">27</span>))</span><br><span class="line">b2 = torch.randn(<span class="number">27</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">logits = h @ W2 + b2</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">logits.shape</span><br></pre></td></tr></table></figure>
+<pre><code>torch.Size([228146, 27])
+</code></pre><p>计算后接每个字符的概率<code>prob</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">counts = logits.exp()</span><br><span class="line">prob = counts / counts.<span class="built_in">sum</span>(<span class="number">1</span>, keepdims=<span class="literal">True</span>)</span><br><span class="line">prob.shape</span><br></pre></td></tr></table></figure>
+<pre><code>torch.Size([228146, 27])
+</code></pre><p>计算损失，和之前一样采用的是负log平均</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">loss = -prob[torch.arange(<span class="number">228146</span>), Y].log().mean()</span><br><span class="line">loss</span><br></pre></td></tr></table></figure>
+<pre><code>tensor(16.1537)
+</code></pre><p>下面是更为正规的书写，因为之前的embedding设置为2维效果不是很好，设置为10维的</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ------------ now made respectable :) ---------------</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Xtr.shape, Ytr.shape <span class="comment"># dataset</span></span><br></pre></td></tr></table></figure>
+<pre><code>(torch.Size([182625, 3]), torch.Size([182625]))
+</code></pre><p>网络的设置</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">g = torch.Generator().manual_seed(<span class="number">2147483647</span>) <span class="comment"># for reproducibility</span></span><br><span class="line">C = torch.randn((<span class="number">27</span>, <span class="number">10</span>), generator=g)</span><br><span class="line">W1 = torch.randn((<span class="number">30</span>, <span class="number">200</span>), generator=g) <span class="comment"># 3*100, hidden_size</span></span><br><span class="line">b1 = torch.randn(<span class="number">200</span>, generator=g)</span><br><span class="line">W2 = torch.randn((<span class="number">200</span>, <span class="number">27</span>), generator=g) <span class="comment"># hidden_size, output_size</span></span><br><span class="line">b2 = torch.randn(<span class="number">27</span>, generator=g)</span><br><span class="line">parameters = [C, W1, b1, W2, b2] </span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sum</span>(p.nelement() <span class="keyword">for</span> p <span class="keyword">in</span> parameters) <span class="comment"># number of parameters in total</span></span><br></pre></td></tr></table></figure>
+<pre><code>11897
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> p <span class="keyword">in</span> parameters:</span><br><span class="line">  p.requires_grad = <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<p>插曲：如何选择lr</p>
+<hr>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">lre = torch.linspace(-<span class="number">3</span>, <span class="number">0</span>, <span class="number">1000</span>) </span><br><span class="line">lrs = <span class="number">10</span>**lre <span class="comment">#让lrs处于0.001到1的区间递增</span></span><br><span class="line"></span><br><span class="line">lri = []</span><br><span class="line">lossi = []</span><br><span class="line">stepi = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1000</span>): <span class="comment">#轮数和lrs长度一致</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment"># minibatch construct</span></span><br><span class="line">  ix = torch.randint(<span class="number">0</span>, Xtr.shape[<span class="number">0</span>], (<span class="number">32</span>,))</span><br><span class="line">  </span><br><span class="line">  <span class="comment"># forward pass</span></span><br><span class="line">  emb = C[Xtr[ix]] <span class="comment"># (32, 3, 10)</span></span><br><span class="line">  h = torch.tanh(emb.view(-<span class="number">1</span>, <span class="number">30</span>) @ W1 + b1) <span class="comment"># (32, 200)</span></span><br><span class="line">  logits = h @ W2 + b2 <span class="comment"># (32, 27)</span></span><br><span class="line">  loss = F.cross_entropy(logits, Ytr[ix])</span><br><span class="line">  <span class="comment">#print(loss.item())</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment"># backward pass</span></span><br><span class="line">  <span class="keyword">for</span> p <span class="keyword">in</span> parameters:</span><br><span class="line">    p.grad = <span class="literal">None</span></span><br><span class="line">  loss.backward()</span><br><span class="line">  </span><br><span class="line">  <span class="comment"># update</span></span><br><span class="line">  lr = lrs[i]</span><br><span class="line">  <span class="keyword">for</span> p <span class="keyword">in</span> parameters:</span><br><span class="line">    p.data += -lr * p.grad</span><br><span class="line"></span><br><span class="line">  <span class="comment"># track stats</span></span><br><span class="line">  lri.append(lre[i])</span><br><span class="line">  lossi.append(loss.log10().item())</span><br><span class="line"></span><br><span class="line"><span class="comment">#print(loss.item())</span></span><br><span class="line"></span><br><span class="line">plt.plot(lri, lossi)</span><br></pre></td></tr></table></figure>
+<p>绘制loss-lre图，最低点差不多在-1.0的位置，也就是lr取0.1就很棒了</p>
+<p><img src="/2025/05/07/NN-zero-to-hero-P2-makemore-MLP/image-20250507152058610.png" alt="image-20250507152058610"></p>
+<hr>
+<p>回到训练~，前向传播，计算loss，梯度清零，计算梯度，这里的cross_entropy直接代替了之前的softmax然后负log平均</p>
+<p>这里用了mini batch的优化，也就是每次随机选batch_size个样本，计算这些样本的loss，然后调整模型参数，多次 mini batch的调整效果也很棒</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">lossi = []</span><br><span class="line">stepi = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">200000</span>):</span><br><span class="line">  </span><br><span class="line">  <span class="comment"># minibatch construct</span></span><br><span class="line">  ix = torch.randint(<span class="number">0</span>, Xtr.shape[<span class="number">0</span>], (<span class="number">32</span>,))</span><br><span class="line">  </span><br><span class="line">  <span class="comment"># forward pass</span></span><br><span class="line">  emb = C[Xtr[ix]] <span class="comment"># (32, 3, 10)</span></span><br><span class="line">  h = torch.tanh(emb.view(-<span class="number">1</span>, <span class="number">30</span>) @ W1 + b1) <span class="comment"># (32, 200)</span></span><br><span class="line">  logits = h @ W2 + b2 <span class="comment"># (32, 27)</span></span><br><span class="line">  loss = F.cross_entropy(logits, Ytr[ix])</span><br><span class="line">  </span><br><span class="line">  <span class="comment"># backward pass</span></span><br><span class="line">  <span class="keyword">for</span> p <span class="keyword">in</span> parameters:</span><br><span class="line">    p.grad = <span class="literal">None</span></span><br><span class="line">  loss.backward()</span><br><span class="line">  </span><br><span class="line">  <span class="comment"># update</span></span><br><span class="line">  lr = <span class="number">0.1</span> <span class="keyword">if</span> i &lt; <span class="number">100000</span> <span class="keyword">else</span> <span class="number">0.01</span></span><br><span class="line">  <span class="keyword">for</span> p <span class="keyword">in</span> parameters:</span><br><span class="line">    p.data += -lr * p.grad</span><br><span class="line"></span><br><span class="line">  <span class="comment"># track stats</span></span><br><span class="line">  stepi.append(i)</span><br><span class="line">  lossi.append(loss.log10().item())</span><br><span class="line"></span><br><span class="line"><span class="comment">#print(loss.item())</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plt.plot(stepi, lossi)</span><br></pre></td></tr></table></figure>
+<p><img src="/2025/05/07/NN-zero-to-hero-P2-makemore-MLP/output_28_1.png" alt="png"></p>
+<p>模型是否训练好还可以看train集和dev集上的loss差异，如果train集和dev集上的loss差不多，说明模型并没有过拟合，效果差只是因为欠拟合或者模型太弱</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">emb = C[Xtr] <span class="comment"># (32, 3, 2)</span></span><br><span class="line">h = torch.tanh(emb.view(-<span class="number">1</span>, <span class="number">30</span>) @ W1 + b1) <span class="comment"># (32, 100)</span></span><br><span class="line">logits = h @ W2 + b2 <span class="comment"># (32, 27)</span></span><br><span class="line">loss = F.cross_entropy(logits, Ytr)</span><br><span class="line">loss</span><br></pre></td></tr></table></figure>
+<pre><code>tensor(2.1426, grad_fn=&lt;NllLossBackward0&gt;)
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">emb = C[Xdev] <span class="comment"># (32, 3, 2)</span></span><br><span class="line">h = torch.tanh(emb.view(-<span class="number">1</span>, <span class="number">30</span>) @ W1 + b1) <span class="comment"># (32, 100)</span></span><br><span class="line">logits = h @ W2 + b2 <span class="comment"># (32, 27)</span></span><br><span class="line">loss = F.cross_entropy(logits, Ydev)</span><br><span class="line">loss</span><br></pre></td></tr></table></figure>
+<pre><code>tensor(2.1830, grad_fn=&lt;NllLossBackward0&gt;)
+</code></pre><p>调整后的embedding绘图，不过适合之前的二维，embedding的距离也代表一些含义</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># visualize dimensions 0 and 1 of the embedding matrix C for all characters</span></span><br><span class="line">plt.figure(figsize=(<span class="number">8</span>,<span class="number">8</span>))</span><br><span class="line">plt.scatter(C[:,<span class="number">0</span>].data, C[:,<span class="number">1</span>].data, s=<span class="number">200</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(C.shape[<span class="number">0</span>]):</span><br><span class="line">    plt.text(C[i,<span class="number">0</span>].item(), C[i,<span class="number">1</span>].item(), itos[i], ha=<span class="string">&quot;center&quot;</span>, va=<span class="string">&quot;center&quot;</span>, color=<span class="string">&#x27;white&#x27;</span>)</span><br><span class="line">plt.grid(<span class="string">&#x27;minor&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p><img src="/2025/05/07/NN-zero-to-hero-P2-makemore-MLP/output_31_0.png" alt="png"></p>
+<p>利用训练好的模型生成新的名字，先取embedding，然后经过两层神经网络，最后做softmax获得下一个字符的概率，然后随机抽样，反复进行直到抽到<code>.</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># sample from the model</span></span><br><span class="line">g = torch.Generator().manual_seed(<span class="number">2147483647</span> + <span class="number">10</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">20</span>):</span><br><span class="line">    </span><br><span class="line">    out = []</span><br><span class="line">    context = [<span class="number">0</span>] * block_size <span class="comment"># initialize with all ...</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">      emb = C[torch.tensor([context])] <span class="comment"># (1,block_size,d)</span></span><br><span class="line">      h = torch.tanh(emb.view(<span class="number">1</span>, -<span class="number">1</span>) @ W1 + b1)</span><br><span class="line">      logits = h @ W2 + b2</span><br><span class="line">      probs = F.softmax(logits, dim=<span class="number">1</span>)</span><br><span class="line">      ix = torch.multinomial(probs, num_samples=<span class="number">1</span>, generator=g).item()</span><br><span class="line">      context = context[<span class="number">1</span>:] + [ix]</span><br><span class="line">      out.append(ix)</span><br><span class="line">      <span class="keyword">if</span> ix == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;&#x27;</span>.join(itos[i] <span class="keyword">for</span> i <span class="keyword">in</span> out))</span><br></pre></td></tr></table></figure>
+<pre><code>carmahfahbelle.
+frimrin.
+taty.
+skansh.
+emmahnen.
+delynn.
+jaree.
+corronia.
+chaiiv.
+kaleigh.
+ham.
+por.
+dessan.
+sulin.
+alianni.
+wazeloniearynn.
+jaxeenissa.
+mel.
+edi.
+abettefer.
+</code></pre></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://leungto.github.io">小凉</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://leungto.github.io/2025/05/07/NN-zero-to-hero-P2-makemore-MLP/">https://leungto.github.io/2025/05/07/NN-zero-to-hero-P2-makemore-MLP/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://leungto.github.io" target="_blank">小凉的博客</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/04/29/NN-zero-to-hero-P2-makemore/" title="NN zero to hero (P2): makemore-bigram"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">NN zero to hero (P2): makemore-bigram</div></div><div class="info-2"><div class="info-item-1">手搓二元语言模型</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">小凉</div><div class="author-info-description">记录一下!</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/07/NN-zero-to-hero-P2-makemore-MLP/" title="NN-zero-to-hero-P2-makemore-MLP">NN-zero-to-hero-P2-makemore-MLP</a><time datetime="2025-05-07T06:55:25.000Z" title="发表于 2025-05-07 14:55:25">2025-05-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/04/29/NN-zero-to-hero-P2-makemore/" title="NN zero to hero (P2): makemore-bigram">NN zero to hero (P2): makemore-bigram</a><time datetime="2025-04-29T01:43:26.000Z" title="发表于 2025-04-29 09:43:26">2025-04-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/04/27/NN-zero-to-hero-P1-micrograd/" title="NN zero to hero (P1): micrograd">NN zero to hero (P1): micrograd</a><time datetime="2025-04-27T11:53:44.000Z" title="发表于 2025-04-27 19:53:44">2025-04-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/05/NLP%E5%85%A5%E9%97%A8/" title="NLP入门">NLP入门</a><time datetime="2024-04-05T03:00:35.000Z" title="发表于 2024-04-05 11:00:35">2024-04-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/15/algorithm-plus/" title="algorithm plus">algorithm plus</a><time datetime="2023-08-15T11:56:19.000Z" title="发表于 2023-08-15 19:56:19">2023-08-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By 小凉</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 6.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.3</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
